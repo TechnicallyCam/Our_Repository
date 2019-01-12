@@ -1,0 +1,1348 @@
+focus_tree = {
+	id = Our_Nation
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = STL
+		}
+	}
+	default = no
+	focus = {
+		id = Chaos Of The New Order
+		icon = GFX_goal_unknown
+		cost = 0.00
+		x = 18
+		y = 5
+
+	}
+	focus = {
+		id = Our Empire
+		icon = GFX_goal_unknown
+		cost = 0.00
+		x = 16
+		y = 26
+
+	}
+	focus = {
+		id = Our Industry
+		icon = GFX_goal_unknown
+		cost = 0.00
+		x = 24
+		y = 5
+
+	}
+	focus = {
+		id = Our Sky
+		icon = GFX_goal_generic_air_fighter2
+		cost = 0.00
+		x = 36
+		y = 5
+
+	}
+	focus = {
+		id = Our Navy
+		icon = GFX_goal_unknown
+		cost = 0.00
+		x = 44
+		y = 5
+
+	}
+	focus = {
+		id = Our Population Issue
+		icon = GFX_goal_unknown
+		cost = 0.00
+		x = 25
+		y = 15
+
+	}
+	focus = {
+		id = Foreign Advisors
+		icon = GFX_goal_unknown
+		cost = 0.00
+		x = 54
+		y = 5
+
+	}
+	focus = {
+		id = Beyond The Continent
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = Our Empire
+		}
+		x = 16
+		y = 27
+
+	}
+	focus = {
+		id = A Forced Stability
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = Chaos Of The New Order
+		}
+		x = 18
+		y = 6
+
+	}
+	focus = {
+		id = Our Home
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = A Forced Stability
+		}
+		x = 18
+		y = 7
+
+	}
+	focus = {
+		id = The Future of Warfare
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = Our Home
+		}
+		x = 5
+		y = 9
+
+	}
+	focus = {
+		id = A new Field
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = The Future of Warfare
+		}
+		mutually_exclusive = {
+			focus = Unmanned Bombing Runs
+		}
+		x = 2
+		y = 10
+
+	}
+	focus = {
+		id = Acolytes of The Allfather
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = Our Home
+		}
+		x = 9
+		y = 9
+
+	}
+	focus = {
+		id = Catching Up In Arms
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = Our Home
+		}
+		x = 13
+		y = 9
+
+	}
+	focus = {
+		id = Griffon Buyout
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = Our Home
+		}
+		x = 18
+		y = 9
+
+	}
+	focus = {
+		id = Wings Dealers
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = Griffon Buyout
+		}
+		x = 18
+		y = 10
+
+	}
+	focus = {
+		id = Just Business
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = Wings Dealers
+		}
+		x = 18
+		y = 11
+
+	}
+	focus = {
+		id = Friendmaking
+		icon = GFX_goal_generic_military_deal
+		cost = 0.00
+		prerequisite = {
+			focus = Just Business
+		}
+		mutually_exclusive = {
+			focus = Fiendmaking
+		}
+		x = 17
+		y = 13
+
+	}
+	focus = {
+		id = Fiendmaking
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = Just Business
+		}
+		mutually_exclusive = {
+			focus = Friendmaking
+		}
+		x = 19
+		y = 13
+
+	}
+	focus = {
+		id = Our Horizons
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = Friendmaking
+			focus = Fiendmaking
+		}
+		x = 18
+		y = 15
+
+	}
+	focus = {
+		id = Our Lands
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = Our Horizons
+		}
+		x = 18
+		y = 16
+
+	}
+	focus = {
+		id = Conflict With Crystal Empire
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = Our Lands
+		}
+		x = 19
+		y = 17
+
+	}
+	focus = {
+		id = Smash Them Like Porcelain
+		icon = GFX_goal_anti_comintern_pact
+		cost = 0.00
+		prerequisite = {
+			focus = Conflict With Crystal Empire
+		}
+		x = 19
+		y = 18
+
+	}
+	focus = {
+		id = The Guns Must Flow
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = Our Industry
+		}
+		x = 22
+		y = 6
+
+	}
+	focus = {
+		id = Better Arms
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = The Guns Must Flow
+		}
+		x = 22
+		y = 7
+
+	}
+	focus = {
+		id = Immigration
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = Our Population Issue
+		}
+		x = 23
+		y = 16
+
+	}
+	focus = {
+		id = The Marvel Of The World
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = Immigration
+		}
+		x = 23
+		y = 17
+
+	}
+	focus = {
+		id = Our Traditional Family
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = Our Population Issue
+		}
+		x = 25
+		y = 16
+
+	}
+	focus = {
+		id = Every Stallion A Mare
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = Our Traditional Family
+		}
+		x = 25
+		y = 17
+
+	}
+	focus = {
+		id = Our Production
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = Our Industry
+		}
+		x = 26
+		y = 6
+
+	}
+	focus = {
+		id = Increased Production
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = Our Production
+		}
+		x = 26
+		y = 7
+
+	}
+	focus = {
+		id = Space To Build
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = Better Arms
+		}
+		prerequisite = {
+			focus = Increased Production
+		}
+		x = 24
+		y = 8
+
+	}
+	focus = {
+		id = Putting Our Village Behind Us
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = Space To Build
+		}
+		x = 20
+		y = 9
+
+	}
+	focus = {
+		id = Our Arms
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = Space To Build
+		}
+		x = 22
+		y = 9
+
+	}
+	focus = {
+		id = Our Means
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = Space To Build
+		}
+		x = 26
+		y = 9
+
+	}
+	focus = {
+		id = A Job For All
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = Our Means
+		}
+		x = 26
+		y = 10
+
+	}
+	focus = {
+		id = Better Builders
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = A Job For All
+		}
+		x = 26
+		y = 11
+
+	}
+	focus = {
+		id = Moderation
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = Better Builders
+		}
+		x = 26
+		y = 12
+
+	}
+	focus = {
+		id = Proper Medicine
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = Our Population Issue
+		}
+		x = 27
+		y = 16
+
+	}
+	focus = {
+		id = Medicine In The Field
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = Proper Medicine
+		}
+		x = 27
+		y = 17
+
+	}
+	focus = {
+		id = Food Production
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = The Marvel Of The World
+		}
+		prerequisite = {
+			focus = Every Stallion A Mare
+		}
+		prerequisite = {
+			focus = Medicine In The Field
+		}
+		x = 25
+		y = 18
+
+	}
+	focus = {
+		id = Our Roads
+		icon = GFX_goal_generic_construct_infrastructure
+		cost = 0.00
+		prerequisite = {
+			focus = Our Industry
+		}
+		x = 30
+		y = 6
+
+	}
+	focus = {
+		id = Our Resources
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = Our Roads
+		}
+		x = 30
+		y = 7
+
+	}
+	focus = {
+		id = Our Synthetics
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = Our Resources
+		}
+		x = 30
+		y = 8
+
+	}
+	focus = {
+		id = Excavating The Mountains
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = Our Synthetics
+		}
+		x = 30
+		y = 9
+
+	}
+	focus = {
+		id = Under The City
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = Excavating The Mountains
+		}
+		x = 30
+		y = 10
+
+	}
+	focus = {
+		id = A New Discovery
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = Under The City
+		}
+		x = 30
+		y = 11
+
+	}
+	focus = {
+		id = Synthetic Steel
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = A New Discovery
+		}
+		x = 30
+		y = 12
+
+	}
+	focus = {
+		id = General Oswald
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = Our Sky
+		}
+		mutually_exclusive = {
+			focus = General Werner
+		}
+		x = 34
+		y = 6
+
+	}
+	focus = {
+		id = Our Fighters
+		icon = GFX_goal_generic_air_fighter
+		cost = 0.00
+		prerequisite = {
+			focus = General Oswald
+		}
+		x = 34
+		y = 7
+
+	}
+	focus = {
+		id = General Werner
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = Our Sky
+		}
+		mutually_exclusive = {
+			focus = General Oswald
+		}
+		x = 38
+		y = 6
+
+	}
+	focus = {
+		id = Our Bombers
+		icon = GFX_goal_generic_air_bomber
+		cost = 0.00
+		prerequisite = {
+			focus = General Werner
+		}
+		x = 38
+		y = 7
+
+	}
+	focus = {
+		id = Better Pilots
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = Our Fighters
+			focus = Our Bombers
+		}
+		x = 34
+		y = 9
+
+	}
+	focus = {
+		id = From Dusk Till Dawn
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = Our Fighters
+			focus = Our Bombers
+		}
+		x = 36
+		y = 9
+
+	}
+	focus = {
+		id = Control The Skies
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = Our Bombers
+			focus = Our Bombers
+		}
+		x = 38
+		y = 9
+
+	}
+	focus = {
+		id = Our Heavy Fighters
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = Control The Skies
+		}
+		x = 38
+		y = 10
+
+	}
+	focus = {
+		id = Our Fleet
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = Our Navy
+		}
+		x = 44
+		y = 6
+
+	}
+	focus = {
+		id = How Do You Sail This Thing?
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = Our Fleet
+		}
+		x = 42
+		y = 7
+
+	}
+	focus = {
+		id = Repurposed Boats
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = Our Fleet
+		}
+		x = 44
+		y = 7
+
+	}
+	focus = {
+		id = Catching Up
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = Our Fleet
+		}
+		x = 46
+		y = 7
+
+	}
+	focus = {
+		id = Making Up For Lost Time
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = Repurposed Boats
+		}
+		prerequisite = {
+			focus = How Do You Sail This Thing?
+		}
+		prerequisite = {
+			focus = Catching Up
+		}
+		x = 44
+		y = 8
+
+	}
+	focus = {
+		id = Fleet Strategy
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = Making Up For Lost Time
+		}
+		x = 42
+		y = 9
+
+	}
+	focus = {
+		id = Dockyards
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = Making Up For Lost Time
+		}
+		x = 44
+		y = 9
+
+	}
+	focus = {
+		id = A Proper Fleet
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = Making Up For Lost Time
+		}
+		x = 46
+		y = 9
+
+	}
+	focus = {
+		id = In Doubt? Shell Them Out!
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = Foreign Advisors
+		}
+		mutually_exclusive = {
+			focus = Drifting Around Their Defences
+			focus = Tactical Genius
+			focus = Hellmarch Doctrine
+			focus = Drifting Around Their Defences
+		}
+		x = 51
+		y = 6
+
+	}
+	focus = {
+		id = No Kill Like Overkill
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = In Doubt? Shell Them Out!
+		}
+		x = 51
+		y = 7
+
+	}
+	focus = {
+		id = Drifting Around Their Defences
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = Foreign Advisors
+		}
+		mutually_exclusive = {
+			focus = In Doubt? Shell Them Out!
+			focus = Tactical Genius
+			focus = Tactical Genius
+			focus = In Doubt? Shell Them Out!
+			focus = Hellmarch Doctrine
+		}
+		x = 53
+		y = 6
+
+	}
+	focus = {
+		id = Deja Vu Strikes
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = Drifting Around Their Defences
+		}
+		x = 53
+		y = 7
+
+	}
+	focus = {
+		id = Tactical Genius
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = Foreign Advisors
+		}
+		mutually_exclusive = {
+			focus = In Doubt? Shell Them Out!
+			focus = Drifting Around Their Defences
+			focus = Hellmarch Doctrine
+			focus = Drifting Around Their Defences
+		}
+		x = 55
+		y = 6
+
+	}
+	focus = {
+		id = Just As Planned
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = Tactical Genius
+		}
+		x = 55
+		y = 7
+
+	}
+	focus = {
+		id = Cathing Up In Arms
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = Catching Up In Arms
+		}
+		x = 13
+		y = 10
+
+	}
+	focus = {
+		id = Science Of War
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = Cathing Up In Arms
+		}
+		x = 13
+		y = 11
+
+	}
+	focus = {
+		id = Big Metal Box
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = Science Of War
+		}
+		x = 13
+		y = 12
+
+	}
+	focus = {
+		id = Maintaining Discipline 
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = Acolytes of The Allfather
+		}
+		x = 9
+		y = 10
+
+	}
+	focus = {
+		id = All for the Allfather
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = Maintaining Discipline 
+		}
+		x = 9
+		y = 11
+
+	}
+	focus = {
+		id = True Order
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = All for the Allfather
+		}
+		x = 9
+		y = 12
+
+	}
+	focus = {
+		id = Unmanned Bombing Runs
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = The Future of Warfare
+		}
+		mutually_exclusive = {
+			focus = A new Field
+		}
+		x = 5
+		y = 10
+
+	}
+	focus = {
+		id = Rockets are the Future!
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = Unmanned Bombing Runs
+		}
+		x = 5
+		y = 11
+
+	}
+	focus = {
+		id = A Rabbithole
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = A new Field
+		}
+		x = 2
+		y = 11
+
+	}
+	focus = {
+		id = Rockets of the future!
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = Rockets are the Future!
+		}
+		x = 5
+		y = 12
+
+	}
+	focus = {
+		id = The Supers
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = A Rabbithole
+		}
+		x = 2
+		y = 12
+
+	}
+	focus = {
+		id = The Gift That Keeps Giving
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = The Supers
+		}
+		x = 2
+		y = 13
+
+	}
+	focus = {
+		id = Tanks, but better
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = Rockets of the future!
+		}
+		x = 5
+		y = 13
+
+	}
+	focus = {
+		id = Infantry rockets
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = Tanks, but better
+		}
+		x = 5
+		y = 14
+
+	}
+	focus = {
+		id = Red Liberation
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = Our Lands
+		}
+		x = 17
+		y = 17
+
+	}
+	focus = {
+		id = Spreading Our Truth
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = Red Liberation
+		}
+		x = 17
+		y = 18
+
+	}
+	focus = {
+		id = Our South
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = Spreading Our Truth
+		}
+		prerequisite = {
+			focus = Smash Them Like Porcelain
+		}
+		x = 18
+		y = 20
+
+	}
+	focus = {
+		id = Our West
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = Spreading Our Truth
+		}
+		prerequisite = {
+			focus = Smash Them Like Porcelain
+		}
+		x = 21
+		y = 20
+
+	}
+	focus = {
+		id = Our North
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = Spreading Our Truth
+		}
+		prerequisite = {
+			focus = Smash Them Like Porcelain
+		}
+		x = 15
+		y = 20
+
+	}
+	focus = {
+		id = Gather The Reaches
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = Our North
+		}
+		x = 13
+		y = 22
+
+	}
+	focus = {
+		id = Steal From Equestria
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = Our South
+		}
+		x = 18
+		y = 22
+
+	}
+	focus = {
+		id = Strike The Changelings
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = Our West
+		}
+		x = 21
+		y = 22
+
+	}
+	focus = {
+		id = The Frontier
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = Gather The Reaches
+		}
+		x = 9
+		y = 23
+
+	}
+	focus = {
+		id = The Bears
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = Gather The Reaches
+		}
+		x = 11
+		y = 23
+
+	}
+	focus = {
+		id = The Yaks
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = Gather The Reaches
+		}
+		x = 13
+		y = 23
+
+	}
+	focus = {
+		id = The Penguins
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = Gather The Reaches
+		}
+		x = 15
+		y = 23
+
+	}
+	focus = {
+		id = The Powers Clash
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = Steal From Equestria
+		}
+		x = 18
+		y = 23
+
+	}
+	focus = {
+		id = Hollow The Mountains
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = The Yaks
+		}
+		x = 13
+		y = 24
+
+	}
+	focus = {
+		id = New Dockyards
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = The Penguins
+		}
+		x = 15
+		y = 24
+
+	}
+	focus = {
+		id = Our Riverlands
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = Beyond The Continent
+		}
+		x = 17
+		y = 28
+
+	}
+	focus = {
+		id = Crushing The Talons Might
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = Beyond The Continent
+		}
+		x = 15
+		y = 28
+
+	}
+	focus = {
+		id = Our Tech
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = Space To Build
+		}
+		x = 24
+		y = 9
+
+	}
+	focus = {
+		id = Our Metropolis
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = Putting Our Village Behind Us
+		}
+		x = 20
+		y = 10
+
+	}
+	focus = {
+		id = Our University
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = Our Metropolis
+		}
+		x = 20
+		y = 11
+
+	}
+	focus = {
+		id = A Motivated Worker
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = Our Arms
+		}
+		x = 22
+		y = 10
+
+	}
+	focus = {
+		id = A Streamlined Process
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = A Motivated Worker
+		}
+		x = 22
+		y = 11
+
+	}
+	focus = {
+		id = Less Is More
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = Our Tech
+		}
+		x = 24
+		y = 10
+
+	}
+	focus = {
+		id = Work At Home
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = A Streamlined Process
+		}
+		x = 22
+		y = 12
+
+	}
+	focus = {
+		id = Every Inch
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = Less Is More
+		}
+		x = 24
+		y = 11
+
+	}
+	focus = {
+		id = Armoured Factories
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = Every Inch
+		}
+		x = 24
+		y = 12
+
+	}
+	focus = {
+		id = An Industrial Powerhouse
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = Work At Home
+		}
+		prerequisite = {
+			focus = Armoured Factories
+		}
+		prerequisite = {
+			focus = Moderation
+		}
+		x = 24
+		y = 13
+
+	}
+	focus = {
+		id = Close Air Support
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = From Dusk Till Dawn
+		}
+		x = 36
+		y = 10
+
+	}
+	focus = {
+		id = Our Aces
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = Better Pilots
+		}
+		x = 34
+		y = 10
+
+	}
+	focus = {
+		id = The Future of Aviation
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = Our Aces
+		}
+		prerequisite = {
+			focus = Close Air Support
+		}
+		prerequisite = {
+			focus = Our Heavy Fighters
+		}
+		x = 36
+		y = 11
+
+	}
+	focus = {
+		id = Hellmarch Doctrine
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = Foreign Advisors
+		}
+		mutually_exclusive = {
+			focus = Tactical Genius
+			focus = In Doubt? Shell Them Out!
+			focus = Drifting Around Their Defences
+		}
+		x = 57
+		y = 6
+
+	}
+	focus = {
+		id = A Gun For Every (other) Stallion
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = Hellmarch Doctrine
+		}
+		x = 57
+		y = 7
+
+	}
+}
