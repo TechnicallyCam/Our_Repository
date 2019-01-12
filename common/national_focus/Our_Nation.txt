@@ -8,6 +8,7 @@ focus_tree = {
 		}
 	}
 	default = yes
+	continuous_focus_position = { x = 290 y = 2500 }
 	focus = {
 		id = Chaos_Of_The_New_Order
 		icon = GFX_goal_unknown
@@ -65,7 +66,7 @@ focus_tree = {
 
 	}
 	focus = {
-		id = Beyond_The_Cntinent
+		id = Beyond_The_Continent
 		icon = GFX_goal_unknown
 		cost = 0.00
 		prerequisite = {
@@ -758,7 +759,7 @@ focus_tree = {
 		icon = GFX_goal_unknown
 		cost = 0.00
 		prerequisite = {
-			focus = Foreign Advisors
+			focus = Foreign_Advisors
 		}
 		mutually_exclusive = {
 			focus = In_Doubt?_Shell_Them_Out!
@@ -787,7 +788,7 @@ focus_tree = {
 		icon = GFX_goal_unknown
 		cost = 0.00
 		prerequisite = {
-			focus = Foreign Advisors
+			focus = Foreign_Advisors
 		}
 		mutually_exclusive = {
 			focus = In_Doubt?_Shell_Them_Out!
@@ -961,7 +962,7 @@ focus_tree = {
 		icon = GFX_goal_unknown
 		cost = 0.00
 		prerequisite = {
-			focus = Tanks,_but_better
+			focus = Tanks_but_better
 		}
 		x = 5
 		y = 14
