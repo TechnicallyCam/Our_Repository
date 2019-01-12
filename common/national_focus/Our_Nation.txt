@@ -7,7 +7,7 @@ focus_tree = {
 			tag = STL
 		}
 	}
-	default = no
+	default = yes
 	focus = {
 		id = Chaos_Of_The_New_Order
 		icon = GFX_goal_unknown
@@ -182,7 +182,7 @@ focus_tree = {
 		icon = GFX_goal_generic_military_deal
 		cost = 0.00
 		prerequisite = {
-			focus = Just Business
+			focus = Just_Business
 		}
 		mutually_exclusive = {
 			focus = Fiendmaking
@@ -196,7 +196,7 @@ focus_tree = {
 		icon = GFX_goal_unknown
 		cost = 0.00
 		prerequisite = {
-			focus = Just Business
+			focus = Just_Business
 		}
 		mutually_exclusive = {
 			focus = Friendmaking
@@ -564,7 +564,7 @@ focus_tree = {
 		icon = GFX_goal_unknown
 		cost = 0.00
 		prerequisite = {
-			focus = Our Sky
+			focus = Our_Sky
 		}
 		mutually_exclusive = {
 			focus = General_Oswald
@@ -730,7 +730,7 @@ focus_tree = {
 		icon = GFX_goal_unknown
 		cost = 0.00
 		prerequisite = {
-			focus = Foreign Advisors
+			focus = Foreign_Advisors
 		}
 		mutually_exclusive = {
 			focus = Drifting_Around_Their_Defences
@@ -747,7 +747,7 @@ focus_tree = {
 		icon = GFX_goal_unknown
 		cost = 0.00
 		prerequisite = {
-			focus = In Doubt?_Shell_Them_Out!
+			focus = In_Doubt?_Shell_Them_Out!
 		}
 		x = 51
 		y = 7
@@ -761,10 +761,10 @@ focus_tree = {
 			focus = Foreign Advisors
 		}
 		mutually_exclusive = {
-			focus = In Doubt?_Shell_Them_Out!
+			focus = In_Doubt?_Shell_Them_Out!
 			focus = Tactical_Genius
 			focus = Tactical_Genius
-			focus = In Doubt?_Shell_Them_Out!
+			focus = In_Doubt?_Shell_Them_Out!
 			focus = Hellmarch_Doctrine
 		}
 		x = 53
@@ -790,7 +790,7 @@ focus_tree = {
 			focus = Foreign Advisors
 		}
 		mutually_exclusive = {
-			focus = In Doubt?_Shell_Them_Out!
+			focus = In_Doubt?_Shell_Them_Out!
 			focus = Drifting_Around_Their_Defences
 			focus = Hellmarch_Doctrine
 			focus = Drifting_Around_Their_Defences
@@ -1327,7 +1327,7 @@ focus_tree = {
 		}
 		mutually_exclusive = {
 			focus = Tactical_Genius
-			focus = In Doubt?_Shell_Them_Out!
+			focus = In_Doubt?_Shell_Them_Out!
 			focus = Drifting_Around_Their_Defences
 		}
 		x = 57
