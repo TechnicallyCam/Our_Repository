@@ -1,6 +1,5 @@
 l_english:
 
-
 # Focuses
 Our_Empire:0 "Our Empire"
 Our_Empire_desc:0 "Equestria has been purified, its been modernized and made beautiful under the watchful eye of our great Allfather Adrian Hoss."
