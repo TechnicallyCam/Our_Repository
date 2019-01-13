@@ -27,7 +27,7 @@ focus_tree = {
 	}
 	focus = {
 		id = Our_Industry
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_construct_civ_factory
 		cost = 0.00
 		x = 24
 		y = 5
@@ -125,7 +125,7 @@ focus_tree = {
 	}
 	focus = {
 		id = Acolytes_of_The_Allfather
-		icon = GFX_goal_unknown
+		icon = GFX_goal_military_mission_pony
 		cost = 0.00
 		prerequisite = {
 			focus = Our_Home
@@ -169,7 +169,7 @@ focus_tree = {
 	}
 	focus = {
 		id = Just_Business
-		icon = GFX_goal_unknown
+		icon = GFX_goal_gold_reserve
 		cost = 0.00
 		prerequisite = {
 			focus = Wings_Dealers
@@ -253,7 +253,7 @@ focus_tree = {
 	}
 	focus = {
 		id = The_Guns_Must_Flow
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_construct_mil_factory
 		cost = 0.00
 		prerequisite = {
 			focus = Our_Industry
@@ -264,7 +264,7 @@ focus_tree = {
 	}
 	focus = {
 		id = Better_Arms
-		icon = GFX_goal_unknown
+		icon = GFX_goal_griffon_arms_focus_com
 		cost = 0.00
 		prerequisite = {
 			focus = The_Guns_Must_Flow
@@ -319,7 +319,7 @@ focus_tree = {
 	}
 	focus = {
 		id = Our_Production
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_production
 		cost = 0.00
 		prerequisite = {
 			focus = Our_Industry
@@ -330,7 +330,7 @@ focus_tree = {
 	}
 	focus = {
 		id = Increased_Production
-		icon = GFX_goal_unknown
+		icon = GFX_IRE_heavy_industry
 		cost = 0.00
 		prerequisite = {
 			focus = Our_Production
@@ -1232,7 +1232,7 @@ focus_tree = {
 	}
 	focus = {
 		id = Work_At_Home
-		icon = GFX_goal_unknown
+		icon = GFX_goal_we_can_do_it_aj
 		cost = 0.00
 		prerequisite = {
 			focus = A_Streamlined_Process
@@ -1321,7 +1321,7 @@ focus_tree = {
 	}
 	focus = {
 		id = Hellmarch_Doctrine
-		icon = GFX_goal_unknown
+		icon = GFX_goal_skull_fortification
 		cost = 0.00
 		prerequisite = {
 			focus = Foreign_Advisors
