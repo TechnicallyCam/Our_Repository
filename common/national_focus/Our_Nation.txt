@@ -925,7 +925,7 @@ focus_tree = {
 
 	}
 	focus = {
-		id = The_Supers
+		id = The_Supersoldaten
 		icon = GFX_goal_unknown
 		cost = 0.00
 		prerequisite = {
@@ -940,7 +940,7 @@ focus_tree = {
 		icon = GFX_goal_unknown
 		cost = 0.00
 		prerequisite = {
-			focus = The_Supers
+			focus = The_Supersoldaten
 		}
 		x = 2
 		y = 13
