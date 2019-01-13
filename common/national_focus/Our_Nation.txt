@@ -100,7 +100,7 @@ focus_tree = {
 	}
 	focus = {
 		id = The_Future_of_Warfare
-		icon = GFX_goal_unknown
+		icon = GFX_focus_generic_strike_at_democracy1
 		cost = 0.00
 		prerequisite = {
 			focus = Our_Home
@@ -111,7 +111,7 @@ focus_tree = {
 	}
 	focus = {
 		id = A_new_Field
-		icon = GFX_goal_unknown
+		icon = GFX_goal_cry_com_magic
 		cost = 0.00
 		prerequisite = {
 			focus = The_Future_of_Warfare
@@ -136,7 +136,7 @@ focus_tree = {
 	}
 	focus = {
 		id = Catching_Up_In_Arms
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_small_arms
 		cost = 0.00
 		prerequisite = {
 			focus = Our_Home
@@ -341,7 +341,7 @@ focus_tree = {
 	}
 	focus = {
 		id = Space_To_Build
-		icon = GFX_goal_unknown
+		icon = GFX_goal_construction_engineering
 		cost = 0.00
 		prerequisite = {
 			focus = Better_Arms
@@ -471,7 +471,7 @@ focus_tree = {
 	}
 	focus = {
 		id = Our_Resources
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_trade
 		cost = 0.00
 		prerequisite = {
 			focus = Our_Roads
@@ -482,7 +482,7 @@ focus_tree = {
 	}
 	focus = {
 		id = Our_Synthetics
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_oil_refinery
 		cost = 0.00
 		prerequisite = {
 			focus = Our_Resources
@@ -868,7 +868,7 @@ focus_tree = {
 	}
 	focus = {
 		id = True_Order
-		icon = GFX_focus_indy_generic_political
+		icon = GFX_goal_HOL_amend_wapenwet
 		cost = 0.00
 		prerequisite = {
 			focus = All_for_the_Allfather
@@ -879,7 +879,7 @@ focus_tree = {
 	}
 	focus = {
 		id = Unmanned_Bombing_Runs
-		icon = GFX_goal_unknown
+		icon = GFX_goal_bombs_away
 		cost = 0.00
 		prerequisite = {
 			focus = The_Future_of_Warfare
@@ -893,7 +893,7 @@ focus_tree = {
 	}
 	focus = {
 		id = Rockets_are_the_Future!
-		icon = GFX_goal_unknown
+		icon = GFX_focus_rocketry
 		cost = 0.00
 		prerequisite = {
 			focus = Unmanned_Bombing_Runs
@@ -904,7 +904,7 @@ focus_tree = {
 	}
 	focus = {
 		id = A_Rabbithole
-		icon = GFX_goal_unknown
+		icon = GFX_goal_magic_cry
 		cost = 0.00
 		prerequisite = {
 			focus = A_new_Field
@@ -959,7 +959,7 @@ focus_tree = {
 	}
 	focus = {
 		id = Infantry_rockets
-		icon = GFX_goal_unknown
+		icon = GFX_goal_rocket
 		cost = 0.00
 		prerequisite = {
 			focus = Tanks,_but_better
