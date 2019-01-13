@@ -1,4 +1,4 @@
-l_english:
+﻿l_english:
 
 # Focuses
 Our_Empire:0 "Our Empire"
@@ -66,7 +66,7 @@ Our_Arms_desc:0 "Our workers have quickly made a batch of Our Town weapons to be
 Our_Means:0 "Our Means"
 Our_Means_desc:0 "The Means Of Production have been made efficient, cheaper, and give us products of higher quality than ever before. With only more factories to come."
 A_Job_For_All:0 "A Job For All"
-A_Job_For_All_desc:0 Every citizen must work for the good of the nation, for we will not become powerful through slothful behavior."
+A_Job_For_All_desc:0 "Every citizen must work for the good of the nation, for we will not become powerful through slothful behavior."
 Better_Builders:0 "Better Builders"
 Better_Builders_desc:0 "With newfound experience and better processes Our Builders have become masters of their craft and can build at marvellous speeds."
 Moderation:0 "Moderation"
@@ -88,7 +88,7 @@ Excavating_The_Mountains_desc:0 "The mountains that surround us are full of stee
 Under_The_City:0 "Under The City"
 Under_The_City_desc:0 "The Mountains are empty and yet the war machine is not sated. Possibly what we’re looking for has been under our noses all along?"
 A_New_Discovery:0 "A New Discovery"
-A_New_Discovery_0 "Under Our City we have found a treasure trove... Crystal caves as far as the eye can see. Mining projects are underway."
+A_New_Discovery_desc:0 "Under Our City we have found a treasure trove... Crystal caves as far as the eye can see. Mining projects are underway."
 Synthetic_Steel:0 "Synthetic Steel"
 Synthetic_Steel_desc:0 "Pengele has been doing experiments on making resources through magic and has found success in making Steel through spells."
 General_Oswald:0 "General oswald"
@@ -221,21 +221,7 @@ Our_Aces:0 "Our Aces"
 Our_Aces_desc:0 "We cannot rely on sheer design quality to win. Any plane, no matter how great and well-made, can be crashed by a sufficiently incompetent pilot. Therefore, we must further increase the level of training required for our pilots, to make sure that only the best of the best rise to the top of Our Airforce."
 The_Future_of_Aviation:0 "The Future of Aviation"
 The_Future_of_Aviation_desc:0 "Propeller engines will only take us so far in our pursuit for domination in the skies, scientists have found a possible alternative within Jet Engines. With this we might once and for all rule the skies."
-Hellmarch_Doctrine:0 "Hellmarch Doctrine"
+Hellmarch_Doctrine:0 ""
 Hellmarch_Doctrine_desc:0 ""
 A_Gun_For_Every_(other)_Stallion:0 ""
 A_Gun_For_Every_(other)_Stallion_desc:0 ""
-
-
-
-
-
-
-
-
-
-
-
-
-
-
