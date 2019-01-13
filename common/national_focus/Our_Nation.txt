@@ -35,7 +35,7 @@ focus_tree = {
 	}
 	focus = {
 		id = Our_Sky
-		icon = GFX_goal_generic_air_fighter2
+		icon = GFX_goal_generic_build_airforce
 		cost = 0.00
 		x = 36
 		y = 5
@@ -208,7 +208,7 @@ focus_tree = {
 	}
 	focus = {
 		id = Our_Horizons
-		icon = GFX_goal_unknown
+		icon = GFX_goal_rhineland
 		cost = 0.00
 		prerequisite = {
 			focus = Friendmaking
@@ -493,7 +493,7 @@ focus_tree = {
 	}
 	focus = {
 		id = Excavating_The_Mountains
-		icon = GFX_goal_unknown
+		icon = GFX_goal_nim_mountains
 		cost = 0.00
 		prerequisite = {
 			focus = Our_Synthetics
@@ -504,7 +504,7 @@ focus_tree = {
 	}
 	focus = {
 		id = Under_The_City
-		icon = GFX_goal_unknown
+		icon = GFX_goal_KTG_Jungle_Diamond_Mine
 		cost = 0.00
 		prerequisite = {
 			focus = Excavating_The_Mountains
@@ -515,7 +515,7 @@ focus_tree = {
 	}
 	focus = {
 		id = A_New_Discovery
-		icon = GFX_goal_unknown
+		icon = GFX_goal_chn_research_harmony
 		cost = 0.00
 		prerequisite = {
 			focus = Under_The_City
@@ -526,7 +526,7 @@ focus_tree = {
 	}
 	focus = {
 		id = Synthetic_Steel
-		icon = GFX_goal_unknown
+		icon = GFX_goal_chn_steel
 		cost = 0.00
 		prerequisite = {
 			focus = A_New_Discovery
@@ -537,7 +537,7 @@ focus_tree = {
 	}
 	focus = {
 		id = General_Oswald
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_air_fighter2
 		cost = 0.00
 		prerequisite = {
 			focus = Our_Sky
@@ -562,7 +562,7 @@ focus_tree = {
 	}
 	focus = {
 		id = General_Werner
-		icon = GFX_goal_unknown
+		icon = GFX_goal_nim_bomb
 		cost = 0.00
 		prerequisite = {
 			focus = Our_Sky
@@ -587,7 +587,7 @@ focus_tree = {
 	}
 	focus = {
 		id = Better_Pilots
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_air_doctrine
 		cost = 0.00
 		prerequisite = {
 			focus = Our_Fighters
@@ -599,7 +599,7 @@ focus_tree = {
 	}
 	focus = {
 		id = From_Dusk_Till_Dawn
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_CAS
 		cost = 0.00
 		prerequisite = {
 			focus = Our_Fighters
@@ -611,7 +611,7 @@ focus_tree = {
 	}
 	focus = {
 		id = Control_The_Skies
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_occupy_start_war
 		cost = 0.00
 		prerequisite = {
 			focus = Our_Bombers
@@ -623,7 +623,7 @@ focus_tree = {
 	}
 	focus = {
 		id = Our_Heavy_Fighters
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_navy_carrier
 		cost = 0.00
 		prerequisite = {
 			focus = Control_The_Skies
@@ -812,7 +812,7 @@ focus_tree = {
 
 	}
 	focus = {
-		id = Cathing_Up_In_Arms
+		id = Outpacing_In_Arms
 		icon = GFX_goal_unknown
 		cost = 0.00
 		prerequisite = {
@@ -827,7 +827,7 @@ focus_tree = {
 		icon = GFX_goal_unknown
 		cost = 0.00
 		prerequisite = {
-			focus = Cathing_Up_In_Arms
+			focus = Outpacing_In_Arms
 		}
 		x = 13
 		y = 11
@@ -926,7 +926,7 @@ focus_tree = {
 	}
 	focus = {
 		id = The_Supersoldaten
-		icon = GFX_goal_unknown
+		icon = GFX_goal_magical_nukes
 		cost = 0.00
 		prerequisite = {
 			focus = A_Rabbithole
@@ -937,7 +937,7 @@ focus_tree = {
 	}
 	focus = {
 		id = The_Gift_That_Keeps_Giving
-		icon = GFX_goal_unknown
+		icon = GFX_goal_eqs_magic_horn
 		cost = 0.00
 		prerequisite = {
 			focus = The_Supersoldaten
@@ -1177,7 +1177,7 @@ focus_tree = {
 	}
 	focus = {
 		id = Our_Metropolis
-		icon = GFX_goal_unknown
+		icon = GFX_goal_rct_expand_the_city
 		cost = 0.00
 		prerequisite = {
 			focus = Putting_Our_Village_Behind_Us
@@ -1282,7 +1282,7 @@ focus_tree = {
 	}
 	focus = {
 		id = Close_Air_Support
-		icon = GFX_goal_unknown
+		icon = GFX_focus_generic_cryptologic_bomb
 		cost = 0.00
 		prerequisite = {
 			focus = From_Dusk_Till_Dawn
@@ -1293,7 +1293,7 @@ focus_tree = {
 	}
 	focus = {
 		id = Our_Aces
-		icon = GFX_goal_unknown
+		icon = GFX_goal_MAF_African_Pilots
 		cost = 0.00
 		prerequisite = {
 			focus = Better_Pilots
@@ -1304,7 +1304,7 @@ focus_tree = {
 	}
 	focus = {
 		id = The_Future_of_Aviation
-		icon = GFX_goal_unknown
+		icon = GFX_goal_somaviation
 		cost = 0.00
 		prerequisite = {
 			focus = Our_Aces
