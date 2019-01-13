@@ -355,7 +355,7 @@ focus_tree = {
 	}
 	focus = {
 		id = Putting_Our_Village_Behind_Us
-		icon = GFX_goal_unknown
+		icon = GFX_focus_eqc_memories_of_our_town
 		cost = 0.00
 		prerequisite = {
 			focus = Space_To_Build
@@ -813,7 +813,7 @@ focus_tree = {
 	}
 	focus = {
 		id = Outpacing_In_Arms
-		icon = GFX_goal_unknown
+		icon = GFX_focus_secret_rearmament
 		cost = 0.00
 		prerequisite = {
 			focus = Catching_Up_In_Arms
@@ -824,7 +824,7 @@ focus_tree = {
 	}
 	focus = {
 		id = Science_Of_War
-		icon = GFX_goal_unknown
+		icon = GFX_goal_nim_research
 		cost = 0.00
 		prerequisite = {
 			focus = Outpacing_In_Arms
@@ -835,7 +835,7 @@ focus_tree = {
 	}
 	focus = {
 		id = Big_Metal_Box
-		icon = GFX_goal_unknown
+		icon = GFX_goal_somtanks
 		cost = 0.00
 		prerequisite = {
 			focus = Science_Of_War
@@ -915,7 +915,7 @@ focus_tree = {
 	}
 	focus = {
 		id = Rockets_of_the_future!
-		icon = GFX_goal_unknown
+		icon = GFX_focus_wonderweapons
 		cost = 0.00
 		prerequisite = {
 			focus = Rockets_are_the_Future!
@@ -926,7 +926,7 @@ focus_tree = {
 	}
 	focus = {
 		id = The_Supersoldaten
-		icon = GFX_goal_magical_nukes
+		icon = GFX_goal_eqs_magic_horn
 		cost = 0.00
 		prerequisite = {
 			focus = A_Rabbithole
@@ -937,7 +937,7 @@ focus_tree = {
 	}
 	focus = {
 		id = The_Gift_That_Keeps_Giving
-		icon = GFX_goal_eqs_magic_horn
+		icon = GFX_goal_magical_nukes
 		cost = 0.00
 		prerequisite = {
 			focus = The_Supersoldaten
@@ -948,7 +948,7 @@ focus_tree = {
 	}
 	focus = {
 		id = Tanks,_but_better
-		icon = GFX_goal_unknown
+		icon = GFX_focus_generic_license_production
 		cost = 0.00
 		prerequisite = {
 			focus = Rockets_of_the_future!
@@ -1166,7 +1166,7 @@ focus_tree = {
 	}
 	focus = {
 		id = Our_Tech
-		icon = GFX_goal_unknown
+		icon = GFX_goal_purchase_tech
 		cost = 0.00
 		prerequisite = {
 			focus = Space_To_Build
@@ -1188,7 +1188,7 @@ focus_tree = {
 	}
 	focus = {
 		id = Our_University
-		icon = GFX_goal_unknown
+		icon = GFX_goal_flo_university2
 		cost = 0.00
 		prerequisite = {
 			focus = Our_Metropolis
@@ -1221,7 +1221,7 @@ focus_tree = {
 	}
 	focus = {
 		id = Less_Is_More
-		icon = GFX_goal_unknown
+		icon = GFX_SIA_maritmesilkroad
 		cost = 0.00
 		prerequisite = {
 			focus = Our_Tech
