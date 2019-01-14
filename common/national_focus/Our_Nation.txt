@@ -43,7 +43,7 @@ focus_tree = {
 	}
 	focus = {
 		id = Our_Navy
-		icon = GFX_goal_unknown
+		icon = GFX_goal_nim_ship
 		cost = 0.00
 		x = 44
 		y = 5
@@ -51,7 +51,7 @@ focus_tree = {
 	}
 	focus = {
 		id = Our_Population_Issue
-		icon = GFX_goal_unknown
+		icon = GFX_focus_HOL_deal_with_right
 		cost = 0.00
 		x = 25
 		y = 15
@@ -59,7 +59,7 @@ focus_tree = {
 	}
 	focus = {
 		id = Foreign_Advisors
-		icon = GFX_goal_unknown
+		icon = GFX_goal_foreign_diplomacy
 		cost = 0.00
 		x = 54
 		y = 5
@@ -220,7 +220,7 @@ focus_tree = {
 	}
 	focus = {
 		id = Our_Lands
-		icon = GFX_goal_unknown
+		icon = GFX_focus_AUS_agriculture
 		cost = 0.00
 		prerequisite = {
 			focus = Our_Horizons
@@ -275,7 +275,7 @@ focus_tree = {
 	}
 	focus = {
 		id = Immigration
-		icon = GFX_goal_unknown
+		icon = GFX_goal_tripartite_pact_pony
 		cost = 0.00
 		prerequisite = {
 			focus = Our_Population_Issue
@@ -286,7 +286,7 @@ focus_tree = {
 	}
 	focus = {
 		id = The_Marvel_Of_The_World
-		icon = GFX_goal_unknown
+		icon = GFX_goal_rct_expand_the_city
 		cost = 0.00
 		prerequisite = {
 			focus = Immigration
@@ -297,7 +297,7 @@ focus_tree = {
 	}
 	focus = {
 		id = Our_Traditional_Family
-		icon = GFX_goal_unknown
+		icon = GFX_focus_generic_japanese_imperial_glory
 		cost = 0.00
 		prerequisite = {
 			focus = Our_Population_Issue
@@ -308,7 +308,7 @@ focus_tree = {
 	}
 	focus = {
 		id = Every_Stallion_A_Mare
-		icon = GFX_goal_unknown
+		icon = GFX_goal_crystal_heart
 		cost = 0.00
 		prerequisite = {
 			focus = Our_Traditional_Family
@@ -366,7 +366,7 @@ focus_tree = {
 	}
 	focus = {
 		id = Our_Arms
-		icon = GFX_goal_unknown
+		icon = GFX_SIA_jungletraining
 		cost = 0.00
 		prerequisite = {
 			focus = Space_To_Build
@@ -377,7 +377,7 @@ focus_tree = {
 	}
 	focus = {
 		id = Our_Means
-		icon = GFX_goal_unknown
+		icon = GFX_goal_factory_complex
 		cost = 0.00
 		prerequisite = {
 			focus = Space_To_Build
@@ -388,7 +388,7 @@ focus_tree = {
 	}
 	focus = {
 		id = A_Job_For_All
-		icon = GFX_goal_unknown
+		icon = GFX_focus_military_derpy
 		cost = 0.00
 		prerequisite = {
 			focus = Our_Means
@@ -399,7 +399,7 @@ focus_tree = {
 	}
 	focus = {
 		id = Better_Builders
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_construct_civilian
 		cost = 0.00
 		prerequisite = {
 			focus = A_Job_For_All
@@ -421,7 +421,7 @@ focus_tree = {
 	}
 	focus = {
 		id = Proper_Medicine
-		icon = GFX_goal_unknown
+		icon = GFX_goal_cry_medicine
 		cost = 0.00
 		prerequisite = {
 			focus = Our_Population_Issue
@@ -432,7 +432,7 @@ focus_tree = {
 	}
 	focus = {
 		id = Medicine_In_The_Field
-		icon = GFX_goal_unknown
+		icon = GFX_goal_graveyard
 		cost = 0.00
 		prerequisite = {
 			focus = Proper_Medicine
@@ -443,7 +443,7 @@ focus_tree = {
 	}
 	focus = {
 		id = Food_Production
-		icon = GFX_goal_unknown
+		icon = GFX_goal_agrarian_reform
 		cost = 0.00
 		prerequisite = {
 			focus = The_Marvel_Of_The_World
@@ -634,7 +634,7 @@ focus_tree = {
 	}
 	focus = {
 		id = Our_Fleet
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_navy_submarine	
 		cost = 0.00
 		prerequisite = {
 			focus = Our_Navy
@@ -645,7 +645,7 @@ focus_tree = {
 	}
 	focus = {
 		id = How_Do_You_Sail_This_Thing?
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_navy_doctrines_tactics
 		cost = 0.00
 		prerequisite = {
 			focus = Our_Fleet
@@ -656,7 +656,7 @@ focus_tree = {
 	}
 	focus = {
 		id = Repurposed_Boats
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_occupy_states_coastal
 		cost = 0.00
 		prerequisite = {
 			focus = Our_Fleet
@@ -667,7 +667,7 @@ focus_tree = {
 	}
 	focus = {
 		id = Catching_Up
-		icon = GFX_goal_unknown
+		icon = GFX_goal_battlefleet
 		cost = 0.00
 		prerequisite = {
 			focus = Our_Fleet
@@ -678,7 +678,7 @@ focus_tree = {
 	}
 	focus = {
 		id = Making_Up_For_Lost_Time
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_navy_cruiser
 		cost = 0.00
 		prerequisite = {
 			focus = Repurposed_Boats
@@ -695,7 +695,7 @@ focus_tree = {
 	}
 	focus = {
 		id = Fleet_Strategy
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_wolf_pack
 		cost = 0.00
 		prerequisite = {
 			focus = Making_Up_For_Lost_Time
@@ -706,7 +706,7 @@ focus_tree = {
 	}
 	focus = {
 		id = Dockyards
-		icon = GFX_goal_unknown
+		icon = GFX_goal_dockyard_generic_psody
 		cost = 0.00
 		prerequisite = {
 			focus = Making_Up_For_Lost_Time
@@ -717,7 +717,7 @@ focus_tree = {
 	}
 	focus = {
 		id = A_Proper_Fleet
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_amphibious_assault
 		cost = 0.00
 		prerequisite = {
 			focus = Making_Up_For_Lost_Time
@@ -745,7 +745,7 @@ focus_tree = {
 	}
 	focus = {
 		id = No_Kill_Like_Overkill
-		icon = GFX_goal_unknown
+		icon = GFX_goal_national_artillery
 		cost = 0.00
 		prerequisite = {
 			focus = In_Doubt?_Shell_Them_Out!
@@ -756,7 +756,7 @@ focus_tree = {
 	}
 	focus = {
 		id = Drifting_Around_Their_Defences
-		icon = GFX_goal_unknown
+		icon = GFX_goal_tfv_saf_support_ossebrandwag
 		cost = 0.00
 		prerequisite = {
 			focus = Foreign_Advisors
@@ -774,7 +774,7 @@ focus_tree = {
 	}
 	focus = {
 		id = Deja_Vu_Strikes
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_army_motorized
 		cost = 0.00
 		prerequisite = {
 			focus = Drifting_Around_Their_Defences
@@ -785,7 +785,7 @@ focus_tree = {
 	}
 	focus = {
 		id = Tactical_Genius
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_army_doctrines
 		cost = 0.00
 		prerequisite = {
 			focus = Foreign_Advisors
@@ -802,7 +802,7 @@ focus_tree = {
 	}
 	focus = {
 		id = Just_As_Planned
-		icon = GFX_goal_unknown
+		icon = GFX_goal_planning_bonus
 		cost = 0.00
 		prerequisite = {
 			focus = Tactical_Genius
@@ -1045,7 +1045,7 @@ focus_tree = {
 	}
 	focus = {
 		id = Steal_From_Equestria
-		icon = GFX_goal_unknown
+		icon = GFX_focus_generic_provoke_border_clashes
 		cost = 0.00
 		prerequisite = {
 			focus = Our_South
@@ -1199,7 +1199,7 @@ focus_tree = {
 	}
 	focus = {
 		id = A_Motivated_Worker
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_propaganda
 		cost = 0.00
 		prerequisite = {
 			focus = Our_Arms
@@ -1210,7 +1210,7 @@ focus_tree = {
 	}
 	focus = {
 		id = A_Streamlined_Process
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_air_production
 		cost = 0.00
 		prerequisite = {
 			focus = A_Motivated_Worker
@@ -1243,7 +1243,7 @@ focus_tree = {
 	}
 	focus = {
 		id = Every_Inch
-		icon = GFX_goal_unknown
+		icon = GFX_focus_generic_industry_2
 		cost = 0.00
 		prerequisite = {
 			focus = Less_Is_More
@@ -1265,7 +1265,7 @@ focus_tree = {
 	}
 	focus = {
 		id = An_Industrial_Powerhouse
-		icon = GFX_goal_unknown
+		icon = GFX_focus_generic_industry_3
 		cost = 0.00
 		prerequisite = {
 			focus = Work_At_Home
@@ -1337,7 +1337,7 @@ focus_tree = {
 	}
 	focus = {
 		id = A_Gun_For_Every_(other)_Stallion
-		icon = GFX_goal_unknown
+		icon = GFX_focus_generic_little_entente
 		cost = 0.00
 		prerequisite = {
 			focus = Hellmarch_Doctrine
