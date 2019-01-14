@@ -1020,7 +1020,7 @@ focus_tree = {
 	}
 	focus = {
 		id = Our_North
-		icon = GFX_goal_unknown
+		icon = GFX_goal_solar_attack_north
 		cost = 0.00
 		prerequisite = {
 			focus = Spreading_Our_Truth
@@ -1034,7 +1034,7 @@ focus_tree = {
 	}
 	focus = {
 		id = Gather_The_Reaches
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_territory_or_war
 		cost = 0.00
 		prerequisite = {
 			focus = Our_North
@@ -1051,7 +1051,7 @@ focus_tree = {
 			focus = Our_South
 		}
 		x = 18
-		y = 22
+		y = 21
 
 	}
 	focus = {
@@ -1078,7 +1078,7 @@ focus_tree = {
 	}
 	focus = {
 		id = The_Bears
-		icon = GFX_goal_unknown
+		icon = GFX_goal_chn_plb_strike
 		cost = 0.00
 		prerequisite = {
 			focus = Gather_The_Reaches
@@ -1089,7 +1089,7 @@ focus_tree = {
 	}
 	focus = {
 		id = The_Yaks
-		icon = GFX_goal_unknown
+		icon = GFX_goal_solar_attack_yak
 		cost = 0.00
 		prerequisite = {
 			focus = Gather_The_Reaches
@@ -1117,7 +1117,7 @@ focus_tree = {
 			focus = Steal_From_Equestria
 		}
 		x = 18
-		y = 23
+		y = 22
 
 	}
 	focus = {
@@ -1133,7 +1133,7 @@ focus_tree = {
 	}
 	focus = {
 		id = New_Dockyards
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_construct_naval_dockyard
 		cost = 0.00
 		prerequisite = {
 			focus = The_Penguins
