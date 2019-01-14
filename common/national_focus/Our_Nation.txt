@@ -231,7 +231,7 @@ focus_tree = {
 	}
 	focus = {
 		id = Conflict_With_Crystal_Empire
-		icon = GFX_goal_unknown
+		icon = GFX_goal_cry_star
 		cost = 0.00
 		prerequisite = {
 			focus = Our_Lands
@@ -970,7 +970,7 @@ focus_tree = {
 	}
 	focus = {
 		id = Red_Liberation
-		icon = GFX_goal_unknown
+		icon = GFX_focus_generic_strike_at_democracy2
 		cost = 0.00
 		prerequisite = {
 			focus = Our_Lands
