@@ -432,7 +432,7 @@ focus_tree = {
 	}
 	focus = {
 		id = Medicine_In_The_Field
-		icon = GFX_goal_graveyard
+		icon = GFX_focus_healthcare_program
 		cost = 0.00
 		prerequisite = {
 			focus = Proper_Medicine
@@ -1199,7 +1199,7 @@ focus_tree = {
 	}
 	focus = {
 		id = A_Motivated_Worker
-		icon = GFX_goal_generic_propaganda
+		icon = GFX_goal_industrial_pony
 		cost = 0.00
 		prerequisite = {
 			focus = Our_Arms
