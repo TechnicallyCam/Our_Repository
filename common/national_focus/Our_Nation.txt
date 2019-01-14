@@ -1067,7 +1067,7 @@ focus_tree = {
 	}
 	focus = {
 		id = The_Frontier
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_attack_allies
 		cost = 0.00
 		prerequisite = {
 			focus = Gather_The_Reaches
@@ -1100,7 +1100,7 @@ focus_tree = {
 	}
 	focus = {
 		id = The_Penguins
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_occupy_states_ongoing_war
 		cost = 0.00
 		prerequisite = {
 			focus = Gather_The_Reaches
@@ -1122,7 +1122,7 @@ focus_tree = {
 	}
 	focus = {
 		id = Hollow_The_Mountains
-		icon = GFX_goal_unknown
+		icon = GFX_goal_nim_mountains
 		cost = 0.00
 		prerequisite = {
 			focus = The_Yaks
@@ -1155,7 +1155,7 @@ focus_tree = {
 	}
 	focus = {
 		id = Crushing_The_Talons_Might
-		icon = GFX_goal_unknown
+		icon = GFX_goal_solar_attack_grf
 		cost = 0.00
 		prerequisite = {
 			focus = Beyond_The_Continent
