@@ -727,7 +727,7 @@ focus_tree = {
 
 	}
 	focus = {
-		id = In_Doubt?_Shell_Them_Out!
+		id = In_Doubt?_Shell_Them_Out
 		icon = GFX_goal_munitions_factories
 		cost = 0.00
 		prerequisite = {
@@ -748,7 +748,7 @@ focus_tree = {
 		icon = GFX_goal_national_artillery
 		cost = 0.00
 		prerequisite = {
-			focus = In_Doubt?_Shell_Them_Out!
+			focus = In_Doubt?_Shell_Them_Out
 		}
 		x = 51
 		y = 7
@@ -762,10 +762,10 @@ focus_tree = {
 			focus = Foreign_Advisors
 		}
 		mutually_exclusive = {
-			focus = In_Doubt?_Shell_Them_Out!
+			focus = In_Doubt?_Shell_Them_Out
 			focus = Tactical_Genius
 			focus = Tactical_Genius
-			focus = In_Doubt?_Shell_Them_Out!
+			focus = In_Doubt?_Shell_Them_Out
 			focus = Hellmarch_Doctrine
 		}
 		x = 53
@@ -791,7 +791,7 @@ focus_tree = {
 			focus = Foreign_Advisors
 		}
 		mutually_exclusive = {
-			focus = In_Doubt?_Shell_Them_Out!
+			focus = In_Doubt?_Shell_Them_Out
 			focus = Drifting_Around_Their_Defences
 			focus = Hellmarch_Doctrine
 			focus = Drifting_Around_Their_Defences
@@ -892,7 +892,7 @@ focus_tree = {
 
 	}
 	focus = {
-		id = Rockets_are_the_Future!
+		id = Rockets_are_the_Future
 		icon = GFX_focus_rocketry
 		cost = 0.00
 		prerequisite = {
@@ -914,11 +914,11 @@ focus_tree = {
 
 	}
 	focus = {
-		id = Rockets_of_the_future!
+		id = Rockets_of_the_future
 		icon = GFX_focus_wonderweapons
 		cost = 0.00
 		prerequisite = {
-			focus = Rockets_are_the_Future!
+			focus = Rockets_are_the_Future
 		}
 		x = 5
 		y = 12
@@ -947,11 +947,11 @@ focus_tree = {
 
 	}
 	focus = {
-		id = Tanks,_but_better
+		id = Tanks_but_better
 		icon = GFX_focus_generic_license_production
 		cost = 0.00
 		prerequisite = {
-			focus = Rockets_of_the_future!
+			focus = Rockets_of_the_future
 		}
 		x = 5
 		y = 13
@@ -962,7 +962,7 @@ focus_tree = {
 		icon = GFX_goal_rocket
 		cost = 0.00
 		prerequisite = {
-			focus = Tanks,_but_better
+			focus = Tanks_but_better
 		}
 		x = 5
 		y = 14
@@ -1328,7 +1328,7 @@ focus_tree = {
 		}
 		mutually_exclusive = {
 			focus = Tactical_Genius
-			focus = In_Doubt?_Shell_Them_Out!
+			focus = In_Doubt?_Shell_Them_Out
 			focus = Drifting_Around_Their_Defences
 		}
 		x = 57
@@ -1336,7 +1336,7 @@ focus_tree = {
 
 	}
 	focus = {
-		id = A_Gun_For_Every_(other)_Stallion
+		id = A_Gun_For_Every_other_Stallion
 		icon = GFX_focus_generic_little_entente
 		cost = 0.00
 		prerequisite = {
