@@ -981,7 +981,7 @@ focus_tree = {
 	}
 	focus = {
 		id = Spreading_Our_Truth
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_propaganda
 		cost = 0.00
 		prerequisite = {
 			focus = Red_Liberation
@@ -992,7 +992,7 @@ focus_tree = {
 	}
 	focus = {
 		id = Our_South
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_harmony
 		cost = 0.00
 		prerequisite = {
 			focus = Spreading_Our_Truth
@@ -1006,7 +1006,7 @@ focus_tree = {
 	}
 	focus = {
 		id = Our_West
-		icon = GFX_goal_unknown
+		icon = GFX_goal_chn_support_chrysalis
 		cost = 0.00
 		prerequisite = {
 			focus = Spreading_Our_Truth
@@ -1056,7 +1056,7 @@ focus_tree = {
 	}
 	focus = {
 		id = Strike_The_Changelings
-		icon = GFX_goal_unknown
+		icon = GFX_goal_chn_swords
 		cost = 0.00
 		prerequisite = {
 			focus = Our_West
@@ -1111,7 +1111,7 @@ focus_tree = {
 	}
 	focus = {
 		id = The_Powers_Clash
-		icon = GFX_goal_unknown
+		icon = GFX_goal_celestia_raising_the_sun
 		cost = 0.00
 		prerequisite = {
 			focus = Steal_From_Equestria
