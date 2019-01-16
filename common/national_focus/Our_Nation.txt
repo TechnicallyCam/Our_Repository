@@ -137,10 +137,15 @@ focus_tree = {
 	focus = {
 		id = Catching_Up_In_Arms
 		icon = GFX_goal_generic_small_arms
-		cost = 0.00
+		cost = 10.00
 		prerequisite = {
 			focus = Our_Home
 		}
+		completion_reward = {
+          add_tech_bonus = { bonus = 00.50 = 1 category = infantry_weapons }
+          add_tech_bonus = { bonus = 00.50 = 1 category = support_tech }
+          add_tech_bonus = { bonus = 00.25 = 1 category = artillery }
+        }  
 		x = 13
 		y = 9
 
