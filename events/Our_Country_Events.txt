@@ -1,0 +1,336 @@
+##########################################################################
+#Our Country Events file
+##########################################################################
+
+add_namespace = Our_Country_Meeting
+
+####################################################
+#Chain one, the late night meeting
+####################################################
+
+#Late Night Guest
+country_event = {
+	id = Our_Country_Meeting.1
+	title = Our_Country_Meeting.1.t
+	desc = Our_Country_Meeting.1.d
+	
+	picture = GFX_event_griffon_mountain
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		name = Our_Country_Meeting.1.a
+		country_event = Our_Country_Meeting.2
+
+	}
+	option = {
+		name = Our_Country_Meeting.1.b
+
+	}
+}
+#Adrian is let inside
+country_event = {
+	id = Our_Country_Meeting.2
+	title = Our_Country_Meeting.2.t
+	desc = Our_Country_Meeting.2.d
+	
+	picture = GFX_event_griffon_mountain
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		name = Our_Country_Meeting.2.a
+		country_event = Our_Country_Meeting.3
+	}
+	option = {
+		name = Our_Country_Meeting.2.b
+		country_event = Our_Country_Meeting.4
+	}
+}
+
+#Accept
+country_event = {
+	id = Our_Country_Meeting.3
+	title = Our_Country_Meeting.3.t
+	desc = Our_Country_Meeting.3.d
+	
+	picture = GFX_event_griffon_mountain
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		name = Our_Country_Meeting.3.a
+
+	}
+
+}
+
+#Refuse
+country_event = {
+	id = Our_Country_Meeting.4
+	title = Our_Country_Meeting.4.t
+	desc = Our_Country_Meeting.4.d
+	
+	picture = GFX_event_griffon_mountain
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		name = Our_Country_Meeting.4.a
+
+	}
+
+}
+
+####################################################
+#Chain two, important business
+####################################################
+
+#Important business to discuss
+country_event = {
+	id = Our_Country_Meeting.5
+	title = Our_Country_Meeting.5.t
+	desc = Our_Country_Meeting.5.d
+	
+	picture = GFX_event_griffon_mountain
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		name = Our_Country_Meeting.5.a
+		country_event = Our_Country_Meeting.6
+
+	}
+	option = {
+		name = Our_Country_Meeting.5.b
+
+	}
+}
+#We will change the staff
+country_event = {
+	id = Our_Country_Meeting.6
+	title = Our_Country_Meeting.6.t
+	desc = Our_Country_Meeting.6.d
+	
+	picture = GFX_event_griffon_mountain
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		name = Our_Country_Meeting.6.a
+		#replace advisor
+	}
+	option = {
+		name = Our_Country_Meeting.6.b
+	}
+}
+
+####################################################
+#Chain three, political problems
+####################################################
+
+#Issues
+country_event = {
+	id = Our_Country_Meeting.7
+	title = Our_Country_Meeting.7.t
+	desc = Our_Country_Meeting.7.d
+	
+	picture = GFX_event_griffon_mountain
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		name = Our_Country_Meeting.7.a
+		country_event = Our_Country_Meeting.8
+
+	}
+	option = {
+		name = Our_Country_Meeting.7.b
+
+	}
+}
+#A new position
+country_event = {
+	id = Our_Country_Meeting.8
+	title = Our_Country_Meeting.8.t
+	desc = Our_Country_Meeting.8.d
+	
+	picture = GFX_event_griffon_mountain
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		name = Our_Country_Meeting.8.a
+		#new advisor
+	}
+	option = {
+		name = Our_Country_Meeting.8.b
+	}
+}
+
+####################################################
+#Chain four, situation worsens
+####################################################
+
+#Worsening situation
+country_event = {
+	id = Our_Country_Meeting.9
+	title = Our_Country_Meeting.9.t
+	desc = Our_Country_Meeting.9.d
+	
+	picture = GFX_event_griffon_mountain
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		name = Our_Country_Meeting.9.a
+		hidden_effect = {
+			country_event = Our_Country_Meeting.10
+		}
+
+	}
+	option = {
+		name = Our_Country_Meeting.9.b
+		hidden_effect = {
+			country_event = Our_Country_Meeting.10
+		}
+	}
+}
+#Awakening
+country_event = {
+	id = Our_Country_Meeting.10
+	title = Our_Country_Meeting.10.t
+	desc = Our_Country_Meeting.10.d
+	
+	picture = GFX_event_griffon_mountain
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		name = Our_Country_Meeting.10.a
+		#new advisor
+	}
+}
+
+#Cordon
+country_event = {
+	id = Our_Country_Meeting.11
+	title = Our_Country_Meeting.11.t
+	desc = Our_Country_Meeting.11.d
+	
+	picture = GFX_event_griffon_mountain
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		name = Our_Country_Meeting.11.a
+		hidden_effect = {
+			country_event = Our_Country_Meeting.12
+		}
+	}
+	option = {
+		name = Our_Country_Meeting.11.b
+		hidden_effect = {
+			country_event = Our_Country_Meeting.12
+		}
+	}
+}
+
+#The getaway
+country_event = {
+	id = Our_Country_Meeting.12
+	title = Our_Country_Meeting.12.t
+	desc = Our_Country_Meeting.12.d
+	
+	picture = GFX_event_griffon_mountain
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		name = Our_Country_Meeting.12.a
+		#new advisor
+	}
+}
+
+####################################################
+#Chain five, betrayal
+####################################################
+
+#Aftermath
+country_event = {
+	id = Our_Country_Meeting.13
+	title = Our_Country_Meeting.13.t
+	desc = Our_Country_Meeting.13.d
+	
+	picture = GFX_event_griffon_mountain
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		name = Our_Country_Meeting.13.a
+		country_event = Our_Country_Meeting.14
+	}
+}
+
+#Emergency
+country_event = {
+	id = Our_Country_Meeting.14
+	title = Our_Country_Meeting.14.t
+	desc = Our_Country_Meeting.14.d
+	
+	picture = GFX_event_griffon_mountain
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		name = Our_Country_Meeting.14.a
+		country_event = Our_Country_Meeting.15
+	}
+}
+
+#Lies
+country_event = {
+	id = Our_Country_Meeting.15
+	title = Our_Country_Meeting.15.t
+	desc = Our_Country_Meeting.15.d
+	
+	picture = GFX_event_griffon_mountain
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		name = Our_Country_Meeting.15.a
+		country_event = Our_Country_Meeting.16
+	}
+}
+
+#Perspective
+country_event = {
+	id = Our_Country_Meeting.16
+	title = Our_Country_Meeting.16.t
+	desc = Our_Country_Meeting.16.d
+	
+	picture = GFX_event_griffon_mountain
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		name = Our_Country_Meeting.16.a
+		country_event = Our_Country_Meeting.17
+	}
+}
+
+#Tr8tor
+country_event = {
+	id = Our_Country_Meeting.17
+	title = Our_Country_Meeting.17.t
+	desc = Our_Country_Meeting.17.d
+	
+	picture = GFX_event_griffon_mountain
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		name = Our_Country_Meeting.17.a
+	}
+}
