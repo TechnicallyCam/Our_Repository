@@ -16,7 +16,16 @@ country_event = {
 	
 	picture = GFX_event_griffon_mountain
 	fire_only_once = yes
-	is_triggered_only = yes
+	is_triggered_only = no
+	
+	trigger = {
+		tag = STL
+		date > 1007.1.1
+	}
+
+	mean_time_to_happen = {
+		days = 40
+	}
 
 	option = {
 		name = Our_Country_Meeting.1.a
@@ -60,7 +69,9 @@ country_event = {
 
 	option = {
 		name = Our_Country_Meeting.3.a
-
+		hidden_effect = {
+			country_event = {id = Our_Country_Meeting.5 days = 40}
+		}
 	}
 
 }
@@ -119,6 +130,9 @@ country_event = {
 	option = {
 		name = Our_Country_Meeting.6.a
 		#replace advisor
+		hidden_effect = {
+			country_event = {id = Our_Country_Meeting.7 days = 40}
+		}
 	}
 	option = {
 		name = Our_Country_Meeting.6.b
@@ -162,6 +176,9 @@ country_event = {
 	option = {
 		name = Our_Country_Meeting.8.a
 		#new advisor
+		hidden_effect = {
+			country_event = {id = Our_Country_Meeting.9 days = 40}
+		}
 	}
 	option = {
 		name = Our_Country_Meeting.8.b
@@ -249,6 +266,9 @@ country_event = {
 	option = {
 		name = Our_Country_Meeting.12.a
 		#new advisor
+		hidden_effect = {
+			country_event = {id = Our_Country_Meeting.13 days = 40}
+		}
 	}
 }
 
