@@ -1,0 +1,69 @@
+pengle_setup = {
+	set_variable = {
+		var = current_sacrifices
+		value = 0
+	}
+	set_variable = {
+		var = overall_sacrifices
+		value = 0
+	}
+}
+
+pengle_decrease_sacrifices_10k = {
+	add_to_variable = {
+		var = current_sacrifices
+		value = -10000
+	}
+}
+
+convert_pops_pengle = {
+	if = {
+		limit = { has_war = no }
+		every_owned_state = {
+			limit = {
+				NOT = { is_core_of = ROOT }
+			}
+			decrease_population_pengle = yes
+		}
+	}
+	else = {
+		every_state = {
+			limit = {
+				NOT = { is_core_of = ROOT }
+				OR = {
+					is_owned_by = ROOT
+					is_controlled_by = ROOT
+				}
+			}
+			decrease_population_pengle = yes
+		}
+	}
+}
+
+#TODO: Figure out if i butchered something here
+decrease_population_pengle = {
+
+	#set_temp_variable = { pop_to_kill = -10000 }
+	
+	#if = {
+	#	limit = { check_variable = { pop_to_kill < 0 } }
+	#	multiply_temp_variable = { pop_to_kill = -1 }
+	#}
+	
+	#multiply_temp_variable = { pop_to_kill = 0.1 } #10%
+	#round_variable = pop_to_kill
+	
+	ROOT = { 
+		add_to_variable = {
+			var = current_sacrifices
+			value = 10000
+		}
+		add_to_variable = {
+			var = overall_sacrifices
+			value = 10000
+		} 
+	}
+	
+	#multiply_temp_variable = { pop_to_kill = -1 }
+	#add_manpower = pop_to_kill
+}

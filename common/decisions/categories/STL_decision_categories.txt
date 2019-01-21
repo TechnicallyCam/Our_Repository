@@ -1,0 +1,8 @@
+pengele_decisions_category = {
+	icon = generic_formable_nations
+	
+	allowed = {
+		#we should obviously check to see if this is valid but since this is dev...
+		original_tag = STL
+	}
+}

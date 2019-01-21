@@ -13,13 +13,14 @@ focus_tree = {
 		id = Chaos_Of_The_New_Order
 		icon = GFX_focus_generic_anti_fascist_diplomacy
 		cost = 0.00
-        completion_reward = {
-            add_ideas = chaos_of_the_new_order
-            }
-
-
+		
 		x = 18
 		y = 5
+		
+        completion_reward = {
+			add_ideas = chaos_of_the_new_order
+			pengle_setup = yes
+		}
 
 	}
 	focus = {

@@ -1,0 +1,159 @@
+pengele_decisions_category = {
+	Pengle_Convert_Pops = {
+		icon = generic_civil_support
+		
+		#we should obviously check to see if this is valid but since this is dev...
+		
+		allowed = {
+			original_tag = STL
+		}
+		visible = {
+
+		}
+		available = {
+
+		}
+		
+		cost = 0
+		
+		complete_effect = {
+			convert_pops_pengle = yes
+		}
+	}
+	
+	pengle_level_1_decision = {
+		icon = generic_civil_support
+		
+		#we should obviously check to see if this is valid but since this is dev...
+		
+		allowed = {
+			original_tag = STL
+		}
+		visible = {
+			check_variable = {
+				var = overall_sacrifices
+				value = 100000
+				compare = greater_than
+			}
+		}
+		available = {
+
+		}
+		
+		cost = 0
+		
+		complete_effect = {
+			add_tech_bonus = {
+				bonus = 0.25
+				uses = 1
+				category = magical_tech
+			}
+			pengle_decrease_sacrifices_10k = yes
+		}
+	}
+	pengle_level_2_decision = {
+		icon = generic_civil_support
+		
+		#we should obviously check to see if this is valid but since this is dev...
+		
+		allowed = {
+			original_tag = STL
+		}
+		visible = {
+			check_variable = {
+				var = overall_sacrifices
+				value = 200000
+				compare = greater_than
+			}
+		}
+		available = {
+
+		}
+		
+		cost = 0
+		
+		complete_effect = {
+			add_tech_bonus = {
+				bonus = 0.25
+				uses = 1
+				category = race_tech
+			}
+			pengle_decrease_sacrifices_10k = yes
+		}
+	}
+	pengle_level_3_decision = {
+		icon = generic_civil_support
+		
+		#we should obviously check to see if this is valid but since this is dev...
+		
+		allowed = {
+			original_tag = STL
+		}
+		visible = {
+			check_variable = {
+				var = overall_sacrifices
+				value = 300000
+				compare = greater_than
+			}
+		}
+		available = {
+
+		}
+		
+		cost = 0
+		
+		complete_effect = {
+			pengle_decrease_sacrifices_10k = yes
+		}
+	}
+	pengle_level_4_decision = {
+		icon = generic_civil_support
+		
+		#we should obviously check to see if this is valid but since this is dev...
+		
+		allowed = {
+			original_tag = STL
+		}
+		visible = {
+			check_variable = {
+				var = overall_sacrifices
+				value = 750000
+				compare = greater_than
+			}
+		}
+		available = {
+
+		}
+		
+		cost = 0
+		
+		complete_effect = {
+			pengle_decrease_sacrifices_10k = yes
+		}
+	}
+	pengle_level_5_decision = {
+		icon = generic_civil_support
+		
+		#we should obviously check to see if this is valid but since this is dev...
+		
+		allowed = {
+			original_tag = STL
+		}
+		visible = {
+			check_variable = {
+				var = overall_sacrifices
+				value = 1000000
+				compare = greater_than
+			}
+		}
+		available = {
+
+		}
+		
+		cost = 0
+		
+		complete_effect = {
+			pengle_decrease_sacrifices_10k = yes
+		}
+	}
+}
