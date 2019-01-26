@@ -12,7 +12,7 @@ focus_tree = {
 	focus = {
 		id = Chaos_Of_The_New_Order
 		icon = GFX_focus_generic_anti_fascist_diplomacy
-		cost = 0.00
+		cost = 35.00
 		
 		x = 18
 		y = 5
@@ -115,6 +115,9 @@ focus_tree = {
 		}
 		x = 5
 		y = 9
+		completion_reward = {
+			add_timed_idea = {idea = STL_blessed_silence days = 140}
+		}
 
 	}
 	focus = {
