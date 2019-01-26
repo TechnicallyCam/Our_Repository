@@ -15,5 +15,18 @@ ideas = {
 				industrial_capacity_factory	= -1.0
 				
 			}
+			STL_blessed_silence_idea = {
+			picture = vittoria_mutilata
+			allowed = {
+				always = yes
+			}
+			available = {
+				is_subject = no
+			}
+			removal_cost = -1
+			modifier = {
+				stability_weekly = 0.02
+				
+			}
 		}
 }
