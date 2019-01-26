@@ -31,4 +31,20 @@ ideas = {
 			}
 		}
 	}
+	country = {
+		STL_charitable_initiatives = {
+			allowed = {
+				always = yes
+			}
+			available = {
+				is_subject = no
+			}
+			picture = vittoria_mutilata
+			removal_cost = -1
+			modifier = {
+				stability_weekly = 0.02
+				consumer_goods_factor = 5
+			}
+		}
+	}
 }
