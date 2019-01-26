@@ -8,7 +8,7 @@ ideas = {
 			available = {
 				is_subject = no
 			}
-			picture = vittoria_mutilata
+			picture = chi_war_of_resistance3
 			removal_cost = -1
 			modifier = {
 				political_power_gain = -1.0
@@ -24,7 +24,7 @@ ideas = {
 			available = {
 				is_subject = no
 			}
-			picture = vittoria_mutilata
+			picture = FRA_matignon_agreements
 			removal_cost = -1
 			modifier = {
 				stability_weekly = 0.02
@@ -39,7 +39,7 @@ ideas = {
 			available = {
 				is_subject = no
 			}
-			picture = vittoria_mutilata
+			picture = generic_goods_red_bonus
 			removal_cost = -1
 			modifier = {
 				political_power_gain = 1.0
@@ -55,7 +55,7 @@ ideas = {
 			available = {
 				is_subject = no
 			}
-			picture = vittoria_mutilata
+			picture = triumphant_will
 			removal_cost = -1
 			modifier = {
 				stability_weekly = 0.01
@@ -70,7 +70,7 @@ ideas = {
 			available = {
 				is_subject = no
 			}
-			picture = vittoria_mutilata
+			picture = generic_manpower_bonus
 			removal_cost = -1
 			modifier = {
 				army_org = 10.0
@@ -86,7 +86,7 @@ ideas = {
 			available = {
 				is_subject = no
 			}
-			picture = vittoria_mutilata
+			picture = FRA_army_of_aggression_focus
 			removal_cost = -1
 			modifier = {
 				land_reinforce_rate = 0.01
@@ -101,7 +101,7 @@ ideas = {
 			available = {
 				is_subject = no
 			}
-			picture = vittoria_mutilata
+			picture = ast_classify_aliens
 			removal_cost = -1
 			modifier = {
 				stability_weekly = 0.01
