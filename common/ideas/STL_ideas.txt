@@ -42,8 +42,70 @@ ideas = {
 			picture = vittoria_mutilata
 			removal_cost = -1
 			modifier = {
-				stability_weekly = 0.02
+				political_power_gain = 1.0
 				consumer_goods_factor = 0.05
+			}
+		}
+	}
+	country = {
+		STL_order_of_the_acolytes = {
+			allowed = {
+				always = yes
+			}
+			available = {
+				is_subject = no
+			}
+			picture = vittoria_mutilata
+			removal_cost = -1
+			modifier = {
+				stability_weekly = 0.01
+			}
+		}
+	}
+	country = {
+		STL_acolyte_discipline = {
+			allowed = {
+				always = yes
+			}
+			available = {
+				is_subject = no
+			}
+			picture = vittoria_mutilata
+			removal_cost = -1
+			modifier = {
+				army_org = 0.10
+				land_reinforce_rate = 0.01
+			}
+		}
+	}
+	country = {
+		STL_acolyte_fervour = {
+			allowed = {
+				always = yes
+			}
+			available = {
+				is_subject = no
+			}
+			picture = vittoria_mutilata
+			removal_cost = -1
+			modifier = {
+				army_org = 0.00
+				land_reinforce_rate = 0.01
+			}
+		}
+	}
+	country = {
+		STL_nation_of_the_acolytes = {
+			allowed = {
+				always = yes
+			}
+			available = {
+				is_subject = no
+			}
+			picture = vittoria_mutilata
+			removal_cost = -1
+			modifier = {
+				production_factory_start_efficiency_factor = 0.05
 			}
 		}
 	}
