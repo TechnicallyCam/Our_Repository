@@ -12,7 +12,7 @@ focus_tree = {
 	focus = {
 		id = Chaos_Of_The_New_Order
 		icon = GFX_focus_generic_anti_fascist_diplomacy
-		cost = 0.00
+		cost = 35.00
 		
 		x = 18
 		y = 5
