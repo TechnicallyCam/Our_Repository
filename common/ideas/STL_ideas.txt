@@ -12,7 +12,7 @@ ideas = {
 			removal_cost = -1
 			modifier = {
 				political_power_gain = -1.0
-				industrial_capacity_factory	= -1.0
+				industrial_capacity_factory	= -0.1
 			}
 		}
 	}
