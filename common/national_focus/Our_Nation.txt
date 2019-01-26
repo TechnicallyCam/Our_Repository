@@ -902,6 +902,23 @@ focus_tree = {
 		}
 		x = 13
 		y = 12
+		completion_reward = (
+			add_tech_bonus = { 
+			  bonus = 00.50 
+			  uses = 1 
+			  category = infantry_weapons 
+			}  
+			add_tech_bonus = { 
+			  bonus = 00.50 
+			  uses = 1 
+			  category = support_tech 
+			}
+			add_tech_bonus = { 
+			  bonus = 00.25 
+			  uses = 1 
+			  category = artillery 
+			}
+		)
 
 	}
 	focus = {
