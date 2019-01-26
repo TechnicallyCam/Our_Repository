@@ -767,6 +767,8 @@ focus_tree = {
 		}
 		x = 51
 		y = 7
+		completion_reward = {
+		 add_tech_bonus = {bonus = 00.35 = 4 category = cat_mass_assault}
 
 	}
 	focus = {
@@ -785,7 +787,8 @@ focus_tree = {
 		}
 		x = 53
 		y = 6
-
+        completion_reward = {
+		   add_tech_bonus = {bonus = 00.35 = 4 category = cat_mobile_warfare}
 	}
 	focus = {
 		id = Deja_Vu_Strikes
@@ -813,7 +816,8 @@ focus_tree = {
 		}
 		x = 55
 		y = 6
-
+         completion_reward = {
+		  add_tech_bonus = {bonus = 00.35 = 4 category = cat_grand_battle_plan}
 	}
 	focus = {
 		id = Just_As_Planned
