@@ -2,34 +2,32 @@ ideas = {
 	
 	country = {
         STL_chaos_of_the_new_order_idea = {
-			picture = vittoria_mutilata
 			allowed = {
 				always = yes
 			}
 			available = {
 				is_subject = no
 			}
+			picture = vittoria_mutilata
 			removal_cost = -1
 			modifier = {
 				political_power_gain = -1.0
 				industrial_capacity_factory	= -1.0
-				
 			}
 		}
 	}
 	country = {
 		STL_blessed_silence_idea = {
-			picture = vittoria_mutilata
 			allowed = {
 				always = yes
 			}
 			available = {
 				is_subject = no
 			}
+			picture = vittoria_mutilata
 			removal_cost = -1
 			modifier = {
 				stability_weekly = 0.02
-				
 			}
 		}
 	}
