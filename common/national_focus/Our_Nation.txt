@@ -18,7 +18,7 @@ focus_tree = {
 		y = 5
 		
         completion_reward = {
-			add_ideas = chaos_of_the_new_order
+			add_ideas = STL_chaos_of_the_new_order
 			pengle_setup = yes
 		}
 
@@ -92,7 +92,7 @@ focus_tree = {
 		x = 18
 		y = 6
 		completion_reward = {
-			add_timed_idea = {idea = blessed_silence days = 140}
+			add_timed_idea = {idea = STL_blessed_silence days = 140}
 		}
 
 	}
