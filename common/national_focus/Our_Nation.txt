@@ -34,10 +34,19 @@ focus_tree = {
 	focus = {
 		id = Our_Industry
 		icon = GFX_goal_generic_construct_civ_factory
-		cost = 0.00
+		cost = 5.00
 		x = 24
 		y = 5
-
+		completion_reward = {
+		    57 = {
+				add_building_construction = {
+					type = industrial_complex
+					level = 5
+					instant_build = yes
+					add_extra_state_shared_building_slots = 5
+				}
+			}
+        }
 	}
 	focus = {
 		id = Our_Sky
@@ -882,7 +891,7 @@ focus_tree = {
 	focus = {
 		id = Science_Of_War
 		icon = GFX_goal_nim_research
-		cost = 0.00
+		cost = 1.00
 		prerequisite = {
 			focus = Outpacing_In_Arms
 		}
@@ -896,7 +905,7 @@ focus_tree = {
 	focus = {
 		id = Big_Metal_Box
 		icon = GFX_goal_somtanks
-		cost = 0.00
+		cost = 1.00
 		prerequisite = {
 			focus = Science_Of_War
 		}
