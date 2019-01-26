@@ -32,7 +32,7 @@ pengele_decisions_category = {
 		visible = {
 			check_variable = {
 				var = overall_sacrifices
-				value = 100000
+				value = 1
 				compare = greater_than
 			}
 		}
@@ -62,7 +62,7 @@ pengele_decisions_category = {
 		visible = {
 			check_variable = {
 				var = overall_sacrifices
-				value = 200000
+				value = 2
 				compare = greater_than
 			}
 		}
@@ -92,7 +92,7 @@ pengele_decisions_category = {
 		visible = {
 			check_variable = {
 				var = overall_sacrifices
-				value = 300000
+				value = 3
 				compare = greater_than
 			}
 		}
@@ -117,7 +117,7 @@ pengele_decisions_category = {
 		visible = {
 			check_variable = {
 				var = overall_sacrifices
-				value = 750000
+				value = 6
 				compare = greater_than
 			}
 		}
@@ -142,7 +142,7 @@ pengele_decisions_category = {
 		visible = {
 			check_variable = {
 				var = overall_sacrifices
-				value = 1000000
+				value = 10
 				compare = greater_than
 			}
 		}
@@ -154,6 +154,26 @@ pengele_decisions_category = {
 		
 		complete_effect = {
 			pengle_decrease_sacrifices_10k = yes
+		}
+	}
+	
+	alicorn_adrian_decision = {
+		icon = generic_civil_support
+		
+		allowed = {
+			original_tag = STL
+		}
+		visible = {
+			has_country_flag = STL_Denied_Alicorn
+		}
+		available = {
+
+		}
+		
+		cost = 0
+		
+		complete_effect = {
+			country_event = Our_Country_Alicorn.1
 		}
 	}
 }

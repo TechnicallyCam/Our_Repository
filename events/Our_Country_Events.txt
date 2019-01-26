@@ -3,6 +3,7 @@
 ##########################################################################
 
 add_namespace = Our_Country_Meeting
+add_namespace = Our_Country_Alicorn
 
 ####################################################
 #Chain one, the late night meeting
@@ -352,5 +353,77 @@ country_event = {
 
 	option = {
 		name = Our_Country_Meeting.17.a
+		set_country_flag = Our_Country_Adrian_Coup_Flag
+	}
+}
+
+####################################################
+#Alicorn chain events
+####################################################
+
+country_event = {
+	id = Our_Country_Alicorn.1
+	title = Our_Country_Alicorn.1.t
+	desc = Our_Country_Alicorn.1.d
+	
+	picture = GFX_event_griffon_mountain
+	fire_only_once = yes
+	is_triggered_only = no
+	
+	trigger = {
+		STL = {
+			has_country_flag = Our_Country_Adrian_Coup_Flag
+			
+			OR = {
+				owns_state = 3
+				owns_state = 53
+			}
+		}
+	}
+	
+	mean_time_to_happen = {
+		days = 40
+	}
+
+	#yes
+	option = {
+		name = Our_Country_Alicorn.1.a
+		roll_alicorn_chance = yes
+		clr_country_flag = STL_Denied_Alicorn
+	}
+	#no
+	option = {
+		name = Our_Country_Alicorn.1.b
+		set_country_flag = STL_Denied_Alicorn
+	}
+}
+
+##Success
+country_event = {
+	id = Our_Country_Alicorn.2
+	title = Our_Country_Alicorn.2.t
+	desc = Our_Country_Alicorn.2.d
+	
+	picture = GFX_event_griffon_mountain
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		name = Our_Country_Alicorn.2.a
+	}
+}
+
+##Fail
+country_event = {
+	id = Our_Country_Alicorn.3
+	title = Our_Country_Alicorn.3.t
+	desc = Our_Country_Alicorn.3.d
+	
+	picture = GFX_event_griffon_mountain
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		name = Our_Country_Alicorn.3.a
 	}
 }

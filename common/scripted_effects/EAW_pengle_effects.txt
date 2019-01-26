@@ -12,7 +12,7 @@ pengle_setup = {
 pengle_decrease_sacrifices_10k = {
 	add_to_variable = {
 		var = current_sacrifices
-		value = -10000
+		value = -1
 	}
 }
 
@@ -56,14 +56,114 @@ decrease_population_pengle = {
 	ROOT = { 
 		add_to_variable = {
 			var = current_sacrifices
-			value = 10000
+			value = 1
 		}
 		add_to_variable = {
 			var = overall_sacrifices
-			value = 10000
+			value = 1
 		} 
 	}
 	
 	#multiply_temp_variable = { pop_to_kill = -1 }
 	#add_manpower = pop_to_kill
+}
+
+roll_alicorn_chance = {
+
+	if = {
+		limit = {
+			STL = {
+				owns_state = 3
+				owns_state = 53
+			}
+		}
+		
+		set_variable = {
+			var = alicorn_chance
+			value = 40
+		}
+	}
+	else = {
+		set_variable = {
+			var = alicorn_chance
+			value = 20
+		}
+	}
+	
+	if = {
+		check_variable = { 
+			overall_sacrifices < 4  
+		}
+		add_to_variable = {
+			var = alicorn_chance
+			value = 50
+		}
+		else = {
+			if = {
+				check_variable = { 
+					overall_sacrifices < 3  
+				}
+				add_to_variable = {
+					var = alicorn_chance
+					value = 40
+				}
+				else = {
+					if = {
+						check_variable = { 
+							overall_sacrifices < 2  
+						}
+						add_to_variable = {
+							var = alicorn_chance
+							value = 30
+						}
+						else = {
+							if = {
+								check_variable = { 
+									overall_sacrifices < 1  
+								}
+								add_to_variable = {
+									var = alicorn_chance
+									value = 20
+								}
+								else = {
+									if = {
+										check_variable = { 
+											overall_sacrifices < 0  
+										}
+										add_to_variable = {
+											var = alicorn_chance
+											value = 10
+										}
+										else = {
+										
+										}
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+	
+	set_variable = {
+		var = fail_chance
+		value = 100
+	}
+	
+	subtract_from_variable = {
+		var = fail_chance
+		value = alicorn_chance
+	}
+	
+	random_list = {
+	
+		alicorn_chance = {
+			
+		}
+		fail_chance = {
+			country_event = 
+		}
+	}
 }
