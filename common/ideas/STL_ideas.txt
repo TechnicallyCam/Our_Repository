@@ -16,7 +16,9 @@ ideas = {
 				
 			}
 		}
-			STL_blessed_silence_idea = {
+	}
+	country = {
+		STL_blessed_silence_idea = {
 			picture = vittoria_mutilata
 			allowed = {
 				always = yes
@@ -30,4 +32,5 @@ ideas = {
 				
 			}
 		}
+	}
 }
