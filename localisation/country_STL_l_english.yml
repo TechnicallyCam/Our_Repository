@@ -240,8 +240,9 @@ STL_order_of_the_acolytes:0 "Order Of The Acolytes"
 STL_order_of_the_acolytes_desc:0 ""
 STL_acolyte_discipline:0 "Acolyte Discipline"
 STL_acolyte_discipline_desc:0 ""
-
-
-
+STL_acolyte_fervour:0 "Acolyte Fervour"
+STL_acolyte_fervour_desc:0 ""
+STL_nation_of_the_acolytes:0 "Nation Of The Acolytes"
+STL_nation_of_the_acolytes_desc:0 ""
 
 
