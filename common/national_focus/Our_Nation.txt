@@ -657,7 +657,7 @@ focus_tree = {
 
 	}
 	focus = {
-		id = How_Do_You_Sail_This_Thing?
+		id = How_Do_You_Sail_This_Thing
 		icon = GFX_goal_generic_navy_doctrines_tactics
 		cost = 0.00
 		prerequisite = {
@@ -697,7 +697,7 @@ focus_tree = {
 			focus = Repurposed_Boats
 		}
 		prerequisite = {
-			focus = How_Do_You_Sail_This_Thing?
+			focus = How_Do_You_Sail_This_Thing
 		}
 		prerequisite = {
 			focus = Catching_Up
