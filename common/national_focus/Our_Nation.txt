@@ -12,7 +12,7 @@ focus_tree = {
 	focus = {
 		id = Chaos_Of_The_New_Order
 		icon = GFX_focus_generic_anti_fascist_diplomacy
-		cost = 35.00
+		cost = 0.10
 		
 		x = 18
 		y = 5
@@ -85,7 +85,7 @@ focus_tree = {
 	focus = {
 		id = A_Forced_Stability
 		icon = GFX_goal_generic_forceful_treaty
-		cost = 0.00
+		cost = 10.00
 		prerequisite = {
 			focus = Chaos_Of_The_New_Order
 		}
@@ -99,12 +99,16 @@ focus_tree = {
 	focus = {
 		id = Our_Home
 		icon = GFX_goal_constitutional_guarantees
-		cost = 0.00
+		cost = 5.00
 		prerequisite = {
 			focus = A_Forced_Stability
 		}
 		x = 18
 		y = 7
+		completion_reward = {
+			add_stablity = 0.10
+			add_timed_idea = {idea = STL_charitable_initiatives days = 140}
+		}
 	}
 	focus = {
 		id = The_Future_of_Warfare
