@@ -1,7 +1,7 @@
 ideas = {
 	
 	country = {
-        STL_chaos_of_the_new_order_idea = {
+        STL_chaos_of_the_new_order = {
 			allowed = {
 				always = yes
 			}
@@ -17,7 +17,7 @@ ideas = {
 		}
 	}
 	country = {
-		STL_blessed_silence_idea = {
+		STL_blessed_silence = {
 			allowed = {
 				always = yes
 			}
