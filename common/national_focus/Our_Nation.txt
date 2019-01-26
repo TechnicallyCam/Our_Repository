@@ -753,6 +753,10 @@ focus_tree = {
 		x = 51
 		y = 6
 
+		completion_reward = {
+		 add_tech_bonus = {bonus = 00.35 = 4 category = cat_superior_firepower}
+
+
 	}
 	focus = {
 		id = No_Kill_Like_Overkill
