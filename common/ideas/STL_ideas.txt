@@ -73,7 +73,7 @@ ideas = {
 			picture = vittoria_mutilata
 			removal_cost = -1
 			modifier = {
-				army_org = 0.10
+				army_org = 10.0
 				land_reinforce_rate = 0.01
 			}
 		}
