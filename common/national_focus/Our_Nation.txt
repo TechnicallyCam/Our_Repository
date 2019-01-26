@@ -91,6 +91,9 @@ focus_tree = {
 		}
 		x = 18
 		y = 6
+		completion_reward = {
+			add_timed_idea = {idea = blessed_silence days = 140}
+		}
 
 	}
 	focus = {
@@ -102,7 +105,6 @@ focus_tree = {
 		}
 		x = 18
 		y = 7
-
 	}
 	focus = {
 		id = The_Future_of_Warfare
