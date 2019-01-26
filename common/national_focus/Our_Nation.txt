@@ -738,7 +738,7 @@ focus_tree = {
 
 	}
 	focus = {
-		id = In_Doubt?_Shell_Them_Out
+		id = In_Doubt_Shell_Them_Out
 		icon = GFX_goal_munitions_factories
 		cost = 0.00
 		prerequisite = {
@@ -765,13 +765,11 @@ focus_tree = {
 		icon = GFX_goal_national_artillery
 		cost = 0.00
 		prerequisite = {
-			focus = In_Doubt?_Shell_Them_Out
+			focus = In_Doubt_Shell_Them_Out
 		}
 		x = 51
 		y = 7
-		completion_reward = {
-		 add_tech_bonus = {bonus = 00.35 = 4 category = cat_mass_assault}
-		 }
+		
 
 
 	}
@@ -783,10 +781,10 @@ focus_tree = {
 			focus = Foreign_Advisors
 		}
 		mutually_exclusive = {
-			focus = In_Doubt?_Shell_Them_Out
+			focus = In_Doubt_Shell_Them_Out
 			focus = Tactical_Genius
 			focus = Tactical_Genius
-			focus = In_Doubt?_Shell_Them_Out
+			focus = In_Doubt_Shell_Them_Out
 			focus = Hellmarch_Doctrine
 		}
 		x = 53
@@ -815,7 +813,7 @@ focus_tree = {
 			focus = Foreign_Advisors
 		}
 		mutually_exclusive = {
-			focus = In_Doubt?_Shell_Them_Out
+			focus = In_Doubt_Shell_Them_Out
 			focus = Drifting_Around_Their_Defences
 			focus = Hellmarch_Doctrine
 			focus = Drifting_Around_Their_Defences
@@ -1355,7 +1353,7 @@ focus_tree = {
 		}
 		mutually_exclusive = {
 			focus = Tactical_Genius
-			focus = In_Doubt?_Shell_Them_Out
+			focus = In_Doubt_Shell_Them_Out
 			focus = Drifting_Around_Their_Defences
 		}
 		x = 57
