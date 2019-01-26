@@ -15,6 +15,7 @@ ideas = {
 				industrial_capacity_factory	= -1.0
 				
 			}
+		}
 			STL_blessed_silence_idea = {
 			picture = vittoria_mutilata
 			allowed = {
