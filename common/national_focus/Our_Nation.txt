@@ -147,6 +147,9 @@ focus_tree = {
 		}
 		x = 9
 		y = 9
+		completion_reward = {
+			add_ideas = STL_order_of_the_acolytes
+		}
 
 	}
 	focus = {
@@ -887,6 +890,9 @@ focus_tree = {
 		}
 		x = 9
 		y = 10
+		completion_reward = {
+			add_ideas = STL_acolyte_discipline
+		}
 
 	}
 	focus = {
@@ -896,8 +902,26 @@ focus_tree = {
 		prerequisite = {
 			focus = Maintaining_Discipline 
 		}
-		x = 9
+		x = 10
 		y = 11
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = STL_acolyte_discipline
+				add_idea = STL_acolyte_fervour 
+			}
+			hidden_effect = {
+				set_rule = {
+					can_use_kamikaze_pilots = yes
+				}
+			}
+			custom_effect_tooltip = kamikaze_focus_tooltip
+			if = {
+				limit = {
+					has_dlc = "Waking the Tiger"
+				}
+				custom_effect_tooltip = super_combat_abilities_tt
+			}
+		}
 
 	}
 	focus = {
@@ -905,10 +929,16 @@ focus_tree = {
 		icon = GFX_goal_HOL_amend_wapenwet
 		cost = 0.00
 		prerequisite = {
-			focus = All_for_the_Allfather
+			focus = Maintaining_Discipline
 		}
-		x = 9
-		y = 12
+		x = 8
+		y = 11
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = STL_order_of_the_acolytes
+				add_idea = STL_nation_of_the_acolytes
+			}
+		}
 
 	}
 	focus = {
