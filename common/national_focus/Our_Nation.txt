@@ -755,6 +755,8 @@ focus_tree = {
 
 		completion_reward = {
 		 add_tech_bonus = {bonus = 00.35 = 4 category = cat_superior_firepower}
+		 }
+
 
 
 	}
@@ -769,6 +771,8 @@ focus_tree = {
 		y = 7
 		completion_reward = {
 		 add_tech_bonus = {bonus = 00.35 = 4 category = cat_mass_assault}
+		 }
+
 
 	}
 	focus = {
@@ -789,6 +793,8 @@ focus_tree = {
 		y = 6
         completion_reward = {
 		   add_tech_bonus = {bonus = 00.35 = 4 category = cat_mobile_warfare}
+		   }
+
 	}
 	focus = {
 		id = Deja_Vu_Strikes
@@ -818,6 +824,8 @@ focus_tree = {
 		y = 6
          completion_reward = {
 		  add_tech_bonus = {bonus = 00.35 = 4 category = cat_grand_battle_plan}
+		  }
+
 	}
 	focus = {
 		id = Just_As_Planned
@@ -1352,7 +1360,9 @@ focus_tree = {
 		}
 		x = 57
 		y = 6
-
+        completion_reward = {
+		 add_tech_bonus = {bonus = 00.35 = 4 category = cat_mass_assault}
+		 }
 	}
 	focus = {
 		id = A_Gun_For_Every_other_Stallion
