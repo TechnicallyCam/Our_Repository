@@ -160,10 +160,10 @@ roll_alicorn_chance = {
 	random_list = {
 	
 		alicorn_chance = {
-			
+			country_event = Our_Country_Alicorn.2
 		}
 		fail_chance = {
-			country_event = 
+			country_event = Our_Country_Alicorn.3
 		}
 	}
 }

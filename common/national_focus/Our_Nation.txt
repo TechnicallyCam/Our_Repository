@@ -8,87 +8,24 @@ focus_tree = {
 		}
 	}
 	default = yes
-	continuous_focus_position = { x = 290 y = 2500 }
+	continuous_focus_position = { x = 0 y = 2000 }
+	
+	##############################################################################
+	#Chaos of the new order branch
+	##############################################################################
+	
 	focus = {
 		id = Chaos_Of_The_New_Order
 		icon = GFX_focus_generic_anti_fascist_diplomacy
 		cost = 0.10
 		
-		x = 18
-		y = 5
+		x = 0
+		y = 0
 		
         completion_reward = {
 			add_ideas = STL_chaos_of_the_new_order
 			pengle_setup = yes
 		}
-
-	}
-	focus = {
-		id = Our_Empire
-		icon = GFX_goal_unknown
-		cost = 0.00
-		x = 16
-		y = 26
-
-	}
-	focus = {
-		id = Our_Industry
-		icon = GFX_goal_generic_construct_civ_factory
-		cost = 5.00
-		x = 24
-		y = 5
-		completion_reward = {
-		    57 = {
-				add_extra_state_shared_building_slots = 5
-				add_building_construction = {
-					type = industrial_complex
-					level = 5
-					instant_build = yes
-				}
-			}
-        }
-	}
-	focus = {
-		id = Our_Sky
-		icon = GFX_goal_generic_build_airforce
-		cost = 0.00
-		x = 36
-		y = 5
-
-	}
-	focus = {
-		id = Our_Navy
-		icon = GFX_goal_nim_ship
-		cost = 0.00
-		x = 44
-		y = 5
-
-	}
-	focus = {
-		id = Our_Population_Issue
-		icon = GFX_focus_HOL_deal_with_right
-		cost = 0.00
-		x = 25
-		y = 15
-
-	}
-	focus = {
-		id = Foreign_Advisors
-		icon = GFX_goal_foreign_diplomacy
-		cost = 0.00
-		x = 54
-		y = 5
-
-	}
-	focus = {
-		id = Beyond_The_Continent
-		icon = GFX_goal_unknown
-		cost = 0.00
-		prerequisite = {
-			focus = Our_Empire
-		}
-		x = 16
-		y = 27
 
 	}
 	focus = {
@@ -98,8 +35,9 @@ focus_tree = {
 		prerequisite = {
 			focus = Chaos_Of_The_New_Order
 		}
-		x = 18
-		y = 6
+		relative_position_id = Chaos_Of_The_New_Order
+		x = 0
+		y = 1
 		completion_reward = {
 			add_timed_idea = {idea = STL_blessed_silence days = 140}
 		}
@@ -112,13 +50,19 @@ focus_tree = {
 		prerequisite = {
 			focus = A_Forced_Stability
 		}
-		x = 18
-		y = 7
+		relative_position_id = A_Forced_Stability
+		x = 0
+		y = 1
 		completion_reward = {
 			add_stablity = 0.10
 			add_timed_idea = {idea = STL_charitable_initiatives days = 140}
 		}
 	}
+	
+	#################################################################
+	#Future war
+	#
+	
 	focus = {
 		id = The_Future_of_Warfare
 		icon = GFX_focus_generic_strike_at_democracy1
@@ -126,8 +70,9 @@ focus_tree = {
 		prerequisite = {
 			focus = Our_Home
 		}
-		x = 5
-		y = 9
+		relative_position_id = Our_Home
+		x = -12
+		y = 1
 		completion_reward = {
 			add_timed_idea = {idea = STL_blessed_silence days = 140}
 		}
@@ -143,10 +88,121 @@ focus_tree = {
 		mutually_exclusive = {
 			focus = Unmanned_Bombing_Runs
 		}
-		x = 2
-		y = 10
+		relative_position_id = The_Future_of_Warfare
+		x = -2
+		y = 1
 
 	}
+	
+	focus = {
+		id = A_Rabbithole
+		icon = GFX_goal_magic_cry
+		cost = 0.00
+		prerequisite = {
+			focus = A_new_Field
+		}
+		relative_position_id = A_new_Field
+		x = 0
+		y = 1
+
+	}
+
+	focus = {
+		id = The_Supersoldaten
+		icon = GFX_goal_eqs_magic_horn
+		cost = 0.00
+		prerequisite = {
+			focus = A_Rabbithole
+		}
+		relative_position_id = A_Rabbithole
+		x = 0
+		y = 1
+
+	}
+	
+	focus = {
+		id = The_Gift_That_Keeps_Giving
+		icon = GFX_goal_magical_nukes
+		cost = 0.00
+		prerequisite = {
+			focus = The_Supersoldaten
+		}
+		relative_position_id = The_Supersoldaten
+		x = 0
+		y = 1
+
+	}
+	
+	focus = {
+		id = Unmanned_Bombing_Runs
+		icon = GFX_goal_bombs_away
+		cost = 0.00
+		prerequisite = {
+			focus = The_Future_of_Warfare
+		}
+		mutually_exclusive = {
+			focus = A_new_Field
+		}
+		relative_position_id = The_Future_of_Warfare
+		x = 0
+		y = 1
+	}
+	
+	focus = {
+		id = Rockets_are_the_Future
+		icon = GFX_focus_rocketry
+		cost = 0.00
+		prerequisite = {
+			focus = Unmanned_Bombing_Runs
+		}
+		relative_position_id = Unmanned_Bombing_Runs
+		x = 0
+		y = 1
+
+	}
+	
+	focus = {
+		id = Rockets_of_the_future
+		icon = GFX_focus_wonderweapons
+		cost = 0.00
+		prerequisite = {
+			focus = Rockets_are_the_Future
+		}
+		relative_position_id = Rockets_are_the_Future
+		x = 0
+		y = 1
+
+	}
+
+	focus = {
+		id = Tanks_but_better
+		icon = GFX_focus_generic_license_production
+		cost = 0.00
+		prerequisite = {
+			focus = Rockets_of_the_future
+		}
+		relative_position_id = Rockets_of_the_future
+		x = 0
+		y = 1
+
+	}
+	focus = {
+		id = Infantry_rockets
+		icon = GFX_goal_rocket
+		cost = 0.00
+		prerequisite = {
+			focus = Tanks_but_better
+		}
+		relative_position_id = Tanks_but_better
+		x = 0
+		y = 1
+
+	}
+	
+	###################################################################
+	#Acolytes bit
+	#
+	
 	focus = {
 		id = Acolytes_of_The_Allfather
 		icon = GFX_goal_military_mission_pony
@@ -154,782 +210,15 @@ focus_tree = {
 		prerequisite = {
 			focus = Our_Home
 		}
-		x = 9
-		y = 9
+		relative_position_id = Our_Home
+		x = -9
+		y = 1
 		completion_reward = {
 			add_ideas = STL_order_of_the_acolytes
 		}
 
 	}
-	focus = {
-		id = Catching_Up_In_Arms
-		icon = GFX_goal_generic_small_arms
-		cost = 10.00
-		prerequisite = {
-			focus = Our_Home
-		}
-		completion_reward = {
-			add_tech_bonus = { 
-			  bonus = 00.50 
-			  uses = 1 
-			  category = infantry_weapons 
-			}  
-			add_tech_bonus = { 
-			  bonus = 00.50 
-			  uses = 1 
-			  category = support_tech 
-			}
-			add_tech_bonus = { 
-			  bonus = 00.25 
-			  uses = 1 
-			  category = artillery 
-			}
-        }  
-		x = 13
-		y = 9
-
-	}
-	focus = {
-		id = Griffon_Buyout
-		icon = GFX_goal_gold_up
-		cost = 0.00
-		prerequisite = {
-			focus = Our_Home
-		}
-		x = 18
-		y = 9
-
-	}
-	focus = {
-		id = Wings_Dealers
-		icon = GFX_goal_Arms_Export
-		cost = 0.00
-		prerequisite = {
-			focus = Griffon_Buyout
-		}
-		x = 18
-		y = 10
-
-	}
-	focus = {
-		id = Just_Business
-		icon = GFX_goal_gold_reserve
-		cost = 0.00
-		prerequisite = {
-			focus = Wings_Dealers
-		}
-		x = 18
-		y = 11
-
-	}
-	focus = {
-		id = Friendmaking
-		icon = GFX_goal_generic_military_deal
-		cost = 0.00
-		prerequisite = {
-			focus = Just_Business
-		}
-		mutually_exclusive = {
-			focus = Fiendmaking
-		}
-		x = 17
-		y = 13
-
-	}
-	focus = {
-		id = Fiendmaking
-		icon = GFX_goal_gunpoint_diplomacy
-		cost = 0.00
-		prerequisite = {
-			focus = Just_Business
-		}
-		mutually_exclusive = {
-			focus = Friendmaking
-		}
-		x = 19
-		y = 13
-
-	}
-	focus = {
-		id = Our_Horizons
-		icon = GFX_goal_rhineland
-		cost = 0.00
-		prerequisite = {
-			focus = Friendmaking
-			focus = Fiendmaking
-		}
-		x = 18
-		y = 15
-
-	}
-	focus = {
-		id = Our_Lands
-		icon = GFX_focus_AUS_agriculture
-		cost = 0.00
-		prerequisite = {
-			focus = Our_Horizons
-		}
-		x = 18
-		y = 16
-
-	}
-	focus = {
-		id = Conflict_With_Crystal_Empire
-		icon = GFX_goal_cry_star
-		cost = 0.00
-		prerequisite = {
-			focus = Our_Lands
-		}
-		x = 19
-		y = 17
-
-	}
-	focus = {
-		id = Smash_Them_Like_Porcelain
-		icon = GFX_goal_anti_comintern_pact
-		cost = 0.00
-		prerequisite = {
-			focus = Conflict_With_Crystal_Empire
-		}
-		x = 19
-		y = 18
-
-	}
-	focus = {
-		id = The_Guns_Must_Flow
-		icon = GFX_goal_generic_construct_mil_factory
-		cost = 0.00
-		prerequisite = {
-			focus = Our_Industry
-		}
-		x = 22
-		y = 6
-
-	}
-	focus = {
-		id = Better_Arms
-		icon = GFX_goal_griffon_arms_focus_com
-		cost = 0.00
-		prerequisite = {
-			focus = The_Guns_Must_Flow
-		}
-		x = 22
-		y = 7
-
-	}
-	focus = {
-		id = Immigration
-		icon = GFX_goal_tripartite_pact_pony
-		cost = 0.00
-		prerequisite = {
-			focus = Our_Population_Issue
-		}
-		x = 23
-		y = 16
-
-	}
-	focus = {
-		id = The_Marvel_Of_The_World
-		icon = GFX_goal_rct_expand_the_city
-		cost = 0.00
-		prerequisite = {
-			focus = Immigration
-		}
-		x = 23
-		y = 17
-
-	}
-	focus = {
-		id = Our_Traditional_Family
-		icon = GFX_focus_generic_japanese_imperial_glory
-		cost = 0.00
-		prerequisite = {
-			focus = Our_Population_Issue
-		}
-		x = 25
-		y = 16
-
-	}
-	focus = {
-		id = Every_Stallion_A_Mare
-		icon = GFX_goal_crystal_heart
-		cost = 0.00
-		prerequisite = {
-			focus = Our_Traditional_Family
-		}
-		x = 25
-		y = 17
-
-	}
-	focus = {
-		id = Our_Production
-		icon = GFX_goal_generic_production
-		cost = 0.00
-		prerequisite = {
-			focus = Our_Industry
-		}
-		x = 26
-		y = 6
-
-	}
-	focus = {
-		id = Increased_Production
-		icon = GFX_IRE_heavy_industry
-		cost = 0.00
-		prerequisite = {
-			focus = Our_Production
-		}
-		x = 26
-		y = 7
-
-	}
-	focus = {
-		id = Space_To_Build
-		icon = GFX_goal_construction_engineering
-		cost = 0.00
-		prerequisite = {
-			focus = Better_Arms
-		}
-		prerequisite = {
-			focus = Increased_Production
-		}
-		x = 24
-		y = 8
-
-	}
-	focus = {
-		id = Putting_Our_Village_Behind_Us
-		icon = GFX_focus_eqc_memories_of_our_town
-		cost = 0.00
-		prerequisite = {
-			focus = Space_To_Build
-		}
-		x = 20
-		y = 9
-
-	}
-	focus = {
-		id = Our_Arms
-		icon = GFX_SIA_jungletraining
-		cost = 0.00
-		prerequisite = {
-			focus = Space_To_Build
-		}
-		x = 22
-		y = 9
-
-	}
-	focus = {
-		id = Our_Means
-		icon = GFX_goal_factory_complex
-		cost = 0.00
-		prerequisite = {
-			focus = Space_To_Build
-		}
-		x = 26
-		y = 9
-
-	}
-	focus = {
-		id = A_Job_For_All
-		icon = GFX_focus_military_derpy
-		cost = 0.00
-		prerequisite = {
-			focus = Our_Means
-		}
-		x = 26
-		y = 10
-
-	}
-	focus = {
-		id = Better_Builders
-		icon = GFX_goal_generic_construct_civilian
-		cost = 0.00
-		prerequisite = {
-			focus = A_Job_For_All
-		}
-		x = 26
-		y = 11
-
-	}
-	focus = {
-		id = Moderation
-		icon = GFX_goal_generic_consumer_goods
-		cost = 0.00
-		prerequisite = {
-			focus = Better_Builders
-		}
-		x = 26
-		y = 12
-
-	}
-	focus = {
-		id = Proper_Medicine
-		icon = GFX_goal_cry_medicine
-		cost = 0.00
-		prerequisite = {
-			focus = Our_Population_Issue
-		}
-		x = 27
-		y = 16
-
-	}
-	focus = {
-		id = Medicine_In_The_Field
-		icon = GFX_focus_healthcare_program
-		cost = 0.00
-		prerequisite = {
-			focus = Proper_Medicine
-		}
-		x = 27
-		y = 17
-
-	}
-	focus = {
-		id = Food_Production
-		icon = GFX_goal_agrarian_reform
-		cost = 0.00
-		prerequisite = {
-			focus = The_Marvel_Of_The_World
-		}
-		prerequisite = {
-			focus = Every_Stallion_A_Mare
-		}
-		prerequisite = {
-			focus = Medicine_In_The_Field
-		}
-		x = 25
-		y = 18
-
-	}
-	focus = {
-		id = Our_Roads
-		icon = GFX_goal_generic_construct_infrastructure
-		cost = 0.00
-		prerequisite = {
-			focus = Our_Industry
-		}
-		x = 30
-		y = 6
-
-	}
-	focus = {
-		id = Our_Resources
-		icon = GFX_goal_generic_trade
-		cost = 0.00
-		prerequisite = {
-			focus = Our_Roads
-		}
-		x = 30
-		y = 7
-
-	}
-	focus = {
-		id = Our_Synthetics
-		icon = GFX_goal_generic_oil_refinery
-		cost = 0.00
-		prerequisite = {
-			focus = Our_Resources
-		}
-		x = 30
-		y = 8
-
-	}
-	focus = {
-		id = Excavating_The_Mountains
-		icon = GFX_goal_nim_mountains
-		cost = 0.00
-		prerequisite = {
-			focus = Our_Synthetics
-		}
-		x = 30
-		y = 9
-
-	}
-	focus = {
-		id = Under_The_City
-		icon = GFX_goal_KTG_Jungle_Diamond_Mine
-		cost = 0.00
-		prerequisite = {
-			focus = Excavating_The_Mountains
-		}
-		x = 30
-		y = 10
-
-	}
-	focus = {
-		id = A_New_Discovery
-		icon = GFX_goal_chn_research_harmony
-		cost = 0.00
-		prerequisite = {
-			focus = Under_The_City
-		}
-		x = 30
-		y = 11
-
-	}
-	focus = {
-		id = Synthetic_Steel
-		icon = GFX_goal_chn_steel
-		cost = 0.00
-		prerequisite = {
-			focus = A_New_Discovery
-		}
-		x = 30
-		y = 12
-
-	}
-	focus = {
-		id = General_Oswald
-		icon = GFX_goal_generic_air_fighter2
-		cost = 0.00
-		prerequisite = {
-			focus = Our_Sky
-		}
-		mutually_exclusive = {
-			focus = General_Werner
-		}
-		x = 34
-		y = 6
-
-	}
-	focus = {
-		id = Our_Fighters
-		icon = GFX_goal_generic_air_fighter
-		cost = 0.00
-		prerequisite = {
-			focus = General_Oswald
-		}
-		x = 34
-		y = 7
-
-	}
-	focus = {
-		id = General_Werner
-		icon = GFX_goal_nim_bomb
-		cost = 0.00
-		prerequisite = {
-			focus = Our_Sky
-		}
-		mutually_exclusive = {
-			focus = General_Oswald
-		}
-		x = 38
-		y = 6
-
-	}
-	focus = {
-		id = Our_Bombers
-		icon = GFX_goal_generic_air_bomber
-		cost = 0.00
-		prerequisite = {
-			focus = General_Werner
-		}
-		x = 38
-		y = 7
-
-	}
-	focus = {
-		id = Better_Pilots
-		icon = GFX_goal_generic_air_doctrine
-		cost = 0.00
-		prerequisite = {
-			focus = Our_Fighters
-			focus = Our_Bombers
-		}
-		x = 34
-		y = 9
-
-	}
-	focus = {
-		id = From_Dusk_Till_Dawn
-		icon = GFX_goal_generic_CAS
-		cost = 0.00
-		prerequisite = {
-			focus = Our_Fighters
-			focus = Our_Bombers
-		}
-		x = 36
-		y = 9
-
-	}
-	focus = {
-		id = Control_The_Skies
-		icon = GFX_goal_generic_occupy_start_war
-		cost = 0.00
-		prerequisite = {
-			focus = Our_Bombers
-			focus = Our_Bombers
-		}
-		x = 38
-		y = 9
-
-	}
-	focus = {
-		id = Our_Heavy_Fighters
-		icon = GFX_goal_generic_navy_carrier
-		cost = 0.00
-		prerequisite = {
-			focus = Control_The_Skies
-		}
-		x = 38
-		y = 10
-
-	}
-	focus = {
-		id = Our_Fleet
-		icon = GFX_goal_generic_navy_submarine	
-		cost = 0.00
-		prerequisite = {
-			focus = Our_Navy
-		}
-		x = 44
-		y = 6
-
-	}
-	focus = {
-		id = How_Do_You_Sail_This_Thing
-		icon = GFX_goal_generic_navy_doctrines_tactics
-		cost = 0.00
-		prerequisite = {
-			focus = Our_Fleet
-		}
-		x = 42
-		y = 7
-
-	}
-	focus = {
-		id = Repurposed_Boats
-		icon = GFX_goal_generic_occupy_states_coastal
-		cost = 0.00
-		prerequisite = {
-			focus = Our_Fleet
-		}
-		x = 44
-		y = 7
-
-	}
-	focus = {
-		id = Catching_Up
-		icon = GFX_goal_battlefleet
-		cost = 0.00
-		prerequisite = {
-			focus = Our_Fleet
-		}
-		x = 46
-		y = 7
-
-	}
-	focus = {
-		id = Making_Up_For_Lost_Time
-		icon = GFX_goal_generic_navy_cruiser
-		cost = 0.00
-		prerequisite = {
-			focus = Repurposed_Boats
-		}
-		prerequisite = {
-			focus = How_Do_You_Sail_This_Thing
-		}
-		prerequisite = {
-			focus = Catching_Up
-		}
-		x = 44
-		y = 8
-
-	}
-	focus = {
-		id = Fleet_Strategy
-		icon = GFX_goal_generic_wolf_pack
-		cost = 0.00
-		prerequisite = {
-			focus = Making_Up_For_Lost_Time
-		}
-		x = 42
-		y = 9
-
-	}
-	focus = {
-		id = Dockyards
-		icon = GFX_goal_dockyard_generic_psody
-		cost = 0.00
-		prerequisite = {
-			focus = Making_Up_For_Lost_Time
-		}
-		x = 44
-		y = 9
-
-	}
-	focus = {
-		id = A_Proper_Fleet
-		icon = GFX_goal_generic_amphibious_assault
-		cost = 0.00
-		prerequisite = {
-			focus = Making_Up_For_Lost_Time
-		}
-		x = 46
-		y = 9
-
-	}
-	focus = {
-		id = In_Doubt_Shell_Them_Out
-		icon = GFX_goal_munitions_factories
-		cost = 10.00
-		prerequisite = {
-			focus = Foreign_Advisors
-		}
-		mutually_exclusive = {
-			focus = Drifting_Around_Their_Defences
-			focus = Tactical_Genius
-			focus = Hellmarch_Doctrine
-			focus = Drifting_Around_Their_Defences
-		}
-		x = 51
-		y = 6
-
-		completion_reward = {
-		 add_tech_bonus = {bonus = 00.35 uses = 4 category = cat_superior_firepower}
-		 }
-
-
-
-	}
-	focus = {
-		id = No_Kill_Like_Overkill
-		icon = GFX_goal_national_artillery
-		cost = 5.00
-		prerequisite = {
-			focus = In_Doubt_Shell_Them_Out
-		}
-		x = 51
-		y = 7
-		
-
-
-	}
-	focus = {
-		id = Drifting_Around_Their_Defences
-		icon = GFX_goal_tfv_saf_support_ossebrandwag
-		cost = 10.00
-		prerequisite = {
-			focus = Foreign_Advisors
-		}
-		mutually_exclusive = {
-			focus = In_Doubt_Shell_Them_Out
-			focus = Tactical_Genius
-			focus = Tactical_Genius
-			focus = In_Doubt_Shell_Them_Out
-			focus = Hellmarch_Doctrine
-		}
-		x = 53
-		y = 6
-        completion_reward = {
-		   add_tech_bonus = {bonus = 00.35 uses = 4 category = cat_mobile_warfare}
-		   }
-
-	}
-	focus = {
-		id = Deja_Vu_Strikes
-		icon = GFX_goal_generic_army_motorized
-		cost = 5.00
-		prerequisite = {
-			focus = Drifting_Around_Their_Defences
-		}
-		x = 53
-		y = 7
-
-	}
-	focus = {
-		id = Tactical_Genius
-		icon = GFX_goal_generic_army_doctrines
-		cost = 10.00
-		prerequisite = {
-			focus = Foreign_Advisors
-		}
-		mutually_exclusive = {
-			focus = In_Doubt_Shell_Them_Out
-			focus = Drifting_Around_Their_Defences
-			focus = Hellmarch_Doctrine
-			focus = Drifting_Around_Their_Defences
-		}
-		x = 55
-		y = 6
-         completion_reward = {
-		  add_tech_bonus = {bonus = 00.35 uses = 4 category = cat_grand_battle_plan}
-		  }
-
-	}
-	focus = {
-		id = Just_As_Planned
-		icon = GFX_goal_planning_bonus
-		cost = 0.00
-		prerequisite = {
-			focus = Tactical_Genius
-		}
-		x = 55
-		y = 7
-
-	}
-	focus = {
-		id = Outpacing_In_Arms
-		icon = GFX_focus_secret_rearmament
-		cost = 10.00
-		prerequisite = {
-			focus = Catching_Up_In_Arms
-		}
-		x = 13
-		y = 10
-		completion_reward = {
-			add_tech_bonus = {
-			  bonus = 00.50 
-			  ahead_reduction = 1
-			  uses = 1 
-			  category = infantry_weapons 
-			}
-		}
-
-	}
-	focus = {
-		id = Science_Of_War
-		icon = GFX_goal_nim_research
-		cost = 1.00
-		prerequisite = {
-			focus = Outpacing_In_Arms
-		}
-		x = 13
-		y = 11
-		completion_reward = {
-			add_research_slot = 1
-		}
-
-	}
-	focus = {
-		id = Big_Metal_Box
-		icon = GFX_goal_somtanks
-		cost = 1.00
-		prerequisite = {
-			focus = Science_Of_War
-		}
-		x = 13
-		y = 12
-		completion_reward = (
-			add_tech_bonus = { 
-			  bonus = 00.50 
-			  uses = 1 
-			  category = infantry_weapons 
-			}  
-			add_tech_bonus = { 
-			  bonus = 00.50 
-			  uses = 1 
-			  category = support_tech 
-			}
-			add_tech_bonus = { 
-			  bonus = 00.25 
-			  uses = 1 
-			  category = artillery 
-			}
-		}
-
-	}
+	
 	focus = {
 		id = Maintaining_Discipline 
 		icon = GFX_goal_military_academy
@@ -937,8 +226,9 @@ focus_tree = {
 		prerequisite = {
 			focus = Acolytes_of_The_Allfather
 		}
-		x = 9
-		y = 10
+		relative_position_id = Acolytes_of_The_Allfather
+		x = 0
+		y = 1
 		completion_reward = {
 			add_ideas = STL_acolyte_discipline
 		}
@@ -951,8 +241,9 @@ focus_tree = {
 		prerequisite = {
 			focus = Maintaining_Discipline 
 		}
-		x = 10
-		y = 11
+		relative_position_id = Maintaining_Discipline
+		x = 1
+		y = 1
 		completion_reward = {
 			swap_ideas = {
 				remove_idea = STL_acolyte_discipline
@@ -980,8 +271,9 @@ focus_tree = {
 		prerequisite = {
 			focus = Maintaining_Discipline
 		}
-		x = 8
-		y = 11
+		relative_position_id = Maintaining_Discipline
+		x = -1
+		y = 1
 		completion_reward = {
 			swap_ideas = {
 				remove_idea = STL_order_of_the_acolytes
@@ -990,97 +282,226 @@ focus_tree = {
 		}
 
 	}
+	
+	##################################################################
+	#Catching up in arms
+	#
+	
 	focus = {
-		id = Unmanned_Bombing_Runs
-		icon = GFX_goal_bombs_away
+		id = Catching_Up_In_Arms
+		icon = GFX_goal_generic_small_arms
+		cost = 10.00
+		prerequisite = {
+			focus = Our_Home
+		}
+		completion_reward = {
+			add_tech_bonus = { 
+			  bonus = 00.50 
+			  uses = 1 
+			  category = infantry_weapons 
+			}  
+			add_tech_bonus = { 
+			  bonus = 00.50 
+			  uses = 1 
+			  category = support_tech 
+			}
+			add_tech_bonus = { 
+			  bonus = 00.25 
+			  uses = 1 
+			  category = artillery 
+			}
+        }  
+		relative_position_id = Our_Home
+		x = -4
+		y = 1
+
+	}
+	
+	focus = {
+		id = Outpacing_In_Arms
+		icon = GFX_focus_secret_rearmament
+		cost = 10.00
+		prerequisite = {
+			focus = Catching_Up_In_Arms
+		}
+		relative_position_id = Catching_Up_In_Arms
+		x = 0
+		y = 1
+		completion_reward = {
+			add_tech_bonus = {
+			  bonus = 00.50 
+			  ahead_reduction = 1
+			  uses = 1 
+			  category = infantry_weapons 
+			}
+		}
+
+	}
+	focus = {
+		id = Science_Of_War
+		icon = GFX_goal_nim_research
+		cost = 1.00
+		prerequisite = {
+			focus = Outpacing_In_Arms
+		}
+		relative_position_id = Outpacing_In_Arms
+		x = 0
+		y = 1
+		completion_reward = {
+			add_research_slot = 1
+		}
+
+	}
+	focus = {
+		id = Big_Metal_Box
+		icon = GFX_goal_somtanks
+		cost = 1.00
+		prerequisite = {
+			focus = Science_Of_War
+		}
+		relative_position_id = Science_Of_War
+		x = 0
+		y = 1
+		completion_reward = (
+			add_tech_bonus = { 
+			  bonus = 00.50 
+			  uses = 1 
+			  category = infantry_weapons 
+			}  
+			add_tech_bonus = { 
+			  bonus = 00.50 
+			  uses = 1 
+			  category = support_tech 
+			}
+			add_tech_bonus = { 
+			  bonus = 00.25 
+			  uses = 1 
+			  category = artillery 
+			}
+		}
+
+	}
+	
+	###################################################################
+	#Griffon buyout
+	###########
+	
+	focus = {
+		id = Griffon_Buyout
+		icon = GFX_goal_gold_up
 		cost = 0.00
 		prerequisite = {
-			focus = The_Future_of_Warfare
+			focus = Our_Home
+		}
+		relative_position_id = Our_Home
+		x = 0
+		y = 1
+
+	}
+	focus = {
+		id = Wings_Dealers
+		icon = GFX_goal_Arms_Export
+		cost = 0.00
+		prerequisite = {
+			focus = Griffon_Buyout
+		}
+		relative_position_id = Griffon_Buyout
+		x = 0
+		y = 1
+
+	}
+	focus = {
+		id = Just_Business
+		icon = GFX_goal_gold_reserve
+		cost = 0.00
+		prerequisite = {
+			focus = Wings_Dealers
+		}
+		relative_position_id = Wings_Dealers
+		x = 0
+		y = 1
+
+	}
+	focus = {
+		id = Friendmaking
+		icon = GFX_goal_generic_military_deal
+		cost = 0.00
+		prerequisite = {
+			focus = Just_Business
 		}
 		mutually_exclusive = {
-			focus = A_new_Field
+			focus = Fiendmaking
 		}
-		x = 5
-		y = 10
+		relative_position_id = Just_Business
+		x = 1
+		y = 1
 
 	}
 	focus = {
-		id = Rockets_are_the_Future
-		icon = GFX_focus_rocketry
+		id = Fiendmaking
+		icon = GFX_goal_gunpoint_diplomacy
 		cost = 0.00
 		prerequisite = {
-			focus = Unmanned_Bombing_Runs
+			focus = Just_Business
 		}
-		x = 5
-		y = 11
+		mutually_exclusive = {
+			focus = Friendmaking
+		}
+		relative_position_id = Just_Business
+		x = -1
+		y = 1
 
 	}
 	focus = {
-		id = A_Rabbithole
-		icon = GFX_goal_magic_cry
+		id = Our_Horizons
+		icon = GFX_goal_rhineland
 		cost = 0.00
 		prerequisite = {
-			focus = A_new_Field
+			focus = Friendmaking
+			focus = Fiendmaking
 		}
-		x = 2
-		y = 11
+		relative_position_id = Fiendmaking
+		x = 1
+		y = 1
 
 	}
 	focus = {
-		id = Rockets_of_the_future
-		icon = GFX_focus_wonderweapons
+		id = Our_Lands
+		icon = GFX_focus_AUS_agriculture
 		cost = 0.00
 		prerequisite = {
-			focus = Rockets_are_the_Future
+			focus = Our_Horizons
 		}
-		x = 5
-		y = 12
+		relative_position_id = Our_Horizons
+		x = 0
+		y = 1
 
 	}
 	focus = {
-		id = The_Supersoldaten
-		icon = GFX_goal_eqs_magic_horn
+		id = Conflict_With_Crystal_Empire
+		icon = GFX_goal_cry_star
 		cost = 0.00
 		prerequisite = {
-			focus = A_Rabbithole
+			focus = Our_Lands
 		}
-		x = 2
-		y = 12
+		relative_position_id = Our_Lands
+		x = 1
+		y = 1
 
 	}
 	focus = {
-		id = The_Gift_That_Keeps_Giving
-		icon = GFX_goal_magical_nukes
+		id = Smash_Them_Like_Porcelain
+		icon = GFX_goal_anti_comintern_pact
 		cost = 0.00
 		prerequisite = {
-			focus = The_Supersoldaten
+			focus = Conflict_With_Crystal_Empire
 		}
-		x = 2
-		y = 13
+		relative_position_id = Conflict_With_Crystal_Empire
+		x = 0
+		y = 1
 
 	}
-	focus = {
-		id = Tanks_but_better
-		icon = GFX_focus_generic_license_production
-		cost = 0.00
-		prerequisite = {
-			focus = Rockets_of_the_future
-		}
-		x = 5
-		y = 13
-
-	}
-	focus = {
-		id = Infantry_rockets
-		icon = GFX_goal_rocket
-		cost = 0.00
-		prerequisite = {
-			focus = Tanks_but_better
-		}
-		x = 5
-		y = 14
-
-	}
+	
 	focus = {
 		id = Red_Liberation
 		icon = GFX_focus_generic_strike_at_democracy2
@@ -1088,8 +509,9 @@ focus_tree = {
 		prerequisite = {
 			focus = Our_Lands
 		}
-		x = 17
-		y = 17
+		relative_position_id = Our_Lands
+		x = -1
+		y = 1
 
 	}
 	focus = {
@@ -1099,24 +521,15 @@ focus_tree = {
 		prerequisite = {
 			focus = Red_Liberation
 		}
-		x = 17
-		y = 18
+		relative_position_id = Red_Liberation
+		x = 0
+		y = 1
 
 	}
-	focus = {
-		id = Our_South
-		icon = GFX_goal_generic_harmony
-		cost = 0.00
-		prerequisite = {
-			focus = Spreading_Our_Truth
-		}
-		prerequisite = {
-			focus = Smash_Them_Like_Porcelain
-		}
-		x = 18
-		y = 20
-
-	}
+	###########################################################################
+	#Changeling section
+	#########################
+	
 	focus = {
 		id = Our_West
 		icon = GFX_goal_chn_support_chrysalis
@@ -1127,10 +540,73 @@ focus_tree = {
 		prerequisite = {
 			focus = Smash_Them_Like_Porcelain
 		}
-		x = 21
-		y = 20
+		relative_position_id = Smash_Them_Like_Porcelain
+		x = 1
+		y = 1
 
 	}
+	
+	focus = {
+		id = Strike_The_Changelings
+		icon = GFX_goal_chn_swords
+		cost = 0.00
+		prerequisite = {
+			focus = Our_West
+		}
+		relative_position_id = Our_West
+		x = 0
+		y = 1
+
+	}
+	
+	###################################################
+	#Equestria section
+	#
+	
+	focus = {
+		id = Our_South
+		icon = GFX_goal_generic_harmony
+		cost = 0.00
+		prerequisite = {
+			focus = Spreading_Our_Truth
+		}
+		prerequisite = {
+			focus = Smash_Them_Like_Porcelain
+		}
+		relative_position_id = Smash_Them_Like_Porcelain
+		x = -1
+		y = 1
+
+	}
+	focus = {
+		id = Steal_From_Equestria
+		icon = GFX_focus_generic_provoke_border_clashes
+		cost = 0.00
+		prerequisite = {
+			focus = Our_South
+		}
+		relative_position_id = Our_South
+		x = 0
+		y = 1
+
+	}
+	
+	focus = {
+		id = The_Powers_Clash
+		icon = GFX_goal_celestia_raising_the_sun
+		cost = 0.00
+		prerequisite = {
+			focus = Steal_From_Equestria
+		}
+		relative_position_id = Steal_From_Equestria
+		x = 0
+		y = 1
+
+	}
+	
+	###########################################################
+	#North section
+	
 	focus = {
 		id = Our_North
 		icon = GFX_goal_solar_attack_north
@@ -1141,8 +617,9 @@ focus_tree = {
 		prerequisite = {
 			focus = Smash_Them_Like_Porcelain
 		}
-		x = 15
-		y = 20
+		relative_position_id = Spreading_Our_Truth
+		x = -1
+		y = 1
 
 	}
 	focus = {
@@ -1152,32 +629,12 @@ focus_tree = {
 		prerequisite = {
 			focus = Our_North
 		}
-		x = 13
-		y = 22
+		relative_position_id = Our_North
+		x = 0
+		y = 1
 
 	}
-	focus = {
-		id = Steal_From_Equestria
-		icon = GFX_focus_generic_provoke_border_clashes
-		cost = 0.00
-		prerequisite = {
-			focus = Our_South
-		}
-		x = 18
-		y = 21
 
-	}
-	focus = {
-		id = Strike_The_Changelings
-		icon = GFX_goal_chn_swords
-		cost = 0.00
-		prerequisite = {
-			focus = Our_West
-		}
-		x = 21
-		y = 22
-
-	}
 	focus = {
 		id = The_Frontier
 		icon = GFX_goal_generic_attack_allies
@@ -1185,8 +642,9 @@ focus_tree = {
 		prerequisite = {
 			focus = Gather_The_Reaches
 		}
-		x = 9
-		y = 23
+		relative_position_id = Gather_The_Reaches
+		x = 0
+		y = 1
 
 	}
 	focus = {
@@ -1194,10 +652,11 @@ focus_tree = {
 		icon = GFX_goal_chn_plb_strike
 		cost = 0.00
 		prerequisite = {
-			focus = Gather_The_Reaches
+			focus = The_Frontier
 		}
-		x = 11
-		y = 23
+		relative_position_id = The_Frontier
+		x = 0
+		y = 1
 
 	}
 	focus = {
@@ -1207,8 +666,9 @@ focus_tree = {
 		prerequisite = {
 			focus = Gather_The_Reaches
 		}
-		x = 13
-		y = 23
+		relative_position_id = Gather_The_Reaches
+		x = -2
+		y = 1
 
 	}
 	focus = {
@@ -1218,19 +678,9 @@ focus_tree = {
 		prerequisite = {
 			focus = Gather_The_Reaches
 		}
-		x = 15
-		y = 23
-
-	}
-	focus = {
-		id = The_Powers_Clash
-		icon = GFX_goal_celestia_raising_the_sun
-		cost = 0.00
-		prerequisite = {
-			focus = Steal_From_Equestria
-		}
-		x = 18
-		y = 22
+		relative_position_id = Gather_The_Reaches
+		x = -4
+		y = 1
 
 	}
 	focus = {
@@ -1240,8 +690,9 @@ focus_tree = {
 		prerequisite = {
 			focus = The_Yaks
 		}
-		x = 13
-		y = 24
+		relative_position_id = The_Yaks
+		x = 0
+		y = 1
 
 	}
 	focus = {
@@ -1251,43 +702,114 @@ focus_tree = {
 		prerequisite = {
 			focus = The_Penguins
 		}
-		x = 15
-		y = 24
+		relative_position_id = The_Penguins
+		x = 0
+		y = 1
 
 	}
+	
+	##########################################################################################
+	#Industry Tree
+	######################################
+	
 	focus = {
-		id = Our_Riverlands
-		icon = GFX_goal_unknown
+		id = Our_Industry
+		icon = GFX_goal_generic_construct_civ_factory
+		cost = 5.00
+		x = 8
+		y = 0
+		completion_reward = {
+		    57 = {
+				add_extra_state_shared_building_slots = 5
+				add_building_construction = {
+					type = industrial_complex
+					level = 5
+					instant_build = yes
+				}
+			}
+        }
+	}
+	
+	focus = {
+		id = The_Guns_Must_Flow
+		icon = GFX_goal_generic_construct_mil_factory
 		cost = 0.00
 		prerequisite = {
-			focus = Beyond_The_Continent
+			focus = Our_Industry
 		}
-		x = 17
-		y = 28
+		relative_position_id = Our_Industry
+		x = -1
+		y = 1
 
 	}
 	focus = {
-		id = Crushing_The_Talons_Might
-		icon = GFX_goal_solar_attack_grf
+		id = Better_Arms
+		icon = GFX_goal_griffon_arms_focus_com
 		cost = 0.00
 		prerequisite = {
-			focus = Beyond_The_Continent
+			focus = The_Guns_Must_Flow
 		}
-		x = 15
-		y = 28
+		relative_position_id = The_Guns_Must_Flow
+		x = 0
+		y = 1
 
 	}
 	focus = {
-		id = Our_Tech
-		icon = GFX_goal_purchase_tech
+		id = Our_Production
+		icon = GFX_goal_generic_production
+		cost = 0.00
+		prerequisite = {
+			focus = Our_Industry
+		}
+		relative_position_id = Our_Industry
+		x = 1
+		y = 1
+
+	}
+	focus = {
+		id = Increased_Production
+		icon = GFX_IRE_heavy_industry
+		cost = 0.00
+		prerequisite = {
+			focus = Our_Production
+		}
+		relative_position_id = Our_Production
+		x = 0
+		y = 1
+
+	}
+	
+	############################################
+	#Space to build
+	
+	focus = {
+		id = Space_To_Build
+		icon = GFX_goal_construction_engineering
+		cost = 0.00
+		prerequisite = {
+			focus = Better_Arms
+		}
+		prerequisite = {
+			focus = Increased_Production
+		}
+		relative_position_id = Increased_Production
+		x = -1
+		y = 1
+
+	}
+	focus = {
+		id = Putting_Our_Village_Behind_Us
+		icon = GFX_focus_eqc_memories_of_our_town
 		cost = 0.00
 		prerequisite = {
 			focus = Space_To_Build
 		}
-		x = 24
-		y = 9
+		relative_position_id = Space_To_Build
+		x = -4
+		y = 1
 
 	}
+	
 	focus = {
 		id = Our_Metropolis
 		icon = GFX_goal_rct_expand_the_city
@@ -1295,8 +817,9 @@ focus_tree = {
 		prerequisite = {
 			focus = Putting_Our_Village_Behind_Us
 		}
-		x = 20
-		y = 10
+		relative_position_id = Putting_Our_Village_Behind_Us
+		x = 0
+		y = 1
 
 	}
 	focus = {
@@ -1306,8 +829,21 @@ focus_tree = {
 		prerequisite = {
 			focus = Our_Metropolis
 		}
-		x = 20
-		y = 11
+		relative_position_id = Our_Metropolis
+		x = 0
+		y = 1
+
+	}
+	focus = {
+		id = Our_Arms
+		icon = GFX_SIA_jungletraining
+		cost = 0.00
+		prerequisite = {
+			focus = Space_To_Build
+		}
+		relative_position_id = Space_To_Build
+		x = -2
+		y = 1
 
 	}
 	focus = {
@@ -1317,8 +853,9 @@ focus_tree = {
 		prerequisite = {
 			focus = Our_Arms
 		}
-		x = 22
-		y = 10
+		relative_position_id = Our_Arms
+		x = 0
+		y = 1
 
 	}
 	focus = {
@@ -1328,19 +865,9 @@ focus_tree = {
 		prerequisite = {
 			focus = A_Motivated_Worker
 		}
-		x = 22
-		y = 11
-
-	}
-	focus = {
-		id = Less_Is_More
-		icon = GFX_SIA_maritmesilkroad
-		cost = 0.00
-		prerequisite = {
-			focus = Our_Tech
-		}
-		x = 24
-		y = 10
+		relative_position_id = A_Motivated_Worker
+		x = 0
+		y = 1
 
 	}
 	focus = {
@@ -1350,10 +877,37 @@ focus_tree = {
 		prerequisite = {
 			focus = A_Streamlined_Process
 		}
-		x = 22
-		y = 12
+		relative_position_id = A_Streamlined_Process
+		x = 0
+		y = 1
 
 	}
+	
+	focus = {
+		id = Our_Tech
+		icon = GFX_goal_purchase_tech
+		cost = 0.00
+		prerequisite = {
+			focus = Space_To_Build
+		}
+		relative_position_id = Space_To_Build
+		x = 0
+		y = 1
+
+	}
+	focus = {
+		id = Less_Is_More
+		icon = GFX_SIA_maritmesilkroad
+		cost = 0.00
+		prerequisite = {
+			focus = Our_Tech
+		}
+		relative_position_id = Our_Tech
+		x = 0
+		y = 1
+
+	}	
+	
 	focus = {
 		id = Every_Inch
 		icon = GFX_focus_generic_industry_2
@@ -1361,10 +915,12 @@ focus_tree = {
 		prerequisite = {
 			focus = Less_Is_More
 		}
-		x = 24
-		y = 11
+		relative_position_id = Less_Is_More
+		x = 0
+		y = 1
 
 	}
+	
 	focus = {
 		id = Armoured_Factories
 		icon = GFX_goal_generic_fortify_city
@@ -1372,10 +928,61 @@ focus_tree = {
 		prerequisite = {
 			focus = Every_Inch
 		}
-		x = 24
-		y = 12
+		relative_position_id = Every_Inch
+		x = 0
+		y = 1
 
 	}
+
+	focus = {
+		id = Our_Means
+		icon = GFX_goal_factory_complex
+		cost = 0.00
+		prerequisite = {
+			focus = Space_To_Build
+		}
+		relative_position_id = Space_To_Build
+		x = 2
+		y = 1
+
+	}
+	focus = {
+		id = A_Job_For_All
+		icon = GFX_focus_military_derpy
+		cost = 0.00
+		prerequisite = {
+			focus = Our_Means
+		}
+		relative_position_id = Our_Means
+		x = 0
+		y = 1
+
+	}
+	focus = {
+		id = Better_Builders
+		icon = GFX_goal_generic_construct_civilian
+		cost = 0.00
+		prerequisite = {
+			focus = A_Job_For_All
+		}
+		relative_position_id = A_Job_For_All
+		x = 0
+		y = 1
+
+	}
+	focus = {
+		id = Moderation
+		icon = GFX_goal_generic_consumer_goods
+		cost = 0.00
+		prerequisite = {
+			focus = Better_Builders
+		}
+		relative_position_id = Better_Builders
+		x = 0
+		y = 1
+
+	}
+	
 	focus = {
 		id = An_Industrial_Powerhouse
 		icon = GFX_focus_generic_industry_3
@@ -1389,10 +996,221 @@ focus_tree = {
 		prerequisite = {
 			focus = Moderation
 		}
-		x = 24
-		y = 13
+		relative_position_id = Armoured_Factories
+		x = 0
+		y = 1
 
 	}
+	
+	#######################################
+	#Road branch
+	
+	focus = {
+		id = Our_Roads
+		icon = GFX_goal_generic_construct_infrastructure
+		cost = 0.00
+		prerequisite = {
+			focus = Our_Industry
+		}
+		relative_position_id = Our_Industry
+		x = 5
+		y = 1
+
+	}
+	focus = {
+		id = Our_Resources
+		icon = GFX_goal_generic_trade
+		cost = 0.00
+		prerequisite = {
+			focus = Our_Roads
+		}
+		relative_position_id = Our_Roads
+		x = 0
+		y = 1
+
+	}
+	focus = {
+		id = Our_Synthetics
+		icon = GFX_goal_generic_oil_refinery
+		cost = 0.00
+		prerequisite = {
+			focus = Our_Resources
+		}
+		relative_position_id = Our_Resources
+		x = 0
+		y = 1
+
+	}
+	focus = {
+		id = Excavating_The_Mountains
+		icon = GFX_goal_nim_mountains
+		cost = 0.00
+		prerequisite = {
+			focus = Our_Synthetics
+		}
+		relative_position_id = Our_Synthetics
+		x = 0
+		y = 1
+
+	}
+	focus = {
+		id = Under_The_City
+		icon = GFX_goal_KTG_Jungle_Diamond_Mine
+		cost = 0.00
+		prerequisite = {
+			focus = Excavating_The_Mountains
+		}
+		relative_position_id = Excavating_The_Mountains
+		x = 0
+		y = 1
+
+	}
+	focus = {
+		id = A_New_Discovery
+		icon = GFX_goal_chn_research_harmony
+		cost = 0.00
+		prerequisite = {
+			focus = Under_The_City
+		}
+		relative_position_id = Under_The_City
+		x = 0
+		y = 1
+
+	}
+	focus = {
+		id = Synthetic_Steel
+		icon = GFX_goal_chn_steel
+		cost = 0.00
+		prerequisite = {
+			focus = A_New_Discovery
+		}
+		relative_position_id = A_New_Discovery
+		x = 0
+		y = 1
+
+	}
+	
+	###############################################################################
+	#Air tree
+	#################
+	
+	focus = {
+		id = Our_Sky
+		icon = GFX_goal_generic_build_airforce
+		cost = 0.00
+		x = 18
+		y = 0
+
+	}
+	
+	focus = {
+		id = General_Oswald
+		icon = GFX_goal_generic_air_fighter2
+		cost = 0.00
+		prerequisite = {
+			focus = Our_Sky
+		}
+		mutually_exclusive = {
+			focus = General_Werner
+		}
+		relative_position_id = Our_Sky
+		x = -1
+		y = 1
+
+	}
+	
+	focus = {
+		id = General_Werner
+		icon = GFX_goal_nim_bomb
+		cost = 0.00
+		prerequisite = {
+			focus = Our_Sky
+		}
+		mutually_exclusive = {
+			focus = General_Oswald
+		}
+		relative_position_id = Our_Sky
+		x = 1
+		y = 1
+
+	}
+	
+	focus = {
+		id = Our_Fighters
+		icon = GFX_goal_generic_air_fighter
+		cost = 0.00
+		prerequisite = {
+			focus = General_Oswald
+		}
+		relative_position_id = General_Oswald
+		x = 0
+		y = 1
+
+	}
+	focus = {
+		id = Our_Bombers
+		icon = GFX_goal_generic_air_bomber
+		cost = 0.00
+		prerequisite = {
+			focus = General_Werner
+		}
+		relative_position_id = General_Werner
+		x = 0
+		y = 1
+
+	}
+	focus = {
+		id = Better_Pilots
+		icon = GFX_goal_generic_air_doctrine
+		cost = 0.00
+		prerequisite = {
+			focus = Our_Fighters
+			focus = Our_Bombers
+		}
+		relative_position_id = Our_Fighters
+		x = -1
+		y = 1
+
+	}
+	focus = {
+		id = From_Dusk_Till_Dawn
+		icon = GFX_goal_generic_CAS
+		cost = 0.00
+		prerequisite = {
+			focus = Our_Fighters
+			focus = Our_Bombers
+		}
+		relative_position_id = Our_Fighters
+		x = 1
+		y = 1
+
+	}
+	focus = {
+		id = Control_The_Skies
+		icon = GFX_goal_generic_occupy_start_war
+		cost = 0.00
+		prerequisite = {
+			focus = Our_Fighters
+			focus = Our_Bombers
+		}
+		relative_position_id = Our_Bombers
+		x = 1
+		y = 1
+
+	}
+	focus = {
+		id = Our_Heavy_Fighters
+		icon = GFX_goal_generic_navy_carrier
+		cost = 0.00
+		prerequisite = {
+			focus = Control_The_Skies
+		}
+		relative_position_id = Control_The_Skies
+		x = 0
+		y = 1
+
+	}
+	
 	focus = {
 		id = Close_Air_Support
 		icon = GFX_focus_generic_cryptologic_bomb
@@ -1400,8 +1218,9 @@ focus_tree = {
 		prerequisite = {
 			focus = From_Dusk_Till_Dawn
 		}
-		x = 36
-		y = 10
+		relative_position_id = From_Dusk_Till_Dawn
+		x = 0
+		y = 1
 
 	}
 	focus = {
@@ -1411,8 +1230,9 @@ focus_tree = {
 		prerequisite = {
 			focus = Better_Pilots
 		}
-		x = 34
-		y = 10
+		relative_position_id = Better_Pilots
+		x = 0
+		y = 1
 
 	}
 	focus = {
@@ -1428,10 +1248,246 @@ focus_tree = {
 		prerequisite = {
 			focus = Our_Heavy_Fighters
 		}
-		x = 36
-		y = 11
+		relative_position_id = Close_Air_Support
+		x = 0
+		y = 1
 
 	}
+	
+	######################################################################
+	#Navy Tree
+	
+	focus = {
+		id = Our_Navy
+		icon = GFX_goal_nim_ship
+		cost = 0.00
+		x = 25
+		y = 0
+
+	}
+	
+	focus = {
+		id = Our_Fleet
+		icon = GFX_goal_generic_navy_submarine	
+		cost = 0.00
+		prerequisite = {
+			focus = Our_Navy
+		}
+		relative_position_id = Our_Navy
+		x = 0
+		y = 1
+
+	}
+	focus = {
+		id = How_Do_You_Sail_This_Thing
+		icon = GFX_goal_generic_navy_doctrines_tactics
+		cost = 0.00
+		prerequisite = {
+			focus = Our_Fleet
+		}
+		relative_position_id = Our_Fleet
+		x = -2
+		y = 1
+
+	}
+	focus = {
+		id = Repurposed_Boats
+		icon = GFX_goal_generic_occupy_states_coastal
+		cost = 0.00
+		prerequisite = {
+			focus = Our_Fleet
+		}
+		relative_position_id = Our_Fleet
+		x = 0
+		y = 1
+
+	}
+	focus = {
+		id = Catching_Up
+		icon = GFX_goal_battlefleet
+		cost = 0.00
+		prerequisite = {
+			focus = Our_Fleet
+		}
+		relative_position_id = Our_Fleet
+		x = 2
+		y = 1
+
+	}
+	focus = {
+		id = Making_Up_For_Lost_Time
+		icon = GFX_goal_generic_navy_cruiser
+		cost = 0.00
+		prerequisite = {
+			focus = Repurposed_Boats
+		}
+		prerequisite = {
+			focus = How_Do_You_Sail_This_Thing
+		}
+		prerequisite = {
+			focus = Catching_Up
+		}
+		relative_position_id = Repurposed_Boats
+		x = 0
+		y = 1
+
+	}
+	focus = {
+		id = Fleet_Strategy
+		icon = GFX_goal_generic_wolf_pack
+		cost = 0.00
+		prerequisite = {
+			focus = Making_Up_For_Lost_Time
+		}
+		relative_position_id = Making_Up_For_Lost_Time
+		x = -2
+		y = 1
+
+	}
+	focus = {
+		id = Dockyards
+		icon = GFX_goal_dockyard_generic_psody
+		cost = 0.00
+		prerequisite = {
+			focus = Making_Up_For_Lost_Time
+		}
+		relative_position_id = Making_Up_For_Lost_Time
+		x = 0
+		y = 1
+
+	}
+	focus = {
+		id = A_Proper_Fleet
+		icon = GFX_goal_generic_amphibious_assault
+		cost = 0.00
+		prerequisite = {
+			focus = Making_Up_For_Lost_Time
+		}
+		relative_position_id = Making_Up_For_Lost_Time
+		x = 2
+		y = 1
+
+	}
+	
+	#################################################################
+	#Foreign Advisors
+	#
+	
+	focus = {
+		id = Foreign_Advisors
+		icon = GFX_goal_foreign_diplomacy
+		cost = 0.00
+		x = 33
+		y = 0
+
+	}
+	
+	focus = {
+		id = In_Doubt_Shell_Them_Out
+		icon = GFX_goal_munitions_factories
+		cost = 10.00
+		prerequisite = {
+			focus = Foreign_Advisors
+		}
+		mutually_exclusive = {
+			focus = Drifting_Around_Their_Defences
+			focus = Tactical_Genius
+			focus = Hellmarch_Doctrine
+			focus = Drifting_Around_Their_Defences
+		}
+		relative_position_id = Foreign_Advisors
+		x = -3
+		y = 1
+
+		completion_reward = {
+		 add_tech_bonus = {bonus = 00.35 uses = 4 category = cat_superior_firepower}
+		 }
+
+
+
+	}
+	focus = {
+		id = No_Kill_Like_Overkill
+		icon = GFX_goal_national_artillery
+		cost = 5.00
+		prerequisite = {
+			focus = In_Doubt_Shell_Them_Out
+		}
+		relative_position_id = In_Doubt_Shell_Them_Out
+		x = 0
+		y = 1
+		
+
+
+	}
+	focus = {
+		id = Drifting_Around_Their_Defences
+		icon = GFX_goal_tfv_saf_support_ossebrandwag
+		cost = 10.00
+		prerequisite = {
+			focus = Foreign_Advisors
+		}
+		mutually_exclusive = {
+			focus = In_Doubt_Shell_Them_Out
+			focus = Tactical_Genius
+			focus = Tactical_Genius
+			focus = In_Doubt_Shell_Them_Out
+			focus = Hellmarch_Doctrine
+		}
+		relative_position_id = Foreign_Advisors
+		x = -1
+		y = 1
+        completion_reward = {
+		   add_tech_bonus = {bonus = 00.35 uses = 4 category = cat_mobile_warfare}
+		   }
+
+	}
+	focus = {
+		id = Deja_Vu_Strikes
+		icon = GFX_goal_generic_army_motorized
+		cost = 5.00
+		prerequisite = {
+			focus = Drifting_Around_Their_Defences
+		}
+		relative_position_id = Drifting_Around_Their_Defences
+		x = 0
+		y = 1
+
+	}
+	focus = {
+		id = Tactical_Genius
+		icon = GFX_goal_generic_army_doctrines
+		cost = 10.00
+		prerequisite = {
+			focus = Foreign_Advisors
+		}
+		mutually_exclusive = {
+			focus = In_Doubt_Shell_Them_Out
+			focus = Drifting_Around_Their_Defences
+			focus = Hellmarch_Doctrine
+			focus = Drifting_Around_Their_Defences
+		}
+		relative_position_id = Foreign_Advisors
+		x = 1
+		y = 1
+         completion_reward = {
+		  add_tech_bonus = {bonus = 00.35 uses = 4 category = cat_grand_battle_plan}
+		  }
+
+	}
+	focus = {
+		id = Just_As_Planned
+		icon = GFX_goal_planning_bonus
+		cost = 0.00
+		prerequisite = {
+			focus = Tactical_Genius
+		}
+		relative_position_id = Tactical_Genius
+		x = 0
+		y = 1
+
+	}
+	
 	focus = {
 		id = Hellmarch_Doctrine
 		icon = GFX_goal_skull_fortification
@@ -1444,8 +1500,9 @@ focus_tree = {
 			focus = In_Doubt_Shell_Them_Out
 			focus = Drifting_Around_Their_Defences
 		}
-		x = 57
-		y = 6
+		relative_position_id = Foreign_Advisors
+		x = 3
+		y = 1
         completion_reward = {
 		 add_tech_bonus = {bonus = 00.35 category = cat_mass_assault uses= 4}
 		 }
@@ -1457,8 +1514,168 @@ focus_tree = {
 		prerequisite = {
 			focus = Hellmarch_Doctrine
 		}
-		x = 57
-		y = 7
+		relative_position_id = Hellmarch_Doctrine
+		x = 0
+		y = 1
 
 	}
+	
+	##################################################################
+	#Populaton issues
+	######################
+	
+	focus = {
+		id = Our_Population_Issue
+		icon = GFX_focus_HOL_deal_with_right
+		cost = 0.00
+		x = 8
+		y = 10
+
+	}
+	
+	focus = {
+		id = Proper_Medicine
+		icon = GFX_goal_cry_medicine
+		cost = 0.00
+		prerequisite = {
+			focus = Our_Population_Issue
+		}
+		relative_position_id = Our_Population_Issue
+		x = 2
+		y = 1
+
+	}
+	focus = {
+		id = Medicine_In_The_Field
+		icon = GFX_focus_healthcare_program
+		cost = 0.00
+		prerequisite = {
+			focus = Proper_Medicine
+		}
+		relative_position_id = Proper_Medicine
+		x = 0
+		y = 1
+
+	}
+	
+	focus = {
+		id = Immigration
+		icon = GFX_goal_tripartite_pact_pony
+		cost = 0.00
+		prerequisite = {
+			focus = Our_Population_Issue
+		}
+		relative_position_id = Our_Population_Issue
+		x = -2
+		y = 1
+
+	}
+	focus = {
+		id = The_Marvel_Of_The_World
+		icon = GFX_goal_rct_expand_the_city
+		cost = 0.00
+		prerequisite = {
+			focus = Immigration
+		}
+		relative_position_id = Immigration
+		x = 0
+		y = 1
+
+	}
+	focus = {
+		id = Our_Traditional_Family
+		icon = GFX_focus_generic_japanese_imperial_glory
+		cost = 0.00
+		prerequisite = {
+			focus = Our_Population_Issue
+		}
+		relative_position_id = Our_Population_Issue
+		x = 0
+		y = 1
+
+	}
+	focus = {
+		id = Every_Stallion_A_Mare
+		icon = GFX_goal_crystal_heart
+		cost = 0.00
+		prerequisite = {
+			focus = Our_Traditional_Family
+		}
+		relative_position_id = Our_Traditional_Family
+		x = 0
+		y = 1
+
+	}
+	
+	focus = {
+		id = Food_Production
+		icon = GFX_goal_agrarian_reform
+		cost = 0.00
+		prerequisite = {
+			focus = The_Marvel_Of_The_World
+		}
+		prerequisite = {
+			focus = Every_Stallion_A_Mare
+		}
+		prerequisite = {
+			focus = Medicine_In_The_Field
+		}
+		relative_position_id = Every_Stallion_A_Mare
+		x = 0
+		y = 1
+
+	}
+	
+	#################################################################
+	#Empire tree
+	#########################
+	
+	focus = {
+		id = Our_Empire
+		icon = GFX_goal_unknown
+		cost = 0.00
+		x = 16
+		y = 26
+
+	}
+	
+	focus = {
+		id = Beyond_The_Continent
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = Our_Empire
+		}
+		relative_position_id = Our_Empire
+		x = 0
+		y = 1
+
+	}
+
+	focus = {
+		id = Our_Riverlands
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = Beyond_The_Continent
+		}
+		relative_position_id = Beyond_The_Continent
+		x = 1
+		y = 1
+
+	}
+	focus = {
+		id = Crushing_The_Talons_Might
+		icon = GFX_goal_solar_attack_grf
+		cost = 0.00
+		prerequisite = {
+			focus = Beyond_The_Continent
+		}
+		relative_position_id = Beyond_The_Continent
+		x = -1
+		y = 1
+
+	}
+
+
 }
