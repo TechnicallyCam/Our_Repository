@@ -1,0 +1,23 @@
+leader_traits = {
+	alicorn_adrian = {
+		random = no
+		
+		stability_factor = 0.50
+		justify_war_goal_time = -0.50
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	mutant_adrian = {
+		random = no
+		
+		stability_factor = -0.50
+		justify_war_goal_time = 0.60
+		political_power_gain = -0.01
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+}

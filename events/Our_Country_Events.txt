@@ -410,6 +410,27 @@ country_event = {
 
 	option = {
 		name = Our_Country_Alicorn.2.a
+		
+		create_country_leader = {
+			name = "God Emperor Adrian"
+			desc = ""
+			picture = "Generic.tga"
+			expire = "1965.1.1"
+			ideology = nazism
+			traits = {
+				alicorn_adrian
+			}
+		}
+		create_field_marshal = {
+			name = "God Emperor Adrian"
+			picture = "Generic.tga"
+			traits = { }
+			skill = 3
+			attack_skill = 3
+			defense_skill = 3
+			planning_skill = 3
+			logistics_skill = 3
+		}
 	}
 }
 
@@ -425,5 +446,16 @@ country_event = {
 
 	option = {
 		name = Our_Country_Alicorn.3.a
+		
+		create_country_leader = {
+			name = "God Emperor Adrian"
+			desc = ""
+			picture = "Generic.tga"
+			expire = "1965.1.1"
+			ideology = nazism
+			traits = {
+				mutant_adrian
+			}
+		}
 	}
 }

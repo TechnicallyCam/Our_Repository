@@ -130,6 +130,10 @@ focus_tree = {
 		relative_position_id = The_Supersoldaten
 		x = 0
 		y = 1
+		completion_reward = {
+			set_country_flag = STL_Pengle_Decisions_Flag
+			custom_effect_tooltip = STL_Pengle_Decisions_Unlocked
+		}
 
 	}
 	
