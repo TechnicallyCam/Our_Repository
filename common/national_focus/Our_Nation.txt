@@ -91,7 +91,9 @@ focus_tree = {
 		relative_position_id = The_Future_of_Warfare
 		x = -2
 		y = 1
-
+		completion_reward = {
+			country_event = Our_Country_Pengle_Meeting.1
+		}
 	}
 	
 	focus = {
@@ -1104,6 +1106,16 @@ focus_tree = {
 		cost = 0.00
 		x = 18
 		y = 0
+		completion_reward = {
+			57 = {
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = air_base
+					level = 3
+					instant_build = yes
+				}
+			}
+		}
 
 	}
 	
@@ -1120,6 +1132,13 @@ focus_tree = {
 		relative_position_id = Our_Sky
 		x = -1
 		y = 1
+		completion_reward = {
+			add_tech_bonus = { 
+				bonus = 00.25 
+				uses = 2 
+				category = cat_battlefield_support 
+			}
+		}
 
 	}
 	
@@ -1136,7 +1155,13 @@ focus_tree = {
 		relative_position_id = Our_Sky
 		x = 1
 		y = 1
-
+		completion_reward = {
+			add_tech_bonus = { 
+				bonus = 00.25 
+				uses = 2 
+				category = cat_operational_integrity 
+			}
+		}
 	}
 	
 	focus = {
@@ -1149,6 +1174,13 @@ focus_tree = {
 		relative_position_id = General_Oswald
 		x = 0
 		y = 1
+		completion_reward = {
+			add_tech_bonus = { 
+				bonus = 00.50 
+				uses = 1
+				category = light_fighter 
+			}
+		}
 
 	}
 	focus = {
@@ -1161,6 +1193,13 @@ focus_tree = {
 		relative_position_id = General_Werner
 		x = 0
 		y = 1
+		completion_reward = {
+			add_tech_bonus = { 
+				bonus = 00.50 
+				uses = 1
+				category = tactical_bomber 
+			}
+		}
 
 	}
 	focus = {
@@ -1174,7 +1213,9 @@ focus_tree = {
 		relative_position_id = Our_Fighters
 		x = -1
 		y = 1
-
+		completion_reward = {
+			add_ideas = STL_Air_Agility_Idea
+		}
 	}
 	focus = {
 		id = From_Dusk_Till_Dawn
@@ -1187,7 +1228,9 @@ focus_tree = {
 		relative_position_id = Our_Fighters
 		x = 1
 		y = 1
-
+		completion_reward = {
+			add_ideas = STL_Dusk_Dawn_Idea
+		}
 	}
 	focus = {
 		id = Control_The_Skies
@@ -1200,6 +1243,9 @@ focus_tree = {
 		relative_position_id = Our_Bombers
 		x = 1
 		y = 1
+		completion_reward = {
+			add_ideas = STL_Control_Skies_Idea
+		}
 
 	}
 	focus = {
@@ -1212,7 +1258,13 @@ focus_tree = {
 		relative_position_id = Control_The_Skies
 		x = 0
 		y = 1
-
+		completion_reward = {
+			add_tech_bonus = { 
+				bonus = 00.25 
+				uses = 2
+				category = cat_heavy_fighter 
+			}
+		}
 	}
 	
 	focus = {
@@ -1225,7 +1277,13 @@ focus_tree = {
 		relative_position_id = From_Dusk_Till_Dawn
 		x = 0
 		y = 1
-
+		completion_reward = {
+			add_tech_bonus = { 
+				bonus = 00.25 
+				uses = 2
+				category = cas_bomber 
+			}
+		}
 	}
 	focus = {
 		id = Our_Aces
@@ -1237,6 +1295,9 @@ focus_tree = {
 		relative_position_id = Better_Pilots
 		x = 0
 		y = 1
+		completion_reward = {
+			add_ideas = STL_Aces_Buff
+		}
 
 	}
 	focus = {
@@ -1255,7 +1316,9 @@ focus_tree = {
 		relative_position_id = Close_Air_Support
 		x = 0
 		y = 1
-
+		completion_reward = {
+			add_ideas = STL_Future_Aviation_Idea
+		}
 	}
 	
 	######################################################################

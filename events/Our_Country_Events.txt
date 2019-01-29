@@ -4,6 +4,31 @@
 
 add_namespace = Our_Country_Meeting
 add_namespace = Our_Country_Alicorn
+add_namespace = Our_Country_Pengle_Meeting
+
+####################################################
+#Choose between pengle and Verner
+####################################################
+
+country_event = {
+	id = Our_Country_Pengle_Meeting.1
+	title = Our_Country_Pengle_Meeting.1.t
+	desc = Our_Country_Pengle_Meeting.1.d
+	
+	picture = GFX_event_griffon_mountain
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		name = Our_Country_Pengle_Meeting.1.a
+		set_country_flag = STL_Went_With_Pengle_Flag
+
+	}
+	option = {
+		name = Our_Country_Pengle_Meeting.1.b
+		set_country_flag = STL_Went_With_Verner_Flag
+	}
+}
 
 ####################################################
 #Chain one, the late night meeting

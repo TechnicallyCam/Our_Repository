@@ -15,8 +15,7 @@ ideas = {
 				industrial_capacity_factory	= -0.1
 			}
 		}
-	}
-	country = {
+	
 		STL_blessed_silence = {
 			allowed = {
 				always = yes
@@ -30,8 +29,7 @@ ideas = {
 				stability_weekly = 0.02
 			}
 		}
-	}
-	country = {
+	
 		STL_charitable_initiatives = {
 			allowed = {
 				always = yes
@@ -46,8 +44,7 @@ ideas = {
 				consumer_goods_factor = 0.05
 			}
 		}
-	}
-	country = {
+	
 		STL_order_of_the_acolytes = {
 			allowed = {
 				always = yes
@@ -61,8 +58,7 @@ ideas = {
 				stability_weekly = 0.01
 			}
 		}
-	}
-	country = {
+	
 		STL_acolyte_discipline = {
 			allowed = {
 				always = yes
@@ -77,8 +73,7 @@ ideas = {
 				land_reinforce_rate = 0.01
 			}
 		}
-	}
-	country = {
+	
 		STL_acolyte_fervour = {
 			allowed = {
 				always = yes
@@ -92,8 +87,7 @@ ideas = {
 				land_reinforce_rate = 0.01
 			}
 		}
-	}
-	country = {
+	
 		STL_nation_of_the_acolytes = {
 			allowed = {
 				always = yes
@@ -106,6 +100,76 @@ ideas = {
 			modifier = {
 				stability_weekly = 0.01
 				production_factory_start_efficiency_factor = 0.05
+			}
+		}
+		
+		STL_Aces_Buff = {
+			allowed = {
+				always = yes
+			}
+			available = {
+				is_subject = no
+			}
+			picture = FRA_army_of_aggression_focus
+			removal_cost = -1
+			modifier = {
+				air_ace_generation_chance_factor = 0.10
+			}
+		}
+		STL_Dusk_Dawn_Idea = {
+			allowed = {
+				always = yes
+			}
+			available = {
+				is_subject = no
+			}
+			picture = FRA_army_of_aggression_focus
+			removal_cost = -1
+			modifier = {
+				air_night_penalty = -0.1
+			}
+		}
+		STL_Control_Skies_Idea = {
+			allowed = {
+				always = yes
+			}
+			available = {
+				is_subject = no
+			}
+			picture = FRA_army_of_aggression_focus
+			removal_cost = -1
+			modifier = {
+				air_air_superiority_attack_factor = 0.02
+				air_air_superiority_defence_factor = 0.02
+			}
+		}
+		STL_Air_Agility_Idea = {
+			allowed = {
+				always = yes
+			}
+			available = {
+				is_subject = no
+			}
+			picture = FRA_army_of_aggression_focus
+			removal_cost = -1
+			modifier = {
+				air_air_superiority_agility_factor = 0.02
+				air_strategic_bomber_agility_factor = 0.02
+				air_close_air_support_agility_factor = 0.02
+			}
+		}
+		STL_Future_Aviation_Idea = {
+			allowed = {
+				always = yes
+			}
+			available = {
+				is_subject = no
+			}
+			picture = FRA_army_of_aggression_focus
+			removal_cost = -1
+			research_bonus = {
+				air_doctrine = 0.05
+				air_equipment = 0.05
 			}
 		}
 	}
