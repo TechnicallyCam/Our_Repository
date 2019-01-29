@@ -75,6 +75,7 @@ focus_tree = {
 		y = 1
 		completion_reward = {
 			add_timed_idea = {idea = STL_blessed_silence days = 140}
+			country_event = Our_Country_Pengle_Meeting.1
 		}
 
 	}
@@ -82,6 +83,9 @@ focus_tree = {
 		id = A_new_Field
 		icon = GFX_goal_cry_com_magic
 		cost = 0.00
+		available = {
+			has_country_flag = STL_Went_With_Pengle_Flag
+		}
 		prerequisite = {
 			focus = The_Future_of_Warfare
 		}
@@ -92,7 +96,7 @@ focus_tree = {
 		x = -2
 		y = 1
 		completion_reward = {
-			country_event = Our_Country_Pengle_Meeting.1
+		
 		}
 	}
 	
@@ -143,6 +147,9 @@ focus_tree = {
 		id = Unmanned_Bombing_Runs
 		icon = GFX_goal_bombs_away
 		cost = 0.00
+		available = {
+			has_country_flag = STL_Went_With_Verner_Flag
+		}
 		prerequisite = {
 			focus = The_Future_of_Warfare
 		}
