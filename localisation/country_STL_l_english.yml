@@ -260,7 +260,8 @@ STL_Aces_Buff:0 "Great Aces"
 STL_Aces_Buff_desc:0 ""
 STL_mass_construction_projects:0 "Mass Construction Projects"
 STL_mass_construction_projects_desc:0 ""
-
+STL_production_priorities:0 "Efficient Production"
+STL_production_priorities_desc:0 ""
 #Events
 Our_Country_Meeting.1.t:0 ""
 Our_Country_Meeting.1.d:0 ""
