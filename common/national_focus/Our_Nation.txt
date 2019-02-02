@@ -17,7 +17,7 @@ focus_tree = {
 	focus = {
 		id = Chaos_Of_The_New_Order
 		icon = GFX_focus_generic_anti_fascist_diplomacy
-		cost = 0.10
+		cost = 1.00
 		
 		x = 0
 		y = 0
@@ -74,7 +74,6 @@ focus_tree = {
 		x = -12
 		y = 1
 		completion_reward = {
-			add_timed_idea = {idea = STL_blessed_silence days = 140}
 			country_event = Our_Country_Pengle_Meeting.1
 		}
 
@@ -746,7 +745,7 @@ focus_tree = {
 	focus = {
 		id = The_Guns_Must_Flow
 		icon = GFX_goal_generic_construct_mil_factory
-		cost = 0.00
+		cost = 10.00
 		prerequisite = {
 			focus = Our_Industry
 		}
@@ -767,7 +766,7 @@ focus_tree = {
 	focus = {
 		id = Better_Arms
 		icon = GFX_goal_griffon_arms_focus_com
-		cost = 0.00
+		cost = 5.00
 		prerequisite = {
 			focus = The_Guns_Must_Flow
 		}
@@ -779,25 +778,34 @@ focus_tree = {
 	focus = {
 		id = Our_Production
 		icon = GFX_goal_generic_production
-		cost = 0.00
+		cost = 10.00
 		prerequisite = {
 			focus = Our_Industry
 		}
 		relative_position_id = Our_Industry
 		x = 1
 		y = 1
+		completion_reward = {
+			add_ideas = STL_mass_construction_projects
+		}
 
 	}
 	focus = {
-		id = Increased_Production
+		id = Efficient_Production
 		icon = GFX_IRE_heavy_industry
-		cost = 0.00
+		cost = 5.00
 		prerequisite = {
 			focus = Our_Production
 		}
 		relative_position_id = Our_Production
 		x = 0
 		y = 1
+		completion_reward = {
+			swap_ideas= {
+			remove_idea = STL_mass_construction_projects
+			add_ideas = STL_production_priorities
+			}
+		}
 
 	}
 	
@@ -812,9 +820,9 @@ focus_tree = {
 			focus = Better_Arms
 		}
 		prerequisite = {
-			focus = Increased_Production
+			focus = Efficient_Production
 		}
-		relative_position_id = Increased_Production
+		relative_position_id = Efficient_Production
 		x = -1
 		y = 1
 
