@@ -237,5 +237,19 @@ ideas = {
 				production_factory_start_efficiency_factor = 0.05
 			}
 		}
+	} country = {
+        STL_indusdrial_research_funding = {
+			allowed = {
+				always = yes
+			}
+			available = {
+				is_subject = no
+			}
+			picture = chi_war_of_resistance3
+			removal_cost = -1
+			modifier = {
+				research_time_factor = -0.05
+			}
+		}
 	}
 }
