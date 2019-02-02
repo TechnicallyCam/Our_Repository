@@ -55,7 +55,7 @@ focus_tree = {
 		y = 1
 		completion_reward = {
 			remove_ideas = STL_chaos_of_the_new_order
-			stability_factor = +1.0
+			add_stability = 0.05
 			add_timed_idea = {idea = STL_charitable_initiatives days = 140}
 		}
 	}
@@ -219,7 +219,7 @@ focus_tree = {
 	focus = {
 		id = Acolytes_of_The_Allfather
 		icon = GFX_goal_military_mission_pony
-		cost = 0.00
+		cost = 10.00
 		prerequisite = {
 			focus = Our_Home
 		}
@@ -235,7 +235,7 @@ focus_tree = {
 	focus = {
 		id = Maintaining_Discipline 
 		icon = GFX_goal_military_academy
-		cost = 0.00
+		cost = 10.00
 		prerequisite = {
 			focus = Acolytes_of_The_Allfather
 		}
@@ -250,7 +250,7 @@ focus_tree = {
 	focus = {
 		id = All_for_the_Allfather
 		icon = GFX_goal_unicorn_soldier
-		cost = 0.00
+		cost = 10.00
 		prerequisite = {
 			focus = Maintaining_Discipline 
 		}
@@ -280,7 +280,7 @@ focus_tree = {
 	focus = {
 		id = True_Order
 		icon = GFX_goal_HOL_amend_wapenwet
-		cost = 0.00
+		cost = 10.00
 		prerequisite = {
 			focus = Maintaining_Discipline
 		}
@@ -808,7 +808,7 @@ focus_tree = {
 	focus = {
 		id = Space_To_Build
 		icon = GFX_goal_construction_engineering
-		cost = 0.00
+		cost = 10.00
 		prerequisite = {
 			focus = Better_Arms
 		}
@@ -818,55 +818,84 @@ focus_tree = {
 		relative_position_id = Efficient_Production
 		x = -1
 		y = 1
+		completion_reward = {
+		    57 = {
+				add_extra_state_shared_building_slots = 5
+			}					
+	    }
 
 	}
 	focus = {
 		id = Putting_Our_Village_Behind_Us
 		icon = GFX_focus_eqc_memories_of_our_town
-		cost = 0.00
+		cost = 5.00
 		prerequisite = {
 			focus = Space_To_Build
 		}
 		relative_position_id = Space_To_Build
 		x = -4
 		y = 1
+		completion_reward = {
+			add_tech_bonus = {
+			  bonus = 00.50 
+			  uses = 2 
+			  category = industry
+			}
+		}
 
 	}
 	
 	focus = {
 		id = Our_Metropolis
 		icon = GFX_goal_rct_expand_the_city
-		cost = 0.00
+		cost = 10.00
 		prerequisite = {
 			focus = Putting_Our_Village_Behind_Us
 		}
 		relative_position_id = Putting_Our_Village_Behind_Us
 		x = 0
 		y = 1
-
+		completion_reward = {
+			57 = {
+				add_extra_state_shared_building_slots = 5
+			}
+			add_tech_bonus = {
+			  bonus = 00.50 
+			  uses = 1 
+			  category = industry
+			}
+		}
 	}
 	focus = {
 		id = Our_University
 		icon = GFX_goal_flo_university2
-		cost = 0.00
+		cost = 10.00
 		prerequisite = {
 			focus = Our_Metropolis
 		}
 		relative_position_id = Our_Metropolis
 		x = 0
 		y = 1
-
+		completion_reward = {
+			add_research_slot = 1
+		}
 	}
 	focus = {
 		id = Our_Arms
 		icon = GFX_SIA_jungletraining
-		cost = 0.00
+		cost = 5.00
 		prerequisite = {
 			focus = Space_To_Build
 		}
 		relative_position_id = Space_To_Build
 		x = -2
 		y = 1
+		completion_reward = {
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = 5000
+			}
+		}
 
 	}
 	focus = {
