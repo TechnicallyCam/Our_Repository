@@ -901,37 +901,49 @@ focus_tree = {
 	focus = {
 		id = A_Motivated_Worker
 		icon = GFX_goal_industrial_pony
-		cost = 0.00
+		cost = 5.00
 		prerequisite = {
 			focus = Our_Arms
 		}
 		relative_position_id = Our_Arms
 		x = 0
 		y = 1
+		completion_reward = {
+			add_ideas = STL_motivated_workers
+		}
 
 	}
 	focus = {
 		id = A_Streamlined_Process
 		icon = GFX_goal_generic_air_production
-		cost = 0.00
+		cost = 10.00
 		prerequisite = {
 			focus = A_Motivated_Worker
 		}
 		relative_position_id = A_Motivated_Worker
 		x = 0
 		y = 1
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = STL_motivated_workers
+				add_idea = STL_organised_workers
+			}
+		}
 
 	}
 	focus = {
 		id = Work_At_Home
 		icon = GFX_goal_we_can_do_it_aj
-		cost = 0.00
+		cost = 10.00
 		prerequisite = {
 			focus = A_Streamlined_Process
 		}
 		relative_position_id = A_Streamlined_Process
 		x = 0
 		y = 1
+		completion_reward = {
+			add_ideas = war_economy
+		}
 
 	}
 	
@@ -945,7 +957,9 @@ focus_tree = {
 		relative_position_id = Space_To_Build
 		x = 0
 		y = 1
-
+		completion_reward = {
+		
+		}
 	}
 	focus = {
 		id = Less_Is_More
