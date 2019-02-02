@@ -15,7 +15,7 @@ ideas = {
 				industrial_capacity_factory	= -0.1
 			}
 		}
-	
+	} country = {
 		STL_blessed_silence = {
 			allowed = {
 				always = yes
@@ -29,7 +29,7 @@ ideas = {
 				stability_weekly = 0.02
 			}
 		}
-	
+	} country = {
 		STL_charitable_initiatives = {
 			allowed = {
 				always = yes
@@ -44,7 +44,7 @@ ideas = {
 				consumer_goods_factor = 0.05
 			}
 		}
-	
+	} country = {
 		STL_order_of_the_acolytes = {
 			allowed = {
 				always = yes
@@ -58,7 +58,7 @@ ideas = {
 				stability_weekly = 0.01
 			}
 		}
-	
+	} country = {
 		STL_acolyte_discipline = {
 			allowed = {
 				always = yes
@@ -73,7 +73,7 @@ ideas = {
 				land_reinforce_rate = 0.01
 			}
 		}
-	
+	} country = {
 		STL_acolyte_fervour = {
 			allowed = {
 				always = yes
@@ -87,7 +87,7 @@ ideas = {
 				land_reinforce_rate = 0.01
 			}
 		}
-	
+	} country = {
 		STL_nation_of_the_acolytes = {
 			allowed = {
 				always = yes
@@ -102,7 +102,7 @@ ideas = {
 				production_factory_start_efficiency_factor = 0.05
 			}
 		}
-		
+	} country = {	
 		STL_Aces_Buff = {
 			allowed = {
 				always = yes
@@ -116,6 +116,7 @@ ideas = {
 				air_ace_generation_chance_factor = 0.10
 			}
 		}
+	} country = {
 		STL_Dusk_Dawn_Idea = {
 			allowed = {
 				always = yes
@@ -129,6 +130,7 @@ ideas = {
 				air_night_penalty = -0.1
 			}
 		}
+	} country = {
 		STL_Control_Skies_Idea = {
 			allowed = {
 				always = yes
@@ -143,6 +145,7 @@ ideas = {
 				air_air_superiority_defence_factor = 0.02
 			}
 		}
+	} country = {
 		STL_Air_Agility_Idea = {
 			allowed = {
 				always = yes
@@ -158,6 +161,7 @@ ideas = {
 				air_close_air_support_agility_factor = 0.02
 			}
 		}
+	} country = {
 		STL_Future_Aviation_Idea = {
 			allowed = {
 				always = yes
@@ -170,6 +174,35 @@ ideas = {
 			research_bonus = {
 				air_doctrine = 0.05
 				air_equipment = 0.05
+			}
+		}
+	} country = {
+        STL_mass_construction_projects = {
+			allowed = {
+				always = yes
+			}
+			available = {
+				is_subject = no
+			}
+			picture = chi_war_of_resistance3
+			removal_cost = -1
+			modifier = {
+				production_speed_buildings_factor = 0.10
+			}
+		}
+	} country = {
+        STL_production_priorities = {
+			allowed = {
+				always = yes
+			}
+			available = {
+				is_subject = no
+			}
+			picture = chi_war_of_resistance3
+			removal_cost = -1
+			modifier = {
+				production_speed_buildings_factor = 0.10
+				consumer_goods_factor = -0.05
 			}
 		}
 	}
