@@ -54,7 +54,8 @@ focus_tree = {
 		x = 0
 		y = 1
 		completion_reward = {
-			add_stablity = 0.10
+			remove_ideas = STL_chaos_of_the_new_order
+			stability_factor = +1.0
 			add_timed_idea = {idea = STL_charitable_initiatives days = 140}
 		}
 	}
