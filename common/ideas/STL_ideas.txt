@@ -99,7 +99,8 @@ ideas = {
 			removal_cost = -1
 			modifier = {
 				stability_weekly = 0.01
-				production_factory_start_efficiency_factor = 0.05
+				opinion_gain_monthly_same_ideology_factor = 0.05
+				production_factory_start_efficiency_factor = 0.1
 			}
 		}
 	} country = {	
