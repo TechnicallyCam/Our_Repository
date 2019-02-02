@@ -306,15 +306,10 @@ focus_tree = {
 		prerequisite = {
 			focus = Our_Home
 		}
-		completion_reward = {
+		completion_reward = {  
 			add_tech_bonus = { 
 			  bonus = 00.50 
-			  uses = 1 
-			  category = infantry_weapons 
-			}  
-			add_tech_bonus = { 
-			  bonus = 00.50 
-			  uses = 1 
+			  uses = 2 
 			  category = support_tech 
 			}
 			add_tech_bonus = { 
@@ -344,7 +339,7 @@ focus_tree = {
 			  bonus = 00.50 
 			  ahead_reduction = 1
 			  uses = 1 
-			  category = infantry_weapons 
+			  category = infantry_weapons   
 			}
 		}
 
@@ -367,7 +362,7 @@ focus_tree = {
 	focus = {
 		id = Big_Metal_Box
 		icon = GFX_goal_somtanks
-		cost = 1.00
+		cost = 10.00
 		prerequisite = {
 			focus = Science_Of_War
 		}
@@ -376,20 +371,10 @@ focus_tree = {
 		y = 1
 		completion_reward = (
 			add_tech_bonus = { 
-			  bonus = 00.50 
+			  bonus = 00.75 
 			  uses = 1 
-			  category = infantry_weapons 
+			  category = armor
 			}  
-			add_tech_bonus = { 
-			  bonus = 00.50 
-			  uses = 1 
-			  category = support_tech 
-			}
-			add_tech_bonus = { 
-			  bonus = 00.25 
-			  uses = 1 
-			  category = artillery 
-			}
 		}
 
 	}
@@ -808,9 +793,9 @@ focus_tree = {
 		x = 0
 		y = 1
 		completion_reward = {
-			swap_ideas= {
+			swap_ideas = {
 			remove_idea = STL_mass_construction_projects
-			add_ideas = STL_production_priorities
+			add_idea = STL_production_priorities
 			}
 		}
 
