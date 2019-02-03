@@ -271,12 +271,6 @@ country_event = {
 			country_event = Our_Country_Meeting.12
 		}
 	}
-	option = {
-		name = Our_Country_Meeting.11.b
-		hidden_effect = {
-			country_event = Our_Country_Meeting.12
-		}
-	}
 }
 
 #The getaway
