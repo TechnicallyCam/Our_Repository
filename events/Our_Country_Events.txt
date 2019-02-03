@@ -40,7 +40,7 @@ country_event = {
 	title = Our_Country_Meeting.1.t
 	desc = Our_Country_Meeting.1.d
 	
-	picture = GFX_event_griffon_mountain
+	picture = GFX_event_canterlot_street_winter
 	fire_only_once = yes
 	is_triggered_only = no
 	
