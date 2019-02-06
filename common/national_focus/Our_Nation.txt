@@ -60,9 +60,9 @@ focus_tree = {
 		}
 	}
 	
-	#################################################################
+	##############################################################################
 	#Future war
-	#
+	##############################################################################
 	
 	focus = {
 		id = The_Future_of_Warfare
@@ -212,9 +212,9 @@ focus_tree = {
 
 	}
 	
-	###################################################################
+	##############################################################################
 	#Acolytes bit
-	#
+	##############################################################################
 	
 	focus = {
 		id = Acolytes_of_The_Allfather
@@ -296,9 +296,9 @@ focus_tree = {
 
 	}
 	
-	##################################################################
+	##############################################################################
 	#Catching up in arms
-	#
+	##############################################################################
 	
 	focus = {
 		id = Catching_Up_In_Arms
@@ -706,9 +706,9 @@ focus_tree = {
 
 	}
 	
-	##########################################################################################
+	##############################################################################
 	#Industry Tree
-	######################################
+	##############################################################################
 	
 	focus = {
 		id = Our_Industry
@@ -802,8 +802,9 @@ focus_tree = {
 
 	}
 	
-	############################################
+	##############################################################################
 	#Space to build
+	##############################################################################
 	
 	focus = {
 		id = Space_To_Build
@@ -962,93 +963,95 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = Less_Is_More
+		id = Foreign_Machines
 		icon = GFX_SIA_maritmesilkroad
-		cost = 0.00
+		cost = 10.00
 		prerequisite = {
 			focus = Our_Tech
 		}
 		relative_position_id = Our_Tech
 		x = 0
 		y = 1
-
+		completion_reward = {
+			add_tech_bonus = {
+			  bonus = 00.50 
+			  uses = 2 
+			  category = electronics
+			}
+		}
 	}	
 	
 	focus = {
 		id = Every_Inch
 		icon = GFX_focus_generic_industry_2
-		cost = 0.00
+		cost = 10.00
 		prerequisite = {
-			focus = Less_Is_More
+			focus = Foreign_Machines
 		}
-		relative_position_id = Less_Is_More
+		relative_position_id = Foreign_Machines
 		x = 0
 		y = 1
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = STL_indusdrial_research_funding
+				add_idea = STL_indusdrial_planning
+			} 
+		}
 
 	}
 	
 	focus = {
 		id = Armoured_Factories
 		icon = GFX_goal_generic_fortify_city
-		cost = 0.00
+		cost = 5.00
 		prerequisite = {
 			focus = Every_Inch
 		}
 		relative_position_id = Every_Inch
 		x = 0
 		y = 1
-
+		completion_reward = { 
+			swap_ideas = { 
+				remove_idea = STL_indusdrial_planning
+				add_idea = STL_defensive_indusdrial_planning
+			}
+		}
 	}
-
 	focus = {
-		id = Our_Means
-		icon = GFX_goal_factory_complex
-		cost = 0.00
+		id = Moderation
+		icon = GFX_goal_generic_consumer_goods
+		cost = 5.00
 		prerequisite = {
 			focus = Space_To_Build
 		}
 		relative_position_id = Space_To_Build
 		x = 2
 		y = 1
+		completion_reward = {
+			add_ideas = STL_national_moderation
+		}
 
 	}
 	focus = {
 		id = A_Job_For_All
 		icon = GFX_focus_military_derpy
-		cost = 0.00
+		cost = 10.00
 		prerequisite = {
-			focus = Our_Means
+			focus = Moderation
 		}
-		relative_position_id = Our_Means
+		relative_position_id = Moderation
 		x = 0
 		y = 1
-
-	}
-	focus = {
-		id = Better_Builders
-		icon = GFX_goal_generic_construct_civilian
-		cost = 0.00
-		prerequisite = {
-			focus = A_Job_For_All
+		completion_reward = { 
+			swap_ideas = { 
+				remove_idea = STL_national_moderation
+				add_idea = STL_national_mobalization
+			}
+			add_ideas = service_by_requirement
 		}
-		relative_position_id = A_Job_For_All
-		x = 0
-		y = 1
 
 	}
-	focus = {
-		id = Moderation
-		icon = GFX_goal_generic_consumer_goods
-		cost = 0.00
-		prerequisite = {
-			focus = Better_Builders
-		}
-		relative_position_id = Better_Builders
-		x = 0
-		y = 1
 
-	}
-	
 	focus = {
 		id = An_Industrial_Powerhouse
 		icon = GFX_focus_generic_industry_3
@@ -1058,9 +1061,6 @@ focus_tree = {
 		}
 		prerequisite = {
 			focus = Armoured_Factories
-		}
-		prerequisite = {
-			focus = Moderation
 		}
 		relative_position_id = Armoured_Factories
 		x = 0
