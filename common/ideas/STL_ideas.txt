@@ -314,5 +314,21 @@ ideas = {
 				industrial_capacity_dockyard = 0.02
 			}
 		}
-	} 
+	} country = {
+        STL_indusdrial_might = {
+			allowed = {
+				always = yes
+			}
+			available = {
+				is_subject = no
+			}
+			picture = chi_war_of_resistance3
+			removal_cost = -1
+			modifier = {
+				global_building_slots_factor = 0.25
+				research_time_factor = -0.05
+				production_factory_efficiency_gain_factor  = 0.05
+
+			}
+		}
 }
