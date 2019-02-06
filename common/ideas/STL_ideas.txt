@@ -251,5 +251,68 @@ ideas = {
 				research_time_factor = -0.05
 			}
 		}
-	}
+	} country = {
+        STL_indusdrial_planning = {
+			allowed = {
+				always = yes
+			}
+			available = {
+				is_subject = no
+			}
+			picture = chi_war_of_resistance3
+			removal_cost = -1
+			modifier = {
+				research_time_factor = -0.05
+				global_building_slots_factor = 0.25
+			}
+		}
+	} country = {
+        STL_defensive_indusdrial_planning = {
+			allowed = {
+				always = yes
+			}
+			available = {
+				is_subject = no
+			}
+			picture = chi_war_of_resistance3
+			removal_cost = -1
+			modifier = {
+				research_time_factor = -0.05
+				global_building_slots_factor = 0.25
+				industry_air_damage_factor = -0.1
+			}
+		}
+	} country = {
+        STL_national_moderation = {
+			allowed = {
+				always = yes
+			}
+			available = {
+				is_subject = no
+			}
+			picture = chi_war_of_resistance3
+			removal_cost = -1
+			modifier = {
+				consumer_goods_factor = -0.05
+			}
+		}
+	} country = {
+        STL_national_mobalization = {
+			allowed = {
+				always = yes
+			}
+			available = {
+				is_subject = no
+			}
+			picture = chi_war_of_resistance3
+			removal_cost = -1
+			modifier = {
+				consumer_goods_factor = -0.05
+				training_time_factor = -0.10
+				industrial_capacity_factory  = 0.02
+				production_speed_buildings_factor = 0.02
+				industrial_capacity_dockyard = 0.02
+			}
+		}
+	} 
 }
