@@ -1055,7 +1055,7 @@ focus_tree = {
 	focus = {
 		id = An_Industrial_Powerhouse
 		icon = GFX_focus_generic_industry_3
-		cost = 0.00
+		cost = 15.00
 		prerequisite = {
 			focus = Work_At_Home
 		}
@@ -1065,6 +1065,10 @@ focus_tree = {
 		relative_position_id = Armoured_Factories
 		x = 0
 		y = 1
+		completion_reward = { 
+			add_ideas = STL_indusdrial_might
+			add_ideas = closed_economy 
+		}
 
 	}
 	
