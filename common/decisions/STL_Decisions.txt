@@ -187,7 +187,7 @@ Wings_dealers_decisions_category = {
 		}
 		
 		available = {
-			check_variable = {farm_var > 0}
+		
 		}
 		
 		cost = 0
