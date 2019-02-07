@@ -331,4 +331,20 @@ ideas = {
 
 			}
 		}
+	} country = {
+        STL_Our_Griffonian_holdings = {
+			allowed = {
+				always = yes
+			}
+			available = {
+				is_subject = no
+			}
+			picture = chi_war_of_resistance3
+			removal_cost = -1
+			modifier = {
+				consumer_goods_factor = 0.6
+				industrial_capacity_factory  = 0.10
+			}
+		}
+	}
 }
