@@ -435,6 +435,32 @@ focus_tree = {
 			transfer_state = 336
 			transfer_state = 337
 			transfer_state = 58
+			if = {
+				limit = {
+					has_dlc = "Together for Victory"
+				}
+				set_autonomy = {
+					target = OGP
+					autonomous_state = integrated_puppet
+				}
+				else = {
+					puppet = OGP
+				}
+			}
+			OGP = {
+				transfer_state = 279
+				transfer_state = 271
+				transfer_state = 335
+				GRF = {
+					all_owned_state = {
+						add_core_of = OGP
+					}
+				}
+				declare_war_on = {
+					target = GRF
+					type = annex_everything
+				}
+			}
 		}
 
 	}
