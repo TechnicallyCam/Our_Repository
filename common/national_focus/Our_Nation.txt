@@ -423,11 +423,11 @@ focus_tree = {
 		y = 1
 		completion_reward = {
 			set_variable = {
-				var = farmvar
+				var = farm_var
 				value = 0
 			}
 			set_variable = {
-				var = minevar
+				var = mine_var
 				value = 0
 			}
 		}
