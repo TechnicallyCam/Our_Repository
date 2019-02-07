@@ -177,3 +177,88 @@ pengele_decisions_category = {
 		}
 	}
 }
+Wings_dealers_decisions_category = {
+
+	dev_decision = {
+		icon = generic_civil_support
+		
+		allowed = {
+			original_tag = STL 
+		}
+		
+		available = {
+			check_variable = {farmvar > 0}
+		}
+		
+		cost = 0
+		
+		complete_effect = {
+			add_equipment_to_stockpile = {
+				type = light_tank_equipment
+				amount = 120
+			}
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = 300
+			}
+		}
+	}
+	farming_equipment_decision = {
+		icon = generic_civil_support
+		
+		allowed = {
+			original_tag = STL 
+		}
+		
+		available = {
+			has_equipment = {
+				infantry_equipment > 499
+			}
+		}
+		
+		cost = 0
+		
+		complete_effect = {
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = -500
+			}
+			add_to_variable = {
+				var = farm_var 
+				value = 1
+			}
+		}
+	}
+	heavy_mining_equipment_decision = {
+		icon = generic_civil_support
+		
+		allowed = {
+			original_tag = STL 
+		}
+		
+		available = {
+			has_equipment = {
+				infantry_equipment > 299
+				light_tank_equipment > 119
+			}
+		}
+		
+		cost = 0
+		
+		complete_effect = {
+			add_equipment_to_stockpile = {
+				type = light_tank_equipment
+				amount = -120
+			}
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = -300
+			}
+			add_to_variable = {
+				var = mine_var 
+				value = 1
+			}
+		}
+	}
+
+}
