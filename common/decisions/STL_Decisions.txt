@@ -187,7 +187,7 @@ Wings_dealers_decisions_category = {
 		}
 		
 		available = {
-			check_variable = {farmvar > 0}
+			check_variable = {farm_var > 0}
 		}
 		
 		cost = 0
@@ -203,6 +203,7 @@ Wings_dealers_decisions_category = {
 			}
 		}
 	}
+	
 	farming_equipment_decision = {
 		icon = generic_civil_support
 		
@@ -229,6 +230,7 @@ Wings_dealers_decisions_category = {
 			}
 		}
 	}
+	
 	heavy_mining_equipment_decision = {
 		icon = generic_civil_support
 		
