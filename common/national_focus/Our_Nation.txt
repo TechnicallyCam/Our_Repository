@@ -394,6 +394,9 @@ focus_tree = {
 		relative_position_id = Our_Home
 		x = 0
 		y = 1
+		completion_reward = {
+			add_ideas = STL_Our_Griffonian_holdings
+		}
 
 	}
 	focus = {
@@ -418,6 +421,16 @@ focus_tree = {
 		relative_position_id = Wings_Dealers
 		x = 0
 		y = 1
+		completion_reward = {
+			set_variable = {
+				var = farmvar
+				value = 0
+			}
+			set_variable = {
+				var = minevar
+				value = 0
+			}
+		}
 
 	}
 	focus = {
