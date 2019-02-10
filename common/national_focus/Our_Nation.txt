@@ -394,6 +394,9 @@ focus_tree = {
 		relative_position_id = Our_Home
 		x = 0
 		y = 1
+		completion_reward = {
+			add_ideas = STL_Our_Griffonian_holdings
+		}
 
 	}
 	focus = {
@@ -406,6 +409,16 @@ focus_tree = {
 		relative_position_id = Griffon_Buyout
 		x = 0
 		y = 1
+		completion_reward = {
+			set_variable = {
+				var = farm_var
+				value = 0
+			}
+			set_variable = {
+				var = mine_var
+				value = 0
+			}
+		}
 
 	}
 	focus = {
@@ -418,6 +431,37 @@ focus_tree = {
 		relative_position_id = Wings_Dealers
 		x = 0
 		y = 1
+		completion_reward = {
+			transfer_state = 336
+			transfer_state = 337
+			transfer_state = 58
+			if = {
+				limit = {
+					has_dlc = "Together for Victory"
+				}
+				set_autonomy = {
+					target = OGP
+					autonomous_state = integrated_puppet
+				}
+				else = {
+					puppet = OGP
+				}
+			}
+			OGP = {
+				transfer_state = 279
+				transfer_state = 271
+				transfer_state = 335
+				GRF = {
+					all_owned_state = {
+						add_core_of = OGP
+					}
+				}
+				declare_war_on = {
+					target = GRF
+					type = annex_everything
+				}
+			}
+		}
 
 	}
 	focus = {
@@ -1394,7 +1438,15 @@ focus_tree = {
 		cost = 0.00
 		x = 25
 		y = 0
-
+		completion_reward = {
+			custom_effect_tooltip = stl_unlock_naval_advisor
+			hidden_effect = {
+				set_country_flag = {
+					flag = STL_navy_advice
+					value = 1
+				}
+			}
+		}
 	}
 	
 	focus = {
@@ -1407,7 +1459,14 @@ focus_tree = {
 		relative_position_id = Our_Navy
 		x = 0
 		y = 1
-
+		completion_reward = {
+			add_tech_bonus = { 
+				bonus = 0.65
+				uses = 2
+				technology = early_destroyer
+				technology = early_light_cruiser
+			}
+		}
 	}
 	focus = {
 		id = How_Do_You_Sail_This_Thing
@@ -1419,7 +1478,9 @@ focus_tree = {
 		relative_position_id = Our_Fleet
 		x = -2
 		y = 1
-
+		completion_reward = {
+			add_ideas = STL_foreign_navy_advisors
+		}
 	}
 	focus = {
 		id = Repurposed_Boats
@@ -1431,6 +1492,12 @@ focus_tree = {
 		relative_position_id = Our_Fleet
 		x = 0
 		y = 1
+		completion_reward = {
+			add_timed_idea = {
+				idea = STL_arming_fishing_boats
+				days = 420
+			}
+		}
 
 	}
 	focus = {
@@ -1443,7 +1510,22 @@ focus_tree = {
 		relative_position_id = Our_Fleet
 		x = 2
 		y = 1
-
+		completion_reward = {
+			add_tech_bonus = { 
+				bonus = 0.35
+				uses = 5
+				technology = early_light_cruiser
+				technology = basic_light_cruiser
+				technology = early_destroyer
+				technology = basic_destroyer
+				technology = early_heavy_cruiser 
+				technology = basic_heavy_cruiser
+				technology = early_battleship
+				technology = basic_battleship
+				technology = early_carrier
+				technology = basic_carrier
+			}
+		}
 	}
 	focus = {
 		id = Making_Up_For_Lost_Time
@@ -1461,7 +1543,15 @@ focus_tree = {
 		relative_position_id = Repurposed_Boats
 		x = 0
 		y = 1
-
+		completion_reward = {
+			custom_effect_tooltip = stl_unlock_naval_advisor
+			hidden_effect = {
+				set_country_flag = {
+					flag = STL_navy_advice
+					value = 2
+				}
+			}
+		}
 	}
 	focus = {
 		id = Fleet_Strategy
@@ -1473,7 +1563,13 @@ focus_tree = {
 		relative_position_id = Making_Up_For_Lost_Time
 		x = -2
 		y = 1
-
+		completion_reward = {
+			add_tech_bonus = { 
+				bonus = 0.5
+				uses = 2
+				category = naval_doctrine
+			}
+		}
 	}
 	focus = {
 		id = Dockyards
@@ -1485,11 +1581,16 @@ focus_tree = {
 		relative_position_id = Making_Up_For_Lost_Time
 		x = 0
 		y = 1
-
+		completion_reward = {
+			add_timed_idea = {
+				idea = STL_building_dockyards
+				days = 180
+			}
+		}
 	}
 	focus = {
-		id = A_Proper_Fleet
-		icon = GFX_goal_generic_amphibious_assault
+		id = Our_capital_ship
+		icon = GFX_goal_battleship
 		cost = 0.00
 		prerequisite = {
 			focus = Making_Up_For_Lost_Time
@@ -1497,7 +1598,43 @@ focus_tree = {
 		relative_position_id = Making_Up_For_Lost_Time
 		x = 2
 		y = 1
-
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 0.5
+				uses = 1
+				ahead_reduction = 1
+				category = cv_tech
+				category = bb_tech
+			}
+		}
+	}
+	focus = {
+		id = Pride_of_the_navy
+		icon = GFX_goal_upgrade_reserves
+		cost = 0.00
+		prerequisite = {
+			focus = Our_capital_ship
+		}
+		prerequisite = {
+			focus = Dockyards
+		}
+		prerequisite = {
+			focus = Fleet_Strategy
+		}
+		available = {
+			has_navy_size = {
+				type = screen_ship
+				size > 19
+			}
+			has_tech = early_carrier
+			has_tech = early_battleship
+		}
+		relative_position_id = Making_Up_For_Lost_Time
+		x = 0
+		y = 2
+		completion_reward = {
+			country_event = stl_navy.1
+		}
 	}
 	
 	#################################################################
@@ -1807,6 +1944,5 @@ focus_tree = {
 		y = 1
 
 	}
-
 
 }
