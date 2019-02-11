@@ -263,6 +263,7 @@ Wings_dealers_decisions_category = {
 		}
 	}
 
+
 }
 navy_construction = {
 	construct_cl_fleet = {

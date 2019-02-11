@@ -358,6 +358,8 @@ ideas = {
 
 			}
 		}
+
+	} country = {
         STL_Our_Griffonian_holdings = {
 			allowed = {
 				always = yes
@@ -372,6 +374,7 @@ ideas = {
 				industrial_capacity_factory  = 0.10
 			}
 		}
+
 		STL_arming_fishing_boats = {
 			allowed = {
 				always = yes

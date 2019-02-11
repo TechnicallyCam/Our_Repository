@@ -18,6 +18,7 @@ Wings_dealers_decisions_category = {
 		has_completed_focus = Wings_Dealers
 	}
 }
+
 navy_construction = {
 	icon = generic_formable_nations
 
@@ -28,3 +29,5 @@ navy_construction = {
 		has_completed_focus = Our_Fleet
 	}
 }
+
+
