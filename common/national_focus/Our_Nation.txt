@@ -1644,10 +1644,12 @@ focus_tree = {
 	focus = {
 		id = Foreign_Advisors
 		icon = GFX_goal_foreign_diplomacy
-		cost = 0.00
+		cost = 5
 		x = 33
 		y = 0
-
+		completion_reward = {
+			army_experience = 15
+		}
 	}
 	
 	focus = {
@@ -1668,25 +1670,30 @@ focus_tree = {
 		y = 1
 
 		completion_reward = {
-		 add_tech_bonus = {bonus = 00.35 uses = 4 category = cat_superior_firepower}
-		 }
-
-
-
+			add_tech_bonus = {bonus = 00.35 uses = 4 category = cat_superior_firepower}
+			swap_ideas = {
+				remove_idea = STL_no_war_experience
+				add_idea = STL_no_war_experience2
+			}
+		}
 	}
 	focus = {
 		id = No_Kill_Like_Overkill
 		icon = GFX_goal_national_artillery
-		cost = 5.00
+		cost = 10
 		prerequisite = {
 			focus = In_Doubt_Shell_Them_Out
 		}
 		relative_position_id = In_Doubt_Shell_Them_Out
 		x = 0
 		y = 1
-		
-
-
+		completion_reward = {
+			add_tech_bonus = { 
+				bonus = 0.4
+				uses = 2
+				category = artillery
+			}
+		}
 	}
 	focus = {
 		id = Drifting_Around_Their_Defences
@@ -1706,21 +1713,31 @@ focus_tree = {
 		x = -1
 		y = 1
         completion_reward = {
-		   add_tech_bonus = {bonus = 00.35 uses = 4 category = cat_mobile_warfare}
-		   }
-
+			add_tech_bonus = {bonus = 00.35 uses = 4 category = cat_mobile_warfare}
+			swap_ideas = {
+				remove_idea = STL_no_war_experience
+				add_idea = STL_no_war_experience2
+			}
+		}	
 	}
 	focus = {
 		id = Deja_Vu_Strikes
 		icon = GFX_goal_generic_army_motorized
-		cost = 5.00
+		cost = 10
 		prerequisite = {
 			focus = Drifting_Around_Their_Defences
 		}
 		relative_position_id = Drifting_Around_Their_Defences
 		x = 0
 		y = 1
-
+		completion_reward = {
+			add_tech_bonus = {
+				ahead_reduction = 1
+				uses = 1
+				bonus = 0.5
+				category = motorized_equipment
+			}
+		}
 	}
 	focus = {
 		id = Tactical_Genius
@@ -1738,22 +1755,27 @@ focus_tree = {
 		relative_position_id = Foreign_Advisors
 		x = 1
 		y = 1
-         completion_reward = {
-		  add_tech_bonus = {bonus = 00.35 uses = 4 category = cat_grand_battle_plan}
-		  }
-
+		completion_reward = {
+			add_tech_bonus = {bonus = 00.35 uses = 4 category = cat_grand_battle_plan}
+			swap_ideas = {
+				remove_idea = STL_no_war_experience
+				add_idea = STL_no_war_experience2
+			}
+		}	
 	}
 	focus = {
 		id = Just_As_Planned
 		icon = GFX_goal_planning_bonus
-		cost = 0.00
+		cost = 10
 		prerequisite = {
 			focus = Tactical_Genius
 		}
 		relative_position_id = Tactical_Genius
 		x = 0
 		y = 1
-
+		completion_reward = {
+			add_ideas = STL_gbp_bonus
+		}
 	}
 	
 	focus = {
@@ -1772,20 +1794,51 @@ focus_tree = {
 		x = 3
 		y = 1
         completion_reward = {
-		 add_tech_bonus = {bonus = 00.35 category = cat_mass_assault uses= 4}
-		 }
+			add_tech_bonus = {bonus = 00.35 category = cat_mass_assault uses= 4}
+			swap_ideas = {
+				remove_idea = STL_no_war_experience
+				add_idea = STL_no_war_experience2
+			}
+		}
 	}
 	focus = {
 		id = A_Gun_For_Every_other_Stallion
 		icon = GFX_focus_generic_little_entente
-		cost = 50.00
+		cost = 10
 		prerequisite = {
 			focus = Hellmarch_Doctrine
 		}
 		relative_position_id = Hellmarch_Doctrine
 		x = 0
 		y = 1
-
+		completion_reward = {
+			add_ideas = STL_mad_bonus
+			add_tech_bonus = {
+				uses = 1
+				bonus = 0.5
+				category = infantry_weapons
+			}
+		}
+	}
+	focus = {
+		id = Our_first_war_lessons
+		icon = GFX_focus_generic_little_entente
+		cost = 10
+		available = {
+			has_country_flag = STL_our_first_war
+		}
+		prerequisite = {
+			focus = Just_As_Planned
+			focus = A_Gun_For_Every_other_Stallion
+			focus = Deja_Vu_Strikes
+			focus = No_Kill_Like_Overkill	
+		}
+		relative_position_id = Just_As_Planned
+		x = -1
+		y = 1
+		completion_reward = {
+			remove_ideas = STL_no_war_experience2
+		}
 	}
 	
 	##################################################################

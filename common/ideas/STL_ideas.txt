@@ -358,8 +358,6 @@ ideas = {
 
 			}
 		}
-
-	} country = {
         STL_Our_Griffonian_holdings = {
 			allowed = {
 				always = yes
@@ -374,7 +372,6 @@ ideas = {
 				industrial_capacity_factory  = 0.10
 			}
 		}
-
 		STL_arming_fishing_boats = {
 			allowed = {
 				always = yes
@@ -415,6 +412,63 @@ ideas = {
 			modifier = {
 				consumer_goods_factor = 0.05
 				production_speed_dockyard_factor = 0.35
+			}
+		}
+		STL_no_war_experience = {
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			picture = chi_incompetent_officers
+			removal_cost = -1
+			research_bonus = {
+				land_doctrine = -1.5
+			}
+		}
+		STL_no_war_experience2 = {
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			picture = chi_incompetent_officers
+			removal_cost = -1
+			research_bonus = {
+				land_doctrine = -0.75
+			}
+		}
+		STL_gbp_bonus = {
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			picture = chi_incompetent_officers
+			removal_cost = -1
+			modifier = {
+				planning_speed = 0.1
+				max_planning = 0.15
+				army_attack_factor = 0.03
+			}
+		}
+		STL_mad_bonus = {
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			picture = chi_incompetent_officers
+			removal_cost = -1
+			equipment_bonus = {
+				infantry_equipment = {
+					build_cost_ic = -0.15
+					instant = yes
+				}
 			}
 		}
 	}

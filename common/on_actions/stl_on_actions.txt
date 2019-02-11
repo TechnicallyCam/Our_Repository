@@ -1,0 +1,17 @@
+on_actions = {
+	on_declare_war = {
+		effect = {
+			if = {
+				limit = {
+					OR = {
+						FROM = { tag = STL }
+						ROOT = { tag = STL }
+					}
+				}
+				STL = { 
+					set_country_flag = STL_our_first_war
+				}
+			}
+		}
+	}
+}
