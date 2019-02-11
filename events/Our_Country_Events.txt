@@ -5,6 +5,7 @@
 add_namespace = Our_Country_Meeting
 add_namespace = Our_Country_Alicorn
 add_namespace = Our_Country_Pengle_Meeting
+add_namespace = stl_navy
 
 ####################################################
 #Choose between pengle and Verner
@@ -477,4 +478,369 @@ country_event = {
 			}
 		}
 	}
+}
+
+country_event = {
+	id = stl_navy.1
+	title = stl_navy.1.t
+	desc = stl_navy.1.d
+	
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		name = stl_navy.1.a #battleship
+		if = {
+			limit = {
+				has_tech = etat_1027_battleship
+			}
+			create_equipment_variant = { 
+				name = "Our Pride" 
+				type = battleship_7
+				upgrades = { 
+					ship_reliability_upgrade = 3
+					ship_engine_upgrade = 3
+					ship_armor_upgrade = 3
+					ship_gun_upgrade = 3
+				}
+			}
+			add_equipment_production = {
+				equipment = {
+					type = battleship_7
+					version_name = "Our Pride" 
+				}
+				requested_factories = 1
+				progress = 0.8
+				amount = 1
+			}
+		}
+		else_if = {
+			limit = {
+				has_tech = etat_modern_battleship
+			}
+			create_equipment_variant = { 
+				name = "Our Pride" 
+				type = battleship_6
+				upgrades = { 
+					ship_reliability_upgrade = 3
+					ship_engine_upgrade = 3
+					ship_armor_upgrade = 3
+					ship_gun_upgrade = 3
+				}
+			}
+			add_equipment_production = {
+				equipment = {
+					type = battleship_6
+					version_name = "Our Pride" 
+				}
+				
+				requested_factories = 1
+				progress = 0.8
+				amount = 1
+			}
+		}
+		else_if = {
+			limit = {
+				has_tech = etat_semi_modern_battleship
+			}
+			create_equipment_variant = { 
+				name = "Our Pride" 
+				type = battleship_5
+				upgrades = { 
+					ship_reliability_upgrade = 3
+					ship_engine_upgrade = 3
+					ship_armor_upgrade = 3
+					ship_gun_upgrade = 3
+				}
+			}
+			add_equipment_production = {
+				equipment = {
+					type = battleship_5
+					version_name = "Our Pride" 
+				}
+				
+				requested_factories = 1
+				progress = 0.8
+				amount = 1
+			}
+		}
+		else_if = {
+			limit = {
+				has_tech = advanced_battleship
+			}
+			create_equipment_variant = { 
+				name = "Our Pride" 
+				type = battleship_4
+				upgrades = { 
+					ship_reliability_upgrade = 3
+					ship_engine_upgrade = 3
+					ship_armor_upgrade = 3
+					ship_gun_upgrade = 3
+				}
+			}
+			add_equipment_production = {
+				equipment = {
+					type = battleship_4
+					version_name = "Our Pride" 
+				}
+				
+				requested_factories = 1
+				progress = 0.8
+				amount = 1
+			}
+		}
+		else_if = {
+			limit = {
+				has_tech = improved_battleship
+			}
+			create_equipment_variant = { 
+				name = "Our Pride" 
+				type = battleship_3
+				upgrades = { 
+					ship_reliability_upgrade = 3
+					ship_engine_upgrade = 3
+					ship_armor_upgrade = 3
+					ship_gun_upgrade = 3
+				}
+			}
+			add_equipment_production = {
+				equipment = {
+					type = battleship_3
+					version_name = "Our Pride" 
+				}
+				
+				requested_factories = 1
+				progress = 0.8
+				amount = 1
+			}
+		}
+		else_if = {
+			limit = {
+				has_tech = basic_battleship
+			}
+			create_equipment_variant = { 
+				name = "Our Pride" 
+				type = battleship_2
+				upgrades = { 
+					ship_reliability_upgrade = 3
+					ship_engine_upgrade = 3
+					ship_armor_upgrade = 3
+					ship_gun_upgrade = 3
+				}
+			}
+			add_equipment_production = {
+				equipment = {
+					type = battleship_2
+					version_name = "Our Pride" 
+				}
+				
+				requested_factories = 1
+				progress = 0.8
+				amount = 1
+			}
+		}
+		else_if = {
+			limit = {
+				has_tech = early_battleship
+			}
+			create_equipment_variant = { 
+				name = "Our Pride" 
+				type = battleship_1
+				upgrades = { 
+					ship_reliability_upgrade = 3
+					ship_engine_upgrade = 3
+					ship_armor_upgrade = 3
+					ship_gun_upgrade = 3
+				}
+			}
+			add_equipment_production = {
+				equipment = {
+					type = battleship_1
+					version_name = "Our Pride" 
+				}
+				
+				requested_factories = 1
+				progress = 0.8
+				amount = 1
+			}
+		}
+	}
+	
+	option = {
+		name = stl_navy.1.b #carrier
+		if = {
+			limit = {
+				has_tech = etat_1027_carrier
+			}
+			create_equipment_variant = { 
+				name = "Our Pride" 
+				type = carrier_7
+				upgrades = { 
+					ship_deckspace_upgrade = 3
+					carrier_armor_upgrade = 3
+					ship_engine_upgrade = 3
+					ship_reliability_upgrade = 3
+				}
+			}
+			add_equipment_production = {
+				equipment = {
+					type = carrier_7
+					version_name = "Our Pride" 
+				}
+				requested_factories = 1
+				progress = 0.8
+				amount = 1
+			}
+		}
+		else_if = {
+			limit = {
+				has_tech = etat_modern_carrier
+			}
+			create_equipment_variant = { 
+				name = "Our Pride" 
+				type = carrier_6
+				upgrades = { 
+					ship_deckspace_upgrade = 3
+					carrier_armor_upgrade = 3
+					ship_engine_upgrade = 3
+					ship_reliability_upgrade = 3
+				}
+			}
+			add_equipment_production = {
+				equipment = {
+					type = carrier_6
+					version_name = "Our Pride" 
+				}
+				
+				requested_factories = 1
+				progress = 0.8
+				amount = 1
+			}
+		}
+		else_if = {
+			limit = {
+				has_tech = etat_semi_modern_carrier
+			}
+			create_equipment_variant = { 
+				name = "Our Pride" 
+				type = carrier_5
+				upgrades = { 
+					ship_deckspace_upgrade = 3
+					carrier_armor_upgrade = 3
+					ship_engine_upgrade = 3
+					ship_reliability_upgrade = 3
+				}
+			}
+			add_equipment_production = {
+				equipment = {
+					type = carrier_5
+					version_name = "Our Pride" 
+				}
+				
+				requested_factories = 1
+				progress = 0.8
+				amount = 1
+			}
+		}
+		else_if = {
+			limit = {
+				has_tech = advanced_carrier
+			}
+			create_equipment_variant = { 
+				name = "Our Pride" 
+				type = carrier_4
+				upgrades = { 
+					ship_deckspace_upgrade = 3
+					carrier_armor_upgrade = 3
+					ship_engine_upgrade = 3
+					ship_reliability_upgrade = 3
+				}
+			}
+			add_equipment_production = {
+				equipment = {
+					type = carrier_4
+					version_name = "Our Pride" 
+				}
+				
+				requested_factories = 1
+				progress = 0.8
+				amount = 1
+			}
+		}
+		else_if = {
+			limit = {
+				has_tech = improved_carrier
+			}
+			create_equipment_variant = { 
+				name = "Our Pride" 
+				type = carrier_3
+				upgrades = { 
+					ship_deckspace_upgrade = 3
+					carrier_armor_upgrade = 3
+					ship_engine_upgrade = 3
+					ship_reliability_upgrade = 3
+				}
+			}
+			add_equipment_production = {
+				equipment = {
+					type = carrier_3
+					version_name = "Our Pride" 
+				}
+				
+				requested_factories = 1
+				progress = 0.8
+				amount = 1
+			}
+		}
+		else_if = {
+			limit = {
+				has_tech = basic_carrier
+			}
+			create_equipment_variant = { 
+				name = "Our Pride" 
+				type = carrier_2
+				upgrades = { 
+					ship_deckspace_upgrade = 3
+					carrier_armor_upgrade = 3
+					ship_engine_upgrade = 3
+					ship_reliability_upgrade = 3
+				}
+			}
+			add_equipment_production = {
+				equipment = {
+					type = carrier_2
+					version_name = "Our Pride" 
+				}
+				
+				requested_factories = 1
+				progress = 0.8
+				amount = 1
+			}
+		}
+		else_if = {
+			limit = {
+				has_tech = early_carrier
+			}
+			create_equipment_variant = { 
+				name = "Our Pride" 
+				type = carrier_1
+				upgrades = { 
+					ship_deckspace_upgrade = 3
+					carrier_armor_upgrade = 3
+					ship_engine_upgrade = 3
+					ship_reliability_upgrade = 3
+				}
+			}
+			add_equipment_production = {
+				equipment = {
+					type = carrier_1
+					version_name = "Our Pride" 
+				}
+				
+				requested_factories = 1
+				progress = 0.8
+				amount = 1
+			}
+		}
+	}			
 }

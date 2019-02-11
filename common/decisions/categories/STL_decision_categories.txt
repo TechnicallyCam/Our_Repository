@@ -18,3 +18,16 @@ Wings_dealers_decisions_category = {
 		has_completed_focus = Wings_Dealers
 	}
 }
+
+navy_construction = {
+	icon = generic_formable_nations
+
+	allowed = {
+		original_tag = STL
+	}
+	visible = {
+		has_completed_focus = Our_Fleet
+	}
+}
+
+

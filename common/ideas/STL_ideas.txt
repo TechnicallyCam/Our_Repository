@@ -1,5 +1,53 @@
 ideas = {
-	
+	navy_chief = {
+		STL_navy_chief_1 = {
+			allowed = {
+				original_tag = STL
+			}
+			available = {
+				has_country_flag = {
+					flag = STL_navy_advice
+					value = 1
+				}
+			}
+			traits = { navy_chief_decisive_battle_3 }
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+		STL_navy_chief_2 = {
+			allowed = {
+				original_tag = STL
+			}
+			available = {
+				has_country_flag = {
+					flag = STL_navy_advice
+					value = 2
+				}
+			}
+			traits = { navy_chief_commerce_raiding_2 }
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
+		STL_navy_chief_3 = {
+			allowed = {
+				original_tag = STL
+			}
+			available = {
+				has_country_flag = {
+					flag = STL_navy_advice
+					value = 2
+				}
+			}
+			traits = { navy_chief_old_guard }
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
 	country = {
         STL_chaos_of_the_new_order = {
 			allowed = {
@@ -15,7 +63,6 @@ ideas = {
 				industrial_capacity_factory	= -0.1
 			}
 		}
-	} country = {
 		STL_blessed_silence = {
 			allowed = {
 				always = yes
@@ -29,7 +76,6 @@ ideas = {
 				stability_weekly = 0.02
 			}
 		}
-	} country = {
 		STL_charitable_initiatives = {
 			allowed = {
 				always = yes
@@ -44,7 +90,6 @@ ideas = {
 				consumer_goods_factor = 0.05
 			}
 		}
-	} country = {
 		STL_order_of_the_acolytes = {
 			allowed = {
 				always = yes
@@ -58,7 +103,6 @@ ideas = {
 				stability_weekly = 0.01
 			}
 		}
-	} country = {
 		STL_acolyte_discipline = {
 			allowed = {
 				always = yes
@@ -73,7 +117,6 @@ ideas = {
 				land_reinforce_rate = 0.01
 			}
 		}
-	} country = {
 		STL_acolyte_fervour = {
 			allowed = {
 				always = yes
@@ -87,7 +130,6 @@ ideas = {
 				land_reinforce_rate = 0.01
 			}
 		}
-	} country = {
 		STL_nation_of_the_acolytes = {
 			allowed = {
 				always = yes
@@ -103,7 +145,6 @@ ideas = {
 				production_factory_start_efficiency_factor = 0.1
 			}
 		}
-	} country = {	
 		STL_Aces_Buff = {
 			allowed = {
 				always = yes
@@ -117,7 +158,6 @@ ideas = {
 				air_ace_generation_chance_factor = 0.10
 			}
 		}
-	} country = {
 		STL_Dusk_Dawn_Idea = {
 			allowed = {
 				always = yes
@@ -131,7 +171,6 @@ ideas = {
 				air_night_penalty = -0.1
 			}
 		}
-	} country = {
 		STL_Control_Skies_Idea = {
 			allowed = {
 				always = yes
@@ -146,7 +185,6 @@ ideas = {
 				air_air_superiority_defence_factor = 0.02
 			}
 		}
-	} country = {
 		STL_Air_Agility_Idea = {
 			allowed = {
 				always = yes
@@ -162,7 +200,6 @@ ideas = {
 				air_close_air_support_agility_factor = 0.02
 			}
 		}
-	} country = {
 		STL_Future_Aviation_Idea = {
 			allowed = {
 				always = yes
@@ -177,7 +214,6 @@ ideas = {
 				air_equipment = 0.05
 			}
 		}
-	} country = {
         STL_mass_construction_projects = {
 			allowed = {
 				always = yes
@@ -191,7 +227,6 @@ ideas = {
 				production_speed_buildings_factor = 0.10
 			}
 		}
-	} country = {
         STL_production_priorities = {
 			allowed = {
 				always = yes
@@ -206,7 +241,6 @@ ideas = {
 				consumer_goods_factor = -0.05
 			}
 		}
-	} country = {
         STL_motivated_workers = {
 			allowed = {
 				always = yes
@@ -221,7 +255,6 @@ ideas = {
 				consumer_goods_factor = 0.1
 			}
 		}
-	} country = {
         STL_organised_workers = {
 			allowed = {
 				always = yes
@@ -237,7 +270,6 @@ ideas = {
 				production_factory_start_efficiency_factor = 0.05
 			}
 		}
-	} country = {
         STL_indusdrial_research_funding = {
 			allowed = {
 				always = yes
@@ -251,7 +283,6 @@ ideas = {
 				research_time_factor = -0.05
 			}
 		}
-	} country = {
         STL_indusdrial_planning = {
 			allowed = {
 				always = yes
@@ -266,7 +297,6 @@ ideas = {
 				global_building_slots_factor = 0.25
 			}
 		}
-	} country = {
         STL_defensive_indusdrial_planning = {
 			allowed = {
 				always = yes
@@ -282,7 +312,6 @@ ideas = {
 				industry_air_damage_factor = -0.1
 			}
 		}
-	} country = {
         STL_national_moderation = {
 			allowed = {
 				always = yes
@@ -296,7 +325,6 @@ ideas = {
 				consumer_goods_factor = -0.05
 			}
 		}
-	} country = {
         STL_national_mobalization = {
 			allowed = {
 				always = yes
@@ -314,7 +342,6 @@ ideas = {
 				industrial_capacity_dockyard = 0.02
 			}
 		}
-	} country = {
         STL_indusdrial_might = {
 			allowed = {
 				always = yes
@@ -331,6 +358,7 @@ ideas = {
 
 			}
 		}
+
 	} country = {
         STL_Our_Griffonian_holdings = {
 			allowed = {
@@ -344,6 +372,49 @@ ideas = {
 			modifier = {
 				consumer_goods_factor = 0.6
 				industrial_capacity_factory  = 0.10
+			}
+		}
+
+		STL_arming_fishing_boats = {
+			allowed = {
+				always = yes
+			}
+			available = {
+				is_subject = no
+			}
+			picture = chi_war_of_resistance3
+			removal_cost = -1
+			equipment_bonus = {
+				screen_ship = {
+					build_cost_ic = -0.2
+				}
+			}
+		}
+		STL_foreign_navy_advisors = {
+			allowed = {
+				always = yes
+			}
+			available = {
+				is_subject = no
+			}
+			picture = chi_war_of_resistance3
+			removal_cost = -1
+			research_bonus = {
+				naval_doctrine = 0.07
+			}
+		}
+		STL_building_dockyards = {
+			allowed = {
+				always = yes
+			}
+			available = {
+				is_subject = no
+			}
+			picture = chi_war_of_resistance3
+			removal_cost = -1
+			modifier = {
+				consumer_goods_factor = 0.05
+				production_speed_dockyard_factor = 0.35
 			}
 		}
 	}

@@ -263,4 +263,85 @@ Wings_dealers_decisions_category = {
 		}
 	}
 
+
+}
+navy_construction = {
+	construct_cl_fleet = {
+		allowed = {
+			original_tag = STL 
+		}
+		available = {
+			num_of_civilian_factories_available_for_projects > 2
+			OR = {
+				owns_state = 166
+				owns_state = 332
+			}
+			has_tech = early_light_cruiser
+			NOT = {
+				has_completed_focus = A_Proper_Fleet
+			}
+		}
+		days_re_enable = 15
+		days_remove = 0
+		
+		cost = 0
+		
+		modifier = {
+			civilian_factory_use = 3
+		}
+		remove_effect = {
+			if = {
+				limit = {
+					owns_state = 166
+				}
+				load_oob = "STL_cl_fleet_166"
+			}else = {
+				if = {
+					limit = {
+						owns_state = 332
+					}
+					load_oob = "STL_cl_fleet_332"
+				}
+			}
+		}
+	}
+	construct_destroyer_fleet = {
+		allowed = {
+			original_tag = STL 
+		}
+		available = {
+			num_of_civilian_factories_available_for_projects > 1
+			OR = {
+				owns_state = 166
+				owns_state = 332
+			}
+			has_tech = early_destroyer
+			NOT = {
+				has_completed_focus = A_Proper_Fleet
+			}
+		}
+		days_re_enable = 15
+		days_remove = 0
+		
+		cost = 0
+		
+		modifier = {
+			civilian_factory_use = 2
+		}
+		remove_effect = {
+			if = {
+				limit = {
+					owns_state = 166
+				}
+				load_oob = "STL_destroyer_fleet_166"
+			}else = {
+				if = {
+					limit = {
+						owns_state = 332
+					}
+					load_oob = "STL_destroyer_fleet_332"
+				}
+			}
+		}
+	}
 }

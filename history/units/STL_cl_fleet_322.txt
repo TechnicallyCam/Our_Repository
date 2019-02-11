@@ -1,0 +1,12 @@
+﻿units = {
+	navy = {					
+		name = "Common Effort"				
+		base = 119
+		location = 119
+		ship = { name = "1" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = STL creator = STL } } }
+		ship = { name = "2" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = STL creator = STL } } }	
+		ship = { name = "3" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = STL creator = STL } } }		
+		ship = { name = "4" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = STL creator = STL } } }		
+		ship = { name = "5" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = STL creator = STL } } }					
+	}									
+}
