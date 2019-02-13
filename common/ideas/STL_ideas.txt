@@ -452,7 +452,6 @@ ideas = {
 			modifier = {
 				planning_speed = 0.1
 				max_planning = 0.15
-				army_attack_factor = 0.03
 			}
 		}
 		STL_mad_bonus = {
