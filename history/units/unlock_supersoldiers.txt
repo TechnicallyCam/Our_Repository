@@ -1,0 +1,12 @@
+﻿division_template = {
+	name = "Supersoldaten"			#Infantry Division -
+
+	regiments = {
+		pengle_supersoldier = { x = 0 y = 0 }
+		pengle_supersoldier = { x = 0 y = 1 }
+		pengle_supersoldier = { x = 0 y = 2 }
+		pengle_supersoldier = { x = 1 y = 0 }
+		pengle_supersoldier = { x = 1 y = 1 }
+		pengle_supersoldier = { x = 1 y = 2 }
+	}
+}
