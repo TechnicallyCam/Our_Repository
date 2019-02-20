@@ -36,7 +36,7 @@ sub_units = {
 		suppression = 2
 		weight = 0.5
 		supply_consumption = 0.06
-		breakthrough = 0.3
+		breakthrough = 0.5
 
 		need = {
 			magical_equipment = 150
