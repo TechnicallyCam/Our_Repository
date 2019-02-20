@@ -68,6 +68,28 @@ decrease_population_pengle = {
 	#add_manpower = pop_to_kill
 }
 
+level_up_supersoldiers = {
+	if = {
+		limit = {
+			has_tech = supersoldier_tech_2
+		}
+		set_technology = {
+			supersoldier_tech_3 = 1
+		}
+		set_country_flag = STL_Supersoldiers_Level_Max
+		else = {
+			if = {
+				limit = {
+					has_tech = supersoldier_tech
+				}
+			}
+			set_technology = {
+				supersoldier_tech_2 = 1
+			}
+		}
+	}
+}
+
 roll_alicorn_chance = {
 
 	if = {

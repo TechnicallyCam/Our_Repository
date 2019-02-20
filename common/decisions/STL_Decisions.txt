@@ -95,6 +95,10 @@ pengele_decisions_category = {
 				value = 3
 				compare = greater_than
 			}
+			has_country_flag = STL_Has_Supersoldiers_Unlocked
+			NOT = {
+				has_country_flag = STL_Supersoldiers_Level_Max
+			}
 		}
 		available = {
 
@@ -103,6 +107,7 @@ pengele_decisions_category = {
 		cost = 0
 		
 		complete_effect = {
+			level_up_supersoldiers = yes
 			pengle_decrease_sacrifices_10k = yes
 		}
 	}
@@ -122,12 +127,15 @@ pengele_decisions_category = {
 			}
 		}
 		available = {
-
+			NOT = {
+				has_idea = STL_factory_pengle_bonus
+			}
 		}
 		
 		cost = 0
 		
 		complete_effect = {
+			add_timed_idea = {idea = STL_factory_pengle_bonus days = 120}
 			pengle_decrease_sacrifices_10k = yes
 		}
 	}
@@ -147,13 +155,16 @@ pengele_decisions_category = {
 			}
 		}
 		available = {
-
+			NOT = {
+				has_idea = STL_Magic_Weapon_Production_Buff
+			}
 		}
 		
 		cost = 0
 		
 		complete_effect = {
 			pengle_decrease_sacrifices_10k = yes
+			add_timed_idea = {idea = STL_Magic_Weapon_Production_Buff days = 120}
 		}
 	}
 	

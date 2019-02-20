@@ -67,7 +67,7 @@ focus_tree = {
 	focus = {
 		id = The_Future_of_Warfare
 		icon = GFX_focus_generic_strike_at_democracy1
-		cost = 0.00
+		cost = 05.00
 		prerequisite = {
 			focus = Our_Home
 		}
@@ -82,7 +82,7 @@ focus_tree = {
 	focus = {
 		id = A_new_Field
 		icon = GFX_goal_cry_com_magic
-		cost = 0.00
+		cost = 10.00
 		available = {
 			has_country_flag = STL_Went_With_Pengle_Flag
 		}
@@ -96,27 +96,40 @@ focus_tree = {
 		x = -2
 		y = 1
 		completion_reward = {
-		
+			add_tech_bonus = {
+				bonus = 0.40
+				uses = 1
+				category = magical_tech
+			}
 		}
 	}
 	
 	focus = {
 		id = A_Rabbithole
 		icon = GFX_goal_magic_cry
-		cost = 0.00
+		cost = 10.00
 		prerequisite = {
 			focus = A_new_Field
 		}
 		relative_position_id = A_new_Field
 		x = 0
 		y = 1
-
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 0.40
+				uses = 1
+				category = magical_tech
+			}
+		}
 	}
 
 	focus = {
 		id = The_Supersoldaten
 		icon = GFX_goal_eqs_magic_horn
-		cost = 0.00
+		cost = 10.00
+		available = {
+			has_tech = magical_weapons
+		}
 		prerequisite = {
 			focus = A_Rabbithole
 		}
@@ -124,8 +137,12 @@ focus_tree = {
 		x = 0
 		y = 1
 		completion_reward = {
-			set_technology = {
-				supersoldier_tech = 1
+			custom_effect_tooltip = STL_Unlock_Supersoldiers
+			hidden_effect = {
+				set_technology = {
+					supersoldier_tech = 1
+				}
+				set_country_flag = STL_Has_Supersoldiers_Unlocked
 			}
 		}
 	}
@@ -133,7 +150,7 @@ focus_tree = {
 	focus = {
 		id = The_Gift_That_Keeps_Giving
 		icon = GFX_goal_magical_nukes
-		cost = 0.00
+		cost = 10.00
 		prerequisite = {
 			focus = The_Supersoldaten
 		}
