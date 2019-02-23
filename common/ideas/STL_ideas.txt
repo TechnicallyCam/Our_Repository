@@ -499,5 +499,112 @@ ideas = {
 				production_factory_efficiency_gain_factor = 0.15
 			}
 		}
+		
+		STL_war_on_disease = {
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			picture = GFX_idea_generic_goods_red_bonus
+			removal_cost = -1
+			modifier = {
+				monthly_population = 0.10
+			}
+		}
+		
+		STL_frontline_against_disease = {
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			picture = GFX_idea_generic_goods_red_bonus
+			removal_cost = -1
+			modifier = {
+				monthly_population = 0.10
+			}
+			research_bonus = {
+				hospital_tech = 0.10
+			}
+		}
+		
+		STL_Stable_Families = {
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			picture = GFX_idea_generic_goods_red_bonus
+			removal_cost = -1
+			modifier = {
+				stability_weekly = 0.01
+			}
+		}
+		
+		STL_Mandatory_Marriage = {
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			picture = GFX_idea_generic_goods_red_bonus
+			removal_cost = -1
+			modifier = {
+				monthly_population = 0.20
+				industrial_capacity_factory  = 0.02
+			}
+		}
+		
+		STL_Immigration_Idea = {
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			picture = GFX_idea_generic_goods_red_bonus
+			removal_cost = -1
+			modifier = {
+				monthly_population = -0.05
+			}
+		}
+		
+		STL_Large_Infrastructue_Projects = {
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			picture = GFX_idea_generic_goods_red_bonus
+			removal_cost = -1
+			modifier = {
+				 production_speed_buildings_factor = 0.20
+			}
+		}
+		
+		STL_Food_Production_Idea = {
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			picture = GFX_idea_generic_goods_red_bonus
+			removal_cost = -1
+			modifier = {
+				monthly_population = 0.40
+				industrial_capacity_factory  = 0.02
+				conscription = 0.02
+			}
+			research_bonus = {
+				hospital_tech = 0.10
+			}
+		}
 	}
 }

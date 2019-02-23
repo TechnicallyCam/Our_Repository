@@ -1874,90 +1874,108 @@ focus_tree = {
 	focus = {
 		id = Our_Population_Issue
 		icon = GFX_focus_HOL_deal_with_right
-		cost = 0.00
+		cost = 10.00
 		x = 8
 		y = 10
-
+		completion_reward = {
+			
+		}
 	}
 	
 	focus = {
 		id = Proper_Medicine
 		icon = GFX_goal_cry_medicine
-		cost = 0.00
+		cost = 10.00
 		prerequisite = {
 			focus = Our_Population_Issue
 		}
 		relative_position_id = Our_Population_Issue
 		x = 2
 		y = 1
-
+		completion_reward = {
+			add_ideas = STL_war_on_disease
+		}
 	}
 	focus = {
 		id = Medicine_In_The_Field
 		icon = GFX_focus_healthcare_program
-		cost = 0.00
+		cost = 10.00
 		prerequisite = {
 			focus = Proper_Medicine
 		}
 		relative_position_id = Proper_Medicine
 		x = 0
 		y = 1
-
+		completion_reward = {
+			swap_ideas = {remove_idea = STL_war_on_disease add_idea = STL_frontline_against_disease }
+		}
 	}
 	
 	focus = {
 		id = Immigration
 		icon = GFX_goal_tripartite_pact_pony
-		cost = 0.00
+		cost = 10.00
 		prerequisite = {
 			focus = Our_Population_Issue
 		}
 		relative_position_id = Our_Population_Issue
 		x = -2
 		y = 1
-
+		completion_reward = {
+			add_ideas = STL_Immigration_Idea
+			add_manpower = 5000
+		}
 	}
 	focus = {
 		id = The_Marvel_Of_The_World
 		icon = GFX_goal_rct_expand_the_city
-		cost = 0.00
+		cost = 10.00
 		prerequisite = {
 			focus = Immigration
 		}
 		relative_position_id = Immigration
 		x = 0
 		y = 1
-
+		completion_reward = {
+			remove_ideas = STL_Immigration_Idea
+			add_manpower = 10000
+			add_timed_idea = {idea = STL_Large_Infrastructue_Projects days = 60}
+		}
 	}
 	focus = {
 		id = Our_Traditional_Family
 		icon = GFX_focus_generic_japanese_imperial_glory
-		cost = 0.00
+		cost = 10.00
 		prerequisite = {
 			focus = Our_Population_Issue
 		}
 		relative_position_id = Our_Population_Issue
 		x = 0
 		y = 1
-
+		completion_reward = {
+			add_stability = -0.10
+			add_timed_idea = { idea = STL_Stable_Families days = 120}
+		}
 	}
 	focus = {
 		id = Every_Stallion_A_Mare
 		icon = GFX_goal_crystal_heart
-		cost = 0.00
+		cost = 10.00
 		prerequisite = {
 			focus = Our_Traditional_Family
 		}
 		relative_position_id = Our_Traditional_Family
 		x = 0
 		y = 1
-
+		completion_reward = {
+			add_ideas = STL_Mandatory_Marriage
+		}
 	}
 	
 	focus = {
 		id = Food_Production
 		icon = GFX_goal_agrarian_reform
-		cost = 0.00
+		cost = 10.00
 		prerequisite = {
 			focus = The_Marvel_Of_The_World
 		}
@@ -1970,7 +1988,11 @@ focus_tree = {
 		relative_position_id = Every_Stallion_A_Mare
 		x = 0
 		y = 1
-
+		completion_reward = {
+			add_ideas = STL_Food_Production_Idea
+			remove_ideas = STL_Mandatory_Marriage
+			remove_ideas = STL_frontline_against_disease
+		}
 	}
 	
 	#################################################################
