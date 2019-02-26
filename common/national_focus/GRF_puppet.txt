@@ -1,0 +1,883 @@
+focus_tree = {
+	id = GRF_Our_Town_Puppet_Focus_Tree
+	
+	country = {
+		factor = 0
+		
+		modifier = {
+			add = 40
+			tag = GRF
+		}
+	}
+	default = no
+	continuous_focus_position = { x = 290 y = 2500 }
+	
+	shared_focus = GRF_Puppet
+	shared_focus = GRF_Loyalist_Victory
+	shared_focus = GRF_Nationalist_Victory
+	shared_focus = GRF_Industrial_Research_Centre
+}
+
+#################################################################################
+#Initial puppet focus tree
+
+shared_focus = {
+	id = GRF_Puppet
+	icon = GFX_focus_HOL_deal_with_right
+	cost = 10.00
+	x = 0
+	y = 0
+	completion_reward = {
+		
+	}
+}
+
+shared_focus = {
+	id = GRF_Form_Government
+	icon = GFX_focus_HOL_deal_with_right
+	cost = 10.00
+	x = 1
+	y = 1
+	relative_position_id = GRF_Puppet
+	prerequisite = {
+		focus = GRF_Puppet
+	}
+	completion_reward = {
+		
+	}
+}
+
+shared_focus = {
+	id = GRF_Rally_Soldiers
+	icon = GFX_focus_HOL_deal_with_right
+	cost = 10.00
+	x = -1
+	y = 1
+	relative_position_id = GRF_Puppet
+	prerequisite = {
+		focus = GRF_Puppet
+	}
+	completion_reward = {
+		
+	}
+}
+
+shared_focus = {
+	id = GRF_Falcons_Back
+	icon = GFX_focus_HOL_deal_with_right
+	cost = 10.00
+	x = 1
+	y = 1
+	relative_position_id = GRF_Rally_Soldiers
+	prerequisite = {
+		focus = GRF_Rally_Soldiers
+	}
+	prerequisite = {
+		focus = GRF_Form_Government
+	}
+	completion_reward = {
+		
+	}
+}
+
+shared_focus = {
+	id = GRF_Redtail_Returns
+	icon = GFX_focus_HOL_deal_with_right
+	cost = 10.00
+	x = 0
+	y = 1
+	relative_position_id = GRF_Falcons_Back
+	prerequisite = {
+		focus = GRF_Falcons_Back
+	}
+	completion_reward = {
+		
+	}
+}
+
+shared_focus = {
+	id = GRF_Redtail_Returns
+	icon = GFX_focus_HOL_deal_with_right
+	cost = 10.00
+	x = 0
+	y = 1
+	relative_position_id = GRF_Falcons_Back
+	prerequisite = {
+		focus = GRF_Falcons_Back
+	}
+	completion_reward = {
+		
+	}
+}
+
+###############################################################################
+#Handle it ourselves
+
+shared_focus = {
+	id = GRF_Handle_It
+	icon = GFX_focus_HOL_deal_with_right
+	cost = 10.00
+	x = 2
+	y = 1
+	relative_position_id = GRF_Redtail_Returns
+	mutually_exclusive = {
+		focus = GRF_Ask_For_Help
+	}
+	prerequisite = {
+		focus = GRF_Redtail_Returns
+	}
+	completion_reward = {
+		
+	}
+}
+
+shared_focus = {
+	id = GRF_Reform_Police_Force
+	icon = GFX_focus_HOL_deal_with_right
+	cost = 10.00
+	x = 0
+	y = 2
+	relative_position_id = GRF_Handle_It
+	prerequisite = {
+		focus = GRF_Handle_It
+		focus = GRF_On_Our_Own_Then
+	}
+	completion_reward = {
+		
+	}
+}
+
+shared_focus = {
+	id = GRF_Griffon_Officers
+	icon = GFX_focus_HOL_deal_with_right
+	cost = 10.00
+	x = 0
+	y = 1
+	relative_position_id = GRF_Reform_Police_Force
+	prerequisite = {
+		focus = GRF_Reform_Police_Force
+	}
+	completion_reward = {
+		
+	}
+}
+
+shared_focus = {
+	id = GRF_Regulatory_Incident
+	icon = GFX_focus_HOL_deal_with_right
+	cost = 10.00
+	x = 0
+	y = 1
+	relative_position_id = GRF_Griffon_Officers
+	prerequisite = {
+		focus = GRF_Griffon_Officers
+	}
+	completion_reward = {
+		
+	}
+}
+
+#####################################################################
+#Ask for help
+
+shared_focus = {
+	id = GRF_Ask_For_Help
+	icon = GFX_focus_HOL_deal_with_right
+	cost = 10.00
+	x = -2
+	y = 1
+	relative_position_id = GRF_Redtail_Returns
+	mutually_exclusive = {
+		focus = GRF_Handle_It
+	}
+	prerequisite = {
+		focus = GRF_Redtail_Returns
+	}
+	completion_reward = {
+		
+	}
+}
+
+
+shared_focus = {
+	id = GRF_On_Our_Own_Then
+	icon = GFX_focus_HOL_deal_with_right
+	cost = 10.00
+	x = 0
+	y = 1
+	relative_position_id = GRF_Ask_For_Help
+	available = {
+		has_country_flag = GRF_Rejected_Our_Town_Aid_Flag
+	}
+	prerequisite = {
+		focus = GRF_Ask_For_Help
+	}
+	completion_reward = {
+		
+	}
+}
+
+shared_focus = {
+	id = GRF_Military_Advisors
+	icon = GFX_focus_HOL_deal_with_right
+	cost = 10.00
+	x = -2
+	y = 1
+	relative_position_id = GRF_Ask_For_Help
+	available = {
+		has_country_flag = GRF_Accepted_Our_Town_Aid_Flag
+	}
+	prerequisite = {
+		focus = GRF_Ask_For_Help
+	}
+	completion_reward = {
+		
+	}
+}
+
+shared_focus = {
+	id = GRF_New_Police_Force
+	icon = GFX_focus_HOL_deal_with_right
+	cost = 10.00
+	x = 0
+	y = 1
+	relative_position_id = GRF_Military_Advisors
+
+	prerequisite = {
+		focus = GRF_Military_Advisors
+	}
+	completion_reward = {
+		
+	}
+}
+
+shared_focus = {
+	id = GRF_Armoured_Divisions
+	icon = GFX_focus_HOL_deal_with_right
+	cost = 10.00
+	x = -1
+	y = 1
+	relative_position_id = GRF_New_Police_Force
+
+	prerequisite = {
+		focus = GRF_New_Police_Force
+	}
+	completion_reward = {
+		
+	}
+}
+
+shared_focus = {
+	id = GRF_Riot_Control
+	icon = GFX_focus_HOL_deal_with_right
+	cost = 10.00
+	x = 0
+	y = 1
+	relative_position_id = GRF_Armoured_Divisions
+
+	prerequisite = {
+		focus = GRF_Armoured_Divisions
+	}
+	completion_reward = {
+		
+	}
+}
+
+shared_focus = {
+	id = GRF_Pony_Officers
+	icon = GFX_focus_HOL_deal_with_right
+	cost = 10.00
+	x = 1
+	y = 1
+	relative_position_id = GRF_New_Police_Force
+
+	prerequisite = {
+		focus = GRF_New_Police_Force
+	}
+	completion_reward = {
+		
+	}
+}
+
+shared_focus = {
+	id = GRF_Overseas_Service
+	icon = GFX_focus_HOL_deal_with_right
+	cost = 10.00
+	x = 0
+	y = 1
+	relative_position_id = GRF_Pony_Officers
+
+	prerequisite = {
+		focus = GRF_Pony_Officers
+	}
+	completion_reward = {
+		
+	}
+}
+
+shared_focus = {
+	id = GRF_National_Guard
+	icon = GFX_focus_HOL_deal_with_right
+	cost = 10.00
+	x = 1
+	y = 1
+	relative_position_id = GRF_Riot_Control
+
+	prerequisite = {
+		focus = GRF_Overseas_Service
+	}
+	prerequisite = {
+		focus = GRF_Riot_Control
+	}
+	completion_reward = {
+		
+	}
+}
+
+#################################################################################
+#The decision
+
+shared_focus = {
+	id = GRF_Remain_Loyal
+	icon = GFX_focus_HOL_deal_with_right
+	cost = 10.00
+	x = -3
+	y = 2
+	relative_position_id = GRF_Regulatory_Incident
+	
+	mutually_exclusive = {
+		focus = GRF_Support_Nationalists
+	}
+	prerequisite = {
+		focus = GRF_National_Guard
+		focus = GRF_Regulatory_Incident
+	}
+	completion_reward = {
+		
+	}
+}
+
+shared_focus = {
+	id = GRF_Support_Nationalists
+	icon = GFX_focus_HOL_deal_with_right
+	cost = 10.00
+	x = 0
+	y = 2
+	relative_position_id = GRF_Regulatory_Incident
+
+	
+	mutually_exclusive = {
+		focus = GRF_Remain_Loyal
+	}
+	prerequisite = {
+		focus = GRF_Regulatory_Incident
+	}
+	completion_reward = {
+		
+	}
+}
+
+#################################################################################
+#Nationalist win
+
+shared_focus = {
+	id = GRF_Nationalist_Victory
+	icon = GFX_focus_HOL_deal_with_right
+	cost = 10.00
+	x = 20
+	y = 0
+
+	completion_reward = {
+		
+	}
+}
+
+shared_focus = {
+	id = GRF_Fort_Up
+	icon = GFX_focus_HOL_deal_with_right
+	cost = 10.00
+	x = 0
+	y = 1
+	relative_position_id = GRF_Nationalist_Victory
+
+	
+	prerequisite = {
+		focus = GRF_Nationalist_Victory
+	}
+	completion_reward = {
+		
+	}
+}
+
+shared_focus = {
+	id = GRF_Nationalist_Spirit
+	icon = GFX_focus_HOL_deal_with_right
+	cost = 10.00
+	x = 0
+	y = 1
+	relative_position_id = GRF_Fort_Up
+
+	
+	prerequisite = {
+		focus = GRF_Fort_Up
+	}
+	completion_reward = {
+		
+	}
+}
+
+shared_focus = {
+	id = GRF_Populaton_Insentives_nationalists
+	icon = GFX_focus_HOL_deal_with_right
+	cost = 10.00
+	x = -1
+	y = 1
+	relative_position_id = GRF_Nationalist_Spirit
+
+	
+	prerequisite = {
+		focus = GRF_Nationalist_Spirit
+	}
+	completion_reward = {
+		
+	}
+}
+
+shared_focus = {
+	id = GRF_Populaton_Insentives_nationalists_2
+	icon = GFX_focus_HOL_deal_with_right
+	cost = 10.00
+	x = 0
+	y = 1
+	relative_position_id = GRF_Populaton_Insentives_nationalists
+
+	
+	prerequisite = {
+		focus = GRF_Populaton_Insentives_nationalists
+	}
+	completion_reward = {
+		
+	}
+}
+
+shared_focus = {
+	id = GRF_Tech_Upgrade_nationalists
+	icon = GFX_focus_HOL_deal_with_right
+	cost = 10.00
+	x = 1
+	y = 1
+	relative_position_id = GRF_Nationalist_Spirit
+
+	
+	prerequisite = {
+		focus = GRF_Nationalist_Spirit
+	}
+	completion_reward = {
+		
+	}
+}
+
+shared_focus = {
+	id = GRF_Tech_Upgrade_nationalists_2
+	icon = GFX_focus_HOL_deal_with_right
+	cost = 10.00
+	x = 0
+	y = 1
+	relative_position_id = GRF_Tech_Upgrade_nationalists
+
+	
+	prerequisite = {
+		focus = GRF_Tech_Upgrade_nationalists
+	}
+	completion_reward = {
+		
+	}
+}
+
+shared_focus = {
+	id = GRF_Revenge_On_Our_Town
+	icon = GFX_focus_HOL_deal_with_right
+	cost = 10.00
+	x = -1
+	y = 1
+	relative_position_id = GRF_Tech_Upgrade_nationalists_2
+
+	
+	prerequisite = {
+		focus = GRF_Tech_Upgrade_nationalists_2
+	}
+	prerequisite = {
+		focus = GRF_Populaton_Insentives_nationalists_2
+	}
+	completion_reward = {
+		
+	}
+}
+
+#################################################################################
+#Loyalist win
+
+shared_focus = {
+	id = GRF_Loyalist_Victory
+	icon = GFX_focus_HOL_deal_with_right
+	cost = 10.00
+	x = 10
+	y = 0
+
+	completion_reward = {
+		
+	}
+}
+
+shared_focus = {
+	id = GRF_Population_Increase
+	icon = GFX_focus_HOL_deal_with_right
+	cost = 10.00
+	x = 0
+	y = 1
+	relative_position_id = GRF_Loyalist_Victory
+
+	
+	prerequisite = {
+		focus = GRF_Loyalist_Victory
+	}
+	completion_reward = {
+		
+	}
+}
+
+shared_focus = {
+	id = GRF_Factory_Regulations
+	icon = GFX_focus_HOL_deal_with_right
+	cost = 10.00
+	x = 0
+	y = 1
+	relative_position_id = GRF_Population_Increase
+
+	
+	prerequisite = {
+		focus = GRF_Population_Increase
+	}
+	completion_reward = {
+		
+	}
+}
+
+shared_focus = {
+	id = GRF_Populaton_Insentives
+	icon = GFX_focus_HOL_deal_with_right
+	cost = 10.00
+	x = -1
+	y = 1
+	relative_position_id = GRF_Factory_Regulations
+
+	
+	prerequisite = {
+		focus = GRF_Factory_Regulations
+	}
+	completion_reward = {
+		
+	}
+}
+
+shared_focus = {
+	id = GRF_Populaton_Insentives_2
+	icon = GFX_focus_HOL_deal_with_right
+	cost = 10.00
+	x = 0
+	y = 1
+	relative_position_id = GRF_Populaton_Insentives
+
+	
+	prerequisite = {
+		focus = GRF_Populaton_Insentives
+	}
+	completion_reward = {
+		
+	}
+}
+
+shared_focus = {
+	id = GRF_Tech_Upgrade
+	icon = GFX_focus_HOL_deal_with_right
+	cost = 10.00
+	x = 1
+	y = 1
+	relative_position_id = GRF_Factory_Regulations
+
+	
+	prerequisite = {
+		focus = GRF_Factory_Regulations
+	}
+	completion_reward = {
+		
+	}
+}
+
+shared_focus = {
+	id = GRF_Tech_Upgrade_2
+	icon = GFX_focus_HOL_deal_with_right
+	cost = 10.00
+	x = 0
+	y = 1
+	relative_position_id = GRF_Tech_Upgrade
+
+	
+	prerequisite = {
+		focus = GRF_Tech_Upgrade
+	}
+	completion_reward = {
+		
+	}
+}
+
+shared_focus = {
+	id = GRF_The_New_State
+	icon = GFX_focus_HOL_deal_with_right
+	cost = 10.00
+	x = -1
+	y = 1
+	relative_position_id = GRF_Tech_Upgrade_2
+
+	
+	prerequisite = {
+		focus = GRF_Tech_Upgrade_2
+	}
+	prerequisite = {
+		focus = GRF_Populaton_Insentives_2
+	}
+	completion_reward = {
+		
+	}
+}
+
+######################################################################
+#Industrial tree
+
+shared_focus = {
+	id = GRF_Industrial_Research_Centre
+	icon = GFX_focus_HOL_deal_with_right
+	cost = 10.00
+	x = 25
+	y = 0
+
+	
+	completion_reward = {
+		
+	}
+}
+
+shared_focus = {
+	id = GRF_New_Country_Roads
+	icon = GFX_focus_HOL_deal_with_right
+	cost = 10.00
+	x = -2
+	y = 1
+	relative_position_id = GRF_Industrial_Research_Centre
+
+	
+	prerequisite = {
+		focus = GRF_Industrial_Research_Centre
+	}
+	completion_reward = {
+		
+	}
+}
+
+shared_focus = {
+	id = GRF_Take_Me_Home
+	icon = GFX_focus_HOL_deal_with_right
+	cost = 10.00
+	x = 0
+	y = 1
+	relative_position_id = GRF_Industrial_Research_Centre
+
+	
+	prerequisite = {
+		focus = GRF_Industrial_Research_Centre
+	}
+	completion_reward = {
+		
+	}
+}
+
+shared_focus = {
+	id = GRF_But_Not_To_Fallout_76
+	icon = GFX_focus_HOL_deal_with_right
+	cost = 10.00
+	x = 0
+	y = 1
+	relative_position_id = GRF_New_Country_Roads
+
+	
+	prerequisite = {
+		focus = GRF_New_Country_Roads
+	}
+	completion_reward = {
+		
+	}
+}
+
+shared_focus = {
+	id = GRF_Because_Its_A_Bugfest
+	icon = GFX_focus_HOL_deal_with_right
+	cost = 10.00
+	x = 0
+	y = 1
+	relative_position_id = GRF_Take_Me_Home
+
+	
+	prerequisite = {
+		focus = GRF_Take_Me_Home
+	}
+	completion_reward = {
+		
+	}
+}
+
+shared_focus = {
+	id = GRF_Oh_Yeah_Industrial_Tree
+	icon = GFX_focus_HOL_deal_with_right
+	cost = 10.00
+	x = -1
+	y = 1
+	relative_position_id = GRF_Because_Its_A_Bugfest
+
+	
+	prerequisite = {
+		focus = GRF_Because_Its_A_Bugfest
+	}
+	prerequisite = {
+		focus = GRF_But_Not_To_Fallout_76
+	}
+	completion_reward = {
+		
+	}
+}
+
+shared_focus = {
+	id = GRF_Smack_Some_Hammers
+	icon = GFX_focus_HOL_deal_with_right
+	cost = 10.00
+	x = 0
+	y = 1
+	relative_position_id = GRF_Oh_Yeah_Industrial_Tree
+
+	
+	prerequisite = {
+		focus = GRF_Oh_Yeah_Industrial_Tree
+	}
+	completion_reward = {
+		
+	}
+}
+
+shared_focus = {
+	id = GRF_Better_Industry
+	icon = GFX_focus_HOL_deal_with_right
+	cost = 10.00
+	x = 0
+	y = 1
+	relative_position_id = GRF_Smack_Some_Hammers
+
+	
+	prerequisite = {
+		focus = GRF_Smack_Some_Hammers
+	}
+	completion_reward = {
+		
+	}
+}
+
+###############################################
+#Factories Branch
+
+shared_focus = {
+	id = GRF_Lousy_Pay_And_Constant_Danger
+	icon = GFX_focus_HOL_deal_with_right
+	cost = 10.00
+	x = 3
+	y = 1
+	relative_position_id = GRF_Industrial_Research_Centre
+
+	
+	prerequisite = {
+		focus = GRF_Industrial_Research_Centre
+	}
+	completion_reward = {
+		
+	}
+}
+
+shared_focus = {
+	id = GRF_I_Wish_Id_Been_A_Farmer_Like_My_Father_Wanted_Me_To
+	icon = GFX_focus_HOL_deal_with_right
+	cost = 10.00
+	x = 0
+	y = 1
+	relative_position_id = GRF_Lousy_Pay_And_Constant_Danger
+
+	
+	prerequisite = {
+		focus = GRF_Lousy_Pay_And_Constant_Danger
+	}
+	completion_reward = {
+		
+	}
+}
+
+shared_focus = {
+	id = GRF_Grab_Your_Sword_And_Fight_The_Horde
+	icon = GFX_focus_HOL_deal_with_right
+	cost = 10.00
+	x = 0
+	y = 1
+	relative_position_id = GRF_I_Wish_Id_Been_A_Farmer_Like_My_Father_Wanted_Me_To
+
+	
+	prerequisite = {
+		focus = GRF_I_Wish_Id_Been_A_Farmer_Like_My_Father_Wanted_Me_To
+	}
+	completion_reward = {
+		
+	}
+}
+
+shared_focus = {
+	id = GRF_I_Hate_Boats
+	icon = GFX_focus_HOL_deal_with_right
+	cost = 10.00
+	x = 0
+	y = 1
+	relative_position_id = GRF_Grab_Your_Sword_And_Fight_The_Horde
+
+	
+	prerequisite = {
+		focus = GRF_Grab_Your_Sword_And_Fight_The_Horde
+	}
+	completion_reward = {
+		
+	}
+}
+
+############################################################################
+#End
+
+shared_focus = {
+	id = GRF_Finally_A_Buff
+	icon = GFX_focus_HOL_deal_with_right
+	cost = 10.00
+	x = -2
+	y = 2
+	relative_position_id = GRF_I_Hate_Boats
+
+	prerequisite = {
+		focus = GRF_I_Hate_Boats
+	}
+	prerequisite = {
+		focus = GRF_Better_Industry
+	}
+	completion_reward = {
+		
+	}
+}
