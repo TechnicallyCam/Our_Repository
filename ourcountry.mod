@@ -8,4 +8,4 @@ tags={
 	"Gameplay"
 }
 picture="Our_Country.png"
-supported_version="1.5.*"
+supported_version="1.6.*"

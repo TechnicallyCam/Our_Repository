@@ -81,22 +81,7 @@ shared_focus = {
 }
 
 shared_focus = {
-	id = GRF_Redtail_Returns
-	icon = GFX_focus_HOL_deal_with_right
-	cost = 10.00
-	x = 0
-	y = 1
-	relative_position_id = GRF_Falcons_Back
-	prerequisite = {
-		focus = GRF_Falcons_Back
-	}
-	completion_reward = {
-		
-	}
-}
-
-shared_focus = {
-	id = GRF_Redtail_Returns
+	id = GRF_Redtails_Big_Comeback_Show
 	icon = GFX_focus_HOL_deal_with_right
 	cost = 10.00
 	x = 0
@@ -119,12 +104,12 @@ shared_focus = {
 	cost = 10.00
 	x = 2
 	y = 1
-	relative_position_id = GRF_Redtail_Returns
+	relative_position_id = GRF_Redtails_Big_Comeback_Show
 	mutually_exclusive = {
 		focus = GRF_Ask_For_Help
 	}
 	prerequisite = {
-		focus = GRF_Redtail_Returns
+		focus = GRF_Redtails_Big_Comeback_Show
 	}
 	completion_reward = {
 		
@@ -186,12 +171,12 @@ shared_focus = {
 	cost = 10.00
 	x = -2
 	y = 1
-	relative_position_id = GRF_Redtail_Returns
+	relative_position_id = GRF_Redtails_Big_Comeback_Show
 	mutually_exclusive = {
 		focus = GRF_Handle_It
 	}
 	prerequisite = {
-		focus = GRF_Redtail_Returns
+		focus = GRF_Redtails_Big_Comeback_Show
 	}
 	completion_reward = {
 		

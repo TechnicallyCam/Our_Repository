@@ -280,7 +280,7 @@ ideas = {
 			picture = chi_war_of_resistance3
 			removal_cost = -1
 			modifier = {
-				research_time_factor = -0.05
+				research_speed_factor = 0.05
 			}
 		}
         STL_indusdrial_planning = {
@@ -293,7 +293,7 @@ ideas = {
 			picture = chi_war_of_resistance3
 			removal_cost = -1
 			modifier = {
-				research_time_factor = -0.05
+				research_speed_factor = 0.05
 				global_building_slots_factor = 0.25
 			}
 		}
@@ -307,7 +307,7 @@ ideas = {
 			picture = chi_war_of_resistance3
 			removal_cost = -1
 			modifier = {
-				research_time_factor = -0.05
+				research_speed_factor = 0.05
 				global_building_slots_factor = 0.25
 				industry_air_damage_factor = -0.1
 			}
@@ -353,7 +353,7 @@ ideas = {
 			removal_cost = -1
 			modifier = {
 				global_building_slots_factor = 0.25
-				research_time_factor = -0.05
+				research_speed_factor = 0.05
 				production_factory_efficiency_gain_factor  = 0.05
 
 			}
