@@ -1,0 +1,36 @@
+##########################################################################
+#GRF Puppet events file
+##########################################################################
+
+add_namespace = GRF_Our_Country_Puppet
+
+####################################################
+#Choose between pengle and Verner
+####################################################
+
+country_event = {
+	id = GRF_Our_Country_Puppet.1
+	title = GRF_Our_Country_Puppet.1.t
+	desc = GRF_Our_Country_Puppet.1.d
+	
+	picture = GFX_event_griffon_mountain
+	fire_only_once = yes
+	is_triggered_only = no
+	
+	trigger = {
+		original_tag = GRF
+		is_puppet_of = STL	
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	option = {
+		name = GRF_Our_Country_Puppet.1.a
+		add_ideas = GRF_Population_Problem_Idea
+		add_ideas = GRF_Government_Problem_Idea
+		add_ideas = GRF_Industrial_Problem_Idea
+		set_country_flag = GRF_Start_Tree_Flag
+	}
+}

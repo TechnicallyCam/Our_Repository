@@ -1,0 +1,43 @@
+ideas = {
+
+	country = {
+        GRF_Population_Problem_Idea = {
+			allowed = {
+				always = yes
+			}
+
+			picture = chi_war_of_resistance3
+			removal_cost = -1
+			modifier = {
+				MONTHLY_POPULATION = -0.40
+				conscription = -0.1
+			}
+		}
+		
+		GRF_Government_Problem_Idea = {
+			allowed = {
+				always = yes
+			}
+
+			picture = chi_war_of_resistance3
+			removal_cost = -1
+			modifier = {
+				stability_factor = -0.50
+				war_support_factor = -0.50
+			}
+		}
+		
+		GRF_Industrial_Problem_Idea = {
+			allowed = {
+				always = yes
+			}
+
+			picture = chi_war_of_resistance3
+			removal_cost = -1
+			modifier = {
+				production_factory_max_efficiency_factor = -0.5
+				production_speed_buildings_factor = -0.5
+			}
+		}
+	}
+}
