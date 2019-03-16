@@ -303,17 +303,38 @@ navy_construction = {
 		remove_effect = {
 			if = {
 				limit = {
-					owns_state = 166
+					has_dlc = "Man the Guns"
 				}
-				load_oob = "STL_cl_fleet_166"
-			}else = {
 				if = {
 					limit = {
-						owns_state = 332
+						owns_state = 166
 					}
-					load_oob = "STL_cl_fleet_332"
+					load_oob = "STL_cl_fleet_166_mtg"
+				}else = {
+					if = {
+						limit = {
+							owns_state = 332
+						}
+						load_oob = "STL_cl_fleet_332_mtg"
+					}
+				}
+				else = {
+					if = {
+					limit = {
+						owns_state = 166
+					}
+					load_oob = "STL_cl_fleet_166"
+					}else = {
+						if = {
+							limit = {
+								owns_state = 332
+							}
+							load_oob = "STL_cl_fleet_332"
+						}
+					}
 				}
 			}
+			
 		}
 	}
 	construct_destroyer_fleet = {
@@ -342,17 +363,38 @@ navy_construction = {
 		remove_effect = {
 			if = {
 				limit = {
-					owns_state = 166
+					has_dlc = "Man the Guns"
 				}
-				load_oob = "STL_destroyer_fleet_166"
-			}else = {
 				if = {
 					limit = {
-						owns_state = 332
+						owns_state = 166
 					}
-					load_oob = "STL_destroyer_fleet_332"
+					load_oob = "STL_destroyer_fleet_166_mtg"
+				}else = {
+					if = {
+						limit = {
+							owns_state = 332
+						}
+						load_oob = "STL_destroyer_fleet_332_mtg"
+					}
+				}
+				else = {
+					if = {
+					limit = {
+						owns_state = 166
+					}
+					load_oob = "STL_destroyer_fleet_166"
+					}else = {
+						if = {
+							limit = {
+								owns_state = 332
+							}
+							load_oob = "STL_destroyer_fleet_332"
+						}
+					}
 				}
 			}
+			
 		}
 	}
 }

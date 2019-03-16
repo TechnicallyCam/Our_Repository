@@ -161,7 +161,12 @@ focus_tree = {
 			set_country_flag = STL_Pengle_Decisions_Flag
 			custom_effect_tooltip = STL_Pengle_Decisions_Unlocked
 		}
-
+		completion_reward = {
+			create_wargoal = {
+				type = annex_everything
+				target = NTR
+			}
+		}
 	}
 	
 	focus = {
@@ -575,7 +580,6 @@ focus_tree = {
 		relative_position_id = Our_Lands
 		x = -1
 		y = 1
-
 	}
 	focus = {
 		id = Spreading_Our_Truth
@@ -587,7 +591,6 @@ focus_tree = {
 		relative_position_id = Red_Liberation
 		x = 0
 		y = 1
-
 	}
 	###########################################################################
 	#Changeling section
@@ -606,7 +609,9 @@ focus_tree = {
 		relative_position_id = Smash_Them_Like_Porcelain
 		x = 1
 		y = 1
-
+		completion_reward = {
+			
+		}
 	}
 	
 	focus = {
@@ -619,7 +624,12 @@ focus_tree = {
 		relative_position_id = Our_West
 		x = 0
 		y = 1
-
+		completion_reward = {
+			create_wargoal = {
+				type = annex_everything
+				target = CHN
+			}
+		}
 	}
 	
 	###################################################
@@ -639,7 +649,7 @@ focus_tree = {
 		relative_position_id = Smash_Them_Like_Porcelain
 		x = -1
 		y = 1
-
+		
 	}
 	focus = {
 		id = Steal_From_Equestria
@@ -664,7 +674,12 @@ focus_tree = {
 		relative_position_id = Steal_From_Equestria
 		x = 0
 		y = 1
-
+		completion_reward = {
+			create_wargoal = {
+				type = annex_everything
+				target = EQS
+			}
+		}
 	}
 	
 	###########################################################
@@ -683,7 +698,7 @@ focus_tree = {
 		relative_position_id = Spreading_Our_Truth
 		x = -1
 		y = 1
-
+		
 	}
 	focus = {
 		id = Gather_The_Reaches
@@ -705,10 +720,20 @@ focus_tree = {
 		prerequisite = {
 			focus = Gather_The_Reaches
 		}
+		bypass = {
+			NOT = {
+				country_exists = GFF
+			}
+		}
 		relative_position_id = Gather_The_Reaches
 		x = 0
 		y = 1
-
+		completion_reward = {
+			create_wargoal = {
+				type = annex_everything
+				target = GFF
+			}
+		}
 	}
 	focus = {
 		id = The_Bears
@@ -720,7 +745,12 @@ focus_tree = {
 		relative_position_id = The_Frontier
 		x = 0
 		y = 1
-
+		completion_reward = {
+			create_wargoal = {
+				type = annex_everything
+				target = PLB
+			}
+		}
 	}
 	focus = {
 		id = The_Yaks
@@ -732,7 +762,16 @@ focus_tree = {
 		relative_position_id = Gather_The_Reaches
 		x = -2
 		y = 1
-
+		completion_reward = {
+			create_wargoal = {
+				type = annex_everything
+				target = YAK
+			}
+			create_wargoal = {
+				type = annex_everything
+				target = JAK
+			}
+		}
 	}
 	focus = {
 		id = The_Penguins
@@ -744,7 +783,12 @@ focus_tree = {
 		relative_position_id = Gather_The_Reaches
 		x = -4
 		y = 1
-
+		completion_reward = {
+			create_wargoal = {
+				type = annex_everything
+				target = PNG
+			}
+		}
 	}
 	focus = {
 		id = Hollow_The_Mountains
@@ -753,10 +797,39 @@ focus_tree = {
 		prerequisite = {
 			focus = The_Yaks
 		}
+		available = {
+			STL = {
+				AND = {
+					owns_state = 102
+					owns_state = 268
+				}
+			}
+		}
 		relative_position_id = The_Yaks
 		x = 0
 		y = 1
-
+		completion_reward = {
+			add_resource = {
+				type = steel
+				amount = 22
+				state = 102
+			}	
+			add_resource = {
+				type = chromium
+				amount = 18
+				state = 102
+			}	
+			add_resource = {
+				type = tungsten
+				amount = 6
+				state = 268
+			}	
+			add_resource = {
+				type = aluminium
+				amount = 12
+				state = 268
+			}	
+		}
 	}
 	focus = {
 		id = New_Dockyards
@@ -765,10 +838,22 @@ focus_tree = {
 		prerequisite = {
 			focus = The_Penguins
 		}
+		available = {
+			owns_state = 325
+		}
 		relative_position_id = The_Penguins
 		x = 0
 		y = 1
-
+		completion_reward = {
+			325 = {
+				add_extra_state_shared_building_slots = 4
+				add_building_construction = {
+					type = dockyard
+					level = 4
+					instant_build = yes
+				}
+			}
+		}
 	}
 	
 	##############################################################################
@@ -1147,22 +1232,68 @@ focus_tree = {
 		prerequisite = {
 			focus = Our_Industry
 		}
+		mutually_exclusive = {
+			focus = Our_railways
+		}
 		relative_position_id = Our_Industry
-		x = 5
+		x = 4
 		y = 1
-
+		completion_reward = {
+			57 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+	}
+	focus = {
+		id = Our_railways
+		icon = GFX_goal_cry_railway
+		cost = 0.00
+		prerequisite = {
+			focus = Our_Industry
+		}
+		mutually_exclusive = {
+			focus = Our_Roads
+		}
+		relative_position_id = Our_Industry
+		x = 6
+		y = 1
+		completion_reward = {
+			57 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			add_tech_bonus = {
+				bonus = 0.75
+				uses = 1
+				category = industry
+			}
+		}
 	}
 	focus = {
 		id = Our_Resources
-		icon = GFX_goal_generic_trade
+		icon = GFX_goal_generic_construction2
 		cost = 0.00
 		prerequisite = {
 			focus = Our_Roads
+			focus = Our_railways
 		}
 		relative_position_id = Our_Roads
-		x = 0
+		x = 1
 		y = 1
-
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 0.75
+				uses = 2
+				category = excavation_tech
+			}
+		}
 	}
 	focus = {
 		id = Our_Synthetics
@@ -1174,7 +1305,13 @@ focus_tree = {
 		relative_position_id = Our_Resources
 		x = 0
 		y = 1
-
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 1
+				uses = 1
+				category = synth_resources
+			}
+		}
 	}
 	focus = {
 		id = Excavating_The_Mountains
@@ -1183,10 +1320,47 @@ focus_tree = {
 		prerequisite = {
 			focus = Our_Synthetics
 		}
+		mutually_exclusive = {
+			focus = grind_mountains_for_concrete
+		}
 		relative_position_id = Our_Synthetics
-		x = 0
+		x = -1
 		y = 1
-
+		completion_reward = {
+			add_resource = {
+				type = steel
+				amount = 12
+				state = 57
+			}
+		}
+	}
+	focus = {
+		id = grind_mountains_for_concrete
+		icon = GFX_goal_continuous_non_factory_construct
+		cost = 0.00
+		prerequisite = {
+			focus = Our_Synthetics
+		}
+		mutually_exclusive = {
+			focus = Excavating_The_Mountains
+		}
+		relative_position_id = Our_Synthetics
+		x = 1
+		y = 1	
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 1
+				uses = 2
+				category = construction_tech
+			}
+			57 = {
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
 	}
 	focus = {
 		id = Under_The_City
@@ -1194,11 +1368,23 @@ focus_tree = {
 		cost = 0.00
 		prerequisite = {
 			focus = Excavating_The_Mountains
+			focus = grind_mountains_for_concrete
 		}
 		relative_position_id = Excavating_The_Mountains
-		x = 0
+		x = 1
 		y = 1
-
+		completion_reward = {
+			add_resource = {
+				type = aluminium
+				amount = 7
+				state = 57
+			}
+			add_resource = {
+				type = tungsten
+				amount = 4
+				state = 57
+			}
+		}
 	}
 	focus = {
 		id = A_New_Discovery
@@ -1207,10 +1393,19 @@ focus_tree = {
 		prerequisite = {
 			focus = Under_The_City
 		}
+		mutually_exclusive = {
+			focus = prize_greater_than_gold
+		}
 		relative_position_id = Under_The_City
-		x = 0
+		x = -1
 		y = 1
-
+		completion_reward = {
+			add_resource = {
+				type = crystals
+				amount = 4
+				state = 57
+			}
+		}
 	}
 	focus = {
 		id = Synthetic_Steel
@@ -1222,7 +1417,52 @@ focus_tree = {
 		relative_position_id = A_New_Discovery
 		x = 0
 		y = 1
-
+		completion_reward = {
+			add_resource = {
+				type = steel
+				amount = 14
+				state = 57
+			}
+		}
+	}
+	focus = {
+		id = prize_greater_than_gold
+		icon = GFX_focus_indy_excavations
+		cost = 0.00
+		prerequisite = {
+			focus = Under_The_City
+		}
+		mutually_exclusive = {
+			focus = A_New_Discovery
+		}
+		relative_position_id = Under_The_City
+		x = 1
+		y = 1
+		completion_reward = {
+			add_resource = {
+				type = crystals
+				amount = 16
+				state = 57
+			}
+		}
+	}
+	focus = {
+		id = deep_mining
+		icon = GFX_focus_generic_rubber
+		cost = 0.00
+		prerequisite = {
+			focus = prize_greater_than_gold
+		}
+		relative_position_id = prize_greater_than_gold
+		x = 0
+		y = 1
+		completion_reward = {
+			add_resource = {
+				type = rubber
+				amount = 7
+				state = 57
+			}
+		}
 	}
 	
 	###############################################################################
@@ -1482,10 +1722,10 @@ focus_tree = {
 		y = 1
 		completion_reward = {
 			add_tech_bonus = { 
-				bonus = 0.65
+				bonus = 1.2
 				uses = 2
-				technology = early_destroyer
-				technology = early_light_cruiser
+				category = dd_tech
+				category = cl_tech
 			}
 		}
 	}
@@ -1533,18 +1773,11 @@ focus_tree = {
 		y = 1
 		completion_reward = {
 			add_tech_bonus = { 
-				bonus = 0.35
+				bonus = 0.7
 				uses = 5
-				technology = early_light_cruiser
-				technology = basic_light_cruiser
-				technology = early_destroyer
-				technology = basic_destroyer
-				technology = early_heavy_cruiser 
-				technology = basic_heavy_cruiser
-				technology = early_battleship
-				technology = basic_battleship
-				technology = early_carrier
-				technology = basic_carrier
+				category = cl_tech
+				category = ca_tech
+				category = dd_tech
 			}
 		}
 	}
@@ -1647,8 +1880,23 @@ focus_tree = {
 				type = screen_ship
 				size > 19
 			}
-			has_tech = early_carrier
-			has_tech = early_battleship
+			if = {
+				limit = {
+					has_dlc = "Man the Guns"
+				}
+				OR= {
+					has_tech = early_ship_hull_carrier
+					has_tech = early_ship_hull_heavy
+				}
+				else = {
+					OR= {
+						has_tech = early_carrier
+						has_tech = early_battleship
+					}
+				}
+			}
+			
+			
 		}
 		relative_position_id = Making_Up_For_Lost_Time
 		x = 0
