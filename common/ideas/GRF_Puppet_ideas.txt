@@ -27,6 +27,57 @@ ideas = {
 			}
 		}
 		
+		GRF_Government_Problem_Idea_2 = {
+			allowed = {
+				always = yes
+			}
+
+			picture = chi_war_of_resistance3
+			removal_cost = -1
+			modifier = {
+				stability_factor = -0.30
+				war_support_factor = -0.50
+			}
+		}
+		
+		GRF_Government_Problem_Idea_3 = {
+			allowed = {
+				always = yes
+			}
+
+			picture = chi_war_of_resistance3
+			removal_cost = -1
+			modifier = {
+				stability_factor = -0.20
+				war_support_factor = -0.30
+			}
+		}
+		
+		GRF_Government_Problem_Idea_4 = {
+			allowed = {
+				always = yes
+			}
+
+			picture = chi_war_of_resistance3
+			removal_cost = -1
+			modifier = {
+				stability_factor = -0.20
+			}
+		}
+		
+		GRF_Police_State_Idea = {
+			allowed = {
+				always = yes
+			}
+
+			picture = chi_war_of_resistance3
+			removal_cost = -1
+			modifier = {
+				enemy_partisan_effect = -0.1
+				experience_gain_army = 0.02
+			}
+		}
+		
 		GRF_Industrial_Problem_Idea = {
 			allowed = {
 				always = yes

@@ -27,8 +27,11 @@ shared_focus = {
 	cost = 10.00
 	x = 0
 	y = 0
+	available = {
+		has_country_flag = GRF_Start_Tree_Flag
+	}
 	completion_reward = {
-		
+		add_political_power = -100
 	}
 }
 
@@ -43,7 +46,10 @@ shared_focus = {
 		focus = GRF_Puppet
 	}
 	completion_reward = {
-		
+		swap_ideas = {
+			add_idea = GRF_Government_Problem_Idea_2
+			remove_idea GRF_Government_Problem_Idea
+		}
 	}
 }
 
@@ -58,7 +64,7 @@ shared_focus = {
 		focus = GRF_Puppet
 	}
 	completion_reward = {
-		
+		add_manpower = 20000
 	}
 }
 
@@ -76,7 +82,11 @@ shared_focus = {
 		focus = GRF_Form_Government
 	}
 	completion_reward = {
-		
+		country_event = GRF_Our_Country_Puppet.2
+		add_political_power = -50
+		hidden_effect = {
+			country_event = GRF_Our_Country_Puppet.2
+		}
 	}
 }
 
@@ -91,7 +101,11 @@ shared_focus = {
 		focus = GRF_Falcons_Back
 	}
 	completion_reward = {
-		
+		country_event = GRF_Our_Country_Puppet.3
+		add_political_power = -50
+		hidden_effect = {
+			country_event = GRF_Our_Country_Puppet.3
+		}
 	}
 }
 
@@ -112,7 +126,15 @@ shared_focus = {
 		focus = GRF_Redtails_Big_Comeback_Show
 	}
 	completion_reward = {
-		
+		country_event = GRF_Our_Country_Puppet.3
+		add_political_power = -50
+		hidden_effect = {
+			country_event = GRF_Our_Country_Puppet.3
+		}
+		swap_ideas = {
+			add_idea = GRF_Government_Problem_Idea_3
+			remove_idea = GRF_Government_Problem_Idea_2
+		}
 	}
 }
 
@@ -128,7 +150,7 @@ shared_focus = {
 		focus = GRF_On_Our_Own_Then
 	}
 	completion_reward = {
-		
+		add_ideas = GRF_Police_State_Idea
 	}
 }
 
@@ -144,6 +166,12 @@ shared_focus = {
 	}
 	completion_reward = {
 		
+		add_manpower = 40000
+	
+		swap_ideas = {
+			add_idea = GRF_Government_Problem_Idea_4
+			remove_idea = GRF_Government_Problem_Idea_3
+		}
 	}
 }
 
@@ -158,7 +186,7 @@ shared_focus = {
 		focus = GRF_Griffon_Officers
 	}
 	completion_reward = {
-		
+		country_event = GRF_Regulatory_Incident.1
 	}
 }
 
@@ -198,7 +226,10 @@ shared_focus = {
 		focus = GRF_Ask_For_Help
 	}
 	completion_reward = {
-		
+		swap_ideas = {
+			add_idea = GRF_Government_Problem_Idea_3
+			remove_idea = GRF_Government_Problem_Idea_2
+		}
 	}
 }
 
@@ -216,7 +247,10 @@ shared_focus = {
 		focus = GRF_Ask_For_Help
 	}
 	completion_reward = {
-		
+		swap_ideas = {
+			add_idea = GRF_Government_Problem_Idea_3
+			remove_idea = GRF_Government_Problem_Idea_2
+		}
 	}
 }
 
@@ -232,7 +266,11 @@ shared_focus = {
 		focus = GRF_Military_Advisors
 	}
 	completion_reward = {
-		
+		add_tech_bonus = {
+			bonus = 0.40
+			uses = 2
+			category = military_police_tech
+		}
 	}
 }
 
@@ -248,7 +286,11 @@ shared_focus = {
 		focus = GRF_New_Police_Force
 	}
 	completion_reward = {
-		
+		add_tech_bonus = {
+			bonus = 0.40
+			uses = 2
+			category = armor
+		}
 	}
 }
 
@@ -264,7 +306,10 @@ shared_focus = {
 		focus = GRF_Armoured_Divisions
 	}
 	completion_reward = {
-		
+		swap_ideas = {
+			add_idea = GRF_Government_Problem_Idea_4
+			remove_idea = GRF_Government_Problem_Idea_3
+		}
 	}
 }
 
@@ -280,7 +325,7 @@ shared_focus = {
 		focus = GRF_New_Police_Force
 	}
 	completion_reward = {
-		
+		add_manpower = 10000
 	}
 }
 
@@ -296,7 +341,7 @@ shared_focus = {
 		focus = GRF_Pony_Officers
 	}
 	completion_reward = {
-		
+		add_ideas = GRF_Overseas_Service_Idea
 	}
 }
 
@@ -315,7 +360,7 @@ shared_focus = {
 		focus = GRF_Riot_Control
 	}
 	completion_reward = {
-		
+		add_ideas = GRF_Police_State_Idea
 	}
 }
 
@@ -329,6 +374,32 @@ shared_focus = {
 	x = -3
 	y = 2
 	relative_position_id = GRF_Regulatory_Incident
+	
+	ai_will_do = {
+		factor = 1
+
+		modifier = {
+			factor = 40
+			OR = {
+				has_country_flag = STL_Made_Choice_2_correct_Flag
+				has_country_flag = STL_Made_Choice_1_correct_Flag
+			}
+		}
+		modifier = {
+			factor = 80
+			AND = {
+				has_country_flag = STL_Made_Choice_2_correct_Flag
+				has_country_flag = STL_Made_Choice_1_correct_Flag
+			}
+		}
+	}
+	
+	available = {
+		OR = {
+			has_completed_focus = GRF_National_Guard
+			has_country_flag = GRF_Regulatory_Incident_Over_Flag
+		}
+	}
 	
 	mutually_exclusive = {
 		focus = GRF_Support_Nationalists
@@ -349,7 +420,17 @@ shared_focus = {
 	x = 0
 	y = 2
 	relative_position_id = GRF_Regulatory_Incident
-
+	
+	ai_will_do = {
+		factor = 40
+	}
+	
+	available = {
+		OR = {
+			has_completed_focus = GRF_National_Guard
+			has_country_flag = GRF_Regulatory_Incident_Over_Flag
+		}
+	}
 	
 	mutually_exclusive = {
 		focus = GRF_Remain_Loyal
