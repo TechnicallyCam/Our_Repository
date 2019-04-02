@@ -454,7 +454,7 @@ shared_focus = {
 	y = 0
 
 	completion_reward = {
-		
+		remove_ideas = GRF_Government_Problem_Idea_4
 	}
 }
 
@@ -488,7 +488,13 @@ shared_focus = {
 		focus = GRF_Fort_Up
 	}
 	completion_reward = {
-		
+
+		add_manpower = 10000
+	
+		swap_ideas = {
+			add_idea = GRF_Population_Problem_Idea_2
+			remove_idea = GRF_Population_Problem_Idea
+		}
 	}
 }
 
@@ -505,7 +511,13 @@ shared_focus = {
 		focus = GRF_Nationalist_Spirit
 	}
 	completion_reward = {
-		
+	
+		add_manpower = 10000
+	
+		swap_ideas = {
+			add_idea = GRF_Population_Problem_Idea_3
+			remove_idea = GRF_Population_Problem_Idea_2
+		}
 	}
 }
 
@@ -522,7 +534,13 @@ shared_focus = {
 		focus = GRF_Populaton_Insentives_nationalists
 	}
 	completion_reward = {
-		
+	
+		add_manpower = 10000
+	
+		swap_ideas = {
+			add_idea = GRF_Population_Problem_Idea_4
+			remove_idea = GRF_Population_Problem_Idea_3
+		}
 	}
 }
 
@@ -568,7 +586,7 @@ shared_focus = {
 	y = 1
 	relative_position_id = GRF_Tech_Upgrade_nationalists_2
 
-	
+	will_lead_to_war_with = STL
 	prerequisite = {
 		focus = GRF_Tech_Upgrade_nationalists_2
 	}
@@ -576,6 +594,18 @@ shared_focus = {
 		focus = GRF_Populaton_Insentives_nationalists_2
 	}
 	completion_reward = {
+	
+		add_manpower = 10000
+	
+		swap_ideas = {
+			add_idea = GRF_Population_Problem_Idea_5_nationalists
+			remove_idea = GRF_Population_Problem_Idea_4
+		}
+		
+		create_wargoal = { 
+			type = annex_everything 
+			target = STL 
+		}
 		
 	}
 }
@@ -591,7 +621,7 @@ shared_focus = {
 	y = 0
 
 	completion_reward = {
-		
+		remove_ideas = GRF_Government_Problem_Idea_4
 	}
 }
 
@@ -608,7 +638,13 @@ shared_focus = {
 		focus = GRF_Loyalist_Victory
 	}
 	completion_reward = {
-		
+	
+		add_manpower = 25000
+	
+		swap_ideas = {
+			add_idea = GRF_Population_Problem_Idea_2
+			remove_idea = GRF_Population_Problem_Idea
+		}
 	}
 }
 
@@ -642,7 +678,13 @@ shared_focus = {
 		focus = GRF_Factory_Regulations
 	}
 	completion_reward = {
-		
+
+		add_manpower = 25000
+
+		swap_ideas = {
+			add_idea = GRF_Population_Problem_Idea_3
+			remove_idea = GRF_Population_Problem_Idea_2
+		}
 	}
 }
 
@@ -659,7 +701,13 @@ shared_focus = {
 		focus = GRF_Populaton_Insentives
 	}
 	completion_reward = {
-		
+	
+		add_manpower = 25000
+	
+		swap_ideas = {
+			add_idea = GRF_Population_Problem_Idea_4
+			remove_idea = GRF_Population_Problem_Idea_3
+		}
 	}
 }
 
@@ -713,7 +761,13 @@ shared_focus = {
 		focus = GRF_Populaton_Insentives_2
 	}
 	completion_reward = {
-		
+	
+		add_manpower = 25000
+	
+		swap_ideas = {
+			add_idea = GRF_Population_Problem_Idea_5_puppet
+			remove_idea = GRF_Population_Problem_Idea_4
+		}
 	}
 }
 
@@ -729,7 +783,11 @@ shared_focus = {
 
 	
 	completion_reward = {
-		
+		add_tech_bonus = {
+			bonus = 0.50
+			uses = 2
+			category = industry
+		}
 	}
 }
 
@@ -746,7 +804,10 @@ shared_focus = {
 		focus = GRF_Industrial_Research_Centre
 	}
 	completion_reward = {
-		
+		swap_ideas = {
+			add_idea = GRF_Industrial_Problem_Idea_2
+			remove_idea = GRF_Industrial_Problem_Idea
+		}
 	}
 }
 
@@ -763,7 +824,87 @@ shared_focus = {
 		focus = GRF_Industrial_Research_Centre
 	}
 	completion_reward = {
-		
+		288 = {
+			limit = {
+				free_building_slots = {
+					building = infrastructure
+					size > 0
+				}
+				OR = {
+					is_in_home_area = yes
+					NOT = {
+						owner = {
+							any_owned_state = {
+								free_building_slots = {
+									building = infrastructure
+									size > 0
+								}
+								is_in_home_area = yes
+							}
+						}
+					}
+				}
+			}
+			add_building_construction = {
+				type = infrastructure
+				level = 1
+				instant_build = yes
+			}
+		}
+		287 = {
+			limit = {
+				free_building_slots = {
+					building = infrastructure
+					size > 0
+				}
+				OR = {
+					is_in_home_area = yes
+					NOT = {
+						owner = {
+							any_owned_state = {
+								free_building_slots = {
+									building = infrastructure
+									size > 0
+								}
+								is_in_home_area = yes
+							}
+						}
+					}
+				}
+			}
+			add_building_construction = {
+				type = infrastructure
+				level = 1
+				instant_build = yes
+			}
+		}
+		244 = {
+			limit = {
+				free_building_slots = {
+					building = infrastructure
+					size > 0
+				}
+				OR = {
+					is_in_home_area = yes
+					NOT = {
+						owner = {
+							any_owned_state = {
+								free_building_slots = {
+									building = infrastructure
+									size > 0
+								}
+								is_in_home_area = yes
+							}
+						}
+					}
+				}
+			}
+			add_building_construction = {
+				type = infrastructure
+				level = 1
+				instant_build = yes
+			}
+		}
 	}
 }
 
@@ -780,7 +921,87 @@ shared_focus = {
 		focus = GRF_New_Country_Roads
 	}
 	completion_reward = {
-		
+		286 = {
+			limit = {
+				free_building_slots = {
+					building = infrastructure
+					size > 0
+				}
+				OR = {
+					is_in_home_area = yes
+					NOT = {
+						owner = {
+							any_owned_state = {
+								free_building_slots = {
+									building = infrastructure
+									size > 0
+								}
+								is_in_home_area = yes
+							}
+						}
+					}
+				}
+			}
+			add_building_construction = {
+				type = infrastructure
+				level = 1
+				instant_build = yes
+			}
+		}
+		271 = {
+			limit = {
+				free_building_slots = {
+					building = infrastructure
+					size > 0
+				}
+				OR = {
+					is_in_home_area = yes
+					NOT = {
+						owner = {
+							any_owned_state = {
+								free_building_slots = {
+									building = infrastructure
+									size > 0
+								}
+								is_in_home_area = yes
+							}
+						}
+					}
+				}
+			}
+			add_building_construction = {
+				type = infrastructure
+				level = 1
+				instant_build = yes
+			}
+		}
+		279 = {
+			limit = {
+				free_building_slots = {
+					building = infrastructure
+					size > 0
+				}
+				OR = {
+					is_in_home_area = yes
+					NOT = {
+						owner = {
+							any_owned_state = {
+								free_building_slots = {
+									building = infrastructure
+									size > 0
+								}
+								is_in_home_area = yes
+							}
+						}
+					}
+				}
+			}
+			add_building_construction = {
+				type = infrastructure
+				level = 2
+				instant_build = yes
+			}
+		}
 	}
 }
 
@@ -797,7 +1018,87 @@ shared_focus = {
 		focus = GRF_Take_Me_Home
 	}
 	completion_reward = {
-		
+		288 = {
+			limit = {
+				free_building_slots = {
+					building = infrastructure
+					size > 0
+				}
+				OR = {
+					is_in_home_area = yes
+					NOT = {
+						owner = {
+							any_owned_state = {
+								free_building_slots = {
+									building = infrastructure
+									size > 0
+								}
+								is_in_home_area = yes
+							}
+						}
+					}
+				}
+			}
+			add_building_construction = {
+				type = infrastructure
+				level = 2
+				instant_build = yes
+			}
+		}
+		287 = {
+			limit = {
+				free_building_slots = {
+					building = infrastructure
+					size > 0
+				}
+				OR = {
+					is_in_home_area = yes
+					NOT = {
+						owner = {
+							any_owned_state = {
+								free_building_slots = {
+									building = infrastructure
+									size > 0
+								}
+								is_in_home_area = yes
+							}
+						}
+					}
+				}
+			}
+			add_building_construction = {
+				type = infrastructure
+				level = 2
+				instant_build = yes
+			}
+		}
+		244 = {
+			limit = {
+				free_building_slots = {
+					building = infrastructure
+					size > 0
+				}
+				OR = {
+					is_in_home_area = yes
+					NOT = {
+						owner = {
+							any_owned_state = {
+								free_building_slots = {
+									building = infrastructure
+									size > 0
+								}
+								is_in_home_area = yes
+							}
+						}
+					}
+				}
+			}
+			add_building_construction = {
+				type = infrastructure
+				level = 2
+				instant_build = yes
+			}
+		}
 	}
 }
 
@@ -817,7 +1118,10 @@ shared_focus = {
 		focus = GRF_But_Not_To_Fallout_76
 	}
 	completion_reward = {
-		
+		swap_ideas = {
+			add_idea = GRF_Industrial_Problem_Idea_3
+			remove_idea = GRF_Industrial_Problem_Idea_2
+		}
 	}
 }
 
@@ -834,7 +1138,36 @@ shared_focus = {
 		focus = GRF_Oh_Yeah_Industrial_Tree
 	}
 	completion_reward = {
-		
+		random_owned_controlled_state = {
+			limit = {
+				free_building_slots = {
+					building = industrial_complex
+					size > 0
+					include_locked = yes
+				}
+				OR = {
+					is_in_home_area = yes
+					NOT = {
+						owner = {
+							any_owned_state = {
+								free_building_slots = {
+									building = industrial_complex
+									size > 0
+									include_locked = yes
+								}
+								is_in_home_area = yes
+							}
+						}
+					}
+				}
+			}
+			add_extra_state_shared_building_slots = 2
+			add_building_construction = {
+				type = industrial_complex
+				level = 2
+				instant_build = yes
+			}
+		}
 	}
 }
 
@@ -851,7 +1184,10 @@ shared_focus = {
 		focus = GRF_Smack_Some_Hammers
 	}
 	completion_reward = {
-		
+		swap_ideas = {
+			add_idea = GRF_Industrial_Problem_Idea_4
+			remove_idea = GRF_Industrial_Problem_Idea_3
+		}
 	}
 }
 
@@ -871,7 +1207,36 @@ shared_focus = {
 		focus = GRF_Industrial_Research_Centre
 	}
 	completion_reward = {
-		
+		random_owned_controlled_state = {
+			limit = {
+				free_building_slots = {
+					building = arms_factory
+					size > 0
+					include_locked = yes
+				}
+				OR = {
+					is_in_home_area = yes
+					NOT = {
+						owner = {
+							any_owned_state = {
+								free_building_slots = {
+									building = arms_factory
+									size > 0
+									include_locked = yes
+								}
+								is_in_home_area = yes
+							}
+						}
+					}
+				}
+			}
+			add_extra_state_shared_building_slots = 2
+			add_building_construction = {
+				type = arms_factory
+				level = 2
+				instant_build = yes
+			}
+		}
 	}
 }
 
@@ -888,7 +1253,7 @@ shared_focus = {
 		focus = GRF_Lousy_Pay_And_Constant_Danger
 	}
 	completion_reward = {
-		
+		add_ideas = GRF_Industry_Rebuilt
 	}
 }
 
@@ -905,7 +1270,36 @@ shared_focus = {
 		focus = GRF_I_Wish_Id_Been_A_Farmer_Like_My_Father_Wanted_Me_To
 	}
 	completion_reward = {
-		
+		random_owned_controlled_state = {
+			limit = {
+				free_building_slots = {
+					building = arms_factory
+					size > 0
+					include_locked = yes
+				}
+				OR = {
+					is_in_home_area = yes
+					NOT = {
+						owner = {
+							any_owned_state = {
+								free_building_slots = {
+									building = arms_factory
+									size > 0
+									include_locked = yes
+								}
+								is_in_home_area = yes
+							}
+						}
+					}
+				}
+			}
+			add_extra_state_shared_building_slots = 2
+			add_building_construction = {
+				type = arms_factory
+				level = 2
+				instant_build = yes
+			}
+		}
 	}
 }
 
@@ -922,7 +1316,29 @@ shared_focus = {
 		focus = GRF_Grab_Your_Sword_And_Fight_The_Horde
 	}
 	completion_reward = {
-		
+		if = {
+			limit = {
+				any_owned_state = {
+					is_coastal = yes
+				}
+			}
+			random_owned_controlled_state = {
+				limit = {
+					is_coastal = yes
+					free_building_slots = {
+						building = dockyard
+						size > 2
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = dockyard
+					level = 3
+					instant_build = yes
+				}
+			}
+		}
 	}
 }
 
@@ -944,6 +1360,6 @@ shared_focus = {
 		focus = GRF_Better_Industry
 	}
 	completion_reward = {
-		
+		add_ideas = GRF_Cheaper_Small_Arms
 	}
 }

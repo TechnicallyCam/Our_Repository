@@ -14,6 +14,70 @@ ideas = {
 			}
 		}
 		
+		GRF_Population_Problem_Idea_2 = {
+			allowed = {
+				always = yes
+			}
+
+			picture = chi_war_of_resistance3
+			removal_cost = -1
+			modifier = {
+				MONTHLY_POPULATION = -0.30
+				conscription = -0.05
+			}
+		}
+		
+		GRF_Population_Problem_Idea_3 = {
+			allowed = {
+				always = yes
+			}
+
+			picture = chi_war_of_resistance3
+			removal_cost = -1
+			modifier = {
+				MONTHLY_POPULATION = -0.10
+				conscription = -0.05
+			}
+		}
+		
+		GRF_Population_Problem_Idea_4 = {
+			allowed = {
+				always = yes
+			}
+
+			picture = chi_war_of_resistance3
+			removal_cost = -1
+			modifier = {
+				MONTHLY_POPULATION = -0.10
+			}
+		}
+		
+		GRF_Population_Problem_Idea_5_nationalists = {
+			allowed = {
+				always = yes
+			}
+
+			picture = chi_war_of_resistance3
+			removal_cost = -1
+			modifier = {
+				MONTHLY_POPULATION = 0.10
+				conscription = 0.05
+			}
+		}
+		
+		GRF_Population_Problem_Idea_5_puppet = {
+			allowed = {
+				always = yes
+			}
+
+			picture = chi_war_of_resistance3
+			removal_cost = -1
+			modifier = {
+				MONTHLY_POPULATION = 0.60
+				conscription = 0.2
+			}
+		}
+		
 		GRF_Government_Problem_Idea = {
 			allowed = {
 				always = yes
@@ -65,6 +129,32 @@ ideas = {
 			}
 		}
 		
+		GRF_Industry_Rebuilt = {
+			allowed = {
+				always = yes
+			}
+
+			picture = chi_war_of_resistance3
+			removal_cost = -1
+			modifier = {
+				production_oil_factor = 0.10
+			}
+		}
+		
+		GRF_Cheaper_Small_Arms = {
+			allowed = {
+				always = yes
+			}
+
+			picture = chi_war_of_resistance3
+			removal_cost = -1
+			equipment_bonus = {
+				infantry_weapons = {
+					build_cost_ic = -0.1
+				}
+			}
+		}
+		
 		GRF_Police_State_Idea = {
 			allowed = {
 				always = yes
@@ -74,6 +164,19 @@ ideas = {
 			removal_cost = -1
 			modifier = {
 				enemy_partisan_effect = -0.1
+				experience_gain_army = 0.02
+			}
+		}
+		
+		GRF_Overseas_Service_Idea = {
+			allowed = {
+				always = yes
+			}
+
+			picture = chi_war_of_resistance3
+			removal_cost = -1
+			modifier = {
+				send_volunteer_size = 1
 				experience_gain_army = 0.02
 			}
 		}
@@ -88,6 +191,42 @@ ideas = {
 			modifier = {
 				production_factory_max_efficiency_factor = -0.5
 				production_speed_buildings_factor = -0.5
+			}
+		}
+		GRF_Industrial_Problem_Idea_2 = {
+			allowed = {
+				always = yes
+			}
+
+			picture = chi_war_of_resistance3
+			removal_cost = -1
+			modifier = {
+				production_factory_max_efficiency_factor = -0.3
+				production_speed_buildings_factor = -0.3
+			}
+		}
+		GRF_Industrial_Problem_Idea_3 = {
+			allowed = {
+				always = yes
+			}
+
+			picture = chi_war_of_resistance3
+			removal_cost = -1
+			modifier = {
+				production_factory_max_efficiency_factor = -0.2
+				production_speed_buildings_factor = -0.2
+			}
+		}
+		GRF_Industrial_Problem_Idea_4 = {
+			allowed = {
+				always = yes
+			}
+
+			picture = chi_war_of_resistance3
+			removal_cost = -1
+			modifier = {
+				production_factory_max_efficiency_factor = 0.1
+				production_speed_buildings_factor = 0.1
 			}
 		}
 	}

@@ -3,6 +3,7 @@
 ##########################################################################
 
 add_namespace = GRF_Our_Country_Puppet
+add_namespace = GRF_Regulatory_Incident
 
 ####################################################
 #Choose between pengle and Verner
@@ -32,5 +33,271 @@ country_event = {
 		add_ideas = GRF_Government_Problem_Idea
 		add_ideas = GRF_Industrial_Problem_Idea
 		set_country_flag = GRF_Start_Tree_Flag
+	}
+}
+
+#########################################
+#Falcons fighting back
+
+country_event = {
+	id = GRF_Our_Country_Puppet.2
+	title = GRF_Our_Country_Puppet.2.t
+	desc = {
+		text = GRF_Our_Country_Puppet.2.d_GRF
+		trigger = {
+			original_tag = GRF
+		}
+	}
+	desc = {
+		text = GRF_Our_Country_Puppet.2.d_STL
+		trigger = {
+			original_tag = STL
+		}
+	}
+	
+	picture = GFX_event_griffon_mountain
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+
+	option = {
+		name = GRF_Our_Country_Puppet.2.a
+	}
+}
+
+#########################################
+#Redtail's return
+
+country_event = {
+	id = GRF_Our_Country_Puppet.3
+	title = GRF_Our_Country_Puppet.3.t
+	desc = {
+		text = GRF_Our_Country_Puppet.3.d_GRF
+		trigger = {
+			original_tag = GRF
+		}
+	}
+	desc = {
+		text = GRF_Our_Country_Puppet.3.d_STL
+		trigger = {
+			original_tag = STL
+		}
+	}
+	
+	picture = GFX_event_griffon_mountain
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+
+	option = {
+		name = GRF_Our_Country_Puppet.3.a
+	}
+}
+
+#########################################
+#GRF is going to handle the problem themselves
+
+country_event = {
+	id = GRF_Our_Country_Puppet.4
+	title = GRF_Our_Country_Puppet.4.t
+	desc = {
+		text = GRF_Our_Country_Puppet.4.d_GRF
+		trigger = {
+			original_tag = GRF
+		}
+	}
+	desc = {
+		text = GRF_Our_Country_Puppet.4.d_STL
+		trigger = {
+			original_tag = STL
+		}
+	}
+	
+	picture = GFX_event_griffon_mountain
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+
+	option = {
+		name = GRF_Our_Country_Puppet.4.a
+	}
+}
+
+#########################################
+#GRF asks for help
+
+country_event = {
+	id = GRF_Our_Country_Puppet.5
+	title = GRF_Our_Country_Puppet.5.t
+	desc = GRF_Our_Country_Puppet.5.d
+	
+	picture = GFX_event_griffon_mountain
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+
+	option = {
+		name = GRF_Our_Country_Puppet.5.a
+		STL = {
+			country_event = GRF_Our_Country_Puppet.6
+		}
+	}
+}
+
+country_event = {
+	id = GRF_Our_Country_Puppet.6
+	title = GRF_Our_Country_Puppet.6.t
+	desc = GRF_Our_Country_Puppet.6.d
+	
+	picture = GFX_event_griffon_mountain
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+
+	option = {
+		name = GRF_Our_Country_Puppet.6.a
+		FROM = {
+			country_event = GRF_Our_Country_Puppet.7
+		}
+	}
+	option = {
+		name = GRF_Our_Country_Puppet.6.b
+		FROM = {
+			country_event = GRF_Our_Country_Puppet.8
+		}
+	}
+}
+
+country_event = {
+	id = GRF_Our_Country_Puppet.7
+	title = GRF_Our_Country_Puppet.7.t
+	desc = GRF_Our_Country_Puppet.7.d
+	
+	picture = GFX_event_griffon_mountain
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+
+	option = {
+		name = GRF_Our_Country_Puppet.7.a
+		set_country_flag = GRF_Accepted_Our_Town_Aid_Flag
+	}
+}
+
+country_event = {
+	id = GRF_Our_Country_Puppet.8
+	title = GRF_Our_Country_Puppet.8.t
+	desc = GRF_Our_Country_Puppet.8.d
+	
+	picture = GFX_event_griffon_mountain
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+
+	option = {
+		name = GRF_Our_Country_Puppet.8.a
+		set_country_flag = GRF_Rejected_Our_Town_Aid_Flag
+	}
+}
+
+#########################################
+#The regulatory incident, this will affect the chances that the nationalists will be powerful 
+
+country_event = {
+	id = GRF_Regulatory_Incident.1
+	title = GRF_Regulatory_Incident.1.t
+	desc = GRF_Regulatory_Incident.1.d
+	
+	picture = GFX_event_griffon_mountain
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+
+	option = {
+		name = GRF_Regulatory_Incident.1.a
+		STL = {
+			country_event = GRF_Regulatory_Incident.2
+		}
+	}
+}
+
+country_event = {
+	id = GRF_Regulatory_Incident.2
+	title = GRF_Regulatory_Incident.2.t
+	desc = GRF_Regulatory_Incident.2.d
+	
+	picture = GFX_event_griffon_mountain
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+
+	option = {
+		name = GRF_Regulatory_Incident.2.a
+		STL = {
+			country_event = GRF_Regulatory_Incident.3
+		}
+		
+		GRF = {
+			set_country_flag = STL_Made_Choice_1_correct_Flag
+		}
+	}
+	option = {
+		name = GRF_Regulatory_Incident.2.b
+		STL = {
+			country_event = GRF_Regulatory_Incident.3
+		}
+	}
+	option = {
+		name = GRF_Regulatory_Incident.2.c
+		STL = {
+			country_event = GRF_Regulatory_Incident.3
+		}
+	}
+}
+
+country_event = {
+	id = GRF_Regulatory_Incident.3
+	title = GRF_Regulatory_Incident.3.t
+	desc = GRF_Regulatory_Incident.3.d
+	
+	picture = GFX_event_griffon_mountain
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+
+	option = {
+		name = GRF_Regulatory_Incident.3.a
+		GRF = {
+			country_event = GRF_Regulatory_Incident.4
+		}
+	}
+	option = {
+		name = GRF_Regulatory_Incident.3.b
+		GRF = {
+			country_event = GRF_Regulatory_Incident.4
+		}
+	}
+	option = {
+		name = GRF_Regulatory_Incident.3.c
+		GRF = {
+			country_event = GRF_Regulatory_Incident.4
+			set_country_flag = STL_Made_Choice_2_correct_Flag
+		}
+	}
+}
+
+country_event = {
+	id = GRF_Regulatory_Incident.4
+	title = GRF_Regulatory_Incident.4.t
+	desc = GRF_Regulatory_Incident.4.d
+	
+	picture = GFX_event_griffon_mountain
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+
+	option = {
+		name = GRF_Regulatory_Incident.4.a
+		set_country_flag = GRF_Regulatory_Incident_Over_Flag
 	}
 }
