@@ -72,7 +72,7 @@ focus_tree = {
 			focus = Our_Home
 		}
 		relative_position_id = Our_Home
-		x = -12
+		x = -10
 		y = 1
 		completion_reward = {
 			country_event = Our_Country_Pengle_Meeting.1
@@ -89,11 +89,8 @@ focus_tree = {
 		prerequisite = {
 			focus = The_Future_of_Warfare
 		}
-		mutually_exclusive = {
-			focus = Unmanned_Bombing_Runs
-		}
 		relative_position_id = The_Future_of_Warfare
-		x = -2
+		x = 0
 		y = 1
 		completion_reward = {
 			add_tech_bonus = {
@@ -161,82 +158,76 @@ focus_tree = {
 			set_country_flag = STL_Pengle_Decisions_Flag
 			custom_effect_tooltip = STL_Pengle_Decisions_Unlocked
 		}
-		completion_reward = {
-			create_wargoal = {
-				type = annex_everything
-				target = NTR
-			}
-		}
 	}
 	
-	focus = {
-		id = Unmanned_Bombing_Runs
-		icon = GFX_goal_bombs_away
-		cost = 0.00
-		available = {
-			has_country_flag = STL_Went_With_Verner_Flag
-		}
-		prerequisite = {
-			focus = The_Future_of_Warfare
-		}
-		mutually_exclusive = {
-			focus = A_new_Field
-		}
-		relative_position_id = The_Future_of_Warfare
-		x = 0
-		y = 1
-	}
-	
-	focus = {
-		id = Rockets_are_the_Future
-		icon = GFX_focus_rocketry
-		cost = 0.00
-		prerequisite = {
-			focus = Unmanned_Bombing_Runs
-		}
-		relative_position_id = Unmanned_Bombing_Runs
-		x = 0
-		y = 1
-
-	}
-	
-	focus = {
-		id = Rockets_of_the_future
-		icon = GFX_focus_wonderweapons
-		cost = 0.00
-		prerequisite = {
-			focus = Rockets_are_the_Future
-		}
-		relative_position_id = Rockets_are_the_Future
-		x = 0
-		y = 1
-
-	}
-
-	focus = {
-		id = Tanks_but_better
-		icon = GFX_focus_generic_license_production
-		cost = 0.00
-		prerequisite = {
-			focus = Rockets_of_the_future
-		}
-		relative_position_id = Rockets_of_the_future
-		x = 0
-		y = 1
-
-	}
-	focus = {
-		id = Infantry_rockets
-		icon = GFX_goal_rocket
-		cost = 0.00
-		prerequisite = {
-			focus = Tanks_but_better
-		}
-		relative_position_id = Tanks_but_better
-		x = 0
-		y = 1
-
-	}
+#	focus = {
+#		id = Unmanned_Bombing_Runs
+#		icon = GFX_goal_bombs_away
+#		cost = 0.00
+#		available = {
+#			has_country_flag = STL_Went_With_Verner_Flag
+#		}
+#		prerequisite = {
+#			focus = The_Future_of_Warfare
+#		}
+#		mutually_exclusive = {
+#			focus = A_new_Field
+#		}
+#		relative_position_id = The_Future_of_Warfare
+#		x = 0
+#		y = 1
+#	}
+#	
+#	focus = {
+#		id = Rockets_are_the_Future
+#		icon = GFX_focus_rocketry
+#		cost = 0.00
+#		prerequisite = {
+#			focus = Unmanned_Bombing_Runs
+#		}
+#		relative_position_id = Unmanned_Bombing_Runs
+#		x = 0
+#		y = 1
+#
+#	}
+#	
+#	focus = {
+#		id = Rockets_of_the_future
+#		icon = GFX_focus_wonderweapons
+#		cost = 0.00
+#		prerequisite = {
+#			focus = Rockets_are_the_Future
+#		}
+#		relative_position_id = Rockets_are_the_Future
+#		x = 0
+#		y = 1
+#
+#	}
+#
+#	focus = {
+#		id = Tanks_but_better
+#		icon = GFX_focus_generic_license_production
+#		cost = 0.00
+#		prerequisite = {
+#			focus = Rockets_of_the_future
+#		}
+#		relative_position_id = Rockets_of_the_future
+#		x = 0
+#		y = 1
+#
+#	}
+#	focus = {
+#		id = Infantry_rockets
+#		icon = GFX_goal_rocket
+#		cost = 0.00
+#		prerequisite = {
+#			focus = Tanks_but_better
+#		}
+#		relative_position_id = Tanks_but_better
+#		x = 0
+#		y = 1
+#
+#	}
 	
 	##############################################################################
 	#Acolytes bit
@@ -250,7 +241,7 @@ focus_tree = {
 			focus = Our_Home
 		}
 		relative_position_id = Our_Home
-		x = -9
+		x = -7
 		y = 1
 		completion_reward = {
 			add_ideas = STL_order_of_the_acolytes
@@ -484,6 +475,15 @@ focus_tree = {
 				declare_war_on = {
 					target = GRF
 					type = annex_everything
+				}
+				create_country_leader = {
+					name = "Wing Gar"
+					picture = "Generic.tga"
+					expire = "1965.1.1"
+					ideology = falangism
+					traits = {
+				
+					}
 				}
 			}
 		}
