@@ -1,0 +1,416 @@
+﻿
+division_template = {
+	name = "Griffon Infantry Division"
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+
+		infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+		infantry = { x = 2 y = 2 }
+	}
+
+	support = {
+		artillery = { x = 0 y = 0 }
+		engineer = { x = 0 y = 1 }
+	}
+}
+
+division_template = {
+	name = "Light Tank Division"
+
+	regiments = {
+		light_armor = { x = 0 y = 0 }
+		light_armor = { x = 0 y = 1 }
+		light_armor = { x = 0 y = 2 }
+
+		light_armor = { x = 1 y = 0 }
+		light_armor = { x = 1 y = 1 }
+		light_armor = { x = 1 y = 2 }
+
+	}
+
+	support = {
+
+	}
+}
+
+units = {
+	division = {
+		name = "Insurgent Division"
+		location = 2292
+		division_template = "Griffon Infantry Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1.0
+	}
+	division = {
+		name = "Insurgent Division"
+		location = 167
+		division_template = "Griffon Infantry Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1.0
+	}
+	division = {
+		name = "Insurgent Division"
+		location = 3146
+		division_template = "Griffon Infantry Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1.0
+	}
+	division = {
+		name = "Insurgent Division"
+		location = 12416
+		division_template = "Griffon Infantry Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1.0
+	}
+	division = {
+		name = "Insurgent Division"
+		location = 6222
+		division_template = "Griffon Infantry Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1.0
+	}
+	division = {
+		name = "Insurgent Division"
+		location = 11149
+		division_template = "Griffon Infantry Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1.0
+	}
+	division = {
+		name = "Insurgent Division"
+		location = 6493
+		division_template = "Griffon Infantry Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1.0
+	}
+	division = {
+		name = "Insurgent Division"
+		location = 3421
+		division_template = "Griffon Infantry Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1.0
+	}
+	division = {
+		name = "Insurgent Division"
+		location = 429
+		division_template = "Griffon Infantry Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1.0
+	}
+	division = {
+		name = "Insurgent Division"
+		location = 6420
+		division_template = "Griffon Infantry Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1.0
+	}
+	division = {
+		name = "Insurgent Division"
+		location = 9313
+		division_template = "Griffon Infantry Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1.0
+	}
+	division = {
+		name = "Insurgent Division"
+		location = 9266
+		division_template = "Griffon Infantry Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1.0
+	}
+	division = {
+		name = "Insurgent Division"
+		location = 11242
+		division_template = "Griffon Infantry Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1.0
+	}
+	division = {
+		name = "Insurgent Division"
+		location = 300
+		division_template = "Griffon Infantry Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1.0
+	}
+	division = {
+		name = "Insurgent Division"
+		location = 2292
+		division_template = "Griffon Infantry Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1.0
+	}
+	division = {
+		name = "Insurgent Division"
+		location = 167
+		division_template = "Griffon Infantry Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1.0
+	}
+	division = {
+		name = "Insurgent Division"
+		location = 3146
+		division_template = "Griffon Infantry Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1.0
+	}
+	division = {
+		name = "Insurgent Division"
+		location = 12416
+		division_template = "Griffon Infantry Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1.0
+	}
+	division = {
+		name = "Insurgent Division"
+		location = 6222
+		division_template = "Griffon Infantry Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1.0
+	}
+	division = {
+		name = "Insurgent Division"
+		location = 11149
+		division_template = "Griffon Infantry Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1.0
+	}
+	division = {
+		name = "Insurgent Division"
+		location = 6493
+		division_template = "Griffon Infantry Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1.0
+	}
+	division = {
+		name = "Insurgent Division"
+		location = 3421
+		division_template = "Griffon Infantry Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1.0
+	}
+	division = {
+		name = "Insurgent Division"
+		location = 429
+		division_template = "Griffon Infantry Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1.0
+	}
+	division = {
+		name = "Insurgent Division"
+		location = 6420
+		division_template = "Griffon Infantry Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1.0
+	}
+	division = {
+		name = "Insurgent Division"
+		location = 9313
+		division_template = "Griffon Infantry Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1.0
+	}
+	division = {
+		name = "Insurgent Division"
+		location = 9266
+		division_template = "Griffon Infantry Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1.0
+	}
+	division = {
+		name = "Insurgent Division"
+		location = 11242
+		division_template = "Griffon Infantry Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1.0
+	}
+	division = {
+		name = "Insurgent Division"
+		location = 300
+		division_template = "Griffon Infantry Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1.0
+	}
+	division = {
+		name = "Light Tank Division"
+		location = 9411
+		division_template = "Light Tank Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1.0
+	}
+	division = {
+		name = "Light Tank Division"
+		location = 9411
+		division_template = "Light Tank Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1.0
+	}
+	division = {
+		name = "Light Tank Division"
+		location = 9411
+		division_template = "Light Tank Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1.0
+	}
+	division = {
+		name = "Light Tank Division"
+		location = 9411
+		division_template = "Light Tank Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1.0
+	}
+	division = {
+		name = "Light Tank Division"
+		location = 9411
+		division_template = "Light Tank Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1.0
+	}
+	division = {
+		name = "Light Tank Division"
+		location = 9411
+		division_template = "Light Tank Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1.0
+	}
+	division = {
+		name = "Light Tank Division"
+		location = 9411
+		division_template = "Light Tank Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1.0
+	}
+	division = {
+		name = "Insurgent Division"
+		location = 9313
+		division_template = "Griffon Infantry Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1.0
+	}
+	division = {
+		name = "Insurgent Division"
+		location = 9266
+		division_template = "Griffon Infantry Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1.0
+	}
+	division = {
+		name = "Insurgent Division"
+		location = 11242
+		division_template = "Griffon Infantry Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1.0
+	}
+	division = {
+		name = "Insurgent Division"
+		location = 300
+		division_template = "Griffon Infantry Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1.0
+	}
+	division = {
+		name = "Insurgent Division"
+		location = 2292
+		division_template = "Griffon Infantry Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1.0
+	}
+	division = {
+		name = "Insurgent Division"
+		location = 167
+		division_template = "Griffon Infantry Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1.0
+	}
+	division = {
+		name = "Insurgent Division"
+		location = 3146
+		division_template = "Griffon Infantry Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1.0
+	}
+	division = {
+		name = "Insurgent Division"
+		location = 12416
+		division_template = "Griffon Infantry Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1.0
+	}
+	division = {
+		name = "Insurgent Division"
+		location = 6222
+		division_template = "Griffon Infantry Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1.0
+	}
+	division = {
+		name = "Insurgent Division"
+		location = 11149
+		division_template = "Griffon Infantry Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1.0
+	}
+	division = {
+		name = "Insurgent Division"
+		location = 6493
+		division_template = "Griffon Infantry Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1.0
+	}
+	division = {
+		name = "Insurgent Division"
+		location = 3421
+		division_template = "Griffon Infantry Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1.0
+	}
+	division = {
+		name = "Insurgent Division"
+		location = 429
+		division_template = "Griffon Infantry Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1.0
+	}
+	division = {
+		name = "Insurgent Division"
+		location = 6420
+		division_template = "Griffon Infantry Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1.0
+	}
+	division = {
+		name = "Insurgent Division"
+		location = 9313
+		division_template = "Griffon Infantry Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1.0
+	}
+	division = {
+		name = "Insurgent Division"
+		location = 9266
+		division_template = "Griffon Infantry Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1.0
+	}
+	division = {
+		name = "Insurgent Division"
+		location = 11242
+		division_template = "Griffon Infantry Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1.0
+	}
+	division = {
+		name = "Insurgent Division"
+		location = 300
+		division_template = "Griffon Infantry Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1.0
+	}
+}

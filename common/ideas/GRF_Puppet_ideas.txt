@@ -229,5 +229,16 @@ ideas = {
 				production_speed_buildings_factor = 0.1
 			}
 		}
+		GRF_Factory_Regulations_Idea = {
+			allowed = {
+				always = yes
+			}
+
+			picture = chi_war_of_resistance3
+			removal_cost = -1
+			modifier = {
+				industry_repair_factor = 0.2
+			}
+		}
 	}
 }

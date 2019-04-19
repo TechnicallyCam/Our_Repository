@@ -5,7 +5,7 @@ focus_tree = {
 		factor = 0
 		
 		modifier = {
-			add = 40
+			add = 0
 			tag = GRF
 		}
 	}
@@ -13,8 +13,41 @@ focus_tree = {
 	continuous_focus_position = { x = 290 y = 2500 }
 	
 	shared_focus = GRF_Puppet
-	shared_focus = GRF_Loyalist_Victory
+}
+
+focus_tree = {
+	id = GRF_Our_Town_Puppet_Focus_Tree_Nationalist_Revolt
+	
+	country = {
+		factor = 0
+		
+		modifier = {
+			add = 0
+			tag = GRF
+		}
+	}
+	default = no
+	continuous_focus_position = { x = 290 y = 2500 }
+	
 	shared_focus = GRF_Nationalist_Victory
+	shared_focus = GRF_Industrial_Research_Centre
+}
+
+focus_tree = {
+	id = GRF_Our_Town_Puppet_Focus_Tree_Puppet_Loyal
+	
+	country = {
+		factor = 0
+		
+		modifier = {
+			add = 0
+			tag = GRF
+		}
+	}
+	default = no
+	continuous_focus_position = { x = 290 y = 2500 }
+	
+	shared_focus = GRF_Loyalist_Victory
 	shared_focus = GRF_Industrial_Research_Centre
 }
 
@@ -126,11 +159,8 @@ shared_focus = {
 		focus = GRF_Redtails_Big_Comeback_Show
 	}
 	completion_reward = {
-		country_event = GRF_Our_Country_Puppet.3
+		country_event = GRF_Our_Country_Puppet.4
 		add_political_power = -50
-		hidden_effect = {
-			country_event = GRF_Our_Country_Puppet.3
-		}
 		swap_ideas = {
 			add_idea = GRF_Government_Problem_Idea_3
 			remove_idea = GRF_Government_Problem_Idea_2
@@ -207,7 +237,8 @@ shared_focus = {
 		focus = GRF_Redtails_Big_Comeback_Show
 	}
 	completion_reward = {
-		
+		add_political_power = -50
+		country_event = GRF_Our_Country_Puppet.5
 	}
 }
 
@@ -410,6 +441,11 @@ shared_focus = {
 	}
 	completion_reward = {
 		
+		custom_effect_tooltip = GRF_Tooltip_Remain_Loyal
+	
+		hidden_effect = {
+			country_event = GRF_Our_Country_Puppet.9
+		}
 	}
 }
 
@@ -439,7 +475,11 @@ shared_focus = {
 		focus = GRF_Regulatory_Incident
 	}
 	completion_reward = {
+		custom_effect_tooltip = GRF_Tooltip_Support_Nationalists
 		
+		hidden_effect = {
+			country_event = GRF_Our_Country_Puppet.10
+		}
 	}
 }
 
@@ -557,7 +597,11 @@ shared_focus = {
 		focus = GRF_Nationalist_Spirit
 	}
 	completion_reward = {
-		
+		add_tech_bonus = {
+			bonus = 1
+			uses = 1
+			category = industry
+		}
 	}
 }
 
@@ -574,7 +618,11 @@ shared_focus = {
 		focus = GRF_Tech_Upgrade_nationalists
 	}
 	completion_reward = {
-		
+		add_tech_bonus = {
+			bonus = 1
+			uses = 1
+			category = industry
+		}
 	}
 }
 
@@ -606,6 +654,8 @@ shared_focus = {
 			type = annex_everything 
 			target = STL 
 		}
+		
+		load_focus_tree = generic_griffon_focus
 		
 	}
 }
@@ -661,7 +711,7 @@ shared_focus = {
 		focus = GRF_Population_Increase
 	}
 	completion_reward = {
-		
+		add_ideas = GRF_Factory_Regulations_Idea
 	}
 }
 
@@ -724,7 +774,11 @@ shared_focus = {
 		focus = GRF_Factory_Regulations
 	}
 	completion_reward = {
-		
+		add_tech_bonus = {
+			bonus = 1
+			uses = 1
+			category = industry
+		}
 	}
 }
 
@@ -741,7 +795,11 @@ shared_focus = {
 		focus = GRF_Tech_Upgrade
 	}
 	completion_reward = {
-		
+		add_tech_bonus = {
+			bonus = 1
+			uses = 1
+			category = industry
+		}
 	}
 }
 

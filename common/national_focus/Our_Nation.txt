@@ -458,9 +458,6 @@ focus_tree = {
 		x = 0
 		y = 1
 		completion_reward = {
-			transfer_state = 336
-			transfer_state = 337
-			transfer_state = 58
 			if = {
 				limit = {
 					has_dlc = "Together for Victory"
@@ -474,14 +471,16 @@ focus_tree = {
 				}
 			}
 			OGP = {
-				transfer_state = 279
-				transfer_state = 271
-				transfer_state = 335
 				GRF = {
 					all_owned_state = {
 						add_core_of = OGP
 					}
 				}
+				transfer_state = 58
+				transfer_state = 336
+				transfer_state = 337
+				load_focus_tree = GRF_Our_Town_Puppet_Focus_Tree
+				load_oob = "OGP_Attack_Troops"
 				declare_war_on = {
 					target = GRF
 					type = annex_everything
@@ -494,6 +493,14 @@ focus_tree = {
 		id = Friendmaking
 		icon = GFX_goal_generic_military_deal
 		cost = 0.00
+		available = {
+			OGP = {
+				exists = yes
+				NOT = {
+					has_war_with = GRF
+				}
+			}
+		}
 		prerequisite = {
 			focus = Just_Business
 		}
@@ -503,12 +510,57 @@ focus_tree = {
 		relative_position_id = Just_Business
 		x = 1
 		y = 1
+		completion_reward = {
+			transfer_state = 58
+			transfer_state = 337
+			transfer_state = 336
+			transfer_state = 335
+			transfer_state = 238
+			transfer_state = 279
+			transfer_state = 271
+			transfer_state = 286
+			transfer_state = 287
+			transfer_state = 244
+			transfer_state = 245
+			transfer_state = 338
+			
+			if = {
+				limit = {
+					OGP = {
+						owns_state = 281
+						owns_state = 278
+						owns_state = 277
+						owns_state = 283
+						owns_state = 282
+					}
+				}
+				
+				transfer_state = 281
+				transfer_state = 278
+				transfer_state = 277
+				transfer_state = 283
+				transfer_state = 282
+			}
+			
+			OGP = {
+				country_event = GRF_Our_Country_Puppet.1
+			}
+			
+		}
 
 	}
 	focus = {
 		id = Fiendmaking
 		icon = GFX_goal_gunpoint_diplomacy
 		cost = 0.00
+		available = {
+			OGP = {
+				exists = no
+				NOT = {
+					has_war_with = GRF
+				}
+			}
+		}
 		prerequisite = {
 			focus = Just_Business
 		}
@@ -518,6 +570,12 @@ focus_tree = {
 		relative_position_id = Just_Business
 		x = -1
 		y = 1
+		completion_reward = {
+			declare_war_on = {
+				target = GRF
+				type = annex_everything
+			}
+		}
 
 	}
 	focus = {

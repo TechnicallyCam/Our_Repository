@@ -1,0 +1,19 @@
+﻿l_english:
+
+#Nation
+
+OGP_neutrality:0 "Our Griffon Protectorate"
+OGP_neutrality_DEF:0 "The Griffon Protectorate"
+OGP_fascism:0 "Our Griffon Protectorate"
+OGP_fascism_DEF:0 "The Griffon Protectorate"
+OGP_communism:0 "West Griffon Union"
+OGP_communism_DEF:0 "The West Griffon Union"
+OGP_democratic:0 "Our Griffon Protectorate"
+OGP_democratic_DEF:0 "The Griffon Protectorate"
+OGP_fascism_ADJ:0 "Protectorate"
+OGP_democratic_ADJ:0 "Protectorate"
+OGP_neutrality_ADJ:0 "Protectorate"
+OGP_communism_ADJ:0 "West Griffon Union"
+
+
+# Focuses

@@ -4,9 +4,10 @@
 
 add_namespace = GRF_Our_Country_Puppet
 add_namespace = GRF_Regulatory_Incident
+add_namespace = GRF_Civil_Wars_News
 
 ####################################################
-#Choose between pengle and Verner
+#
 ####################################################
 
 country_event = {
@@ -16,16 +17,8 @@ country_event = {
 	
 	picture = GFX_event_griffon_mountain
 	fire_only_once = yes
-	is_triggered_only = no
+	is_triggered_only = yes
 	
-	trigger = {
-		original_tag = GRF
-		is_puppet_of = STL	
-	}
-	
-	mean_time_to_happen = {
-		days = 1
-	}
 
 	option = {
 		name = GRF_Our_Country_Puppet.1.a
@@ -200,6 +193,97 @@ country_event = {
 	}
 }
 
+################################################################################################
+#Nationalist revolt, revolt is not powerful
+
+country_event = {
+	id = GRF_Our_Country_Puppet.9
+	title = GRF_Our_Country_Puppet.9.t
+	desc = GRF_Our_Country_Puppet.9.d
+	
+	picture = GFX_event_griffon_mountain
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+
+	option = {
+		name = GRF_Our_Country_Puppet.9.a
+		
+		load_focus_tree = GRF_Our_Town_Puppet_Focus_Tree_Puppet_Loyal
+		
+		start_civil_war = {
+			ideology = communism
+			size = 0.3
+			only_own_territory = yes
+			capital = 483
+			states = { 
+				288
+			}
+		}
+		random_other_country = {
+			limit = { original_tag = OGP }
+			load_focus_tree = GRF_Our_Town_Puppet_Focus_Tree_Nationalist_Revolt
+		}
+	}
+}
+
+################################################################################################
+#Nationalist revolt, revolt is powerful
+
+country_event = {
+	id = GRF_Our_Country_Puppet.10
+	title = GRF_Our_Country_Puppet.10.t
+	desc = GRF_Our_Country_Puppet.10.d
+	
+	picture = GFX_event_griffon_mountain
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+
+	option = {
+		name = GRF_Our_Country_Puppet.10.a
+		
+		set_politics = {
+			parties = {
+				democratic = { 
+					popularity = 0
+				}
+			
+				fascism = {
+					popularity = 30
+				}
+				
+				communism = {
+					popularity = 70
+				}
+				
+				neutrality = { 
+					popularity = 0
+				}
+			}
+			
+			ruling_party = communism
+		}
+		
+		load_focus_tree = GRF_Our_Town_Puppet_Focus_Tree_Nationalist_Revolt
+		
+		start_civil_war = {
+			ideology = fascism
+			size = 0.3
+			only_own_territory = yes
+			capital = 483
+			states = { 
+				239 222
+			}
+		}
+		
+		random_other_country = {
+			limit = { original_tag = OGP }
+			load_focus_tree = GRF_Our_Town_Puppet_Focus_Tree_Puppet_Loyal
+		}
+	}
+}
+
 #########################################
 #The regulatory incident, this will affect the chances that the nationalists will be powerful 
 
@@ -301,3 +385,48 @@ country_event = {
 		set_country_flag = GRF_Regulatory_Incident_Over_Flag
 	}
 }
+
+#########################################################################################
+#Original GRF won
+
+news_event = {
+	id = GRF_Civil_Wars_News.1
+    title = GRF_Civil_Wars_News.1.t
+    desc = GRF_Civil_Wars_News.1.d
+	
+	
+    picture = GFX_news_griffon_soldier
+
+	is_triggered_only = yes
+
+	major = yes
+
+	option = {
+		name = GRF_Civil_Wars_News.1.a
+
+	}
+
+}
+
+#########################################################################################
+#The STL puppet won
+
+news_event = {
+	id = GRF_Civil_Wars_News.2
+    title = GRF_Civil_Wars_News.2.t
+    desc = GRF_Civil_Wars_News.2.d
+	
+	
+    picture = GFX_news_griffon_soldier
+
+	is_triggered_only = yes
+
+	major = yes
+
+	option = {
+		name = GRF_Civil_Wars_News.2.a
+
+	}
+
+}
+
