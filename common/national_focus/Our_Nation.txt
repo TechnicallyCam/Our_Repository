@@ -510,6 +510,7 @@ focus_tree = {
 		relative_position_id = Just_Business
 		x = 1
 		y = 1
+
 		completion_reward = {
 			transfer_state = 58
 			transfer_state = 337
@@ -546,7 +547,16 @@ focus_tree = {
 				country_event = GRF_Our_Country_Puppet.1
 			}
 			
+			set_rule = { can_create_factions = yes }
+			
 		}
+
+		
+		available_if_capitulated = yes
+		
+
+	}
+
 
 	}
 	focus = {
@@ -571,11 +581,14 @@ focus_tree = {
 		x = -1
 		y = 1
 		completion_reward = {
+
 			declare_war_on = {
 				target = GRF
 				type = annex_everything
 			}
-		}
+		
+			Add_ideas = STL_Fiendmaking
+        }
 
 	}
 	focus = {
@@ -589,7 +602,9 @@ focus_tree = {
 		relative_position_id = Fiendmaking
 		x = 1
 		y = 1
-
+        completion_reward = {
+			add_war_support = 0.10
+        }
 	}
 	focus = {
 		id = Our_Lands
@@ -601,7 +616,10 @@ focus_tree = {
 		relative_position_id = Our_Horizons
 		x = 0
 		y = 1
-
+		completion_reward = {
+			240 = { add_claim_by = STL }
+			339 = { add_claim_by = STL }
+		}
 	}
 	focus = {
 		id = Conflict_With_Crystal_Empire
@@ -613,7 +631,9 @@ focus_tree = {
 		relative_position_id = Our_Lands
 		x = 1
 		y = 1
-
+		completion_reward = {
+				create_wargoal = { type = annex_everything target = CRY }
+		}
 	}
 	focus = {
 		id = Smash_Them_Like_Porcelain
@@ -625,9 +645,15 @@ focus_tree = {
 		relative_position_id = Conflict_With_Crystal_Empire
 		x = 0
 		y = 1
-
+		completion_reward = {
+			every_state = {
+				limit = {
+					is_core_of = CRY
+				}
+				add_core_of = STL
+			}
+		}
 	}
-	
 	focus = {
 		id = Red_Liberation
 		icon = GFX_focus_generic_strike_at_democracy2
@@ -638,6 +664,9 @@ focus_tree = {
 		relative_position_id = Our_Lands
 		x = -1
 		y = 1
+		completion_reward = {
+				create_wargoal = { type = annex_everything target = STG }
+	    }
 	}
 	focus = {
 		id = Spreading_Our_Truth
@@ -649,6 +678,14 @@ focus_tree = {
 		relative_position_id = Red_Liberation
 		x = 0
 		y = 1
+		completion_reward = {
+			every_state = {
+				limit = {
+					is_core_of = STG
+				}
+				add_core_of = STL
+			}
+		}
 	}
 	###########################################################################
 	#Changeling section
@@ -668,10 +705,10 @@ focus_tree = {
 		x = 1
 		y = 1
 		completion_reward = {
-			
+			247 = { add_claim_by = STL }
+			319 = { add_claim_by = STL }
 		}
 	}
-	
 	focus = {
 		id = Strike_The_Changelings
 		icon = GFX_goal_chn_swords
@@ -707,7 +744,20 @@ focus_tree = {
 		relative_position_id = Smash_Them_Like_Porcelain
 		x = -1
 		y = 1
-		
+		completion_reward = {
+			154 = { add_claim_by = STL }
+			155 = { add_claim_by = STL }
+			156 = { add_claim_by = STL }
+			157 = { add_claim_by = STL }
+			158 = { add_claim_by = STL }
+			159 = { add_claim_by = STL }
+			160 = { add_claim_by = STL }
+			162 = { add_claim_by = STL }
+			164 = { add_claim_by = STL }
+			167 = { add_claim_by = STL }
+			229 = { add_claim_by = STL }
+			653 = { add_claim_by = STL }
+		}
 	}
 	focus = {
 		id = Steal_From_Equestria

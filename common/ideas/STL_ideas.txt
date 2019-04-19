@@ -606,5 +606,22 @@ ideas = {
 				hospital_tech = 0.10
 			}
 		}
+		STL_Fiendmaking = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				justify_war_goal_time = -0.5
+			}
+		}
+
 	}
 }
