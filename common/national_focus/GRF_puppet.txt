@@ -56,7 +56,7 @@ focus_tree = {
 
 shared_focus = {
 	id = GRF_Puppet
-	icon = GFX_focus_HOL_deal_with_right
+	icon = GFX_goal_national_populism
 	cost = 10.00
 	x = 0
 	y = 0
@@ -70,7 +70,7 @@ shared_focus = {
 
 shared_focus = {
 	id = GRF_Form_Government
-	icon = GFX_focus_HOL_deal_with_right
+	icon = GFX_goal_news
 	cost = 10.00
 	x = 1
 	y = 1
@@ -88,7 +88,7 @@ shared_focus = {
 
 shared_focus = {
 	id = GRF_Rally_Soldiers
-	icon = GFX_focus_HOL_deal_with_right
+	icon = GFX_focus_generic_military_mission
 	cost = 10.00
 	x = -1
 	y = 1
@@ -103,7 +103,7 @@ shared_focus = {
 
 shared_focus = {
 	id = GRF_Falcons_Back
-	icon = GFX_focus_HOL_deal_with_right
+	icon = GFX_goal_griffon_levy
 	cost = 10.00
 	x = 1
 	y = 1
@@ -125,7 +125,7 @@ shared_focus = {
 
 shared_focus = {
 	id = GRF_Redtails_Big_Comeback_Show
-	icon = GFX_focus_HOL_deal_with_right
+	icon = GFX_goal_gold_up
 	cost = 10.00
 	x = 0
 	y = 1
@@ -147,7 +147,7 @@ shared_focus = {
 
 shared_focus = {
 	id = GRF_Handle_It
-	icon = GFX_focus_HOL_deal_with_right
+	icon = GFX_goal_griffon_special_force
 	cost = 10.00
 	x = 2
 	y = 1
@@ -170,7 +170,7 @@ shared_focus = {
 
 shared_focus = {
 	id = GRF_Reform_Police_Force
-	icon = GFX_focus_HOL_deal_with_right
+	icon = GFX_goal_secret_agents_red
 	cost = 10.00
 	x = 0
 	y = 2
@@ -186,7 +186,7 @@ shared_focus = {
 
 shared_focus = {
 	id = GRF_Griffon_Officers
-	icon = GFX_focus_HOL_deal_with_right
+	icon = GFX_goal_griffon_knights
 	cost = 10.00
 	x = 0
 	y = 1
@@ -207,7 +207,7 @@ shared_focus = {
 
 shared_focus = {
 	id = GRF_Regulatory_Incident
-	icon = GFX_focus_HOL_deal_with_right
+	icon = GFX_goal_death_tracks
 	cost = 10.00
 	x = 0
 	y = 1
@@ -225,7 +225,7 @@ shared_focus = {
 
 shared_focus = {
 	id = GRF_Ask_For_Help
-	icon = GFX_focus_HOL_deal_with_right
+	icon = GFX_focus_generic_concessions
 	cost = 10.00
 	x = -2
 	y = 1
@@ -245,7 +245,7 @@ shared_focus = {
 
 shared_focus = {
 	id = GRF_On_Our_Own_Then
-	icon = GFX_focus_HOL_deal_with_right
+	icon = GFX_goal_foreign_diplomacy
 	cost = 10.00
 	x = 0
 	y = 1
@@ -266,7 +266,7 @@ shared_focus = {
 
 shared_focus = {
 	id = GRF_Military_Advisors
-	icon = GFX_focus_HOL_deal_with_right
+	icon = GFX_goal_officers
 	cost = 10.00
 	x = -2
 	y = 1
@@ -287,7 +287,7 @@ shared_focus = {
 
 shared_focus = {
 	id = GRF_New_Police_Force
-	icon = GFX_focus_HOL_deal_with_right
+	icon = GFX_goal_secret_agents
 	cost = 10.00
 	x = 0
 	y = 1
@@ -307,7 +307,7 @@ shared_focus = {
 
 shared_focus = {
 	id = GRF_Armoured_Divisions
-	icon = GFX_focus_HOL_deal_with_right
+	icon = GFX_focus_indy_tanks_across_the_border
 	cost = 10.00
 	x = -1
 	y = 1
@@ -327,7 +327,7 @@ shared_focus = {
 
 shared_focus = {
 	id = GRF_Riot_Control
-	icon = GFX_focus_HOL_deal_with_right
+	icon = GFX_goal_step_on_skull
 	cost = 10.00
 	x = 0
 	y = 1
@@ -346,7 +346,7 @@ shared_focus = {
 
 shared_focus = {
 	id = GRF_Pony_Officers
-	icon = GFX_focus_HOL_deal_with_right
+	icon = GFX_goal_military_mission_pony
 	cost = 10.00
 	x = 1
 	y = 1
@@ -362,7 +362,7 @@ shared_focus = {
 
 shared_focus = {
 	id = GRF_Overseas_Service
-	icon = GFX_focus_HOL_deal_with_right
+	icon = GFX_focus_indy_scuba_griffon_2
 	cost = 10.00
 	x = 0
 	y = 1
@@ -378,7 +378,7 @@ shared_focus = {
 
 shared_focus = {
 	id = GRF_National_Guard
-	icon = GFX_focus_HOL_deal_with_right
+	icon = GFX_goal_GRF_troubles_begin
 	cost = 10.00
 	x = 1
 	y = 1
@@ -400,7 +400,7 @@ shared_focus = {
 
 shared_focus = {
 	id = GRF_Remain_Loyal
-	icon = GFX_focus_HOL_deal_with_right
+	icon = GFX_goal_tfv_strengthen_commonwealth_ties_pony_griffon
 	cost = 10.00
 	x = -3
 	y = 2
