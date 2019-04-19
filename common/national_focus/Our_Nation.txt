@@ -558,7 +558,7 @@ focus_tree = {
 	}
 
 
-	}
+	
 	focus = {
 		id = Fiendmaking
 		icon = GFX_goal_gunpoint_diplomacy
