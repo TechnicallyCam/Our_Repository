@@ -665,7 +665,7 @@ shared_focus = {
 
 shared_focus = {
 	id = GRF_Loyalist_Victory
-	icon = GFX_focus_HOL_deal_with_right
+	icon = GFX_goal_GEA_guerilla_warfare
 	cost = 10.00
 	x = 10
 	y = 0
@@ -677,7 +677,7 @@ shared_focus = {
 
 shared_focus = {
 	id = GRF_Population_Increase
-	icon = GFX_focus_HOL_deal_with_right
+	icon = GFX_goal_conscription
 	cost = 10.00
 	x = 0
 	y = 1
