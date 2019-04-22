@@ -1,5 +1,14 @@
 ﻿l_english:
 
+
+#nation
+STL_fascism:0 "Our Nation"
+STL_fascism_DEF:0 "Our Nation"
+STL_fascism_ADJ:0 "Our Nation"
+
+
+
+
 # Focuses
 Chaos_Of_The_New_Order:0 "Chaos Of The New Order"
 Chaos_Of_The_New_Order_desc:0 "With a violent coup ending Double Diamond and the Allfather Adrian Hoss having taken over there is chaos in Our Town’s streets. It's time for the Freecorps to clean things up."
