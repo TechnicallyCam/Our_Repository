@@ -1,0 +1,26 @@
+spriteTypes = {
+	SpriteType = {
+		name = "GFX_STL_Weapons_1"
+		texturefile = "gfx/interface/Weapon_1.dds"
+	}
+	SpriteType = {
+		name = "GFX_STL_Weapons_2"
+		texturefile = "gfx/interface/Weapon_2.dds"
+	}
+	SpriteType = {
+		name = "GFX_STL_Weapons_3"
+		texturefile = "gfx/interface/Weapon_3.dds"
+	}
+	SpriteType = {
+		name = "GFX_STL_Weapons_4"
+		texturefile = "gfx/interface/Weapon_4.dds"
+	}
+	SpriteType = {
+		name = "GFX_STL_Weapons_5"
+		texturefile = "gfx/interface/Weapon_5.dds"
+	}
+	SpriteType = {
+		name = "GFX_STL_Weapons_6"
+		texturefile = "gfx/interface/Weapon_6.dds"
+	}
+}

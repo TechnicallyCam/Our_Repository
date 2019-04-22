@@ -1,0 +1,13 @@
+spriteTypes = {
+
+	#### Equestria At War
+
+	SpriteType = {
+		name = "GFX_Our_Empire"
+		texturefile = "gfx/interface/goals/Our_Empire.dds"
+	}
+	SpriteType = {
+		name = "GFX_Our_Riverlands"
+		texturefile = "gfx/interface/goals/Our_Riverlands.dds"
+	}
+}

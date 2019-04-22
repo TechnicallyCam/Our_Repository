@@ -375,6 +375,40 @@ country_event = {
 	option = {
 		name = Our_Country_Meeting.17.a
 		set_country_flag = Our_Country_Adrian_Coup_Flag
+		kill_country_leader = yes
+		set_politics = {
+			parties = {
+				democratic = { 
+					popularity = 0
+				}
+			
+				fascism = {
+					popularity = 90
+				}
+				
+				communism = {
+					popularity = 10
+				}
+				
+				neutrality = { 
+					popularity = 0
+				}
+			}
+			
+			ruling_party = fascism
+		}
+		hidden_effect = {
+			load_focus_tree = Our_Nation
+		}
+		create_country_leader = {
+			name = "Allfather Adrian"
+			picture = "allfather_adrian.dds"
+			expire = "1965.1.1"
+			ideology = falangism
+			traits = {
+		
+			}
+		}
 	}
 }
 
@@ -435,7 +469,7 @@ country_event = {
 		create_country_leader = {
 			name = "God Emperor Adrian"
 			desc = ""
-			picture = "Generic.tga"
+			picture = "godemperor_adrian.dds"
 			expire = "1965.1.1"
 			ideology = nazism
 			traits = {
@@ -444,7 +478,7 @@ country_event = {
 		}
 		create_field_marshal = {
 			name = "God Emperor Adrian"
-			picture = "Generic.tga"
+			picture = "godemperor_adrian.dds"
 			traits = { }
 			skill = 3
 			attack_skill = 3
@@ -471,7 +505,7 @@ country_event = {
 		create_country_leader = {
 			name = "God Emperor Adrian"
 			desc = ""
-			picture = "Generic.tga"
+			picture = "spilled_ketchup_adrian.dds"
 			expire = "1965.1.1"
 			ideology = nazism
 			traits = {
