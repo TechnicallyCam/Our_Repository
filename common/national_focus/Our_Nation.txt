@@ -438,6 +438,11 @@ focus_tree = {
 				var = mine_var
 				value = 0
 			}
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = -10000
+				producer = STL
+			}
 		}
 
 	}
@@ -680,7 +685,8 @@ focus_tree = {
 		y = 1
 		will_lead_to_war_with = STG
 		completion_reward = {
-				create_wargoal = { type = annex_everything target = STG }
+			create_wargoal = { type = annex_everything target = STG }
+			country_event = { id = Our_Country_Documentary.1 days = 420 }
 	    }
 	}
 	focus = {
@@ -864,6 +870,9 @@ focus_tree = {
 		relative_position_id = Spreading_Our_Truth
 		x = -1
 		y = 1
+		completion_reward = {
+			add_ideas = STL_Our_North_Idea
+		}
 		
 	}
 	focus = {
@@ -876,6 +885,40 @@ focus_tree = {
 		relative_position_id = Our_North
 		x = 0
 		y = 1
+		completion_reward = {
+			284 = { add_claim_by = STL }
+			285 = { add_claim_by = STL }
+			266 = { add_claim_by = STL }
+			325 = { add_claim_by = STL }
+			265 = { add_claim_by = STL }
+			272 = { add_claim_by = STL }
+			280 = { add_claim_by = STL }
+			289 = { add_claim_by = STL }
+			263 = { add_claim_by = STL }
+			290 = { add_claim_by = STL }
+			282 = { add_claim_by = STL }
+			283 = { add_claim_by = STL }
+			277 = { add_claim_by = STL }
+			281 = { add_claim_by = STL }
+			278 = { add_claim_by = STL }
+			253 = { add_claim_by = STL }
+			342 = { add_claim_by = STL }
+			341 = { add_claim_by = STL }
+			340 = { add_claim_by = STL }
+			275 = { add_claim_by = STL }
+			269 = { add_claim_by = STL }
+			274 = { add_claim_by = STL }
+			276 = { add_claim_by = STL }
+			268 = { add_claim_by = STL }
+			270 = { add_claim_by = STL }
+			346 = { add_claim_by = STL }
+			273 = { add_claim_by = STL }
+			257 = { add_claim_by = STL }
+			256 = { add_claim_by = STL }
+			11 = { add_claim_by = STL }
+			317 = { add_claim_by = STL }
+			255 = { add_claim_by = STL }
+		}
 
 	}
 
@@ -2292,7 +2335,7 @@ focus_tree = {
 		x = 8
 		y = 10
 		completion_reward = {
-			
+			add_ideas = STL_Population_Increase_Buff
 		}
 	}
 	

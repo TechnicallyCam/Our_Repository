@@ -622,6 +622,39 @@ ideas = {
 				justify_war_goal_time = -0.5
 			}
 		}
+		
+		STL_Population_Increase_Buff = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				monthly_population = 0.1
+			}
+		}
+		
+		STL_Our_North_Idea = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				justify_war_goal_time = -0.2
+			}
+		}
 
 	}
 }
