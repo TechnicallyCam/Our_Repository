@@ -412,7 +412,10 @@ focus_tree = {
 		x = 0
 		y = 1
 		completion_reward = {
-			add_ideas = STL_Our_Griffonian_holdings
+			add_timed_idea = {
+				idea = STL_Our_Griffonian_holdings
+				days = 60
+			}
 		}
 
 	}
@@ -625,12 +628,18 @@ focus_tree = {
 		id = Conflict_With_Crystal_Empire
 		icon = GFX_goal_cry_star
 		cost = 0.00
+		bypass = {
+			CRY = {
+				exists = no
+			}
+		}
 		prerequisite = {
 			focus = Our_Lands
 		}
 		relative_position_id = Our_Lands
 		x = 1
 		y = 1
+		will_lead_to_war_with = CRY
 		completion_reward = {
 				create_wargoal = { type = annex_everything target = CRY }
 		}
@@ -658,12 +667,18 @@ focus_tree = {
 		id = Red_Liberation
 		icon = GFX_focus_generic_strike_at_democracy2
 		cost = 0.00
+		bypass = {
+			STG = {
+				exists = no
+			}
+		}
 		prerequisite = {
 			focus = Our_Lands
 		}
 		relative_position_id = Our_Lands
 		x = -1
 		y = 1
+		will_lead_to_war_with = STG
 		completion_reward = {
 				create_wargoal = { type = annex_everything target = STG }
 	    }
@@ -713,12 +728,18 @@ focus_tree = {
 		id = Strike_The_Changelings
 		icon = GFX_goal_chn_swords
 		cost = 0.00
+		bypass = {
+			CHN = {
+				exists = no
+			}
+		}
 		prerequisite = {
 			focus = Our_West
 		}
 		relative_position_id = Our_West
 		x = 0
 		y = 1
+		will_lead_to_war_with = CHN
 		completion_reward = {
 			create_wargoal = {
 				type = annex_everything
@@ -763,29 +784,66 @@ focus_tree = {
 		id = Steal_From_Equestria
 		icon = GFX_focus_generic_provoke_border_clashes
 		cost = 0.00
+		bypass = {
+			OR = {
+				STL = {
+					owns_state = 167
+				}
+				has_war_with = event_target:equestria
+			}
+		}
 		prerequisite = {
 			focus = Our_South
 		}
 		relative_position_id = Our_South
 		x = 0
 		y = 1
-
+		completion_reward = {
+			country_event = Our_Country_Equestria_Border_War.1
+		}
 	}
 	
 	focus = {
 		id = The_Powers_Clash
 		icon = GFX_goal_celestia_raising_the_sun
 		cost = 0.00
+		bypass = {
+			has_war_with = event_target:equestria
+		}
 		prerequisite = {
 			focus = Steal_From_Equestria
 		}
+		
+		will_lead_to_war_with = NLR
+		will_lead_to_war_with = EQS
+		
 		relative_position_id = Steal_From_Equestria
 		x = 0
 		y = 1
 		completion_reward = {
-			create_wargoal = {
-				type = annex_everything
-				target = EQS
+			if = {
+				limit = {
+					event_target:equestria = {
+						exists = yes
+					}
+				}
+			
+				create_wargoal = {
+					type = annex_everything
+					target = event_target:equestria
+				}
+			}
+			if = {
+				limit = {
+					NLR = {
+						exists = yes
+					}
+				}
+			
+				create_wargoal = {
+					type = annex_everything
+					target = NLR
+				}
 			}
 		}
 	}

@@ -6,6 +6,7 @@ add_namespace = Our_Country_Meeting
 add_namespace = Our_Country_Alicorn
 add_namespace = Our_Country_Pengle_Meeting
 add_namespace = stl_navy
+add_namespace = Our_Country_Equestria_Border_War
 
 ####################################################
 #Choose between pengle and Verner
@@ -479,6 +480,128 @@ country_event = {
 		}
 	}
 }
+
+###########################################################################################
+# Our country equestrian border war
+
+country_event = {
+	id = Our_Country_Equestria_Border_War.1
+	title = Our_Country_Equestria_Border_War.1.t
+	desc = Our_Country_Equestria_Border_War.1.d
+	
+	picture = GFX_event_griffon_mountain
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		name = Our_Country_Equestria_Border_War.1.a
+		
+		start_border_war = {
+			change_state_after_war = no
+			attacker = {
+				state = 168
+				num_provinces = 4
+				on_win = Our_Country_Equestria_Border_War.2
+				on_lose = Our_Country_Equestria_Border_War.3
+				on_cancel = Our_Country_Equestria_Border_War.4
+			}
+						
+			defender = {
+				state = 167
+				num_provinces = 4
+				on_win = Our_Country_Equestria_Border_War.3
+				on_lose = Our_Country_Equestria_Border_War.2
+				on_cancel = Our_Country_Equestria_Border_War.4
+			}
+		}
+	}
+}
+
+#########################################################################
+# Our Town wins the border conflict
+
+country_event = {
+	id = Our_Country_Equestria_Border_War.2
+	title = Our_Country_Equestria_Border_War.2.t
+	desc = Our_Country_Equestria_Border_War.2.d
+	
+	picture = GFX_event_griffon_mountain
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		name = Our_Country_Equestria_Border_War.2.a
+		STL = {
+			transfer_state = 167
+		}
+	}
+}
+
+#########################################################################
+# Equestria wins the border conflict
+
+country_event = {
+	id = Our_Country_Equestria_Border_War.3
+	title = Our_Country_Equestria_Border_War.3.t
+	desc = Our_Country_Equestria_Border_War.3.d
+	
+	picture = GFX_event_griffon_mountain
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		name = Our_Country_Equestria_Border_War.3.a
+		
+		if = {
+			limit = {
+				event_target:equestria = {
+					owns_state = 167
+				}
+			}
+			event_target:equestria = {
+				create_wargoal = {
+					type = annex_everything
+					target = STL
+				}
+			}
+		}
+		if = {
+			limit = {
+				NLR = {
+					owns_state = 167
+				}
+			}
+			NLR = {
+				create_wargoal = {
+					type = annex_everything
+					target = STL
+				}
+			}
+		}
+	}
+}
+
+#########################################################################
+# Border conflict ends inconclusively
+
+country_event = {
+	id = Our_Country_Equestria_Border_War.4
+	title = Our_Country_Equestria_Border_War.4.t
+	desc = Our_Country_Equestria_Border_War.4.d
+	
+	picture = GFX_event_griffon_mountain
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		name = Our_Country_Equestria_Border_War.4.a
+		STL = {
+			add_stability = -0.10
+			add_war_support = -0.10
+		}
+	}
+}
+
 
 country_event = {
 	id = stl_navy.1
