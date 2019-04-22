@@ -68,7 +68,7 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "Wing"
+	name = "Wing Gar"
 	picture = "Generic.tga"
 	expire = "1965.1.1"
 	ideology = falangism
