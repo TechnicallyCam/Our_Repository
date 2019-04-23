@@ -1254,7 +1254,7 @@ shared_focus = {
 
 shared_focus = {
 	id = GRF_Lousy_Pay_And_Constant_Danger
-	icon = GFX_focus_HOL_deal_with_right
+	icon = GFX_industrialise_league_icon
 	cost = 10.00
 	x = 3
 	y = 1
@@ -1300,7 +1300,7 @@ shared_focus = {
 
 shared_focus = {
 	id = GRF_I_Wish_Id_Been_A_Farmer_Like_My_Father_Wanted_Me_To
-	icon = GFX_focus_HOL_deal_with_right
+	icon = GFX_goal_state_economy
 	cost = 10.00
 	x = 0
 	y = 1
@@ -1317,7 +1317,7 @@ shared_focus = {
 
 shared_focus = {
 	id = GRF_Grab_Your_Sword_And_Fight_The_Horde
-	icon = GFX_focus_HOL_deal_with_right
+	icon = GFX_focus_indy_industrial_tanks
 	cost = 10.00
 	x = 0
 	y = 1
@@ -1363,7 +1363,7 @@ shared_focus = {
 
 shared_focus = {
 	id = GRF_I_Hate_Boats
-	icon = GFX_focus_HOL_deal_with_right
+	icon = GFX_goal_nim_ship
 	cost = 10.00
 	x = 0
 	y = 1
@@ -1405,7 +1405,7 @@ shared_focus = {
 
 shared_focus = {
 	id = GRF_Finally_A_Buff
-	icon = GFX_focus_HOL_deal_with_right
+	icon = GFX_goal_solar_attack_cry
 	cost = 10.00
 	x = -2
 	y = 2
