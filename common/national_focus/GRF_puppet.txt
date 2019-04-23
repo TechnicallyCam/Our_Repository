@@ -488,7 +488,7 @@ shared_focus = {
 
 shared_focus = {
 	id = GRF_Nationalist_Victory
-	icon = GFX_focus_HOL_deal_with_right
+	icon = GFX_goal_griffon_special_force
 	cost = 10.00
 	x = 20
 	y = 0
@@ -500,7 +500,7 @@ shared_focus = {
 
 shared_focus = {
 	id = GRF_Fort_Up
-	icon = GFX_focus_HOL_deal_with_right
+	icon = GFX_goal_nested_fortifications
 	cost = 10.00
 	x = 0
 	y = 1
@@ -517,7 +517,7 @@ shared_focus = {
 
 shared_focus = {
 	id = GRF_Nationalist_Spirit
-	icon = GFX_focus_HOL_deal_with_right
+	icon = GFX_goal_national_populism
 	cost = 10.00
 	x = 0
 	y = 1
@@ -540,7 +540,7 @@ shared_focus = {
 
 shared_focus = {
 	id = GRF_Populaton_Insentives_nationalists
-	icon = GFX_focus_HOL_deal_with_right
+	icon = GFX_goal_bag_of_money
 	cost = 10.00
 	x = -1
 	y = 1
@@ -563,7 +563,7 @@ shared_focus = {
 
 shared_focus = {
 	id = GRF_Populaton_Insentives_nationalists_2
-	icon = GFX_focus_HOL_deal_with_right
+	icon = GFX_goal_gold_up
 	cost = 10.00
 	x = 0
 	y = 1
@@ -586,7 +586,7 @@ shared_focus = {
 
 shared_focus = {
 	id = GRF_Tech_Upgrade_nationalists
-	icon = GFX_focus_HOL_deal_with_right
+	icon = GFX_goal_purchase_tech
 	cost = 10.00
 	x = 1
 	y = 1
@@ -607,7 +607,7 @@ shared_focus = {
 
 shared_focus = {
 	id = GRF_Tech_Upgrade_nationalists_2
-	icon = GFX_focus_HOL_deal_with_right
+	icon = GFX_focus_indy_technological_supremacy
 	cost = 10.00
 	x = 0
 	y = 1
@@ -628,7 +628,7 @@ shared_focus = {
 
 shared_focus = {
 	id = GRF_Revenge_On_Our_Town
-	icon = GFX_focus_HOL_deal_with_right
+	icon = GFX_goal_stg_stl
 	cost = 10.00
 	x = -1
 	y = 1
@@ -834,7 +834,7 @@ shared_focus = {
 
 shared_focus = {
 	id = GRF_Industrial_Research_Centre
-	icon = GFX_focus_HOL_deal_with_right
+	icon = GFX_goal_factory_complex
 	cost = 10.00
 	x = 25
 	y = 0
@@ -851,7 +851,7 @@ shared_focus = {
 
 shared_focus = {
 	id = GRF_New_Country_Roads
-	icon = GFX_focus_HOL_deal_with_right
+	icon = GFX_goal_death_tracks
 	cost = 10.00
 	x = -2
 	y = 1
@@ -871,7 +871,7 @@ shared_focus = {
 
 shared_focus = {
 	id = GRF_Take_Me_Home
-	icon = GFX_focus_HOL_deal_with_right
+	icon = GFX_goal_som_railway
 	cost = 10.00
 	x = 0
 	y = 1
@@ -968,7 +968,7 @@ shared_focus = {
 
 shared_focus = {
 	id = GRF_But_Not_To_Fallout_76
-	icon = GFX_focus_HOL_deal_with_right
+	icon = GFX_goal_railway_stg
 	cost = 10.00
 	x = 0
 	y = 1
@@ -1065,7 +1065,7 @@ shared_focus = {
 
 shared_focus = {
 	id = GRF_Because_Its_A_Bugfest
-	icon = GFX_focus_HOL_deal_with_right
+	icon = GFX_goal_cry_railway
 	cost = 10.00
 	x = 0
 	y = 1
@@ -1162,7 +1162,7 @@ shared_focus = {
 
 shared_focus = {
 	id = GRF_Oh_Yeah_Industrial_Tree
-	icon = GFX_focus_HOL_deal_with_right
+	icon = GFX_IRE_medium_industry
 	cost = 10.00
 	x = -1
 	y = 1
@@ -1185,7 +1185,7 @@ shared_focus = {
 
 shared_focus = {
 	id = GRF_Smack_Some_Hammers
-	icon = GFX_focus_HOL_deal_with_right
+	icon = GFX_IRE_heavy_industry
 	cost = 10.00
 	x = 0
 	y = 1
@@ -1231,7 +1231,7 @@ shared_focus = {
 
 shared_focus = {
 	id = GRF_Better_Industry
-	icon = GFX_focus_HOL_deal_with_right
+	icon = GFX_goal_industry_air
 	cost = 10.00
 	x = 0
 	y = 1
