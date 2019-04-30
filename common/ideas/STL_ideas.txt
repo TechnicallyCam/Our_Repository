@@ -510,7 +510,7 @@ ideas = {
 			picture = GFX_idea_generic_goods_red_bonus
 			removal_cost = -1
 			modifier = {
-				monthly_population = 0.10
+				monthly_population = 0.20
 			}
 		}
 		
@@ -524,7 +524,7 @@ ideas = {
 			picture = GFX_idea_generic_goods_red_bonus
 			removal_cost = -1
 			modifier = {
-				monthly_population = 0.10
+				monthly_population = 0.20
 			}
 			research_bonus = {
 				hospital_tech = 0.10
@@ -555,7 +555,7 @@ ideas = {
 			picture = GFX_idea_generic_goods_red_bonus
 			removal_cost = -1
 			modifier = {
-				monthly_population = 0.20
+				monthly_population = 0.40
 				industrial_capacity_factory  = 0.02
 			}
 		}
@@ -598,7 +598,7 @@ ideas = {
 			picture = GFX_idea_generic_goods_red_bonus
 			removal_cost = -1
 			modifier = {
-				monthly_population = 0.40
+				monthly_population = 0.60
 				industrial_capacity_factory  = 0.02
 				conscription = 0.02
 			}
@@ -635,7 +635,7 @@ ideas = {
 			removal_cost = -1
 			
 			modifier = {
-				monthly_population = 0.1
+				monthly_population = 0.4
 			}
 		}
 		

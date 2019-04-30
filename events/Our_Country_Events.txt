@@ -315,6 +315,9 @@ country_event = {
 	option = {
 		name = Our_Country_Meeting.10.a
 		#new advisor
+		hidden_effect = {
+			country_event = Our_Country_Meeting.11
+		}
 	}
 }
 

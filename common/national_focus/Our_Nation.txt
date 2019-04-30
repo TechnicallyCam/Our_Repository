@@ -457,18 +457,6 @@ focus_tree = {
 		x = 0
 		y = 1
 		completion_reward = {
-			if = {
-				limit = {
-					has_dlc = "Together for Victory"
-				}
-				set_autonomy = {
-					target = OGP
-					autonomous_state = integrated_puppet
-				}
-				else = {
-					puppet = OGP
-				}
-			}
 			OGP = {
 				GRF = {
 					all_owned_state = {
@@ -492,6 +480,28 @@ focus_tree = {
 					traits = {
 				
 					}
+				}
+				add_equipment_to_stockpile = {
+					type = infantry_equipment
+					amount = 10000
+					producer = STL
+				}
+				add_equipment_to_stockpile = {
+					type = support_equipment
+					amount = 1000
+					producer = STL
+				}
+			}
+			if = {
+				limit = {
+					has_dlc = "Together for Victory"
+				}
+				set_autonomy = {
+					target = OGP
+					autonomous_state = integrated_puppet
+				}
+				else = {
+					puppet = OGP
 				}
 			}
 		}
