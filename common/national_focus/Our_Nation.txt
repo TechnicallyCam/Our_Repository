@@ -468,13 +468,9 @@ focus_tree = {
 				transfer_state = 337
 				load_focus_tree = GRF_Our_Town_Puppet_Focus_Tree
 				load_oob = "OGP_Attack_Troops"
-				declare_war_on = {
-					target = GRF
-					type = annex_everything
-				}
 				create_country_leader = {
 					name = "Wing Gar"
-					picture = "Generic.tga"
+					picture = "Wing.tga"
 					expire = "1965.1.1"
 					ideology = falangism
 					traits = {
@@ -484,14 +480,11 @@ focus_tree = {
 				add_equipment_to_stockpile = {
 					type = infantry_equipment
 					amount = 10000
-					producer = STL
+					producer = OGP
 				}
-				add_equipment_to_stockpile = {
-					type = support_equipment
-					amount = 1000
-					producer = STL
-				}
+				
 			}
+			
 			if = {
 				limit = {
 					has_dlc = "Together for Victory"
@@ -502,6 +495,12 @@ focus_tree = {
 				}
 				else = {
 					puppet = OGP
+				}
+			}
+			OGP = {
+				declare_war_on = {
+					target = GRF
+					type = annex_everything
 				}
 			}
 		}

@@ -18,6 +18,7 @@ pengele_decisions_category = {
 		
 		complete_effect = {
 			convert_pops_pengle = yes
+			custom_effect_tooltip = STL_Convert_Population_TT
 		}
 	}
 	
@@ -49,6 +50,7 @@ pengele_decisions_category = {
 				category = magical_tech
 			}
 			pengle_decrease_sacrifices_10k = yes
+			custom_effect_tooltip = STL_Decrease_Population_TT
 		}
 	}
 	pengle_level_2_decision = {
@@ -79,6 +81,7 @@ pengele_decisions_category = {
 				category = race_tech
 			}
 			pengle_decrease_sacrifices_10k = yes
+			custom_effect_tooltip = STL_Decrease_Population_TT
 		}
 	}
 	pengle_level_3_decision = {
@@ -109,6 +112,7 @@ pengele_decisions_category = {
 		complete_effect = {
 			level_up_supersoldiers = yes
 			pengle_decrease_sacrifices_10k = yes
+			custom_effect_tooltip = STL_Decrease_Population_TT
 		}
 	}
 	pengle_level_4_decision = {
@@ -137,6 +141,7 @@ pengele_decisions_category = {
 		complete_effect = {
 			add_timed_idea = {idea = STL_factory_pengle_bonus days = 120}
 			pengle_decrease_sacrifices_10k = yes
+			custom_effect_tooltip = STL_Decrease_Population_TT
 		}
 	}
 	pengle_level_5_decision = {
@@ -165,6 +170,7 @@ pengele_decisions_category = {
 		complete_effect = {
 			pengle_decrease_sacrifices_10k = yes
 			add_timed_idea = {idea = STL_Magic_Weapon_Production_Buff days = 120}
+			custom_effect_tooltip = STL_Decrease_Population_TT
 		}
 	}
 	
