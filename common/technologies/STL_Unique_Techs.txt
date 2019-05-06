@@ -32,7 +32,7 @@ technologies = {
 		}
 		
 		pengle_supersoldier = {
-			max_organisation = 5
+			max_organisation = 10
 		}
 	}
 	
@@ -48,7 +48,7 @@ technologies = {
 		
 		pengle_supersoldier = {
 			max_organisation = 5
-			soft_attack = 0.05
+			soft_attack = 0.10
 		}
 	}
 }
