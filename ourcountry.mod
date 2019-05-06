@@ -1,4 +1,4 @@
-﻿name="OurCountry"
+﻿name="Our Nation"
 path="mod/Our_Repository/"
 dependencies = { "Equestria at War" }
 tags={
