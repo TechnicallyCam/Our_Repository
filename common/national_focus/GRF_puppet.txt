@@ -65,6 +65,18 @@ shared_focus = {
 	}
 	completion_reward = {
 		add_political_power = -100
+		every_state = {
+			limit = {
+				is_core_of = GRF
+			}
+			add_state_core = OGP
+		}
+		every_state = {
+			limit = {
+				is_core_of = OGP
+			}
+			add_core_of = GRF
+		}
 	}
 }
 
