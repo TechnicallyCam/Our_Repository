@@ -8,4 +8,5 @@ tags={
 	"Gameplay"
 }
 picture="Our_Country.png"
-supported_version="1.6.*"
+remote_file_id="1734262417"
+supported_version="1.6.2"
