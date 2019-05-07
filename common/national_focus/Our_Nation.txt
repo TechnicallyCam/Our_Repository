@@ -31,7 +31,7 @@ focus_tree = {
 	focus = {
 		id = A_Forced_Stability
 		icon = GFX_goal_generic_forceful_treaty
-		cost = 9.00
+		cost = 7.00
 		prerequisite = {
 			focus = Chaos_Of_The_New_Order
 		}
@@ -82,7 +82,7 @@ focus_tree = {
 	focus = {
 		id = A_new_Field
 		icon = GFX_goal_cry_com_magic
-		cost = 9.00
+		cost = 7.00
 		available = {
 			has_country_flag = STL_Went_With_Pengle_Flag
 		}
@@ -104,7 +104,7 @@ focus_tree = {
 	focus = {
 		id = A_Rabbithole
 		icon = GFX_goal_magic_cry
-		cost = 9.00
+		cost = 7.00
 		prerequisite = {
 			focus = A_new_Field
 		}
@@ -123,7 +123,7 @@ focus_tree = {
 	focus = {
 		id = The_Supersoldaten
 		icon = GFX_goal_eqs_magic_horn
-		cost = 9.00
+		cost = 7.00
 		available = {
 			has_tech = magical_weapons
 		}
@@ -147,7 +147,7 @@ focus_tree = {
 	focus = {
 		id = The_Gift_That_Keeps_Giving
 		icon = GFX_goal_magical_nukes
-		cost = 9.00
+		cost = 7.00
 		prerequisite = {
 			focus = The_Supersoldaten
 		}
@@ -236,7 +236,7 @@ focus_tree = {
 	focus = {
 		id = Acolytes_of_The_Allfather
 		icon = GFX_goal_military_mission_pony
-		cost = 9.00
+		cost = 7.00
 		prerequisite = {
 			focus = Our_Home
 		}
@@ -252,7 +252,7 @@ focus_tree = {
 	focus = {
 		id = Maintaining_Discipline 
 		icon = GFX_goal_military_academy
-		cost = 9.00
+		cost = 7.00
 		prerequisite = {
 			focus = Acolytes_of_The_Allfather
 		}
@@ -267,7 +267,7 @@ focus_tree = {
 	focus = {
 		id = All_for_the_Allfather
 		icon = GFX_goal_unicorn_soldier
-		cost = 9.00
+		cost = 7.00
 		prerequisite = {
 			focus = Maintaining_Discipline 
 		}
@@ -297,7 +297,7 @@ focus_tree = {
 	focus = {
 		id = True_Order
 		icon = GFX_goal_HOL_amend_wapenwet
-		cost = 9.00
+		cost = 7.00
 		prerequisite = {
 			focus = Maintaining_Discipline
 		}
@@ -320,7 +320,7 @@ focus_tree = {
 	focus = {
 		id = Catching_Up_In_Arms
 		icon = GFX_goal_generic_small_arms
-		cost = 9.00
+		cost = 7.00
 		prerequisite = {
 			focus = Our_Home
 		}
@@ -345,7 +345,7 @@ focus_tree = {
 	focus = {
 		id = Outpacing_In_Arms
 		icon = GFX_focus_secret_rearmament
-		cost = 9.00
+		cost = 7.00
 		prerequisite = {
 			focus = Catching_Up_In_Arms
 		}
@@ -380,7 +380,7 @@ focus_tree = {
 	focus = {
 		id = Big_Metal_Box
 		icon = GFX_goal_somtanks
-		cost = 9.00
+		cost = 7.00
 		prerequisite = {
 			focus = Science_Of_War
 		}
@@ -404,7 +404,7 @@ focus_tree = {
 	focus = {
 		id = Griffon_Buyout
 		icon = GFX_goal_gold_up
-		cost = 9.00
+		cost = 7.00
 		prerequisite = {
 			focus = Our_Home
 		}
@@ -422,7 +422,7 @@ focus_tree = {
 	focus = {
 		id = Wings_Dealers
 		icon = GFX_goal_Arms_Export
-		cost = 9.00
+		cost = 7.00
 		prerequisite = {
 			focus = Griffon_Buyout
 		}
@@ -444,7 +444,7 @@ focus_tree = {
 	focus = {
 		id = Just_Business
 		icon = GFX_goal_gold_reserve
-		cost = 9.00
+		cost = 7.00
 		prerequisite = {
 			focus = Wings_Dealers
 		}
@@ -505,7 +505,7 @@ focus_tree = {
 	focus = {
 		id = Friendmaking
 		icon = GFX_goal_generic_military_deal
-		cost = 9.00
+		cost = 7.00
 		available = {
 			OGP = {
 				exists = yes
@@ -657,7 +657,7 @@ focus_tree = {
 	focus = {
 		id = Smash_Them_Like_Porcelain
 		icon = GFX_goal_anti_comintern_pact
-		cost = 9.00
+		cost = 7.00
 		prerequisite = {
 			focus = Conflict_With_Crystal_Empire
 		}
@@ -697,7 +697,7 @@ focus_tree = {
 	focus = {
 		id = Spreading_Our_Truth
 		icon = GFX_goal_generic_propaganda
-		cost = 9.00
+		cost = 7.00
 		prerequisite = {
 			focus = Red_Liberation
 		}
@@ -720,7 +720,7 @@ focus_tree = {
 	focus = {
 		id = Our_West
 		icon = GFX_goal_chn_support_chrysalis
-		cost = 9.00
+		cost = 7.00
 		prerequisite = {
 			focus = Spreading_Our_Truth
 		}
@@ -738,7 +738,7 @@ focus_tree = {
 	focus = {
 		id = Strike_The_Changelings
 		icon = GFX_goal_chn_swords
-		cost = 9.00
+		cost = 7.00
 		bypass = {
 			CHN = {
 				exists = no
@@ -766,7 +766,7 @@ focus_tree = {
 	focus = {
 		id = Our_South
 		icon = GFX_goal_generic_harmony
-		cost = 9.00
+		cost = 7.00
 		prerequisite = {
 			focus = Spreading_Our_Truth
 		}
@@ -794,7 +794,7 @@ focus_tree = {
 	focus = {
 		id = Steal_From_Equestria
 		icon = GFX_focus_generic_provoke_border_clashes
-		cost = 9.00
+		cost = 7.00
 		bypass = {
 			OR = {
 				STL = {
@@ -817,7 +817,7 @@ focus_tree = {
 	focus = {
 		id = The_Powers_Clash
 		icon = GFX_goal_celestia_raising_the_sun
-		cost = 9.00
+		cost = 7.00
 		bypass = {
 			has_war_with = event_target:equestria
 		}
@@ -865,7 +865,7 @@ focus_tree = {
 	focus = {
 		id = Our_North
 		icon = GFX_goal_solar_attack_north
-		cost = 9.00
+		cost = 7.00
 		prerequisite = {
 			focus = Spreading_Our_Truth
 		}
@@ -883,7 +883,7 @@ focus_tree = {
 	focus = {
 		id = Gather_The_Reaches
 		icon = GFX_goal_generic_territory_or_war
-		cost = 9.00
+		cost = 7.00
 		prerequisite = {
 			focus = Our_North
 		}
@@ -930,7 +930,7 @@ focus_tree = {
 	focus = {
 		id = The_Frontier
 		icon = GFX_goal_generic_attack_allies
-		cost = 9.00
+		cost = 7.00
 		prerequisite = {
 			focus = Gather_The_Reaches
 		}
@@ -952,7 +952,7 @@ focus_tree = {
 	focus = {
 		id = The_Bears
 		icon = GFX_goal_chn_plb_strike
-		cost = 9.00
+		cost = 7.00
 		prerequisite = {
 			focus = The_Frontier
 		}
@@ -969,7 +969,7 @@ focus_tree = {
 	focus = {
 		id = The_Yaks
 		icon = GFX_goal_solar_attack_yak
-		 cost = 9.00
+		 cost = 7.00
 		prerequisite = {
 			focus = Gather_The_Reaches
 		}
@@ -990,7 +990,7 @@ focus_tree = {
 	focus = {
 		id = The_Penguins
 		icon = GFX_goal_generic_occupy_states_ongoing_war
-		cost = 9.00
+		cost = 7.00
 		prerequisite = {
 			focus = Gather_The_Reaches
 		}
@@ -1007,7 +1007,7 @@ focus_tree = {
 	focus = {
 		id = Hollow_The_Mountains
 		icon = GFX_goal_nim_mountains
-		cost = 9.00
+		cost = 7.00
 		prerequisite = {
 			focus = The_Yaks
 		}
@@ -1048,7 +1048,7 @@ focus_tree = {
 	focus = {
 		id = New_Dockyards
 		icon = GFX_goal_generic_construct_naval_dockyard
-		cost = 9.00
+		cost = 7.00
 		prerequisite = {
 			focus = The_Penguins
 		}
@@ -1095,7 +1095,7 @@ focus_tree = {
 	focus = {
 		id = The_Guns_Must_Flow
 		icon = GFX_goal_generic_construct_mil_factory
-		cost = 9.00
+		cost = 7.00
 		prerequisite = {
 			focus = Our_Industry
 		}
@@ -1135,7 +1135,7 @@ focus_tree = {
 	focus = {
 		id = Our_Production
 		icon = GFX_goal_generic_production
-		cost = 9.00
+		cost = 7.00
 		prerequisite = {
 			focus = Our_Industry
 		}
@@ -1173,7 +1173,7 @@ focus_tree = {
 	focus = {
 		id = Space_To_Build
 		icon = GFX_goal_construction_engineering
-		cost = 9.00
+		cost = 7.00
 		prerequisite = {
 			focus = Better_Arms
 		}
@@ -1213,7 +1213,7 @@ focus_tree = {
 	focus = {
 		id = Our_Metropolis
 		icon = GFX_goal_rct_expand_the_city
-		cost = 9.00
+		cost = 7.00
 		prerequisite = {
 			focus = Putting_Our_Village_Behind_Us
 		}
@@ -1234,7 +1234,7 @@ focus_tree = {
 	focus = {
 		id = Our_University
 		icon = GFX_goal_flo_university2
-		cost = 9.00
+		cost = 7.00
 		prerequisite = {
 			focus = Our_Metropolis
 		}
@@ -1281,7 +1281,7 @@ focus_tree = {
 	focus = {
 		id = A_Streamlined_Process
 		icon = GFX_goal_generic_air_production
-		cost = 9.00
+		cost = 7.00
 		prerequisite = {
 			focus = A_Motivated_Worker
 		}
@@ -1299,7 +1299,7 @@ focus_tree = {
 	focus = {
 		id = Work_At_Home
 		icon = GFX_goal_we_can_do_it_aj
-		cost = 9.00
+		cost = 7.00
 		prerequisite = {
 			focus = A_Streamlined_Process
 		}
@@ -1329,7 +1329,7 @@ focus_tree = {
 	focus = {
 		id = Foreign_Machines
 		icon = GFX_SIA_maritmesilkroad
-		cost = 9.00
+		cost = 7.00
 		prerequisite = {
 			focus = Our_Tech
 		}
@@ -1348,7 +1348,7 @@ focus_tree = {
 	focus = {
 		id = Every_Inch
 		icon = GFX_focus_generic_industry_2
-		cost = 9.00
+		cost = 7.00
 		prerequisite = {
 			focus = Foreign_Machines
 		}
@@ -1399,7 +1399,7 @@ focus_tree = {
 	focus = {
 		id = A_Job_For_All
 		icon = GFX_focus_military_derpy
-		cost = 9.00
+		cost = 7.00
 		prerequisite = {
 			focus = Moderation
 		}
@@ -1419,7 +1419,7 @@ focus_tree = {
 	focus = {
 		id = An_Industrial_Powerhouse
 		icon = GFX_focus_generic_industry_3
-		cost = 9.00
+		cost = 7.00
 		prerequisite = {
 			focus = Work_At_Home
 		}
@@ -1442,7 +1442,7 @@ focus_tree = {
 	focus = {
 		id = Our_Roads
 		icon = GFX_goal_generic_construct_infrastructure
-		cost = 9.00
+		cost = 7.00
 		prerequisite = {
 			focus = Our_Industry
 		}
@@ -1465,7 +1465,7 @@ focus_tree = {
 	focus = {
 		id = Our_railways
 		icon = GFX_goal_cry_railway
-		cost = 9.00
+		cost = 7.00
 		prerequisite = {
 			focus = Our_Industry
 		}
@@ -1493,7 +1493,7 @@ focus_tree = {
 	focus = {
 		id = Our_Resources
 		icon = GFX_goal_generic_construction2
-		cost = 9.00
+		cost = 7.00
 		prerequisite = {
 			focus = Our_Roads
 			focus = Our_railways
@@ -1512,7 +1512,7 @@ focus_tree = {
 	focus = {
 		id = Our_Synthetics
 		icon = GFX_goal_generic_oil_refinery
-		cost = 9.00
+		cost = 7.00
 		prerequisite = {
 			focus = Our_Resources
 		}
@@ -1530,7 +1530,7 @@ focus_tree = {
 	focus = {
 		id = Excavating_The_Mountains
 		icon = GFX_goal_nim_mountains
-		cost = 9.00
+		cost = 7.00
 		prerequisite = {
 			focus = Our_Synthetics
 		}
@@ -1551,7 +1551,7 @@ focus_tree = {
 	focus = {
 		id = grind_mountains_for_concrete
 		icon = GFX_goal_continuous_non_factory_construct
-		cost = 9.00
+		cost = 7.00
 		prerequisite = {
 			focus = Our_Synthetics
 		}
@@ -1579,7 +1579,7 @@ focus_tree = {
 	focus = {
 		id = Under_The_City
 		icon = GFX_goal_KTG_Jungle_Diamond_Mine
-		cost = 9.00
+		cost = 7.00
 		prerequisite = {
 			focus = Excavating_The_Mountains
 			focus = grind_mountains_for_concrete
@@ -1603,7 +1603,7 @@ focus_tree = {
 	focus = {
 		id = A_New_Discovery
 		icon = GFX_goal_chn_research_harmony
-		cost = 9.00
+		cost = 7.00
 		prerequisite = {
 			focus = Under_The_City
 		}
@@ -1624,7 +1624,7 @@ focus_tree = {
 	focus = {
 		id = Synthetic_Steel
 		icon = GFX_goal_chn_steel
-		cost = 9.00
+		cost = 7.00
 		prerequisite = {
 			focus = A_New_Discovery
 		}
@@ -1642,7 +1642,7 @@ focus_tree = {
 	focus = {
 		id = prize_greater_than_gold
 		icon = GFX_focus_indy_excavations
-		cost = 9.00
+		cost = 7.00
 		prerequisite = {
 			focus = Under_The_City
 		}
@@ -1663,7 +1663,7 @@ focus_tree = {
 	focus = {
 		id = deep_mining
 		icon = GFX_focus_generic_rubber
-		cost = 9.00
+		cost = 7.00
 		prerequisite = {
 			focus = prize_greater_than_gold
 		}
@@ -1853,7 +1853,7 @@ focus_tree = {
 	focus = {
 		id = Close_Air_Support
 		icon = GFX_focus_generic_cryptologic_bomb
-		cost = 9.00
+		cost = 7.00
 		prerequisite = {
 			focus = From_Dusk_Till_Dawn
 		}
@@ -1871,7 +1871,7 @@ focus_tree = {
 	focus = {
 		id = Our_Aces
 		icon = GFX_goal_MAF_African_Pilots
-		cost = 9.00
+		cost = 7.00
 		prerequisite = {
 			focus = Better_Pilots
 		}
@@ -1886,7 +1886,7 @@ focus_tree = {
 	focus = {
 		id = The_Future_of_Aviation
 		icon = GFX_goal_somaviation
-		cost = 9.00
+		cost = 7.00
 		prerequisite = {
 			focus = Our_Aces
 		}
@@ -1910,7 +1910,7 @@ focus_tree = {
 	focus = {
 		id = Our_Navy
 		icon = GFX_goal_nim_ship
-		cost = 9.00
+		cost = 7.00
 		x = 25
 		y = 0
 		completion_reward = {
@@ -1927,7 +1927,7 @@ focus_tree = {
 	focus = {
 		id = Our_Fleet
 		icon = GFX_goal_generic_navy_submarine	
-		cost = 9.00
+		cost = 7.00
 		prerequisite = {
 			focus = Our_Navy
 		}
@@ -1946,7 +1946,7 @@ focus_tree = {
 	focus = {
 		id = How_Do_You_Sail_This_Thing
 		icon = GFX_goal_generic_navy_doctrines_tactics
-		cost = 9.00
+		cost = 7.00
 		prerequisite = {
 			focus = Our_Fleet
 		}
@@ -1960,7 +1960,7 @@ focus_tree = {
 	focus = {
 		id = Repurposed_Boats
 		icon = GFX_goal_generic_occupy_states_coastal
-		cost = 9.00
+		cost = 7.00
 		prerequisite = {
 			focus = Our_Fleet
 		}
@@ -1978,7 +1978,7 @@ focus_tree = {
 	focus = {
 		id = Catching_Up
 		icon = GFX_goal_battlefleet
-		cost = 9.00
+		cost = 7.00
 		prerequisite = {
 			focus = Our_Fleet
 		}
@@ -1998,7 +1998,7 @@ focus_tree = {
 	focus = {
 		id = Making_Up_For_Lost_Time
 		icon = GFX_goal_generic_navy_cruiser
-		cost = 9.00
+		cost = 7.00
 		prerequisite = {
 			focus = Repurposed_Boats
 		}
@@ -2024,7 +2024,7 @@ focus_tree = {
 	focus = {
 		id = Fleet_Strategy
 		icon = GFX_goal_generic_wolf_pack
-		cost = 9.00
+		cost = 7.00
 		prerequisite = {
 			focus = Making_Up_For_Lost_Time
 		}
@@ -2042,7 +2042,7 @@ focus_tree = {
 	focus = {
 		id = Dockyards
 		icon = GFX_goal_dockyard_generic_psody
-		cost = 9.00
+		cost = 7.00
 		prerequisite = {
 			focus = Making_Up_For_Lost_Time
 		}
@@ -2059,7 +2059,7 @@ focus_tree = {
 	focus = {
 		id = Our_capital_ship
 		icon = GFX_goal_battleship
-		cost = 9.00
+		cost = 7.00
 		prerequisite = {
 			focus = Making_Up_For_Lost_Time
 		}
@@ -2079,7 +2079,7 @@ focus_tree = {
 	focus = {
 		id = Pride_of_the_navy
 		icon = GFX_goal_upgrade_reserves
-		cost = 9.00
+		cost = 7.00
 		prerequisite = {
 			focus = Our_capital_ship
 		}
@@ -2138,7 +2138,7 @@ focus_tree = {
 	focus = {
 		id = In_Doubt_Shell_Them_Out
 		icon = GFX_goal_munitions_factories
-		cost = 9.00
+		cost = 7.00
 		prerequisite = {
 			focus = Foreign_Advisors
 		}
@@ -2181,7 +2181,7 @@ focus_tree = {
 	focus = {
 		id = Drifting_Around_Their_Defences
 		icon = GFX_goal_tfv_saf_support_ossebrandwag
-		cost = 9.00
+		cost = 7.00
 		prerequisite = {
 			focus = Foreign_Advisors
 		}
@@ -2230,7 +2230,7 @@ focus_tree = {
 	focus = {
 		id = Tactical_Genius
 		icon = GFX_goal_generic_army_doctrines
-		cost = 9.00
+		cost = 7.00
 		prerequisite = {
 			focus = Foreign_Advisors
 		}
@@ -2269,7 +2269,7 @@ focus_tree = {
 	focus = {
 		id = Hellmarch_Doctrine
 		icon = GFX_goal_skull_fortification
-		cost = 9.00
+		cost = 7.00
 		prerequisite = {
 			focus = Foreign_Advisors
 		}
@@ -2336,7 +2336,7 @@ focus_tree = {
 	focus = {
 		id = Our_Population_Issue
 		icon = GFX_focus_HOL_deal_with_right
-		cost = 9.00
+		cost = 7.00
 		x = 8
 		y = 10
 		completion_reward = {
@@ -2347,7 +2347,7 @@ focus_tree = {
 	focus = {
 		id = Proper_Medicine
 		icon = GFX_goal_cry_medicine
-		cost = 9.00
+		cost = 7.00
 		prerequisite = {
 			focus = Our_Population_Issue
 		}
@@ -2361,7 +2361,7 @@ focus_tree = {
 	focus = {
 		id = Medicine_In_The_Field
 		icon = GFX_focus_healthcare_program
-		cost = 9.00
+		cost = 7.00
 		prerequisite = {
 			focus = Proper_Medicine
 		}
@@ -2376,7 +2376,7 @@ focus_tree = {
 	focus = {
 		id = Immigration
 		icon = GFX_goal_tripartite_pact_pony
-		cost = 9.00
+		cost = 7.00
 		prerequisite = {
 			focus = Our_Population_Issue
 		}
@@ -2391,7 +2391,7 @@ focus_tree = {
 	focus = {
 		id = The_Marvel_Of_The_World
 		icon = GFX_goal_rct_expand_the_city
-		cost = 9.00
+		cost = 7.00
 		prerequisite = {
 			focus = Immigration
 		}
@@ -2407,7 +2407,7 @@ focus_tree = {
 	focus = {
 		id = Our_Traditional_Family
 		icon = GFX_focus_generic_japanese_imperial_glory
-		cost = 9.00
+		cost = 7.00
 		prerequisite = {
 			focus = Our_Population_Issue
 		}
@@ -2422,7 +2422,7 @@ focus_tree = {
 	focus = {
 		id = Every_Stallion_A_Mare
 		icon = GFX_goal_crystal_heart
-		cost = 9.00
+		cost = 7.00
 		prerequisite = {
 			focus = Our_Traditional_Family
 		}
@@ -2437,7 +2437,7 @@ focus_tree = {
 	focus = {
 		id = Food_Production
 		icon = GFX_goal_agrarian_reform
-		cost = 9.00
+		cost = 7.00
 		prerequisite = {
 			focus = The_Marvel_Of_The_World
 		}
