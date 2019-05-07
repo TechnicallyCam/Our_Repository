@@ -529,7 +529,11 @@ focus_tree = {
 		x = 1
 		y = 1
 
+		completion_reward = {
+		
 		set_rule = { can_create_factions = yes }
+		
+		}
 			
 		
 		available_if_capitulated = yes
