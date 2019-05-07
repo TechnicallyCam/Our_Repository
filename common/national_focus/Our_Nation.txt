@@ -525,10 +525,8 @@ focus_tree = {
 		x = 1
 		y = 1
 
-			set_rule = { can_create_factions = yes }
+		set_rule = { can_create_factions = yes }
 			
-		}
-
 		
 		available_if_capitulated = yes
 		
