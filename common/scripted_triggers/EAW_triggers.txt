@@ -861,7 +861,6 @@ country_with_custom_designers = {
 		original_tag = DMT
 		original_tag = NCH
 		original_tag = RCT
-		original_tag = STL
 	}
 }
 owns_major_griffon_city = {

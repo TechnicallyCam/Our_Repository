@@ -1,8 +1,398 @@
 ideas = {
+	political_advisor = {
+
+		stl_advisor1 = {
+			picture = tba
+
+			allowed = {
+				original_tag = STL
+			}
+			visible = {
+				has_government = fascism
+			}
+			available = {
+				has_government = fascism
+			}
+
+			traits = { ideological_crusader }
+		}
+
+		stl_advisor2 = {
+			picture = tba
+
+			allowed = {
+				original_tag = STL
+			}
+			visible = {
+				has_government = fascism
+			}
+			available = {
+				has_government = fascism
+			}
+
+
+			traits = { captain_of_industry }
+		}
+
+		stl_advisor3 = {
+			picture = tba
+
+			allowed = {
+				original_tag = STL
+			}
+			visible = {
+				has_government = fascism
+			}
+			available = {
+				has_government = fascism
+			}
+
+			traits = { fortification_engineer }
+		}
+
+		stl_advisor4 = {
+			picture = tba
+
+			allowed = {
+				original_tag = STL
+			}
+			visible = {
+				has_government = fascism
+			}
+			available = {
+				has_government = fascism
+			}
+
+			traits = { war_industrialist }
+		}
+
+		stl_advisor5 = {
+			picture = tba
+
+			allowed = {
+				original_tag = STL
+			}
+			visible = {
+				has_government = fascism
+			}
+			available = {
+				has_government = fascism
+			}
+
+
+			traits = { propaganda_expert }
+		}
+
+		stl_advisor6 = {
+			picture = tba
+
+			allowed = {
+				original_tag = STL
+			}
+			visible = {
+				has_government = fascism
+			}
+			available = {
+				has_government = fascism
+			}
+
+			traits = { collaborating_press_chief }
+		}
+
+		stl_advisor7 = {
+			picture = tba
+
+			allowed = {
+				original_tag = STL
+			}
+			visible = {
+				has_government = fascism
+			}
+			available = {
+				has_government = fascism
+			}
+
+			traits = { prince_of_terror }
+		}
+	}
+	army_chief = {
+		stl_armyChief1 = {
+			picture = tba
+
+			allowed = {
+				original_tag = STL
+			}
+			visible = {
+				has_government = fascism
+			}
+			available = {
+				has_government = fascism
+			}
+
+			traits = {
+				army_chief_offensive_2
+			}
+
+		}
+
+		stl_armyChief2 = {
+			picture = tba
+
+			allowed = {
+				original_tag = STL
+			}
+			visible = {
+				has_government = fascism
+			}
+			available = {
+				has_government = fascism
+			}
+
+			traits = {
+				army_chief_defensive_2
+			}
+
+		}
+
+		stl_armyChief3 = {
+			picture = tba
+
+			allowed = {
+				original_tag = STL
+			}
+			visible = {
+				has_government = fascism
+			}
+			available = {
+				has_government = fascism
+			}
+
+			traits = {
+				army_chief_organizational_2
+			}
+
+		}
+	}
+
+	air_chief = {
+		stl_air_chief1 = {
+			picture = tba
+
+			allowed = {
+				original_tag = STL
+			}
+			visible = {
+				has_government = fascism
+			}
+			available = {
+				has_government = fascism
+			}
+
+			traits = { air_air_superiority_1 }
+
+			ai_will_do = {
+				factor = 3
+			}
+		}
+
+		stl_air_chief2 = {
+			picture = tba
+
+			allowed = {
+				original_tag = STL
+			}
+			visible = {
+				has_government = fascism
+			}
+			available = {
+				has_government = fascism
+			}
+
+			traits = { air_close_air_support_1 }
+
+			ai_will_do = {
+				factor = 2
+			}
+		}
+		
+		stl_air_chief3 = {
+			picture = tba
+
+			allowed = {
+				original_tag = STL
+			}
+			visible = {
+				has_government = fascism
+			}
+			available = {
+				has_government = fascism
+			}
+
+			traits = { air_strategic_bombing_1 }
+			
+			ai_will_do = {
+				factor = 2
+			}
+		}
+	}
+
+	high_command = {
+		stl_high_command1 = {
+			picture = tba
+
+			allowed = {
+				original_tag = STL
+			}
+			visible = {
+				has_government = fascism
+			}
+			available = {
+				has_government = fascism
+			}
+
+			traits = { army_artillery_2 }
+
+			ai_will_do = {
+				factor = 2
+			}
+		}
+
+		stl_high_command2 = {
+			picture = tba
+
+			allowed = {
+				original_tag = STL
+			}
+			visible = {
+				has_government = fascism
+			}
+			available = {
+				has_government = fascism
+			}
+
+			traits = { army_regrouping_1 }
+
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		stl_high_command3 = {
+			picture = tba
+
+			allowed = {
+				original_tag = STL
+			}
+			visible = {
+				has_government = fascism
+			}
+			available = {
+				has_government = fascism
+			}
+
+			traits = { army_infantry_2 }
+
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+		stl_high_command4 = {
+			picture = tba
+
+			allowed = {
+				original_tag = STL
+			}
+			visible = {
+				has_government = fascism
+			}
+			available = {
+				has_government = fascism
+			}
+
+			traits = { army_logistics_2 }
+
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+		stl_high_command5 = {
+			picture = tba
+
+			allowed = {
+				original_tag = STL
+			}
+			visible = {
+				has_government = fascism
+			}
+			available = {
+				has_government = fascism
+			}
+
+			traits = { air_chief_all_weather_1 }
+
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+
+	theorist = {
+		stl_theorist1 = {
+			picture = tba
+
+			allowed = {
+				original_tag = STL
+			}
+			visible = {
+				has_government = fascism
+			}
+			available = {
+				has_government = fascism
+			}
+
+			research_bonus = {
+				land_doctrine = 0.10
+			}
+
+			traits = { military_theorist }
+
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+		stl_theorist2 = {
+			picture = tba
+
+			allowed = {
+				original_tag = STL
+			}
+			visible = {
+				has_government = fascism
+			}
+			available = {
+				has_government = fascism
+			}
+
+			research_bonus = {
+				air_doctrine = 0.10
+			}
+
+			traits = { air_warfare_theorist }
+
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
 	navy_chief = {
 		STL_navy_chief_1 = {
 			allowed = {
 				original_tag = STL
+			}
+			visible = {
+				has_government = fascism
 			}
 			available = {
 				has_country_flag = {
@@ -20,6 +410,9 @@ ideas = {
 			allowed = {
 				original_tag = STL
 			}
+			visible = {
+				has_government = fascism
+			}
 			available = {
 				has_country_flag = {
 					flag = STL_navy_advice
@@ -35,6 +428,9 @@ ideas = {
 		STL_navy_chief_3 = {
 			allowed = {
 				original_tag = STL
+			}
+			visible = {
+				has_government = fascism
 			}
 			available = {
 				has_country_flag = {
