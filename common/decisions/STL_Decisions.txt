@@ -194,65 +194,7 @@ pengele_decisions_category = {
 		}
 	}
 }
-Wings_dealers_decisions_category = {
-	
-	farming_equipment_decision = {
-		icon = generic_civil_support
-		
-		allowed = {
-			original_tag = STL 
-		}
-		
-		available = {
-			has_equipment = {
-				infantry_equipment > 499
-			}
-		}
-		
-		cost = 0
-		
-		complete_effect = {
-			add_equipment_to_stockpile = {
-				type = infantry_equipment
-				amount = -500
-			}
-			add_to_variable = {
-				var = farm_var 
-				value = 1
-			}
-		}
-	}
-	
-	heavy_mining_equipment_decision = {
-		icon = generic_civil_support
-		
-		allowed = {
-			original_tag = STL 
-		}
-		
-		available = {
-			has_equipment = {
-				light_tank_equipment > 119
-			}
-		}
-		
-		cost = 0
-		
-		complete_effect = {
-			add_equipment_to_stockpile = {
-				type = light_tank_equipment
-				amount = -200
-			}
-			}
-			add_to_variable = {
-				var = mine_var 
-				value = 1
-			}
-		}
-	}
 
-
-}
 navy_construction = {
 	construct_cl_fleet = {
 		allowed = {
