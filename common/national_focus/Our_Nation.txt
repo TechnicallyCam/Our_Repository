@@ -438,11 +438,6 @@ focus_tree = {
 				var = mine_var
 				value = 0
 			}
-			add_equipment_to_stockpile = {
-				type = infantry_equipment
-				amount = -10000
-				producer = STL
-			}
 		}
 
 	}
@@ -463,9 +458,7 @@ focus_tree = {
 						add_core_of = OGP
 					}
 				}
-				transfer_state = 58
-				transfer_state = 336
-				transfer_state = 337
+				transfer_state = 239
 				load_focus_tree = GRF_Our_Town_Puppet_Focus_Tree
 				load_oob = "OGP_Attack_Troops"
 				create_country_leader = {
@@ -475,13 +468,23 @@ focus_tree = {
 					ideology = falangism
 					traits = {
 				
+						}
 					}
-				}
 				add_equipment_to_stockpile = {
 					type = infantry_equipment
-					amount = 10000
+					amount = (farm_var * 500)
+					producer = OGP
+				add_equipment_to_stockpile = {
+					type = light_tank_equipment
+					amount = (mine_var * 200)
 					producer = OGP
 				}
+				every_state = {
+				limit = {
+					is_core_of = GRF
+				}
+				add_core_of = GRF
+			}
 				
 			}
 			
