@@ -454,8 +454,13 @@ focus_tree = {
 			transfer_state = 337
 			transfer_state = 336
 			OGP = {
+				every_state = {
+					limit = {
+						is_core_of = GRF
+					}
+					add_core_of = OGP
+				}
 				transfer_state = 239
-				add_state_core = 239
 				load_focus_tree = GRF_Our_Town_Puppet_Focus_Tree
 				load_oob = "OGP_Attack_Troops"
 				create_country_leader = {
