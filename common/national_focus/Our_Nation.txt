@@ -605,6 +605,7 @@ focus_tree = {
         }
 
 	}
+	
 	focus = {
 		id = Our_Horizons
 		icon = GFX_goal_rhineland
