@@ -512,12 +512,7 @@ focus_tree = {
 		icon = GFX_goal_generic_military_deal
 		cost = 7.00
 		available = {
-			OGP = {
-				exists = yes
-				NOT = {
-					has_war_with = GRF
-				}
-			}
+		
 		}
 		prerequisite = {
 			focus = Just_Business
@@ -530,12 +525,12 @@ focus_tree = {
 		y = 1
 
 		completion_reward = {
-		
-		set_rule = { can_create_factions = yes }
-		
+			set_rule = { can_create_factions = yes }
+			OGP = {
+				country_event = GRF_Our_Country_Puppet.1
+			}
 		}
-			
-		
+
 		available_if_capitulated = yes
 		
 
@@ -561,6 +556,9 @@ focus_tree = {
 		y = 1
 		completion_reward = {
 			Add_ideas = STL_Fiendmaking
+			OGP = {
+				country_event = GRF_Our_Country_Puppet.1
+			}
         }
 
 	}
