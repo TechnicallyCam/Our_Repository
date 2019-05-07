@@ -525,42 +525,6 @@ focus_tree = {
 		x = 1
 		y = 1
 
-		completion_reward = {
-			transfer_state = 58
-			transfer_state = 337
-			transfer_state = 336
-			transfer_state = 335
-			transfer_state = 238
-			transfer_state = 279
-			transfer_state = 271
-			transfer_state = 286
-			transfer_state = 287
-			transfer_state = 244
-			transfer_state = 245
-			transfer_state = 338
-			
-			if = {
-				limit = {
-					OGP = {
-						owns_state = 281
-						owns_state = 278
-						owns_state = 277
-						owns_state = 283
-						owns_state = 282
-					}
-				}
-				
-				transfer_state = 281
-				transfer_state = 278
-				transfer_state = 277
-				transfer_state = 283
-				transfer_state = 282
-			}
-			
-			OGP = {
-				country_event = GRF_Our_Country_Puppet.1
-			}
-			
 			set_rule = { can_create_factions = yes }
 			
 		}
