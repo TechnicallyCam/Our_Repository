@@ -453,11 +453,6 @@ focus_tree = {
 		y = 1
 		completion_reward = {
 			OGP = {
-				GRF = {
-					all_owned_state = {
-						add_core_of = OGP
-					}
-				}
 				transfer_state = 239
 				load_focus_tree = GRF_Our_Town_Puppet_Focus_Tree
 				load_oob = "OGP_Attack_Troops"
@@ -480,13 +475,14 @@ focus_tree = {
 					producer = OGP
 				}
 				every_state = {
-				limit = {
+					limit = {
 					is_core_of = GRF
+					}
+					add_core_of = GRF
 				}
-				add_core_of = GRF
-			}
 				
 			}
+			STL = { puppet = OGP }
 			
 			if = {
 				limit = {
@@ -494,10 +490,7 @@ focus_tree = {
 				}
 				set_autonomy = {
 					target = OGP
-					autonomous_state = integrated_puppet
-				}
-				else = {
-					puppet = OGP
+					autonomy_state = integrated_puppet
 				}
 			}
 			OGP = {
