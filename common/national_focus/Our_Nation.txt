@@ -498,17 +498,17 @@ focus_tree = {
 				set_autonomy = {
 					target = OGP
 					autonomy_state = integrated_puppet
-					}
 				}
+			}
 			OGP = {
 				declare_war_on = {
 					target = GRF
 					type = annex_everything
 					}
-				}
 			}
 		}
 	}
+	
 	
 	focus = {
 		id = Friendmaking
