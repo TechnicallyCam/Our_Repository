@@ -548,12 +548,7 @@ focus_tree = {
 		icon = GFX_goal_gunpoint_diplomacy
 		cost = 5.00
 		available = {
-			OGP = {
-				exists = no
-				NOT = {
-					has_war_with = GRF
-				}
-			}
+
 		}
 		prerequisite = {
 			focus = Just_Business
@@ -565,12 +560,6 @@ focus_tree = {
 		x = -1
 		y = 1
 		completion_reward = {
-
-			declare_war_on = {
-				target = GRF
-				type = annex_everything
-			}
-		
 			Add_ideas = STL_Fiendmaking
         }
 
