@@ -402,3 +402,9 @@ GRF_Regulatory_Incident.1.t:0 ""
 GRF_Regulatory_Incident.1.d:0 ""
 GRF_Regulatory_Incident.1.a:0 ""
 GRF_Regulatory_Incident.1.b:0 ""
+
+
+farming_equipment_decision:0 "Sending 'Farming' Equipment"
+farming_equipment_decision_desc:0 "We will send Alfonzo some equipment, soon enough he will have more than enough equipment to make a fine army."
+heavy_mining_equipment_decision:0 "Sending Heavy 'Farming' Equipment"
+heavy_mining_equipment_decision_desc:0 "We shall send Alfonzo some stronger equipment as well, make his force a truly formidable one."
