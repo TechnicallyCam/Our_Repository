@@ -17,13 +17,12 @@ division_template = {
 	}
 
 	support = {
-		artillery = { x = 0 y = 0 }
-		engineer = { x = 0 y = 1 }
+
 	}
 }
 
 division_template = {
-	name = "Light Tank Division"
+	name = "Wing Corperation Mobile Civilian Oppression Force"
 
 	regiments = {
 		light_armor = { x = 0 y = 0 }
@@ -42,372 +41,289 @@ division_template = {
 }
 
 units = {
+	
 	division = {
-		name = "Insurgent Division"
-		location = 2292
-		division_template = "Griffon Infantry Division"
-		start_experience_factor = 0.3
-		start_equipment_factor = 1.0
-	}
-	division = {
-		name = "Insurgent Division"
-		location = 167
-		division_template = "Griffon Infantry Division"
-		start_experience_factor = 0.3
-		start_equipment_factor = 1.0
-	}
-	division = {
-		name = "Insurgent Division"
-		location = 3146
-		division_template = "Griffon Infantry Division"
-		start_experience_factor = 0.3
-		start_equipment_factor = 1.0
-	}
-	division = {
-		name = "Insurgent Division"
-		location = 12416
-		division_template = "Griffon Infantry Division"
-		start_experience_factor = 0.3
-		start_equipment_factor = 1.0
-	}
-	division = {
-		name = "Insurgent Division"
-		location = 6222
-		division_template = "Griffon Infantry Division"
-		start_experience_factor = 0.3
-		start_equipment_factor = 1.0
-	}
-	division = {
-		name = "Insurgent Division"
-		location = 11149
-		division_template = "Griffon Infantry Division"
-		start_experience_factor = 0.3
-		start_equipment_factor = 1.0
-	}
-	division = {
-		name = "Insurgent Division"
-		location = 6493
-		division_template = "Griffon Infantry Division"
-		start_experience_factor = 0.3
-		start_equipment_factor = 1.0
-	}
-	division = {
-		name = "Insurgent Division"
-		location = 3421
-		division_template = "Griffon Infantry Division"
-		start_experience_factor = 0.3
-		start_equipment_factor = 1.0
-	}
-	division = {
-		name = "Insurgent Division"
-		location = 429
-		division_template = "Griffon Infantry Division"
-		start_experience_factor = 0.3
-		start_equipment_factor = 1.0
-	}
-	division = {
-		name = "Insurgent Division"
-		location = 6420
-		division_template = "Griffon Infantry Division"
-		start_experience_factor = 0.3
-		start_equipment_factor = 1.0
-	}
-	division = {
-		name = "Insurgent Division"
-		location = 9313
-		division_template = "Griffon Infantry Division"
-		start_experience_factor = 0.3
-		start_equipment_factor = 1.0
-	}
-	division = {
-		name = "Insurgent Division"
-		location = 9266
-		division_template = "Griffon Infantry Division"
-		start_experience_factor = 0.3
-		start_equipment_factor = 1.0
-	}
-	division = {
-		name = "Insurgent Division"
+		name = "Wing Corperation Security"
 		location = 11242
 		division_template = "Griffon Infantry Division"
 		start_experience_factor = 0.3
 		start_equipment_factor = 1.0
 	}
 	division = {
-		name = "Insurgent Division"
+		name = "Wing Corperation Security"
 		location = 300
 		division_template = "Griffon Infantry Division"
 		start_experience_factor = 0.3
 		start_equipment_factor = 1.0
 	}
 	division = {
-		name = "Insurgent Division"
+		name = "Wing Corperation Security"
 		location = 2292
 		division_template = "Griffon Infantry Division"
 		start_experience_factor = 0.3
 		start_equipment_factor = 1.0
 	}
 	division = {
-		name = "Insurgent Division"
+		name = "Wing Corperation Security"
 		location = 167
 		division_template = "Griffon Infantry Division"
 		start_experience_factor = 0.3
 		start_equipment_factor = 1.0
 	}
 	division = {
-		name = "Insurgent Division"
+		name = "Wing Corperation Security"
 		location = 3146
 		division_template = "Griffon Infantry Division"
 		start_experience_factor = 0.3
 		start_equipment_factor = 1.0
 	}
 	division = {
-		name = "Insurgent Division"
+		name = "Wing Corperation Security"
 		location = 12416
 		division_template = "Griffon Infantry Division"
 		start_experience_factor = 0.3
 		start_equipment_factor = 1.0
 	}
 	division = {
-		name = "Insurgent Division"
+		name = "Wing Corperation Security"
 		location = 6222
 		division_template = "Griffon Infantry Division"
 		start_experience_factor = 0.3
 		start_equipment_factor = 1.0
 	}
 	division = {
-		name = "Insurgent Division"
+		name = "Wing Corperation Security"
 		location = 11149
 		division_template = "Griffon Infantry Division"
 		start_experience_factor = 0.3
 		start_equipment_factor = 1.0
 	}
 	division = {
-		name = "Insurgent Division"
+		name = "Wing Corperation Security"
 		location = 6493
 		division_template = "Griffon Infantry Division"
 		start_experience_factor = 0.3
 		start_equipment_factor = 1.0
 	}
 	division = {
-		name = "Insurgent Division"
+		name = "Wing Corperation Security"
 		location = 3421
 		division_template = "Griffon Infantry Division"
 		start_experience_factor = 0.3
 		start_equipment_factor = 1.0
 	}
 	division = {
-		name = "Insurgent Division"
+		name = "Wing Corperation Security"
 		location = 429
 		division_template = "Griffon Infantry Division"
 		start_experience_factor = 0.3
 		start_equipment_factor = 1.0
 	}
 	division = {
-		name = "Insurgent Division"
+		name = "Wing Corperation Security"
 		location = 6420
 		division_template = "Griffon Infantry Division"
 		start_experience_factor = 0.3
 		start_equipment_factor = 1.0
 	}
 	division = {
-		name = "Insurgent Division"
+		name = "Wing Corperation Security"
 		location = 9313
 		division_template = "Griffon Infantry Division"
 		start_experience_factor = 0.3
 		start_equipment_factor = 1.0
 	}
 	division = {
-		name = "Insurgent Division"
+		name = "Wing Corperation Security"
 		location = 9266
 		division_template = "Griffon Infantry Division"
 		start_experience_factor = 0.3
 		start_equipment_factor = 1.0
 	}
 	division = {
-		name = "Insurgent Division"
+		name = "Wing Corperation Security"
 		location = 11242
 		division_template = "Griffon Infantry Division"
 		start_experience_factor = 0.3
 		start_equipment_factor = 1.0
 	}
 	division = {
-		name = "Insurgent Division"
+		name = "Wing Corperation Security"
 		location = 300
 		division_template = "Griffon Infantry Division"
 		start_experience_factor = 0.3
 		start_equipment_factor = 1.0
 	}
 	division = {
-		name = "Light Tank Division"
+		name = "Wing Corperation Mobile Civilian Oppression Force"
 		location = 9411
-		division_template = "Light Tank Division"
+		division_template = "Wing Corperation Mobile Civilian Oppression Force"
 		start_experience_factor = 0.3
 		start_equipment_factor = 1.0
 	}
 	division = {
-		name = "Light Tank Division"
+		name = "Wing Corperation Mobile Civilian Oppression Force"
 		location = 9411
-		division_template = "Light Tank Division"
+		division_template = "Wing Corperation Mobile Civilian Oppression Force"
 		start_experience_factor = 0.3
 		start_equipment_factor = 1.0
 	}
 	division = {
-		name = "Light Tank Division"
+		name = "Wing Corperation Mobile Civilian Oppression Force"
 		location = 9411
-		division_template = "Light Tank Division"
+		division_template = "Wing Corperation Mobile Civilian Oppression Force"
 		start_experience_factor = 0.3
 		start_equipment_factor = 1.0
 	}
 	division = {
-		name = "Light Tank Division"
+		name = "Wing Corperation Mobile Civilian Oppression Force"
 		location = 9411
-		division_template = "Light Tank Division"
+		division_template = "Wing Corperation Mobile Civilian Oppression Force"
 		start_experience_factor = 0.3
 		start_equipment_factor = 1.0
 	}
 	division = {
-		name = "Light Tank Division"
+		name = "Wing Corperation Mobile Civilian Oppression Force"
 		location = 9411
-		division_template = "Light Tank Division"
+		division_template = "Wing Corperation Mobile Civilian Oppression Force"
 		start_experience_factor = 0.3
 		start_equipment_factor = 1.0
 	}
 	division = {
-		name = "Light Tank Division"
+		name = "Wing Corperation Mobile Civilian Oppression Force"
 		location = 9411
-		division_template = "Light Tank Division"
+		division_template = "Wing Corperation Mobile Civilian Oppression Force"
 		start_experience_factor = 0.3
 		start_equipment_factor = 1.0
 	}
 	division = {
-		name = "Light Tank Division"
+		name = "Wing Corperation Mobile Civilian Oppression Force"
 		location = 9411
-		division_template = "Light Tank Division"
+		division_template = "Wing Corperation Mobile Civilian Oppression Force"
 		start_experience_factor = 0.3
 		start_equipment_factor = 1.0
 	}
 	division = {
-		name = "Insurgent Division"
+		name = "Wing Corperation Security"
 		location = 9313
 		division_template = "Griffon Infantry Division"
 		start_experience_factor = 0.3
 		start_equipment_factor = 1.0
 	}
 	division = {
-		name = "Insurgent Division"
+		name = "Wing Corperation Security"
 		location = 9266
 		division_template = "Griffon Infantry Division"
 		start_experience_factor = 0.3
 		start_equipment_factor = 1.0
 	}
 	division = {
-		name = "Insurgent Division"
+		name = "Wing Corperation Security"
 		location = 11242
 		division_template = "Griffon Infantry Division"
 		start_experience_factor = 0.3
 		start_equipment_factor = 1.0
 	}
 	division = {
-		name = "Insurgent Division"
+		name = "Wing Corperation Security"
 		location = 300
 		division_template = "Griffon Infantry Division"
 		start_experience_factor = 0.3
 		start_equipment_factor = 1.0
 	}
 	division = {
-		name = "Insurgent Division"
+		name = "Wing Corperation Security"
 		location = 2292
 		division_template = "Griffon Infantry Division"
 		start_experience_factor = 0.3
 		start_equipment_factor = 1.0
 	}
 	division = {
-		name = "Insurgent Division"
+		name = "Wing Corperation Security"
 		location = 167
 		division_template = "Griffon Infantry Division"
 		start_experience_factor = 0.3
 		start_equipment_factor = 1.0
 	}
 	division = {
-		name = "Insurgent Division"
+		name = "Wing Corperation Security"
 		location = 3146
 		division_template = "Griffon Infantry Division"
 		start_experience_factor = 0.3
 		start_equipment_factor = 1.0
 	}
 	division = {
-		name = "Insurgent Division"
+		name = "Wing Corperation Security"
 		location = 12416
 		division_template = "Griffon Infantry Division"
 		start_experience_factor = 0.3
 		start_equipment_factor = 1.0
 	}
 	division = {
-		name = "Insurgent Division"
+		name = "Wing Corperation Security"
 		location = 6222
 		division_template = "Griffon Infantry Division"
 		start_experience_factor = 0.3
 		start_equipment_factor = 1.0
 	}
 	division = {
-		name = "Insurgent Division"
+		name = "Wing Corperation Security"
 		location = 11149
 		division_template = "Griffon Infantry Division"
 		start_experience_factor = 0.3
 		start_equipment_factor = 1.0
 	}
 	division = {
-		name = "Insurgent Division"
+		name = "Wing Corperation Security"
 		location = 6493
 		division_template = "Griffon Infantry Division"
 		start_experience_factor = 0.3
 		start_equipment_factor = 1.0
 	}
 	division = {
-		name = "Insurgent Division"
+		name = "Wing Corperation Security"
 		location = 3421
 		division_template = "Griffon Infantry Division"
 		start_experience_factor = 0.3
 		start_equipment_factor = 1.0
 	}
 	division = {
-		name = "Insurgent Division"
+		name = "Wing Corperation Security"
 		location = 429
 		division_template = "Griffon Infantry Division"
 		start_experience_factor = 0.3
 		start_equipment_factor = 1.0
 	}
 	division = {
-		name = "Insurgent Division"
+		name = "Wing Corperation Security"
 		location = 6420
 		division_template = "Griffon Infantry Division"
 		start_experience_factor = 0.3
 		start_equipment_factor = 1.0
 	}
 	division = {
-		name = "Insurgent Division"
+		name = "Wing Corperation Security"
 		location = 9313
 		division_template = "Griffon Infantry Division"
 		start_experience_factor = 0.3
 		start_equipment_factor = 1.0
 	}
 	division = {
-		name = "Insurgent Division"
+		name = "Wing Corperation Security"
 		location = 9266
 		division_template = "Griffon Infantry Division"
 		start_experience_factor = 0.3
 		start_equipment_factor = 1.0
 	}
 	division = {
-		name = "Insurgent Division"
+		name = "Wing Corperation Security"
 		location = 11242
 		division_template = "Griffon Infantry Division"
 		start_experience_factor = 0.3
 		start_equipment_factor = 1.0
 	}
 	division = {
-		name = "Insurgent Division"
+		name = "Wing Corperation Security"
 		location = 300
 		division_template = "Griffon Infantry Division"
 		start_experience_factor = 0.3
