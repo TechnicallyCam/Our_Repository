@@ -485,7 +485,7 @@ focus_tree = {
 					limit = {
 					is_core_of = GRF
 					}
-					add_core_of = GRF
+					add_core_of = OGP
 				}
 				
 			}
