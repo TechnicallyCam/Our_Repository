@@ -460,6 +460,7 @@ focus_tree = {
 					}
 					add_core_of = OGP
 				}
+				
 				transfer_state = 239
 				load_focus_tree = GRF_Our_Town_Puppet_Focus_Tree
 				load_oob = "OGP_Attack_Troops"
@@ -528,7 +529,7 @@ focus_tree = {
 		y = 1
 
 		completion_reward = {
-			set_rule = { can_create_factions = yes }
+			create_faction = "Our Coallition"
 			OGP = {
 				country_event = GRF_Our_Country_Puppet.1
 			}
