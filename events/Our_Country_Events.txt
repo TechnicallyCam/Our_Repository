@@ -159,7 +159,7 @@ country_event = {
 	option = {
 		name = Our_Country_Meeting.3.a
 		hidden_effect = {
-			country_event = {id = Our_Country_Meeting.5 days = 40}
+			country_event = {id = Our_Country_Meeting.5 days = 20}
 		}
 	}
 
@@ -220,7 +220,7 @@ country_event = {
 		name = Our_Country_Meeting.6.a
 		#replace advisor
 		hidden_effect = {
-			country_event = {id = Our_Country_Meeting.7 days = 40}
+			country_event = {id = Our_Country_Meeting.7 days = 10}
 		}
 	}
 	option = {
@@ -266,7 +266,7 @@ country_event = {
 		name = Our_Country_Meeting.8.a
 		#new advisor
 		hidden_effect = {
-			country_event = {id = Our_Country_Meeting.9 days = 40}
+			country_event = {id = Our_Country_Meeting.9 days = 30}
 		}
 	}
 	option = {
@@ -353,7 +353,7 @@ country_event = {
 		name = Our_Country_Meeting.12.a
 		#new advisor
 		hidden_effect = {
-			country_event = {id = Our_Country_Meeting.13 days = 40}
+			country_event = {id = Our_Country_Meeting.13 days = 5}
 		}
 	}
 }
