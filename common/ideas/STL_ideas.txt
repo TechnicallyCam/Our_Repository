@@ -820,7 +820,7 @@ ideas = {
 			picture = chi_incompetent_officers
 			removal_cost = -1
 			research_bonus = {
-				land_doctrine = -1.5
+				land_doctrine = -0.3
 			}
 		}
 		STL_no_war_experience2 = {
@@ -833,7 +833,7 @@ ideas = {
 			picture = chi_incompetent_officers
 			removal_cost = -1
 			research_bonus = {
-				land_doctrine = -0.75
+				land_doctrine = -0.15
 			}
 		}
 		STL_gbp_bonus = {

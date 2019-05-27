@@ -463,6 +463,9 @@ country_event = {
 		}
 		hidden_effect = {
 			load_focus_tree = Our_Nation
+			remove_ideas = STL_equality_past 
+			remove_ideas = STL_city_state  
+			remove_ideas = STL_city_state2
 		}
 		create_country_leader = {
 			name = "Allfather Adrian"
