@@ -1,0 +1,56 @@
+characters = {
+	OGP_Heinrich_Redtail = {
+		name=STL_Heinrich_Redtail
+		portraits={
+			civilian={
+				large="gfx/leaders/OGP/Heinrich.tga"
+			}
+		}
+		country_leader={
+			ideology=leninism
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+	OGP_Wing_Gar = {
+		name=OGP_Wing_Gar
+		country_leader={
+			ideology=falangism
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+	OGP_Hans_Rot = {
+		name=OGP_Hans_Rot
+		corps_commander={
+			traits = { griffon_race_trait }
+			skill = 2
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 3
+			logistics_skill = 3
+		}
+	}
+	OGP_Sailant_Soar = {
+		name=OGP_Sailant_Soar
+		corps_commander={
+			traits = { politically_connected pony_race_trait }
+			skill = 2
+			attack_skill = 3
+			defense_skill = 2
+			planning_skill = 1
+			logistics_skill = 2
+		}
+	}
+	OGP_Wilhelm_Schmidt = {
+		name=OGP_Wilhelm_Schmidt
+		corps_commander={
+			traits = { infantry_officer griffon_race_trait }
+			skill = 2
+			attack_skill = 1
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 2
+		}
+	}
+}

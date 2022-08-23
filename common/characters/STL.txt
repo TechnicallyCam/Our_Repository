@@ -1,0 +1,79 @@
+characters={
+	STL_Feather_Bangs = {
+		name=STL_Feather_Bangs
+		portraits={
+			civilian={
+				large="gfx/leaders/STL/FeatherBangs.tga"
+			}
+		}
+	}
+	STL_Double_Diamond = {
+		name=STL_Double_Diamond
+		portraits={
+			civilian={
+				large="gfx/leaders/STL/DoubleDiamond.tga"
+			}
+		}
+		country_leader={
+			ideology=leninism
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+	STL_Allfather_Adrian = {
+		name=STL_Allfather_Adrian
+		portraits={
+			civilian={
+				large="gfx/leaders/STL/allfather_adrian.tga"
+			}
+		}
+	}
+	STL_Grey_Bread = {
+		name=STL_Grey_Bread
+		portraits={
+			army={
+				large="gfx/leaders/STL/GreyBread.tga"
+			}
+		}
+		corps_commander={
+			traits = { commissar_general pony_race_trait }
+			skill = 4
+			attack_skill = 2
+			defense_skill = 3
+			planning_skill = 4
+			logistics_skill = 5
+		}
+	}
+	STL_Liquid_Miracle = {
+		name=STL_Grey_Bread
+		portraits={
+			army={
+				large="gfx/leaders/STL/GreyBread.tga"
+			}
+		}
+		corps_commander={
+			traits = { panzer_leader winter_specialist pony_race_trait }
+			skill = 2
+			attack_skill = 1
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 2
+		}
+	}
+	STL_Magic_Fly = {
+		name=STL_Grey_Bread
+		portraits={
+			army={
+				large="gfx/leaders/STL/GreyBread.tga"
+			}
+		}
+		corps_commander={
+			traits = { pony_race_trait }
+			skill = 2
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 1
+			logistics_skill = 1
+		}
+	}
+}

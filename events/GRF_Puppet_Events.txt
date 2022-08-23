@@ -223,15 +223,6 @@ country_event = {
 		random_other_country = {
 			limit = { original_tag = OGP }
 			hidden_effect = {
-				create_country_leader = {
-					name = "Heinrich Redtail"
-					picture = "Heinrich.tga"
-					expire = "1965.1.1"
-					ideology = socialism
-					traits = {
-				
-					}
-				}
 				load_focus_tree = GRF_Our_Town_Puppet_Focus_Tree_Nationalist_Revolt
 			}
 		}
@@ -277,17 +268,6 @@ country_event = {
 		}
 		
 		load_focus_tree = GRF_Our_Town_Puppet_Focus_Tree_Nationalist_Revolt
-		hidden_effect = {
-			create_country_leader = {
-				name = "Heinrich Redtail"
-				picture = "Heinrich.tga"
-				expire = "1965.1.1"
-				ideology = socialism
-				traits = {
-			
-				}
-			}
-		}
 		
 		start_civil_war = {
 			ideology = fascism
@@ -302,15 +282,6 @@ country_event = {
 			random_other_country = {
 				limit = { original_tag = OGP }
 				load_focus_tree = GRF_Our_Town_Puppet_Focus_Tree_Puppet_Loyal
-				create_country_leader = {
-					name = "Wing Gar"
-					picture = "Generic.tga"
-					expire = "1965.1.1"
-					ideology = falangism
-					traits = {
-				
-					}
-				}
 			}
 		}
 	}

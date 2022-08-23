@@ -439,7 +439,6 @@ country_event = {
 	option = {
 		name = Our_Country_Meeting.17.a
 		set_country_flag = Our_Country_Adrian_Coup_Flag
-		kill_country_leader = yes
 		set_politics = {
 			parties = {
 				democratic = { 
@@ -467,13 +466,13 @@ country_event = {
 			remove_ideas = STL_city_state  
 			remove_ideas = STL_city_state2
 		}
-		create_country_leader = {
-			name = "Allfather Adrian"
-			picture = "allfather_adrian.tga"
-			expire = "1965.1.1"
-			ideology = falangism
-			traits = {
-		
+		add_country_leader_role = {
+			character = STL_Allfather_Adrian
+			promote_leader = yes
+
+			country_leader = {
+				expire = "1965.1.1"
+				ideology = falangism
 			}
 		}
 	}
@@ -533,20 +532,35 @@ country_event = {
 	option = {
 		name = Our_Country_Alicorn.2.a
 		
-		create_country_leader = {
-			name = "God Emperor Adrian"
-			desc = ""
-			picture = "godemperor_adrian.dds"
-			expire = "1965.1.1"
-			ideology = nazism
-			traits = {
-				alicorn_adrian
+		STL_Allfather_Adrian = {
+			set_portraits = {
+				civilian={
+					large="gfx/leaders/STL/godemperor_adrian.tga"
+				}
+				army={
+					large="gfx/leaders/STL/godemperor_adrian.tga"
+				}
+			}
+			set_character_name = STL_Allfather_Adrian_god_emperor
+			add_trait = {
+				ideology = falangism
+				trait = alicorn_adrian
 			}
 		}
-		create_field_marshal = {
-			name = "God Emperor Adrian"
-			picture = "godemperor_adrian.dds"
-			traits = { }
+
+		add_country_leader_role = {
+			character = STL_Allfather_Adrian
+			promote_leader = yes
+
+			country_leader = {
+				expire = "1965.1.1"
+				ideology = falangism
+			}
+		}
+
+		add_corps_commander_role = {
+			character = STL_Allfather_Adrian
+			traits = { pony_race_trait }
 			skill = 3
 			attack_skill = 3
 			defense_skill = 3
@@ -569,14 +583,16 @@ country_event = {
 	option = {
 		name = Our_Country_Alicorn.3.a
 		
-		create_country_leader = {
-			name = "God Emperor Adrian"
-			desc = ""
-			picture = "spilled_ketchup_adrian.dds"
-			expire = "1965.1.1"
-			ideology = nazism
-			traits = {
-				mutant_adrian
+		STL_Allfather_Adrian = {
+			set_portraits = {
+				civilian={
+					large="gfx/leaders/STL/spilled_ketchup_adrian.tga"
+				}
+			}
+			set_character_name = STL_Allfather_Adrian_god_emperor
+			add_trait = {
+				ideology = nazism
+				trait = mutant_adrian
 			}
 		}
 	}

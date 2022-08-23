@@ -19,36 +19,19 @@ set_technology = {
 	tech_knights = 1
 	fuel_silos = 1
 }
-
+actually_fix_weapon_techs = yes
 
 set_convoys = 10
-set_politics = {
 
-	parties = {
-		democratic = {
-			popularity = 0
-		}
-
-		fascism = {
-			popularity = 100
-		}
-
-		communism = {
-			popularity = 0
-			#banned = no #default is no
-		}
-
-		neutrality = {
-			popularity = 0
-		}
-	}
-
-	ruling_party = fascism
-	last_election = "1000.10.10"
-	election_frequency = 36
-	elections_allowed = no
+set_popularities = {
+	democratic = 0
+	fascism = 100
+	communism = 0
+	neutrality = 0
 }
-
+set_politics = {
+	ruling_party = fascism
+}
 
 add_ideas = {
 
@@ -57,59 +40,11 @@ add_ideas = {
 set_stability = 0.9
 set_war_support = 0.8
 
-create_country_leader = {
-	name = "Heinrich Redtail"
-	picture = "Heinrich.tga"
-	expire = "1965.1.1"
-	ideology = socialism
-	traits = {
-
-	}
-}
-
-create_country_leader = {
-	name = "Wing Gar"
-	picture = "Generic.tga"
-	expire = "1965.1.1"
-	ideology = falangism
-	traits = {
-
-	}
-}
-
-create_field_marshal = {
-	name = "Hans Rot"
-	picture = "Generic.tga"
-	traits = { }
-	skill = 2
-
-	attack_skill = 2
-	defense_skill = 2
-	planning_skill = 3
-	logistics_skill = 3
-}
-
-create_corps_commander = {
-	name = "Sailant Soar"
-	picture = "Generic.tga"
-	traits = { politically_connected  }
-	skill = 2
-	attack_skill = 3
-	defense_skill = 2
-	planning_skill = 1
-	logistics_skill = 2
-}
-create_corps_commander = {
-	name = "Wilhelm Schmidt"
-	picture = "Generic.tga"
-	traits = { infantry_officer }
-	skill = 2
-	attack_skill = 1
-	defense_skill = 2
-	planning_skill = 2
-	logistics_skill = 2
-}
-
+recruit_character = OGP_Heinrich_Redtail
+recruit_character = OGP_Wing_Gar
+recruit_character = OGP_Hans_Rot
+recruit_character = OGP_Sailant_Soar
+recruit_character = OGP_Wilhelm_Schmidt
 
 set_rule = {
 	can_generate_female_aces = yes

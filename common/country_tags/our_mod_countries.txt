@@ -1,0 +1,2 @@
+
+OGP = "countries/OurGriffonProtectorate.txt"
